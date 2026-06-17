@@ -1,2 +1,4 @@
-:HL["/-/_next/static/chunks/0s59iikf7offa.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"ai-career-ops","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"otf5wsOQ-ZYtaEG7qLazQ"}
+:HL["/-/_next/static/chunks/3lgwv6z6fre19.css","style"]
+:HL["/-/images/ai-career-ops.png","image"]
+:HL["/-/images/ai-skills-workflow.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"projects","param":null,"prefetchHints":0,"slots":{"children":{"name":"ai-career-ops","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"a1Pwz8QVtprDT5Ya6aK_o"}
