@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">智慧养殖ERP模块流程证据图</title>
+  <desc id="desc">展示智慧养殖ERP从基础资料、养殖批次到投喂、用药、库存、采购销售、报表和设备监控的数据关系。</desc>
+  <rect width="1200" height="760" fill="#f7faf7"/>
+  <rect x="48" y="46" width="1104" height="668" rx="18" fill="#ffffff" stroke="#d7e2d6" stroke-width="2"/>
+  <text x="88" y="104" fill="#1f3328" font-family="Arial, sans-serif" font-size="34" font-weight="700">智慧养殖 ERP 系统模块拆解</text>
+  <text x="88" y="142" fill="#5b6b60" font-family="Arial, sans-serif" font-size="18">把线下养殖流程拆成基础数据、单据流转、状态规则和报表指标</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="88" y="202" width="190" height="86" rx="12" fill="#e7f5ec" stroke="#9bc7a8"/>
+    <text x="122" y="238" fill="#264b35" font-size="18" font-weight="700">基础资料</text>
+    <text x="122" y="265" fill="#57705e" font-size="14">塘口 / 物资 / 人员</text>
+    <rect x="368" y="202" width="190" height="86" rx="12" fill="#eef7ff" stroke="#94bce2"/>
+    <text x="402" y="238" fill="#214866" font-size="18" font-weight="700">养殖批次</text>
+    <text x="402" y="265" fill="#54718b" font-size="14">批次档案 / 状态</text>
+    <rect x="648" y="202" width="190" height="86" rx="12" fill="#fff6e5" stroke="#e3bd73"/>
+    <text x="682" y="238" fill="#6f4c16" font-size="18" font-weight="700">投喂 / 用药</text>
+    <text x="682" y="265" fill="#856b3f" font-size="14">记录 / 校验 / 追溯</text>
+    <rect x="928" y="202" width="190" height="86" rx="12" fill="#f4edff" stroke="#c4a7e7"/>
+    <text x="962" y="238" fill="#503070" font-size="18" font-weight="700">设备监控</text>
+    <text x="962" y="265" fill="#705a85" font-size="14">水质 / 状态 / 指标</text>
+    <rect x="228" y="408" width="190" height="86" rx="12" fill="#f1f8e8" stroke="#accb74"/>
+    <text x="262" y="444" fill="#445d20" font-size="18" font-weight="700">库存管理</text>
+    <text x="262" y="471" fill="#627744" font-size="14">入库 / 出库 / 盘点</text>
+    <rect x="508" y="408" width="190" height="86" rx="12" fill="#fff0ef" stroke="#df9b95"/>
+    <text x="542" y="444" fill="#74322e" font-size="18" font-weight="700">采购销售</text>
+    <text x="542" y="471" fill="#8b5a55" font-size="14">单据 / 流转 / 关联</text>
+    <rect x="788" y="408" width="190" height="86" rx="12" fill="#edf7f4" stroke="#8cc8bc"/>
+    <text x="822" y="444" fill="#29594f" font-size="18" font-weight="700">报表看板</text>
+    <text x="822" y="471" fill="#52726b" font-size="14">经营 / 养殖 / 设备</text>
+  </g>
+  <g stroke="#91a598" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M278 245 H368"/>
+    <path d="M558 245 H648"/>
+    <path d="M838 245 H928"/>
+    <path d="M463 288 C463 350 323 350 323 408"/>
+    <path d="M743 288 C743 350 603 350 603 408"/>
+    <path d="M1023 288 C1023 350 883 350 883 408"/>
+    <path d="M418 451 H508"/>
+    <path d="M698 451 H788"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#91a598"/>
+    </marker>
+  </defs>
+  <rect x="88" y="586" width="1030" height="76" rx="12" fill="#f4f8f4" stroke="#dce8dc"/>
+  <text x="116" y="626" fill="#2c3d32" font-family="Arial, sans-serif" font-size="18" font-weight="700">我负责的部分</text>
+  <text x="252" y="626" fill="#58695e" font-family="Arial, sans-serif" font-size="16">字段设计 / 表单配置 / 数据库结构 / 状态流转 / 数据校验 / 模块关系 / 低代码页面流程落地</text>
+</svg>

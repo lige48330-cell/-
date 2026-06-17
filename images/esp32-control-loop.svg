@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">ESP32远程控制闭环证据图</title>
+  <desc id="desc">展示小程序、云端通信、ESP32、继电器和设备响应组成的控制闭环。</desc>
+  <rect width="1200" height="760" fill="#fbfaf6"/>
+  <rect x="52" y="48" width="1096" height="664" rx="18" fill="#ffffff" stroke="#e5ded0" stroke-width="2"/>
+  <text x="92" y="104" fill="#302a20" font-family="Arial, sans-serif" font-size="34" font-weight="700">ESP32 远程控制与智能监控原型</text>
+  <text x="92" y="142" fill="#756b5d" font-family="Arial, sans-serif" font-size="18">验证从小程序操作到硬件响应的完整控制闭环</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="92" y="278" width="180" height="126" rx="16" fill="#eff6ff" stroke="#9fc2ea"/>
+    <text x="128" y="324" fill="#244d71" font-size="20" font-weight="700">小程序端</text>
+    <text x="128" y="356" fill="#5e7890" font-size="14">控制界面</text>
+    <text x="128" y="382" fill="#5e7890" font-size="14">开关状态</text>
+    <rect x="382" y="278" width="180" height="126" rx="16" fill="#f7f3ff" stroke="#bba9ea"/>
+    <text x="418" y="324" fill="#4f3972" font-size="20" font-weight="700">云端服务</text>
+    <text x="418" y="356" fill="#716188" font-size="14">MQTT / HTTP</text>
+    <text x="418" y="382" fill="#716188" font-size="14">数据交互</text>
+    <rect x="672" y="278" width="180" height="126" rx="16" fill="#edf8f2" stroke="#9bd2b2"/>
+    <text x="708" y="324" fill="#2a6540" font-size="20" font-weight="700">ESP32</text>
+    <text x="708" y="356" fill="#5b7d68" font-size="14">通信解析</text>
+    <text x="708" y="382" fill="#5b7d68" font-size="14">GPIO 控制</text>
+    <rect x="962" y="278" width="150" height="126" rx="16" fill="#fff3e6" stroke="#e2b47c"/>
+    <text x="994" y="324" fill="#744817" font-size="20" font-weight="700">继电器</text>
+    <text x="994" y="356" fill="#846b4d" font-size="14">设备开关</text>
+    <text x="994" y="382" fill="#846b4d" font-size="14">硬件响应</text>
+  </g>
+  <g stroke="#9b8e7b" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M272 341 H382"/>
+    <path d="M562 341 H672"/>
+    <path d="M852 341 H962"/>
+    <path d="M1037 404 C1037 538 182 538 182 404"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#9b8e7b"/>
+    </marker>
+  </defs>
+  <rect x="92" y="586" width="1014" height="76" rx="12" fill="#faf8f3" stroke="#e7dfd0"/>
+  <text x="120" y="626" fill="#342b20" font-family="Arial, sans-serif" font-size="18" font-weight="700">我完成的部分</text>
+  <text x="256" y="626" fill="#6d6253" font-family="Arial, sans-serif" font-size="16">硬件连接 / 继电器控制 / 小程序页面 / 云端通信 / MQTT-HTTP链路 / 联调验证</text>
+</svg>
