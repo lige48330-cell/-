@@ -1,0 +1,299 @@
+/* Liquid Glass UI Effects */
+
+/* 基础变量定义 */
+:root {
+  --liquid-glass-bg: rgba(255, 255, 255, 0.08);
+  --liquid-glass-border: rgba(255, 255, 255, 0.15);
+  --liquid-glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --liquid-glass-blur: blur(20px);
+  --liquid-glass-gradient: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 100%);
+  --liquid-glass-highlight: linear-gradient(180deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 50%);
+  --liquid-accent-glow: 0 0 40px rgba(99, 179, 237, 0.3);
+}
+
+/* 液态玻璃卡片基础样式 */
+.liquid-card {
+  background: var(--liquid-glass-bg);
+  backdrop-filter: var(--liquid-glass-blur);
+  -webkit-backdrop-filter: var(--liquid-glass-blur);
+  border: 1px solid var(--liquid-glass-border);
+  border-radius: 16px;
+  box-shadow: var(--liquid-glass-shadow);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.liquid-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: var(--liquid-glass-highlight);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.liquid-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.liquid-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--liquid-glass-shadow), var(--liquid-accent-glow);
+  border-color: rgba(99, 179, 237, 0.4);
+}
+
+.liquid-card:hover::after {
+  opacity: 1;
+}
+
+/* 液态玻璃按钮 */
+.liquid-btn {
+  background: var(--liquid-glass-bg);
+  backdrop-filter: var(--liquid-glass-blur);
+  -webkit-backdrop-filter: var(--liquid-glass-blur);
+  border: 1px solid var(--liquid-glass-border);
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.liquid-btn:hover {
+  background: rgba(99, 179, 237, 0.2);
+  border-color: rgba(99, 179, 237, 0.5);
+  box-shadow: 0 4px 20px rgba(99, 179, 237, 0.3);
+  transform: translateY(-2px);
+}
+
+.liquid-btn:hover::before {
+  left: 100%;
+}
+
+.liquid-btn-primary {
+  background: linear-gradient(135deg, rgba(99, 179, 237, 0.4) 0%, rgba(99, 179, 237, 0.2) 100%);
+  border-color: rgba(99, 179, 237, 0.5);
+}
+
+/* 液态玻璃导航栏 */
+.liquid-nav {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 液态玻璃英雄区域 */
+.liquid-hero {
+  background: 
+    radial-gradient(at 40% 20%, rgba(99, 179, 237, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(99, 179, 237, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(236, 72, 153, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(139, 92, 246, 0.1) 0px, transparent 50%);
+}
+
+/* 流动动画背景 */
+@keyframes liquid-flow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.liquid-animated-bg {
+  background: linear-gradient(-45deg, 
+    rgba(99, 179, 237, 0.1), 
+    rgba(139, 92, 246, 0.1), 
+    rgba(236, 72, 153, 0.1),
+    rgba(99, 179, 237, 0.1));
+  background-size: 400% 400%;
+  animation: liquid-flow 15s ease infinite;
+}
+
+/* 液态玻璃徽章 */
+.liquid-badge {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+}
+
+.liquid-badge:hover {
+  background: rgba(99, 179, 237, 0.15);
+  border-color: rgba(99, 179, 237, 0.4);
+  transform: scale(1.05);
+}
+
+/* 光泽效果 */
+.liquid-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-shine::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 70%
+  );
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* 液态玻璃输入框 */
+.liquid-input {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.liquid-input:focus {
+  border-color: rgba(99, 179, 237, 0.5);
+  box-shadow: 0 0 20px rgba(99, 179, 237, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 179, 237, 0.3);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 179, 237, 0.5);
+}
+
+/* 浮动气泡装饰 */
+.liquid-bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.liquid-bubble {
+  position: absolute;
+  bottom: -100px;
+  background: radial-gradient(circle at 30% 30%, 
+    rgba(255, 255, 255, 0.1), 
+    rgba(255, 255, 255, 0.02));
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  animation: bubble-rise 15s infinite ease-in;
+}
+
+@keyframes bubble-rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* 玻璃态分割线 */
+.liquid-divider {
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.2), 
+    rgba(255, 255, 255, 0.1),
+    transparent);
+  border: none;
+  margin: 2rem 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .liquid-card {
+    border-radius: 12px;
+  }
+  
+  .liquid-btn {
+    padding: 10px 20px;
+  }
+}
