@@ -1,131 +1,56 @@
-// Liquid Glass UI Effects - JavaScript
+(function initLiquidGlass() {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const pointerTargets = document.querySelectorAll("[data-lg-pointer]");
 
-document.addEventListener('DOMContentLoaded', function() {
-  // 创建浮动气泡背景
-  createBubbles();
-  
-  // 添加滚动动画
-  initScrollAnimations();
-  
-  // 添加鼠标视差效果
-  initParallaxEffect();
-});
+  function setPointerVars(element, event) {
+    const rect = element.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width) * 100;
+    const y = ((event.clientY - rect.top) / rect.height) * 100;
+    element.style.setProperty("--lg-pointer-x", `${x.toFixed(2)}%`);
+    element.style.setProperty("--lg-pointer-y", `${y.toFixed(2)}%`);
 
-// 创建浮动气泡
-function createBubbles() {
-  const bubblesContainer = document.createElement('div');
-  bubblesContainer.className = 'liquid-bubbles';
-  document.body.appendChild(bubblesContainer);
-  
-  const bubbleCount = 8;
-  for (let i = 0; i < bubbleCount; i++) {
-    const bubble = document.createElement('div');
-    bubble.className = 'liquid-bubble';
-    
-    // 随机大小
-    const size = Math.random() * 80 + 20;
-    bubble.style.width = `${size}px`;
-    bubble.style.height = `${size}px`;
-    
-    // 随机位置
-    bubble.style.left = `${Math.random() * 100}%`;
-    
-    // 随机延迟和持续时间
-    bubble.style.animationDelay = `${Math.random() * 15}s`;
-    bubble.style.animationDuration = `${Math.random() * 10 + 15}s`;
-    
-    bubblesContainer.appendChild(bubble);
+    if (element.dataset.lgPointer === "tilt" && !prefersReducedMotion) {
+      const rotateY = ((x - 50) / 50) * 4;
+      const rotateX = ((50 - y) / 50) * 4;
+      element.style.setProperty("--lg-rotate-x", `${rotateX.toFixed(2)}deg`);
+      element.style.setProperty("--lg-rotate-y", `${rotateY.toFixed(2)}deg`);
+    }
   }
-}
 
-// 滚动动画初始化
-function initScrollAnimations() {
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in');
-        observer.unobserve(entry.target);
-      }
+  pointerTargets.forEach((element) => {
+    element.addEventListener("pointermove", (event) => {
+      element.classList.add("lg-pointer-active");
+      setPointerVars(element, event);
     });
-  }, observerOptions);
-  
-  // 观察所有卡片和项目元素
-  document.querySelectorAll('.liquid-card, article, .group').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-  });
-}
 
-// 添加 animate-in 类样式
-const style = document.createElement('style');
-style.textContent = `
-  .animate-in {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-`;
-document.head.appendChild(style);
-
-// 鼠标视差效果
-function initParallaxEffect() {
-  const cards = document.querySelectorAll('.liquid-card');
-  
-  cards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-      
-      const rotateX = (y - centerY) / 20;
-      const rotateY = (centerX - x) / 20;
-      
-      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
-    });
-    
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+    element.addEventListener("pointerleave", () => {
+      element.classList.remove("lg-pointer-active");
+      element.style.removeProperty("--lg-rotate-x");
+      element.style.removeProperty("--lg-rotate-y");
+      element.style.setProperty("--lg-pointer-x", "50%");
+      element.style.setProperty("--lg-pointer-y", "50%");
     });
   });
-}
 
-// 平滑滚动到锚点
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (href !== '#') {
-      e.preventDefault();
-      const target = document.querySelector(href);
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+  if (!prefersReducedMotion && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.animate(
+              [
+                { opacity: 0, transform: "translateY(18px) scale(0.985)" },
+                { opacity: 1, transform: "translateY(0) scale(1)" },
+              ],
+              { duration: 520, easing: "cubic-bezier(.2,.75,.18,1)", fill: "both" }
+            );
+            observer.unobserve(entry.target);
+          }
         });
-      }
-    }
-  });
-});
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
 
-// 导航栏滚动效果
-let lastScrollY = window.scrollY;
-const nav = document.querySelector('header');
-
-window.addEventListener('scroll', () => {
-  if (nav) {
-    if (window.scrollY > 100) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-    lastScrollY = window.scrollY;
+    document.querySelectorAll(".lg-card, .lg-surface").forEach((element) => observer.observe(element));
   }
-});
+})();
