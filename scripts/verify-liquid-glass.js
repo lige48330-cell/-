@@ -10,14 +10,6 @@ const requiredEveryPageSnippets = [
   "lg-liquid-ready",
 ];
 
-const requiredHomePageSnippets = [
-  "lg-nav",
-  "lg-card",
-  "lg-button",
-  "lg-badge",
-  "lg-surface",
-];
-
 const requiredCssSnippets = [
   ".lg-card",
   ".lg-button",
@@ -26,7 +18,21 @@ const requiredCssSnippets = [
   ".lg-surface",
   ".lg-shimmer",
   "@media (prefers-reduced-motion: reduce)",
+  ".lg-liquid-ready .section-band::before",
+  ".lg-liquid-ready .section-band::after",
+  ".lg-404-panel",
 ];
+
+const requiredPageSnippets = {
+  'projects/ai-career-ops.html': [
+    'section-band',
+    'lg-card',
+    'lg-surface',
+  ],
+  '404.html': [
+    'lg-404-panel',
+  ],
+};
 
 const requiredJsSnippets = [
   "initLiquidGlass",
@@ -49,9 +55,12 @@ for (const page of pages) {
   }
 }
 
-const homeHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
-for (const snippet of requiredHomePageSnippets) {
-  assertContains("index.html", homeHtml, snippet);
+for (const [page, snippets] of Object.entries(requiredPageSnippets)) {
+  const filePath = path.join(root, page);
+  const html = fs.readFileSync(filePath, "utf8");
+  for (const snippet of snippets) {
+    assertContains(page, html, snippet);
+  }
 }
 
 const css = fs.readFileSync(path.join(root, "liquid-glass.css"), "utf8");

@@ -1,4 +1,4 @@
-/* Liquid Glass UI component layer for the static portfolio export. */
+﻿/* Liquid Glass UI component layer for the static portfolio export. */
 
 :root {
   --lg-tint: 94 224 184;
@@ -13,6 +13,8 @@
   --lg-radius: 14px;
   --lg-pointer-x: 50%;
   --lg-pointer-y: 50%;
+  --lg-elevated-blur: 30px;
+  --lg-elevated-shadow: 0 28px 84px rgba(0, 0, 0, 0.42);
 }
 
 .lg-liquid-ready {
@@ -55,6 +57,14 @@
 .lg-card,
 .lg-surface {
   border-radius: var(--lg-radius);
+}
+
+.lg-card:focus-within {
+  border-color: rgba(var(--lg-tint), 0.46) !important;
+  box-shadow:
+    0 26px 80px rgba(0, 0, 0, 0.42),
+    0 0 48px rgba(var(--lg-tint), 0.18),
+    var(--lg-inner-glow);
 }
 
 .lg-nav {
@@ -169,8 +179,40 @@
   will-change: transform;
 }
 
+.lg-liquid-ready .section-band {
+  position: relative;
+}
+
 .lg-liquid-ready .section-band::before {
-  background: linear-gradient(90deg, transparent, rgba(var(--lg-tint), 0.5), rgba(255, 255, 255, 0.22), transparent);
+  background:
+    linear-gradient(90deg, transparent, rgba(var(--lg-tint), 0.5), rgba(255, 255, 255, 0.22), transparent);
+  opacity: 0.85;
+}
+
+.lg-liquid-ready .section-band::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(var(--lg-tint), 0.28), transparent);
+  pointer-events: none;
+}
+
+.lg-liquid-ready .section-band + .section-band {
+  position: relative;
+}
+
+.lg-liquid-ready .section-band + .section-band::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(var(--lg-highlight), 0.14), transparent);
+  pointer-events: none;
 }
 
 @keyframes lg-shimmer {
@@ -199,5 +241,50 @@
   .lg-button:hover::after,
   .lg-badge:hover::after {
     animation: none;
+  }
+}
+
+.lg-liquid-ready .lg-404-panel {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--foreground);
+  background: linear-gradient(135deg, rgba(var(--lg-highlight), 0.12), rgba(var(--lg-highlight), 0.03)), rgba(var(--lg-surface), 0.64) !important;
+  border-top: 1px solid var(--lg-border);
+  border-bottom: 1px solid var(--lg-border);
+  box-shadow: var(--lg-elevated-shadow), var(--lg-inner-glow);
+  backdrop-filter: blur(var(--lg-elevated-blur)) saturate(1.5);
+  -webkit-backdrop-filter: blur(var(--lg-elevated-blur)) saturate(1.5);
+}
+
+.lg-liquid-ready .lg-404-panel .lg-404-inner {
+  max-width: 28rem;
+  padding: 2.5rem 1.25rem;
+}
+
+.lg-liquid-ready .lg-404-panel h1 {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+  padding: 0 1.5rem 0 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  border-right: 1px solid rgba(var(--lg-highlight), 0.28);
+}
+
+.lg-liquid-ready .lg-404-panel h2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .lg-liquid-ready .lg-404-panel h1 {
+    border-right-color: rgba(var(--lg-highlight), 0.28);
   }
 }
