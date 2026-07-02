@@ -7,6 +7,8 @@
   --lg-surface: 17 28 25;
   --lg-highlight: 255 255 255;
   --lg-border: rgba(255, 255, 255, 0.18);
+  --lg-elevated-border: rgba(255, 255, 255, 0.22);
+  --lg-glass-shimmer: rgba(255, 255, 255, 0.18);
   --lg-shadow: 0 22px 70px rgba(0, 0, 0, 0.34);
   --lg-inner-glow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
   --lg-blur: 24px;
@@ -48,8 +50,8 @@
   background:
     linear-gradient(135deg, rgba(var(--lg-highlight), 0.13), rgba(var(--lg-highlight), 0.035)),
     rgba(var(--lg-surface), 0.62) !important;
-  border-color: var(--lg-border) !important;
-  box-shadow: var(--lg-shadow), var(--lg-inner-glow);
+  border-color: var(--lg-elevated-border) !important;
+  box-shadow: var(--lg-shadow), var(--lg-inner-glow), 0 0 0 1px rgba(var(--lg-highlight), 0.06);
   backdrop-filter: blur(var(--lg-blur)) saturate(1.42);
   -webkit-backdrop-filter: blur(var(--lg-blur)) saturate(1.42);
 }
@@ -72,6 +74,7 @@
 }
 
 .lg-card {
+  --lg-blur: 26px;
   overflow: hidden;
   transform: perspective(1200px) rotateX(var(--lg-rotate-x, 0deg)) rotateY(var(--lg-rotate-y, 0deg)) translate3d(0, var(--lg-lift, 0), 0);
   transition:
@@ -127,8 +130,8 @@
 .lg-button,
 .lg-badge {
   overflow: hidden;
-  backdrop-filter: blur(18px) saturate(1.36);
-  -webkit-backdrop-filter: blur(18px) saturate(1.36);
+  backdrop-filter: blur(16px) saturate(1.32);
+  -webkit-backdrop-filter: blur(16px) saturate(1.32);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.13), 0 10px 28px rgba(0, 0, 0, 0.18);
   transition:
     transform 180ms ease,
@@ -181,12 +184,13 @@
 
 .lg-liquid-ready .section-band {
   position: relative;
+  z-index: 0;
 }
 
 .lg-liquid-ready .section-band::before {
   background:
     linear-gradient(90deg, transparent, rgba(var(--lg-tint), 0.5), rgba(255, 255, 255, 0.22), transparent);
-  opacity: 0.85;
+  opacity: 0.95;
 }
 
 .lg-liquid-ready .section-band::after {
@@ -213,6 +217,11 @@
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(var(--lg-highlight), 0.14), transparent);
   pointer-events: none;
+}
+
+.lg-liquid-ready .section-band > * {
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes lg-shimmer {
@@ -244,6 +253,11 @@
   }
 }
 
+.lg-button:focus-visible {
+  outline: 2px solid rgba(var(--lg-tint), 0.7);
+  outline-offset: 2px;
+}
+
 .lg-liquid-ready .lg-404-panel {
   min-height: 100vh;
   display: flex;
@@ -253,8 +267,8 @@
   text-align: center;
   color: var(--foreground);
   background: linear-gradient(135deg, rgba(var(--lg-highlight), 0.12), rgba(var(--lg-highlight), 0.03)), rgba(var(--lg-surface), 0.64) !important;
-  border-top: 1px solid var(--lg-border);
-  border-bottom: 1px solid var(--lg-border);
+  border-top: 1px solid var(--lg-elevated-border);
+  border-bottom: 1px solid var(--lg-elevated-border);
   box-shadow: var(--lg-elevated-shadow), var(--lg-inner-glow);
   backdrop-filter: blur(var(--lg-elevated-blur)) saturate(1.5);
   -webkit-backdrop-filter: blur(var(--lg-elevated-blur)) saturate(1.5);
