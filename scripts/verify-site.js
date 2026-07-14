@@ -31,12 +31,16 @@ for (const file of files) {
 }
 
 const home = read("index.html");
-for (const text of ["把业务流程、物联网设备与 AI 工程实践，落成可验证的软件系统。", "ESP32 IoT 平台", "AI Supervisor", "智慧水产养殖应用套件", "AI Agent 编程学习平台", "开发服务展示小程序"]) {
+for (const text of ["把业务流程、物联网设备与 AI 工程实践，落成可验证的软件系统。", "ESP32 IoT 平台", "AI Supervisor", "智慧水产养殖应用套件", "AI Agent 编程学习平台", "开发服务展示小程序", "AI Supervisor pytest 93 项通过", "水产后端 API 测试 12 项通过"]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 
 for (const file of ["index.html", "projects/esp32-iot-platform.html", "projects/ai-supervisor.html", "projects/aquaculture-prototype.html"]) {
   if (!read(file).includes('data-site-version="2026-07-14"')) throw new Error(`${file} has an unexpected site version`);
+}
+
+for (const [file, text] of [["projects/esp32-iot-platform.html", "0 个警告、0 个错误"], ["projects/ai-supervisor.html", "93 项测试，全部通过"], ["projects/aquaculture-prototype.html", "12 项全部通过"]]) {
+  if (!read(file).includes(text)) throw new Error(`${file} is missing verification evidence`);
 }
 
 console.log("Portfolio site verified.");
