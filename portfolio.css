@@ -46,6 +46,8 @@ h2 { margin-bottom: 0; font-size: clamp(2rem, 3.7vw, 3.7rem); line-height: 1.08;
 h3 { font-size: clamp(1.45rem, 2.5vw, 2.4rem); line-height: 1.12; letter-spacing: -0.045em; }
 .hero-lede, .section-heading > p, .case-lede, .method-copy p { color: var(--muted); font-size: 1.02rem; line-height: 1.85; }
 .hero-lede { max-width: 38rem; }
+.hero-summary { max-width: 47rem; padding: 0.8rem 1rem; margin: 1.25rem 0 0; border-left: 2px solid var(--signal); border-radius: 0 0.55rem 0.55rem 0; background: rgba(96, 230, 174, 0.07); color: #d9e6df; font-size: 0.84rem; line-height: 1.75; }
+.hero-summary strong { color: var(--signal); font-size: 0.72rem; letter-spacing: 0.08em; }
 .role-focus { max-width: 38rem; margin: 1.15rem 0 0; color: #c9d4ce; font-size: 0.82rem; line-height: 1.65; }
 .role-focus strong { color: var(--warm); font-size: 0.7rem; letter-spacing: 0.08em; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
@@ -88,16 +90,16 @@ h3 { font-size: clamp(1.45rem, 2.5vw, 2.4rem); line-height: 1.12; letter-spacing
 .tech-chain { position: relative; }
 .tech-chain::before { content: ""; position: absolute; inset: 7.5rem 0 0; z-index: -1; background: linear-gradient(100deg, rgba(25, 80, 57, 0.13), transparent 55%); pointer-events: none; }
 .tech-chain-heading { margin-bottom: 1.4rem; }
-.tech-chain-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.65rem; padding: 0; margin: 0; list-style: none; }
+.tech-chain-list { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0.65rem; padding: 0; margin: 0; list-style: none; }
 .tech-chain-list li { position: relative; min-width: 0; }
 .tech-chain-list li:not(:last-child)::after { content: ""; position: absolute; top: 50%; left: calc(100% + 0.08rem); width: 0.5rem; border-top: 1px solid var(--line-strong); }
-.tech-chain-node { position: relative; display: flex; min-height: 178px; flex-direction: column; padding: 1.15rem; overflow: hidden; border: 1px solid var(--line); border-radius: 0.85rem; background: rgba(11, 31, 24, 0.9); text-decoration: none; transition: border-color 160ms ease, background 160ms ease, transform 160ms ease; }
+.tech-chain-node { position: relative; display: flex; min-height: 184px; flex-direction: column; padding: 1.05rem; overflow: hidden; border: 1px solid var(--line); border-radius: 0.85rem; background: rgba(11, 31, 24, 0.9); text-decoration: none; transition: border-color 160ms ease, background 160ms ease, transform 160ms ease; }
 .tech-chain-node::before { content: ""; position: absolute; top: 0; left: 1.15rem; width: 2.5rem; height: 2px; background: var(--signal); box-shadow: 0 0 14px rgba(96, 230, 174, 0.62); }
 .tech-chain-node:hover, .tech-chain-node:focus-visible { border-color: var(--line-strong); background: rgba(21, 75, 57, 0.62); outline: none; transform: translateY(-2px); }
 .tech-chain-node span { color: rgba(167, 226, 197, 0.56); font: 800 0.7rem ui-monospace, monospace; letter-spacing: 0.08em; }
-.tech-chain-node strong { margin: 2.25rem 0 0.65rem; font-size: 0.96rem; line-height: 1.35; }
-.tech-chain-node small { color: var(--muted); font-size: 0.71rem; line-height: 1.6; }
-.tech-chain-node em { margin-top: auto; padding-top: 1rem; color: var(--warm); font-size: 0.68rem; font-style: normal; }
+.tech-chain-node strong { margin: 2.1rem 0 0.65rem; font-size: 0.88rem; line-height: 1.38; }
+.tech-chain-node small { color: var(--muted); font-size: 0.68rem; line-height: 1.6; }
+.tech-chain-node em { margin-top: auto; padding-top: 1rem; color: var(--warm); font-size: 0.63rem; font-style: normal; }
 .tech-enhancer { display: grid; grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.2fr) auto; gap: 1.5rem; align-items: center; padding: 1.4rem 1.5rem; margin-top: 0.75rem; border: 1px solid var(--line); border-radius: 0.85rem; background: rgba(15, 42, 31, 0.74); }
 .tech-enhancer h3 { max-width: 26rem; margin: 0.55rem 0 0; font-size: 1.08rem; line-height: 1.35; }
 .tech-enhancer > p { margin: 0; color: var(--muted); font-size: 0.82rem; line-height: 1.68; }
@@ -116,7 +118,10 @@ h3 { font-size: clamp(1.45rem, 2.5vw, 2.4rem); line-height: 1.12; letter-spacing
 .case-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.85rem; margin: 1.2rem 0; }
 .case-grid > div { padding: 1rem; border-left: 1px solid var(--line-strong); background: rgba(167, 226, 197, 0.04); }
 .case-grid h4 { margin-bottom: 0.45rem; font-size: 0.84rem; }
+.case-grid h4[id] { scroll-margin-top: 6.2rem; }
 .case-grid p { margin: 0; color: var(--muted); font-size: 0.79rem; line-height: 1.65; }
+.case-grid p + p { margin-top: 0.65rem; }
+.case-grid strong { color: #dcebe2; font-size: 0.73rem; }
 .case-learning { padding: 0.85rem 1rem; margin: 0 0 1.1rem; color: #c9d4ce; border: 1px solid var(--line); border-radius: 0.6rem; background: rgba(11, 31, 24, 0.72); font-size: 0.78rem; line-height: 1.65; }
 .case-learning strong { color: var(--warm); font-size: 0.7rem; letter-spacing: 0.07em; }
 

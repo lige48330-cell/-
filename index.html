@@ -35,18 +35,19 @@
     <main id="home">
       <section class="hero section-wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">ERP / IoT / 低代码 / AI 辅助交付</p>
-          <h1 id="hero-title">把业务流程、<br />物联网设备与 AI<br />落成可验证的软件系统</h1>
+          <p class="eyebrow">ERP / IoT / 低代码交付</p>
+          <h1 id="hero-title">把业务流程与<br />物联网设备<br />落成可验证的系统</h1>
           <p class="hero-lede">从养殖业务建模、低代码流程配置，到设备接入、状态监控与交付验证，专注把现场需求变成可运行、可迭代的系统能力。</p>
-          <p class="role-focus"><strong>交付定位</strong> · 业务系统与 IoT 应用协作，覆盖领域建模、应用实现、设备协同与工程验证。</p>
+          <p class="hero-summary"><strong>30 秒能力摘要</strong> · 企业业务系统 × IoT 联动交付：业务问题 → 领域模型 → 管理应用 → API / MQTT → ESP32 → 状态、告警与运营验证。</p>
+          <p class="role-focus"><strong>交付定位</strong> · 业务系统与 IoT 应用协作；AI 用于增强研发、证据与工程验证。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">浏览项目案例</a>
-            <a class="button button-quiet" href="#tech-chain">查看技术链</a>
+            <a class="button button-primary" href="#projects">浏览项目证据</a>
+            <a class="button button-quiet" href="#tech-chain">60 秒看技术链</a>
           </div>
           <ul class="proof-row" aria-label="项目范围">
-            <li><strong>养殖渔业 ERP</strong><span>流程与低代码实现</span></li>
-            <li><strong>设备监管平台</strong><span>IoT 接入与可视化</span></li>
-            <li><strong>ESP32 小程序</strong><span>设备联动与控制</span></li>
+            <li><strong>养殖渔业 ERP</strong><span>领域模型与低代码实现</span></li>
+            <li><strong>设备监管平台</strong><span>IoT 运营与可视化</span></li>
+            <li><strong>ESP32 小程序</strong><span>端云协同与状态反馈</span></li>
           </ul>
         </div>
 
@@ -92,17 +93,18 @@
         <div class="section-heading tech-chain-heading">
           <div>
             <p class="eyebrow">HOW THE SYSTEMS CONNECT</p>
-            <h2 id="tech-chain-title">从业务问题到现场反馈，一条跨项目能力链</h2>
+            <h2 id="tech-chain-title">从业务问题到运营验证，一条六段技术链</h2>
           </div>
           <p>这是一张能力关系图，不表示所有系统运行在同一生产环境。每个节点都可跳转到对应的公开案例证据。</p>
         </div>
 
         <ol class="tech-chain-list">
-          <li><a class="tech-chain-node" href="#case-erp"><span>01</span><strong>业务规则与建模</strong><small>对象 · 角色 · 状态 · 规则</small><em>ERP 案例</em></a></li>
-          <li><a class="tech-chain-node" href="#case-erp"><span>02</span><strong>应用与运营界面</strong><small>模块 · 表单 · 小程序 · 监管视图</small><em>ERP / IoT</em></a></li>
-          <li><a class="tech-chain-node" href="#case-miniapp"><span>03</span><strong>服务与协议协同</strong><small>API · HTTP · MQTT · 状态事件</small><em>ESP32 案例</em></a></li>
-          <li><a class="tech-chain-node" href="#case-miniapp"><span>04</span><strong>现场设备与反馈</strong><small>ESP32 · 状态上报 · 响应</small><em>设备链路</em></a></li>
-          <li><a class="tech-chain-node" href="#case-iot"><span>05</span><strong>运营验证与交付</strong><small>告警 · 日志 · 权限 · 关键闭环</small><em>监管平台</em></a></li>
+          <li><a class="tech-chain-node" href="#case-erp-problem"><span>01</span><strong>业务问题与约束</strong><small>现场角色 · 流程 · 异常</small><em>ERP · 业务问题</em></a></li>
+          <li><a class="tech-chain-node" href="#case-erp-model"><span>02</span><strong>领域模型与规则</strong><small>对象 · 字段 · 状态 · 校验</small><em>ERP · 模型证据</em></a></li>
+          <li><a class="tech-chain-node" href="#case-erp-application"><span>03</span><strong>管理应用与操作</strong><small>模块 · 表单 · 管理视图</small><em>ERP · 配置证据</em></a></li>
+          <li><a class="tech-chain-node" href="#case-miniapp-protocol"><span>04</span><strong>服务与协议协同</strong><small>API · HTTP · MQTT · 状态事件</small><em>小程序 · 端云协同</em></a></li>
+          <li><a class="tech-chain-node" href="#case-miniapp-device"><span>05</span><strong>现场设备与反馈</strong><small>ESP32 · 状态上报 · 回传</small><em>小程序 · 设备边界</em></a></li>
+          <li><a class="tech-chain-node" href="#case-iot-validation"><span>06</span><strong>运营验证与闭环</strong><small>在线态势 · 日志 · 告警 · 验收</small><em>IoT · 监管证据</em></a></li>
         </ol>
 
         <aside class="tech-enhancer" aria-label="工程增强层">
@@ -128,9 +130,9 @@
             <h3>养殖渔业 ERP 业务系统</h3>
             <p class="case-lede">把养殖业务的基础资料、库存、采购销售和设备相关流程，细化为可配置的模块、表单、字段、状态与校验规则。</p>
             <div class="case-grid">
-              <div><h4>01 · 业务问题</h4><p>养殖资料、库存、采购销售与设备流程需要被拆成可追踪、可配置的业务规则。</p></div>
-              <div><h4>02 · 我的边界</h4><p>业务流程梳理、模块与字段设计、页面/流程配置与关键闭环验证。</p></div>
-              <div><h4>03 · 技术链位置</h4><p>业务对象与角色 → 模块/字段/表单 → 状态校验 → 关键单据闭环。</p></div>
+              <div><h4 id="case-erp-problem">01 · 业务问题</h4><p>养殖资料、库存、采购销售与设备流程需要被拆成可追踪、可配置的业务规则。</p></div>
+              <div><h4 id="case-erp-model">02 · 领域建模与我的边界</h4><p><strong>我负责：</strong>业务流程梳理、模块与字段设计、页面/流程配置与关键闭环验证。</p><p><strong>系统协同：</strong>业务规则在既有 ERP 配置与数据环境中运行；公开页仅展示脱敏模型与界面表达。</p></div>
+              <div><h4 id="case-erp-application">03 · 管理应用与操作</h4><p>业务对象与角色 → 模块、字段与表单 → 状态校验 → 关键单据闭环。</p></div>
               <div><h4>04 · 公开验证</h4><p>脱敏大屏展示业务模块与管理视图；不公开客户数据、配置或完整源码。</p></div>
             </div>
             <p class="case-learning"><strong>能力沉淀</strong> · 将现场业务语言转换成对象、状态、校验和可验证的系统闭环。</p>
@@ -139,16 +141,16 @@
         </article>
 
         <article id="case-iot" class="case-card case-card-reverse">
-          <div class="case-visual"><img src="images/iot-monitoring-dashboard.png" alt="养殖场消毒除臭设备监管大屏截图" /></div>
+          <div class="case-visual"><img src="images/iot-monitoring-dashboard-public.png" alt="脱敏后的养殖场消毒除臭设备监管大屏" /></div>
           <div class="case-content">
             <p class="case-index">CASE 02 · IOT / 数据看板</p>
             <h3>养殖场消毒除臭设备监管平台</h3>
-            <p class="case-lede">面向现场设备管理，把在线状态、运行记录、换水记录、异常事件与地理分布汇总为一张可读的监管视图。</p>
+            <p class="case-lede">面向现场设备管理，把在线状态、运行记录、换水记录与异常事件整理为可读的监管视图。</p>
             <div class="case-grid">
               <div><h4>01 · 业务问题</h4><p>现场管理需要从分散记录中快速判断设备在线、运行事件、异常和运营态势。</p></div>
-              <div><h4>02 · 我的边界</h4><p>监控指标梳理、状态与事件展示、管理界面和大屏功能联动。</p></div>
-              <div><h4>03 · 技术链位置</h4><p>设备状态与事件 → 服务端处理 → 在线态势、日志、告警和监管视图。</p></div>
-              <div><h4>04 · 公开验证</h4><p>脱敏监管大屏展示实时态势、地图、日志与异常反馈，不展示真实设备标识。</p></div>
+              <div><h4>02 · 我的边界 / 系统协同</h4><p><strong>我负责：</strong>监控指标梳理、状态与事件展示、管理界面和大屏功能联动。</p><p><strong>系统协同：</strong>设备状态上报、服务处理与固件反馈属于多端协同链路；公开页不将其表述为由我单独交付。</p></div>
+              <div><h4 id="case-iot-validation">03 · 运营验证与闭环</h4><p>设备状态与事件 → 协同服务处理 → 在线态势、日志、告警与监管视图。</p></div>
+              <div><h4>04 · 公开验证</h4><p>公开版监管界面展示指标类型、日志区域与异常反馈结构；地图与精确时间已移除。</p></div>
             </div>
             <p class="case-learning"><strong>能力沉淀</strong> · 用可观察的状态、事件与日志，把现场设备信息转为运营决策界面。</p>
             <ul class="tag-list"><li>IoT 场景</li><li>设备状态</li><li>监控大屏</li><li>可视化</li></ul>
@@ -159,12 +161,12 @@
           <div class="case-visual"><img src="images/esp32-miniapp-public.png" alt="养殖场消毒除臭设备管理总览小程序截图" /></div>
           <div class="case-content">
             <p class="case-index">CASE 03 · ESP32 / 小程序</p>
-            <h3>养殖场消毒除臭设备联动小程序</h3>
-            <p class="case-lede">围绕养殖场消毒除臭设备，完成小程序控制页面、云端通信与 ESP32 硬件状态反馈之间的联动链路。</p>
+            <h3>养殖场消毒除臭设备管理小程序</h3>
+            <p class="case-lede">围绕养殖场消毒除臭设备，在管理总览中呈现设备、预警与日常入口，并参与小程序、云端接口与 ESP32 状态反馈的协同链路。</p>
             <div class="case-grid">
               <div><h4>01 · 业务问题</h4><p>管理人员需要通过移动端了解设备、预警和养殖户概览，并进入日常管理流程。</p></div>
-              <div><h4>02 · 我的边界</h4><p>前端管理界面、设备状态呈现、云端接口协作与远程控制流程。</p></div>
-              <div><h4>03 · 技术链位置</h4><p>管理操作 → API / MQTT 协同 → ESP32 状态反馈 → 小程序管理总览。</p></div>
+              <div><h4 id="case-miniapp-protocol">02 · 服务与协议协同</h4><p><strong>我负责：</strong>前端管理界面、设备状态呈现、云端接口协作与日常管理流程。</p><p><strong>系统协同：</strong>端云交互、消息协议与 ESP32 固件反馈为多端协同范围，公开页不等同于真实控制操作。</p></div>
+              <div><h4 id="case-miniapp-device">03 · 现场设备与状态反馈</h4><p>管理端操作 → API / HTTP / MQTT 协同 → ESP32 状态上报 → 小程序管理总览。</p></div>
               <div><h4>04 · 公开验证</h4><p>管理总览截图展示聚合状态与常用入口；不展示真实设备控制或设备标识。</p></div>
             </div>
             <p class="case-learning"><strong>能力沉淀</strong> · 在端、云、管理端之间划清状态反馈与控制流程的责任边界。</p>
