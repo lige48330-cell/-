@@ -83,8 +83,15 @@
 - Browser console errors: none.
 - Static JavaScript syntax, Git whitespace, asset-reference, and supplied-credential literal scans: passed.
 
+## Mini-program screenshot replacement — 2026-08-01
+
+- Source visual truth: user-provided `C:\Users\12982\AppData\Local\Temp\codex-clipboard-712de9fd-8c0b-438a-96e3-6f8308b00444.png`.
+- Public asset: `images/esp32-miniapp-public.png`.
+- The source visual is an approved, static management-overview capture. It shows aggregate device and alert information plus generic navigation only; it contains no account, customer name, contact detail, location, device identifier, credential, or control action.
+- The case card and the interactive `ESP32 小程序` tab now use the same image and describe only the visible management-overview capabilities.
+
 ## Follow-up polish
 
-- Replace the mini-program chain illustration with a user-approved, de-identified mobile capture when one is supplied. The source control page was intentionally not driven because it polls backend device status and exposes physical-control actions.
+- The mini-program chain illustration has been replaced with the user-approved management-overview capture. Any future screen containing device identifiers, live location, customer records, or physical-control actions still requires de-identification before publication.
 
 final result: passed
