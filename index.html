@@ -1,46 +1,196 @@
 <!doctype html>
-<html lang="zh-CN" data-site-version="2026-07-14">
+<html lang="zh-CN">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>业务流程数字化作品集 | IoT 与 AI 工程</title>
-    <meta name="description" content="展示原创的物联网平台、AI 工程工具与全栈业务原型。">
-    <link rel="canonical" href="https://lige48330-cell.github.io/-/">
-    <meta property="og:title" content="业务流程数字化作品集">
-    <meta property="og:description" content="把业务流程、物联网设备与 AI 工程实践，落成可验证的软件系统。">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lige48330-cell.github.io/-/">
-    <meta property="og:image" content="https://lige48330-cell.github.io/-/images/esp32-miniapp.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="/-/favicon.ico">
-    <link rel="stylesheet" href="/-/styles/site.css">
-    <script src="/-/scripts/site.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="展示养殖渔业 ERP、养殖场消毒除臭设备联动平台与 ESP32 小程序的项目实践。" />
+    <title>业务系统与 IoT 项目作品集</title>
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="portfolio.css" />
   </head>
   <body>
+    <a class="skip-link" href="#projects">跳到项目案例</a>
     <header class="site-header">
-      <a class="brand" href="/-/" aria-label="返回首页"><span class="brand-mark">SYS</span><span><strong>业务流程数字化作品集</strong><small>IoT / AI / 全栈原型</small></span></a>
-      <nav class="main-nav" aria-label="主导航"><a href="#capabilities">能力</a><a href="#projects">项目</a><a href="#evidence">边界</a><a href="#contact">联系</a></nav>
-    </header>
-    <main>
-      <section class="hero section-shell">
-        <div class="hero-copy">
-          <p class="eyebrow">Original work portfolio</p>
-          <h1>把业务流程、物联网设备与 AI 工程实践，落成可验证的软件系统。</h1>
-          <p class="hero-lead">这里仅展示原创项目。每个案例都标明当前证据与边界，不把原型、示意图或推进中的工作包装成已上线产品。</p>
-          <div class="hero-actions"><a class="button button-primary" href="#projects">查看原创项目</a><a class="button" href="#evidence">查看证据规则</a></div>
-          <dl class="metric-strip" aria-label="作品集摘要"><div><dt>3</dt><dd>主案例</dd></div><div><dt>2</dt><dd>次级项目</dd></div><div><dt>0</dt><dd>公开源码</dd></div></dl>
+      <nav class="nav-shell" aria-label="主导航">
+        <a class="brand" href="#home" aria-label="返回作品集首页">
+          <span class="brand-mark">SYS</span>
+          <span>
+            <strong>系统交付作品集</strong>
+            <small>ERP / IoT / 低代码 / AI</small>
+          </span>
+        </a>
+        <div class="nav-links">
+          <a href="#projects">项目案例</a>
+          <a href="#skills">能力体系</a>
+          <a href="#ai-work">AI 全栈</a>
+          <a href="#method">交付方法</a>
+          <a href="#contact">联系</a>
         </div>
-        <aside class="hero-panel" aria-label="交付能力"><div class="panel-top"><span></span><span></span><span></span><code>verified-delivery</code></div><img src="/-/images/esp32-control-loop.svg" alt="ESP32 设备控制流程示意图"><ul class="signal-list"><li><strong>业务</strong><span>把流程拆成角色、状态、数据与验证点</span></li><li><strong>设备</strong><span>连接固件、云平台与小程序端</span></li><li><strong>工程</strong><span>用规则与检查把交付边界写清楚</span></li></ul></aside>
+        <a class="nav-cta" href="#projects">查看证据</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">ERP / IoT / 低代码 / AI 辅助交付</p>
+          <h1 id="hero-title">把业务流程、<br />物联网设备与 AI<br />落成可验证的软件系统</h1>
+          <p class="hero-lede">从养殖业务建模、低代码流程配置，到设备接入、状态监控与交付验证，专注把现场需求变成可运行、可迭代的系统能力。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">浏览项目案例</a>
+            <a class="button button-quiet" href="#method">查看交付方法</a>
+          </div>
+          <ul class="proof-row" aria-label="项目范围">
+            <li><strong>养殖渔业 ERP</strong><span>流程与低代码实现</span></li>
+            <li><strong>设备监管平台</strong><span>IoT 接入与可视化</span></li>
+            <li><strong>ESP32 小程序</strong><span>设备联动与控制</span></li>
+          </ul>
+        </div>
+
+        <div class="project-control-room" aria-label="项目证据控制台">
+          <div class="atlas-bg" aria-hidden="true"></div>
+          <div class="control-heading">
+            <div>
+              <p class="eyebrow">SELECTED WORKS</p>
+              <h2>项目实证</h2>
+            </div>
+            <p>点击切换案例</p>
+          </div>
+          <div class="evidence-switcher" role="tablist" aria-label="选择项目案例">
+            <button class="evidence-tab is-active" type="button" role="tab" aria-selected="true" data-project="iot">
+              <span>01</span><strong>设备监管</strong><small>IoT</small>
+            </button>
+            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="erp">
+              <span>02</span><strong>养殖渔业 ERP</strong><small>ERP</small>
+            </button>
+            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="miniapp">
+              <span>03</span><strong>ESP32 小程序</strong><small>APP</small>
+            </button>
+          </div>
+          <div class="evidence-stage" role="tabpanel" aria-live="polite">
+            <figure>
+              <img id="project-image" src="images/iot-monitoring-dashboard.png" alt="养殖场消毒除臭设备监管大屏" />
+              <figcaption id="project-caption">实时监控、设备分布、运行与换水日志的监管大屏。</figcaption>
+            </figure>
+            <div class="evidence-detail">
+              <p class="detail-kicker" id="project-type">IoT 设备监管平台</p>
+              <h3 id="project-title">养殖场消毒除臭设备监管</h3>
+              <p id="project-summary">将设备运行状态、在线态势、日志和异常信息组织为管理人员可快速判断的监控界面。</p>
+              <ul id="project-tags" class="tag-list">
+                <li>设备状态</li><li>实时监控</li><li>事件日志</li><li>数据可视化</li>
+              </ul>
+              <a id="project-link" class="text-link" href="#case-iot">查看此案例 →</a>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="capabilities" class="section-shell"><div class="section-heading"><p class="eyebrow">01 / 能力主线</p><h2>从问题到可验证交付</h2></div><div class="capability-grid"><article><span>01</span><h3>业务建模</h3><p>把现场操作整理为模块、字段、状态、权限和验证规则。</p></article><article><span>02</span><h3>全栈原型</h3><p>把前端、服务端、数据模型和测试组织成可运行的闭环。</p></article><article><span>03</span><h3>IoT 联调</h3><p>衔接设备通信、云端管理与用户侧小程序。</p></article><article><span>04</span><h3>AI 工程</h3><p>将 spec、plan、review 与质量门禁纳入协作流程。</p></article></div></section>
-      <section id="projects" class="section-shell"><div class="section-heading"><p class="eyebrow">02 / 原创项目</p><h2>精选主案例</h2></div><div class="project-grid">
-        <article class="project-card project-card-featured"><img src="/-/images/esp32-miniapp.png" alt="ESP32 IoT 平台小程序界面"><div><p class="project-kicker">IoT / .NET 8 / uni-app</p><h3>ESP32 IoT 平台</h3><span class="status-note">证据等级：推进中 / 待联调</span><p>面向智能消毒除臭设备的三端监管平台，覆盖 ESP32 固件、MQTT、.NET 8 云平台与微信小程序。</p><a class="text-link" href="/-/projects/esp32-iot-platform.html">查看案例边界</a></div></article>
-        <article class="project-card"><img src="/-/images/agent-workflow.svg" alt="AI Supervisor 工作流示意图"><div><p class="project-kicker">Python / CLI / Quality Gate</p><h3>AI Supervisor</h3><span class="status-note">证据等级：工具化实验</span><p>用规范、计划、审查、门禁和诊断命令约束 AI 交付过程。</p><a class="text-link" href="/-/projects/ai-supervisor.html">查看案例边界</a></div></article>
-        <article class="project-card"><img src="/-/images/aquaculture-prototype-flow.svg" alt="水产养殖应用架构示意图"><div><p class="project-kicker">Vue / uni-app / Express / Prisma</p><h3>智慧水产养殖应用套件</h3><span class="status-note">证据等级：可运行全栈原型</span><p>由 H5、微信小程序壳与 Node.js 服务组成，覆盖养殖、物料、设备和告警模块。</p><a class="text-link" href="/-/projects/aquaculture-prototype.html">查看案例边界</a></div></article>
-      </div><div class="section-heading secondary-heading"><p class="eyebrow">03 / 次级项目</p><h2>仍在补强证据的原创工作</h2></div><div class="project-grid secondary-projects"><article class="project-card"><div><p class="project-kicker">AI Product / Learning</p><h3>AI Agent 编程学习平台</h3><span class="status-note">状态：在研 / 待补证据</span><p>围绕 AI Agent 编程学习的 MVP 探索，当前不以完成产品对外宣称。</p></div></article><article class="project-card"><div><p class="project-kicker">uni-app / Service Profile</p><h3>开发服务展示小程序</h3><span class="status-note">状态：个人服务入口</span><p>用于说明开发服务、常见方案与咨询方式的展示型小程序，不与交付型案例并列。</p></div></article></div></section>
-      <section id="evidence" class="section-shell method-section"><div class="section-heading"><p class="eyebrow">04 / 证据与边界</p><h2>宁可明确边界，也不夸大完成度</h2></div><ol class="method-list"><li><strong>仅原创</strong><span>不展示非原创项目，不公开其页面、图片或源码链接。</span></li><li><strong>推进中</strong><span>可展示架构与联调思路，但不宣称已上线或已完成。</span></li><li><strong>可运行原型</strong><span>说明当前技术闭环，不等同于真实生产运营。</span></li><li><strong>示意图</strong><span>流程和架构图只用于解释设计，不伪装成运行截图。</span></li><li><strong>本地复现验证（2026-07-14）</strong><span>ESP32 后端隔离构建 0 警告 / 0 错误；AI Supervisor pytest 93 项通过；水产后端 API 测试 12 项通过。</span></li></ol></section>
-      <section id="contact" class="section-shell contact-section"><div><p class="eyebrow">05 / 后续沟通</p><h2>演示与项目材料可按需提供</h2><p>本页不公开个人联系方式或源码仓库；如需进一步了解，可在约定渠道中沟通。</p></div><div class="contact-card"><strong>作品集维护原则</strong><span>仅补充已确认原创、可诚实描述并具备相应证据的项目。</span></div></section>
+
+      <section id="projects" class="section-wrap section-block" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / PROJECT CASES</p>
+            <h2 id="projects-title">项目不是标题，是责任边界</h2>
+          </div>
+          <p>每个案例聚焦我实际参与的工作、可展示的交付证据，以及这套能力可以迁移到什么场景。</p>
+        </div>
+
+        <article id="case-erp" class="case-card">
+          <div class="case-visual"><img src="images/smartagri-erp.png" alt="养殖渔业 ERP 功能验证报告截图" /></div>
+          <div class="case-content">
+            <p class="case-index">CASE 01 · ERP / 低代码</p>
+            <h3>养殖渔业 ERP 业务系统</h3>
+            <p class="case-lede">把养殖业务的基础资料、库存、采购销售和设备相关流程，细化为可配置的模块、表单、字段、状态与校验规则。</p>
+            <div class="case-grid">
+              <div><h4>我参与的工作</h4><p>业务流程梳理、模块与字段设计、页面/流程配置、关键闭环验证。</p></div>
+              <div><h4>可展示的证据</h4><p>低代码菜单、单据保存、审批触发库存变化、反审批回滚与验证记录。</p></div>
+            </div>
+            <ul class="tag-list"><li>业务建模</li><li>ERP 模块</li><li>低代码配置</li><li>闭环验证</li></ul>
+          </div>
+        </article>
+
+        <article id="case-iot" class="case-card case-card-reverse">
+          <div class="case-visual"><img src="images/iot-monitoring-dashboard.png" alt="养殖场消毒除臭设备监管大屏截图" /></div>
+          <div class="case-content">
+            <p class="case-index">CASE 02 · IOT / 数据看板</p>
+            <h3>养殖场消毒除臭设备监管平台</h3>
+            <p class="case-lede">面向现场设备管理，把在线状态、运行记录、换水记录、异常事件与地理分布汇总为一张可读的监管视图。</p>
+            <div class="case-grid">
+              <div><h4>我参与的工作</h4><p>监控指标梳理、状态与事件展示、管理界面和大屏功能联动。</p></div>
+              <div><h4>可展示的证据</h4><p>实时监控、在线态势、设备地图、运行/换水日志与异常反馈区。</p></div>
+            </div>
+            <ul class="tag-list"><li>IoT 场景</li><li>设备状态</li><li>监控大屏</li><li>可视化</li></ul>
+          </div>
+        </article>
+
+        <article id="case-miniapp" class="case-card">
+          <div class="case-visual"><img src="images/esp32-miniapp.png" alt="ESP32 远程控制与智能监控小程序示意" /></div>
+          <div class="case-content">
+            <p class="case-index">CASE 03 · ESP32 / 小程序</p>
+            <h3>养殖场消毒除臭设备联动小程序</h3>
+            <p class="case-lede">围绕养殖场消毒除臭设备，完成小程序控制页面、云端通信与 ESP32 硬件状态反馈之间的联动链路。</p>
+            <div class="case-grid">
+              <div><h4>我参与的工作</h4><p>前端控制界面、设备状态呈现、云端接口协作与远程控制流程。</p></div>
+              <div><h4>可展示的证据</h4><p>小程序发出控制指令，云端转发，ESP32 响应并回传状态的完整闭环。</p></div>
+            </div>
+            <ul class="tag-list"><li>ESP32</li><li>uni-app</li><li>MQTT / HTTP</li><li>设备联动</li></ul>
+          </div>
+        </article>
+      </section>
+
+      <section id="skills" class="section-wrap section-block" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / CAPABILITY SYSTEM</p><h2 id="skills-title">从现场问题到可交付系统</h2></div>
+          <p>不是堆技术名词，而是用一条能落地、能验证的交付链条组织工作。</p>
+        </div>
+        <ol class="capability-path">
+          <li><span>01</span><div><h3>业务梳理</h3><p>识别对象、流程、状态、规则与协作关系。</p></div></li>
+          <li><span>02</span><div><h3>系统设计</h3><p>把需求映射成模块、字段、表单、权限与数据关系。</p></div></li>
+          <li><span>03</span><div><h3>低代码与前端实现</h3><p>配置可用页面和流程，让业务逻辑可操作、可维护。</p></div></li>
+          <li><span>04</span><div><h3>设备接入</h3><p>连接设备状态、消息协议、控制指令与可视化反馈。</p></div></li>
+          <li><span>05</span><div><h3>验证交付</h3><p>通过关键链路验证、记录证据并支持后续迭代。</p></div></li>
+        </ol>
+      </section>
+
+      <section id="ai-work" class="section-wrap section-block ai-work" aria-labelledby="ai-work-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">03 / AI ENGINEERING PRACTICE</p><h2 id="ai-work-title">把 Codex 项目沉淀成 AI 全栈能力</h2></div>
+          <p>这里展示的是经筛选后的工程方法与技术边界，不公开任何项目源码、配置、凭据或业务数据。</p>
+        </div>
+        <div class="ai-work-grid">
+          <article class="ai-work-card">
+            <p class="case-index">AI SYSTEM 01</p>
+            <h3>AI-Native 知识库</h3>
+            <p>把原始资料、结构化 Wiki、设计规范、项目复盘和可发布成果分层组织，让知识可以追溯、复用和持续更新。</p>
+            <ul class="tag-list"><li>知识建模</li><li>Obsidian</li><li>Schema</li><li>可追溯性</li></ul>
+          </article>
+          <article class="ai-work-card">
+            <p class="case-index">AI SYSTEM 02</p>
+            <h3>可复用 Codex 工作流</h3>
+            <p>将项目探索、需求拆解、实现验证、代码审查和复盘归档沉淀为可调用的工程方法，避免 AI 只停留在临时问答。</p>
+            <ul class="tag-list"><li>Agent 协作</li><li>验证优先</li><li>Skill 设计</li><li>项目交接</li></ul>
+          </article>
+          <article class="ai-work-card">
+            <p class="case-index">AI SYSTEM 03</p>
+            <h3>跨栈工程改造</h3>
+            <p>在 React/Vite、Tauri/Rust、Go sidecar、.NET、uni-app 与 ESP32 组合中，利用 AI 辅助理解、实现、验证和产品体验迭代。</p>
+            <ul class="tag-list"><li>TypeScript</li><li>Rust</li><li>Go</li><li>.NET</li><li>Embedded</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="method" class="section-wrap section-block method-panel" aria-labelledby="method-title">
+        <div><p class="eyebrow">04 / DELIVERY METHOD</p><h2 id="method-title">让交付过程有迹可循</h2></div>
+        <div class="method-copy">
+          <p>我会用 AI 辅助需求拆解、代码理解、原型验证和问题排查；核心仍是把每个工具的输出落回业务边界、系统行为和可验证结果。</p>
+          <p>从业务现场到代码与设备，从资料整理到可复用工作流，重点始终是：信息可追溯、过程可验证、系统可持续迭代。</p>
+        </div>
+      </section>
     </main>
-    <footer class="site-footer"><span>© <span data-current-year>2026</span> 业务流程数字化作品集</span><a href="#projects">返回项目列表</a></footer>
+
+    <footer id="contact" class="site-footer">
+      <div><strong>系统交付作品集</strong><span>聚焦业务流程、物联网设备与 AI 辅助交付</span></div>
+      <a href="https://github.com/lige48330-cell/-" target="_blank" rel="noreferrer">GitHub 作品集 ↗</a>
+    </footer>
+    <script src="portfolio.js"></script>
   </body>
 </html>
