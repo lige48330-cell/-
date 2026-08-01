@@ -10,9 +10,9 @@ const projects = {
     link: "#case-iot",
   },
   erp: {
-    image: "images/smartagri-erp.png",
-    alt: "养殖渔业 ERP 验证报告",
-    caption: "低代码菜单与库存 ERP 闭环验证记录。",
+    image: "images/smartagri-erp-public.png",
+    alt: "脱敏后的养殖渔业 ERP 数据大屏",
+    caption: "养殖水质、投喂、设备自动化与经营模块的脱敏展示图。",
     type: "ERP / 低代码业务系统",
     title: "养殖渔业 ERP 业务闭环",
     summary: "把基础资料、库存、采购销售和设备相关流程，落到模块、字段、状态和可验证的单据闭环。",
@@ -65,3 +65,25 @@ function selectProject(key) {
 }
 
 tabs.forEach((tab) => tab.addEventListener("click", () => selectProject(tab.dataset.project)));
+
+const radarFilters = document.querySelectorAll(".radar-filter");
+const radarCards = document.querySelectorAll(".radar-card");
+const radarCount = document.querySelector("#radar-count");
+
+radarFilters.forEach((filter) => filter.addEventListener("click", () => {
+  const selected = filter.dataset.filter;
+  let visibleCount = 0;
+
+  radarCards.forEach((card) => {
+    const visible = selected === "all" || card.dataset.track.includes(selected);
+    card.hidden = !visible;
+    if (visible) visibleCount += 1;
+  });
+
+  radarCount.textContent = String(visibleCount);
+  radarFilters.forEach((item) => {
+    const active = item === filter;
+    item.classList.toggle("is-active", active);
+    item.setAttribute("aria-pressed", String(active));
+  });
+}));

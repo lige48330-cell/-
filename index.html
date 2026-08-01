@@ -23,6 +23,7 @@
           <a href="#projects">项目案例</a>
           <a href="#skills">能力体系</a>
           <a href="#ai-work">AI 全栈</a>
+          <a href="#project-radar">工程档案</a>
           <a href="#method">交付方法</a>
           <a href="#contact">联系</a>
         </div>
@@ -95,14 +96,14 @@
         </div>
 
         <article id="case-erp" class="case-card">
-          <div class="case-visual"><img src="images/smartagri-erp.png" alt="养殖渔业 ERP 功能验证报告截图" /></div>
+          <div class="case-visual"><img src="images/smartagri-erp-public.png" alt="脱敏后的养殖渔业 ERP 业务系统大屏" /></div>
           <div class="case-content">
             <p class="case-index">CASE 01 · ERP / 低代码</p>
             <h3>养殖渔业 ERP 业务系统</h3>
             <p class="case-lede">把养殖业务的基础资料、库存、采购销售和设备相关流程，细化为可配置的模块、表单、字段、状态与校验规则。</p>
             <div class="case-grid">
               <div><h4>我参与的工作</h4><p>业务流程梳理、模块与字段设计、页面/流程配置、关键闭环验证。</p></div>
-              <div><h4>可展示的证据</h4><p>低代码菜单、单据保存、审批触发库存变化、反审批回滚与验证记录。</p></div>
+              <div><h4>可展示的证据</h4><p>养殖水质、设备自动化、饲料库存与经营模块的脱敏大屏展示。</p></div>
             </div>
             <ul class="tag-list"><li>业务建模</li><li>ERP 模块</li><li>低代码配置</li><li>闭环验证</li></ul>
           </div>
@@ -123,7 +124,7 @@
         </article>
 
         <article id="case-miniapp" class="case-card">
-          <div class="case-visual"><img src="images/esp32-miniapp.png" alt="ESP32 远程控制与智能监控小程序示意" /></div>
+          <div class="case-visual"><img src="images/esp32-miniapp.png" alt="ESP32 设备联动小程序控制链路示意" /></div>
           <div class="case-content">
             <p class="case-index">CASE 03 · ESP32 / 小程序</p>
             <h3>养殖场消毒除臭设备联动小程序</h3>
@@ -178,8 +179,86 @@
         </div>
       </section>
 
+      <section id="project-radar" class="section-wrap section-block project-radar" aria-labelledby="project-radar-title">
+        <div class="section-heading radar-heading">
+          <div>
+            <p class="eyebrow">04 / CODEX PROJECT RADAR</p>
+            <h2 id="project-radar-title">不止一个案例，是一组持续运行的工程档案</h2>
+          </div>
+          <p>基于本机 Codex 已登记项目逐项整理。每张卡都保留实际技术证据与参与边界，涉及凭据、邮件、客户或真实业务数据的工程不公开。</p>
+        </div>
+        <div class="radar-toolbar" aria-label="项目分类筛选">
+          <p><strong id="radar-count">8</strong> 个可公开的工程档案 <span>·</span> 真实项目来源，脱敏呈现</p>
+          <div class="radar-filters" role="group" aria-label="按项目类型筛选">
+            <button class="radar-filter is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+            <button class="radar-filter" type="button" data-filter="product" aria-pressed="false">产品工程</button>
+            <button class="radar-filter" type="button" data-filter="ai" aria-pressed="false">AI 系统</button>
+            <button class="radar-filter" type="button" data-filter="research" aria-pressed="false">研究实验</button>
+          </div>
+        </div>
+        <div class="radar-grid">
+          <article class="radar-card radar-card-featured" data-track="product ai">
+            <p class="radar-kicker"><span>DESKTOP / PRIVATE EXTENSION</span><em>私有改造</em></p>
+            <h3>Cockpit Tools 私有工程改造</h3>
+            <p>在既有桌面端基础上推进本地 Codex 配置、工作流与运行状态管理能力，以可验证的前后端边界完成私有化工程改造。</p>
+            <ul class="tag-list"><li>React / Vite</li><li>Tauri / Rust</li><li>Go Sidecar</li><li>TypeScript</li></ul>
+            <p class="radar-proof">证据：多端桌面架构、前端构建脚本、Rust workspace 与 sidecar 模块。</p>
+          </article>
+          <article class="radar-card" data-track="ai">
+            <p class="radar-kicker"><span>KNOWLEDGE SYSTEM</span><em>个人系统</em></p>
+            <h3>AI-Native 知识库</h3>
+            <p>将资料采集、Wiki、设计规范、项目经验与交付物分层，让 AI 的结论能回到证据、Schema 和可复用的工作流。</p>
+            <ul class="tag-list"><li>Obsidian</li><li>Schema</li><li>ADR / 复盘</li><li>Agent Context</li></ul>
+            <p class="radar-proof">证据：00/01/02/03 分层、AI_CONTEXT 与质量检查脚本。</p>
+          </article>
+          <article class="radar-card" data-track="ai research">
+            <p class="radar-kicker"><span>AI STREAMING R&amp;D</span><em>本地研究</em></p>
+            <h3>AI 流式响应可靠性实验</h3>
+            <p>围绕 OpenAI 兼容接口的 SSE 流式响应、终态判断和本地中间件编排开展协议层研究，重点是可观测性与响应一致性。</p>
+            <ul class="tag-list"><li>Python</li><li>Starlette</li><li>HTTPX</li><li>SSE</li></ul>
+            <p class="radar-proof">证据：本地代理入口、流式合并逻辑、示例配置与测试目录。</p>
+          </article>
+          <article class="radar-card" data-track="ai product">
+            <p class="radar-kicker"><span>SECURE RAG LAB</span><em>个人作品</em></p>
+            <h3>安全 RAG 验证实验室</h3>
+            <p>本地优先的检索增强演示：把租户隔离、行级安全、授权检索、审计记录与安全评估组合为可演示的最小闭环。</p>
+            <ul class="tag-list"><li>Go</li><li>PostgreSQL / pgvector</li><li>RLS</li><li>Security Eval</li></ul>
+            <p class="radar-proof">证据：Go HTTP 服务、迁移、权限边界与安全评估脚本。</p>
+          </article>
+          <article class="radar-card" data-track="ai product">
+            <p class="radar-kicker"><span>LOCAL WORKFLOW</span><em>个人工作流</em></p>
+            <h3>职位研究与 AI 预览台</h3>
+            <p>把授权登录下的低频职位资料整理为 JSONL，并提供本地预览、规范化、筛选与受事实边界约束的 AI 辅助文案流程。</p>
+            <ul class="tag-list"><li>Node.js</li><li>Python</li><li>Playwright</li><li>JSONL</li></ul>
+            <p class="radar-proof">证据：CLI、离线检查、静态预览与本地数据同步模块。</p>
+          </article>
+          <article class="radar-card" data-track="ai product">
+            <p class="radar-kicker"><span>CAREER OPS ADAPTATION</span><em>开源适配</em></p>
+            <h3>AI 求职运营系统适配</h3>
+            <p>围绕简历、岗位研究、申请节奏与面试准备，适配开源的多 Agent 工作流；所有投递和最终决策保留人为确认。</p>
+            <ul class="tag-list"><li>Node.js</li><li>Playwright</li><li>Workflow</li><li>Human-in-the-loop</li></ul>
+            <p class="radar-proof">证据：管道校验、去重、状态规范化与本地报告体系。</p>
+          </article>
+          <article class="radar-card" data-track="research ai">
+            <p class="radar-kicker"><span>REVERSELAB</span><em>开源研究环境</em></p>
+            <h3>授权样本研究与工具编排</h3>
+            <p>以知识库路由、看板和 MCP 工具映射组织授权场景下的逆向与安全研究，强调证据链、边界和可复现记录。</p>
+            <ul class="tag-list"><li>Knowledge Base</li><li>MCP</li><li>Tool Routing</li><li>Evidence</li></ul>
+            <p class="radar-proof">证据：多领域知识库、board 路由、启动检查与研究规范。</p>
+          </article>
+          <article class="radar-card" data-track="research">
+            <p class="radar-kicker"><span>QUANT RESEARCH</span><em>个人研究</em></p>
+            <h3>XAU 指标与前向研究记录</h3>
+            <p>围绕市场结构、流动性过滤、事件记录和回测结论构建研究工具；定位为模拟与研究，不作自动交易承诺或投资建议。</p>
+            <ul class="tag-list"><li>MQL4</li><li>MT4</li><li>Research Log</li><li>Smoke Test</li></ul>
+            <p class="radar-proof">证据：指标源码、研究数据、设计原则、回测总结与逻辑烟雾测试。</p>
+          </article>
+        </div>
+        <p class="radar-note">隐私、账号、邮箱和凭据相关的本机辅助工程已主动排除在公开作品集之外。</p>
+      </section>
+
       <section id="method" class="section-wrap section-block method-panel" aria-labelledby="method-title">
-        <div><p class="eyebrow">04 / DELIVERY METHOD</p><h2 id="method-title">让交付过程有迹可循</h2></div>
+        <div><p class="eyebrow">05 / DELIVERY METHOD</p><h2 id="method-title">让交付过程有迹可循</h2></div>
         <div class="method-copy">
           <p>我会用 AI 辅助需求拆解、代码理解、原型验证和问题排查；核心仍是把每个工具的输出落回业务边界、系统行为和可验证结果。</p>
           <p>从业务现场到代码与设备，从资料整理到可复用工作流，重点始终是：信息可追溯、过程可验证、系统可持续迭代。</p>
