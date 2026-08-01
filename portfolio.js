@@ -1,8 +1,8 @@
 const projects = {
   iot: {
-    image: "images/iot-monitoring-dashboard.png",
-    alt: "养殖场消毒除臭设备监管大屏",
-    caption: "实时监控、设备分布、运行与换水日志的监管大屏。",
+    image: "images/iot-monitoring-dashboard-public.png",
+    alt: "脱敏后的养殖场消毒除臭设备监管大屏",
+    caption: "脱敏监管界面展示指标类型、日志区域与异常反馈结构。",
     type: "IOT 设备监管平台",
     title: "养殖场消毒除臭设备监管",
     summary: "将设备运行状态、在线态势、日志和异常信息组织为管理人员可快速判断的监控界面。",
@@ -23,10 +23,10 @@ const projects = {
     image: "images/esp32-miniapp-public.png",
     alt: "养殖场消毒除臭设备管理总览小程序截图",
     caption: "管理总览汇集设备、在线状态、养殖户、预警与常用管理入口。",
-    type: "ESP32 / 小程序设备联动",
-    title: "消毒除臭设备远程控制",
-    summary: "让养殖场设备控制从小程序操作，经过云端通信，到硬件响应与状态反馈形成完整链路。",
-    tags: ["ESP32", "uni-app", "MQTT / HTTP", "远程控制"],
+    type: "ESP32 / 小程序端云协同",
+    title: "消毒除臭设备管理小程序",
+    summary: "在管理总览中呈现设备、预警与日常入口，并参与小程序、云端接口和 ESP32 状态反馈的协同链路。",
+    tags: ["ESP32", "uni-app", "MQTT / HTTP", "状态反馈"],
     link: "#case-miniapp",
   },
 };

@@ -111,3 +111,13 @@
 - Responsive visual checks: desktop technical chain is a readable five-node horizontal route; at a 390 × 844 CSS viewport it becomes a vertical route with no horizontal overflow (`scrollWidth === clientWidth`). Browser console errors: none.
 
 final result: passed
+
+## Six-stage technical-chain refinement — 2026-08-02
+
+- The hero now prioritizes the primary delivery chain and gives a 30-second summary: business problem → domain model → management application → API/MQTT collaboration → ESP32 feedback → operations validation. AI remains an explicitly separate engineering-enablement layer.
+- The technical-chain overview now has six native deep links that land on specific ERP, mini-program, or IoT evidence headings rather than only the start of a case card.
+- All flagship cases now distinguish `我负责` from `系统协同`. The public copy does not claim that multi-end service, protocol, or firmware work was independently delivered where the evidence supports collaboration only.
+- The IoT public asset is `images/iot-monitoring-dashboard-public.png`, generated as a privacy-safe derivative for the portfolio. It removes the geographic map and precise timestamp while preserving the dashboard's aggregate monitoring structure.
+- The mini-program selector and case copy now describe the visible management overview and state-feedback collaboration only; they do not present the screenshot as proof of a real remote-control action.
+- Browser verification: the desktop route shows six readable nodes in one horizontal chain; at `390 × 844`, the hero summary is visible in the first viewport and the chain collapses into a readable vertical route with no horizontal overflow (`scrollWidth === clientWidth`).
+- Interaction verification: the protocol node navigates to `#case-miniapp-protocol`; selecting the IoT project tab sets its selected state and displays `images/iot-monitoring-dashboard-public.png`. Browser console errors: none.
