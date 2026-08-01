@@ -94,4 +94,10 @@
 
 - The mini-program chain illustration has been replaced with the user-approved management-overview capture. Any future screen containing device identifiers, live location, customer records, or physical-control actions still requires de-identification before publication.
 
+## Capability distillation — 2026-08-01
+
+- Added a six-track capability module that translates verified project evidence into transferable learning outcomes: domain modeling, device-to-cloud feedback, cross-runtime engineering, AI knowledge/RAG design, reliability/security evidence, and human-accountable automation.
+- Evidence was checked against local project README files, manifests, module entry points, and project guidance for the listed public categories only. Private source, account, credential, customer, device-location, and email-oriented utilities remain excluded.
+- Copy distinguishes business delivery, private modification, personal experimentation, and open-source adaptation; it does not claim authorship or commercial delivery where the evidence only supports learning or adaptation.
+
 final result: passed
