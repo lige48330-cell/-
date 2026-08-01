@@ -20,9 +20,9 @@ const projects = {
     link: "#case-erp",
   },
   miniapp: {
-    image: "images/esp32-miniapp.png",
-    alt: "ESP32 远程控制与智能监控小程序示意",
-    caption: "小程序、云端通信与 ESP32 设备响应的联动链路。",
+    image: "images/esp32-miniapp-public.png",
+    alt: "养殖场消毒除臭设备管理总览小程序截图",
+    caption: "管理总览汇集设备、在线状态、养殖户、预警与常用管理入口。",
     type: "ESP32 / 小程序设备联动",
     title: "消毒除臭设备远程控制",
     summary: "让养殖场设备控制从小程序操作，经过云端通信，到硬件响应与状态反馈形成完整链路。",
