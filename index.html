@@ -20,9 +20,10 @@
           </span>
         </a>
         <div class="nav-links">
+          <a href="#tech-chain">技术链</a>
           <a href="#projects">项目案例</a>
-          <a href="#skills">能力体系</a>
-          <a href="#ai-work">AI 全栈</a>
+          <a href="#skills">交付模型</a>
+          <a href="#ai-work">工程增强</a>
           <a href="#project-radar">工程档案</a>
           <a href="#method">交付方法</a>
           <a href="#contact">联系</a>
@@ -37,9 +38,10 @@
           <p class="eyebrow">ERP / IoT / 低代码 / AI 辅助交付</p>
           <h1 id="hero-title">把业务流程、<br />物联网设备与 AI<br />落成可验证的软件系统</h1>
           <p class="hero-lede">从养殖业务建模、低代码流程配置，到设备接入、状态监控与交付验证，专注把现场需求变成可运行、可迭代的系统能力。</p>
+          <p class="role-focus"><strong>交付定位</strong> · 业务系统与 IoT 应用协作，覆盖领域建模、应用实现、设备协同与工程验证。</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">浏览项目案例</a>
-            <a class="button button-quiet" href="#method">查看交付方法</a>
+            <a class="button button-quiet" href="#tech-chain">查看技术链</a>
           </div>
           <ul class="proof-row" aria-label="项目范围">
             <li><strong>养殖渔业 ERP</strong><span>流程与低代码实现</span></li>
@@ -58,11 +60,11 @@
             <p>点击切换案例</p>
           </div>
           <div class="evidence-switcher" role="tablist" aria-label="选择项目案例">
-            <button class="evidence-tab is-active" type="button" role="tab" aria-selected="true" data-project="iot">
-              <span>01</span><strong>设备监管</strong><small>IoT</small>
+            <button class="evidence-tab is-active" type="button" role="tab" aria-selected="true" data-project="erp">
+              <span>01</span><strong>养殖渔业 ERP</strong><small>ERP</small>
             </button>
-            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="erp">
-              <span>02</span><strong>养殖渔业 ERP</strong><small>ERP</small>
+            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="iot">
+              <span>02</span><strong>设备监管</strong><small>IoT</small>
             </button>
             <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="miniapp">
               <span>03</span><strong>ESP32 小程序</strong><small>APP</small>
@@ -70,20 +72,44 @@
           </div>
           <div class="evidence-stage" role="tabpanel" aria-live="polite">
             <figure>
-              <img id="project-image" src="images/iot-monitoring-dashboard.png" alt="养殖场消毒除臭设备监管大屏" />
-              <figcaption id="project-caption">实时监控、设备分布、运行与换水日志的监管大屏。</figcaption>
+              <img id="project-image" src="images/smartagri-erp-public.png" alt="脱敏后的养殖渔业 ERP 数据大屏" />
+              <figcaption id="project-caption">养殖水质、投喂、设备自动化与经营模块的脱敏展示图。</figcaption>
             </figure>
             <div class="evidence-detail">
-              <p class="detail-kicker" id="project-type">IoT 设备监管平台</p>
-              <h3 id="project-title">养殖场消毒除臭设备监管</h3>
-              <p id="project-summary">将设备运行状态、在线态势、日志和异常信息组织为管理人员可快速判断的监控界面。</p>
+              <p class="detail-kicker" id="project-type">ERP / 低代码业务系统</p>
+              <h3 id="project-title">养殖渔业 ERP 业务闭环</h3>
+              <p id="project-summary">把基础资料、库存、采购销售和设备相关流程，落到模块、字段、状态和可验证的单据闭环。</p>
               <ul id="project-tags" class="tag-list">
-                <li>设备状态</li><li>实时监控</li><li>事件日志</li><li>数据可视化</li>
+                <li>业务建模</li><li>库存流程</li><li>低代码</li><li>验证记录</li>
               </ul>
-              <a id="project-link" class="text-link" href="#case-iot">查看此案例 →</a>
+              <a id="project-link" class="text-link" href="#case-erp">查看此案例 →</a>
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="tech-chain" class="section-wrap section-block tech-chain" aria-labelledby="tech-chain-title">
+        <div class="section-heading tech-chain-heading">
+          <div>
+            <p class="eyebrow">HOW THE SYSTEMS CONNECT</p>
+            <h2 id="tech-chain-title">从业务问题到现场反馈，一条跨项目能力链</h2>
+          </div>
+          <p>这是一张能力关系图，不表示所有系统运行在同一生产环境。每个节点都可跳转到对应的公开案例证据。</p>
+        </div>
+
+        <ol class="tech-chain-list">
+          <li><a class="tech-chain-node" href="#case-erp"><span>01</span><strong>业务规则与建模</strong><small>对象 · 角色 · 状态 · 规则</small><em>ERP 案例</em></a></li>
+          <li><a class="tech-chain-node" href="#case-erp"><span>02</span><strong>应用与运营界面</strong><small>模块 · 表单 · 小程序 · 监管视图</small><em>ERP / IoT</em></a></li>
+          <li><a class="tech-chain-node" href="#case-miniapp"><span>03</span><strong>服务与协议协同</strong><small>API · HTTP · MQTT · 状态事件</small><em>ESP32 案例</em></a></li>
+          <li><a class="tech-chain-node" href="#case-miniapp"><span>04</span><strong>现场设备与反馈</strong><small>ESP32 · 状态上报 · 响应</small><em>设备链路</em></a></li>
+          <li><a class="tech-chain-node" href="#case-iot"><span>05</span><strong>运营验证与交付</strong><small>告警 · 日志 · 权限 · 关键闭环</small><em>监管平台</em></a></li>
+        </ol>
+
+        <aside class="tech-enhancer" aria-label="工程增强层">
+          <div><p class="learning-kicker">ENGINEERING ENABLEMENT</p><h3>AI 用于增强研发、证据与验证，不替代业务和设备主链。</h3></div>
+          <p>知识库、Schema、安全 RAG 与 Codex 工作流贯穿资料整理、工程理解、权限边界和可复核交付。</p>
+          <a class="text-link" href="#ai-work">查看工程增强层 →</a>
+        </aside>
       </section>
 
       <section id="projects" class="section-wrap section-block" aria-labelledby="projects-title">
@@ -102,9 +128,12 @@
             <h3>养殖渔业 ERP 业务系统</h3>
             <p class="case-lede">把养殖业务的基础资料、库存、采购销售和设备相关流程，细化为可配置的模块、表单、字段、状态与校验规则。</p>
             <div class="case-grid">
-              <div><h4>我参与的工作</h4><p>业务流程梳理、模块与字段设计、页面/流程配置、关键闭环验证。</p></div>
-              <div><h4>可展示的证据</h4><p>养殖水质、设备自动化、饲料库存与经营模块的脱敏大屏展示。</p></div>
+              <div><h4>01 · 业务问题</h4><p>养殖资料、库存、采购销售与设备流程需要被拆成可追踪、可配置的业务规则。</p></div>
+              <div><h4>02 · 我的边界</h4><p>业务流程梳理、模块与字段设计、页面/流程配置与关键闭环验证。</p></div>
+              <div><h4>03 · 技术链位置</h4><p>业务对象与角色 → 模块/字段/表单 → 状态校验 → 关键单据闭环。</p></div>
+              <div><h4>04 · 公开验证</h4><p>脱敏大屏展示业务模块与管理视图；不公开客户数据、配置或完整源码。</p></div>
             </div>
+            <p class="case-learning"><strong>能力沉淀</strong> · 将现场业务语言转换成对象、状态、校验和可验证的系统闭环。</p>
             <ul class="tag-list"><li>业务建模</li><li>ERP 模块</li><li>低代码配置</li><li>闭环验证</li></ul>
           </div>
         </article>
@@ -116,9 +145,12 @@
             <h3>养殖场消毒除臭设备监管平台</h3>
             <p class="case-lede">面向现场设备管理，把在线状态、运行记录、换水记录、异常事件与地理分布汇总为一张可读的监管视图。</p>
             <div class="case-grid">
-              <div><h4>我参与的工作</h4><p>监控指标梳理、状态与事件展示、管理界面和大屏功能联动。</p></div>
-              <div><h4>可展示的证据</h4><p>实时监控、在线态势、设备地图、运行/换水日志与异常反馈区。</p></div>
+              <div><h4>01 · 业务问题</h4><p>现场管理需要从分散记录中快速判断设备在线、运行事件、异常和运营态势。</p></div>
+              <div><h4>02 · 我的边界</h4><p>监控指标梳理、状态与事件展示、管理界面和大屏功能联动。</p></div>
+              <div><h4>03 · 技术链位置</h4><p>设备状态与事件 → 服务端处理 → 在线态势、日志、告警和监管视图。</p></div>
+              <div><h4>04 · 公开验证</h4><p>脱敏监管大屏展示实时态势、地图、日志与异常反馈，不展示真实设备标识。</p></div>
             </div>
+            <p class="case-learning"><strong>能力沉淀</strong> · 用可观察的状态、事件与日志，把现场设备信息转为运营决策界面。</p>
             <ul class="tag-list"><li>IoT 场景</li><li>设备状态</li><li>监控大屏</li><li>可视化</li></ul>
           </div>
         </article>
@@ -130,9 +162,12 @@
             <h3>养殖场消毒除臭设备联动小程序</h3>
             <p class="case-lede">围绕养殖场消毒除臭设备，完成小程序控制页面、云端通信与 ESP32 硬件状态反馈之间的联动链路。</p>
             <div class="case-grid">
-              <div><h4>我参与的工作</h4><p>前端控制界面、设备状态呈现、云端接口协作与远程控制流程。</p></div>
-              <div><h4>可展示的证据</h4><p>管理总览中的设备、在线状态、养殖户、预警概览与常用管理入口。</p></div>
+              <div><h4>01 · 业务问题</h4><p>管理人员需要通过移动端了解设备、预警和养殖户概览，并进入日常管理流程。</p></div>
+              <div><h4>02 · 我的边界</h4><p>前端管理界面、设备状态呈现、云端接口协作与远程控制流程。</p></div>
+              <div><h4>03 · 技术链位置</h4><p>管理操作 → API / MQTT 协同 → ESP32 状态反馈 → 小程序管理总览。</p></div>
+              <div><h4>04 · 公开验证</h4><p>管理总览截图展示聚合状态与常用入口；不展示真实设备控制或设备标识。</p></div>
             </div>
+            <p class="case-learning"><strong>能力沉淀</strong> · 在端、云、管理端之间划清状态反馈与控制流程的责任边界。</p>
             <ul class="tag-list"><li>ESP32</li><li>uni-app</li><li>MQTT / HTTP</li><li>设备联动</li></ul>
           </div>
         </article>
@@ -140,8 +175,8 @@
 
       <section id="skills" class="section-wrap section-block" aria-labelledby="skills-title">
         <div class="section-heading">
-          <div><p class="eyebrow">02 / CAPABILITY SYSTEM</p><h2 id="skills-title">从现场问题到可交付系统</h2></div>
-          <p>不是堆技术名词，而是用一条能落地、能验证的交付链条组织工作。</p>
+          <div><p class="eyebrow">02 / DELIVERY MODEL</p><h2 id="skills-title">把技术链落进可交付的工作过程</h2></div>
+          <p>技术链说明系统如何连接；这里说明我如何把它们拆成可以协作、验证和迭代的交付步骤。</p>
         </div>
         <ol class="capability-path">
           <li><span>01</span><div><h3>业务梳理</h3><p>识别对象、流程、状态、规则与协作关系。</p></div></li>
@@ -154,19 +189,19 @@
 
       <section id="ai-work" class="section-wrap section-block ai-work" aria-labelledby="ai-work-title">
         <div class="section-heading">
-          <div><p class="eyebrow">03 / AI ENGINEERING PRACTICE</p><h2 id="ai-work-title">把 Codex 项目沉淀成 AI 全栈能力</h2></div>
-          <p>这里展示的是经筛选后的工程方法与技术边界，不公开任何项目源码、配置、凭据或业务数据。</p>
+          <div><p class="eyebrow">03 / ENGINEERING ENABLEMENT</p><h2 id="ai-work-title">AI 是工程增强层，不替代业务与设备主链</h2></div>
+          <p>这里展示经筛选的知识治理、验证与跨栈协作方法；不公开任何项目源码、配置、凭据或业务数据。</p>
         </div>
         <div class="ai-work-grid">
           <article class="ai-work-card">
             <p class="case-index">AI SYSTEM 01</p>
-            <h3>AI-Native 知识库</h3>
+            <h3>知识与上下文治理</h3>
             <p>把原始资料、结构化 Wiki、设计规范、项目复盘和可发布成果分层组织，让知识可以追溯、复用和持续更新。</p>
             <ul class="tag-list"><li>知识建模</li><li>Obsidian</li><li>Schema</li><li>可追溯性</li></ul>
           </article>
           <article class="ai-work-card">
             <p class="case-index">AI SYSTEM 02</p>
-            <h3>可复用 Codex 工作流</h3>
+            <h3>可复用的工程验证工作流</h3>
             <p>将项目探索、需求拆解、实现验证、代码审查和复盘归档沉淀为可调用的工程方法，避免 AI 只停留在临时问答。</p>
             <ul class="tag-list"><li>Agent 协作</li><li>验证优先</li><li>Skill 设计</li><li>项目交接</li></ul>
           </article>
@@ -188,7 +223,7 @@
           <p>基于本机 Codex 已登记项目逐项整理。每张卡都保留实际技术证据与参与边界，涉及凭据、邮件、客户或真实业务数据的工程不公开。</p>
         </div>
         <div class="radar-toolbar" aria-label="项目分类筛选">
-          <p><strong id="radar-count">8</strong> 个可公开的工程档案 <span>·</span> 真实项目来源，脱敏呈现</p>
+          <p><strong id="radar-count">7</strong> 个可公开的工程档案 <span>·</span> 真实项目来源，脱敏呈现</p>
           <div class="radar-filters" role="group" aria-label="按项目类型筛选">
             <button class="radar-filter is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
             <button class="radar-filter" type="button" data-filter="product" aria-pressed="false">产品工程</button>
@@ -210,13 +245,6 @@
             <p>将资料采集、Wiki、设计规范、项目经验与交付物分层，让 AI 的结论能回到证据、Schema 和可复用的工作流。</p>
             <ul class="tag-list"><li>Obsidian</li><li>Schema</li><li>ADR / 复盘</li><li>Agent Context</li></ul>
             <p class="radar-proof">证据：00/01/02/03 分层、AI_CONTEXT 与质量检查脚本。</p>
-          </article>
-          <article class="radar-card" data-track="ai research">
-            <p class="radar-kicker"><span>AI STREAMING R&amp;D</span><em>本地研究</em></p>
-            <h3>AI 流式响应可靠性实验</h3>
-            <p>围绕 OpenAI 兼容接口的 SSE 流式响应、终态判断和本地中间件编排开展协议层研究，重点是可观测性与响应一致性。</p>
-            <ul class="tag-list"><li>Python</li><li>Starlette</li><li>HTTPX</li><li>SSE</li></ul>
-            <p class="radar-proof">证据：本地代理入口、流式合并逻辑、示例配置与测试目录。</p>
           </article>
           <article class="radar-card" data-track="ai product">
             <p class="radar-kicker"><span>SECURE RAG LAB</span><em>个人作品</em></p>
@@ -310,8 +338,8 @@
             <span>05</span>
             <p class="learning-type">可靠性与安全</p>
             <h3>把实验结论留在可复核的记录里</h3>
-            <p>在流式响应研究、授权安全研究与模拟评估记录中，训练以终态、日志、权限边界和复现条件判断结果，不以“看起来能用”代替验证。</p>
-            <p class="learning-proof"><strong>项目依据</strong> · CodexCont、ReverseLab、量化研究记录</p>
+            <p>在授权安全研究与模拟评估记录中，训练以日志、权限边界和复现条件判断结果，不以“看起来能用”代替验证。</p>
+            <p class="learning-proof"><strong>项目依据</strong> · Secure RAG Lab、ReverseLab、量化研究记录</p>
           </li>
           <li class="learning-card">
             <span>06</span>
