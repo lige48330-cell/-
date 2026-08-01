@@ -100,4 +100,14 @@
 - Evidence was checked against local project README files, manifests, module entry points, and project guidance for the listed public categories only. Private source, account, credential, customer, device-location, and email-oriented utilities remain excluded.
 - Copy distinguishes business delivery, private modification, personal experimentation, and open-source adaptation; it does not claim authorship or commercial delivery where the evidence only supports learning or adaptation.
 
+## Technical-chain information architecture — 2026-08-02
+
+- Reordered the hero project selector to match the three detailed case cards: ERP, IoT monitoring, then ESP32 mini-program.
+- Added a five-node, native-anchor technical-chain overview: business modeling → application/operations UI → service/protocol collaboration → field device feedback → operations validation. It is explicitly labeled as a cross-project capability map, not a claim that every project runs in one production deployment.
+- Reframed AI as an engineering-enablement layer for knowledge, evidence, verification, and cross-stack collaboration; it is explicitly not presented as direct business-device control.
+- Each flagship case now uses the same public evidence path: business problem, personal boundary, technical-chain position, public validation, and transferable learning.
+- Removed the CodexCont entry from public project inventory after scope review. The public page continues to exclude credentials, private source, customer data, real device identifiers, locations, and live-control evidence.
+- Browser checks: the default hero evidence selection is ERP; selecting IoT updates both its selected state and displayed image; a technical-chain node navigates to its related ESP32 case.
+- Responsive visual checks: desktop technical chain is a readable five-node horizontal route; at a 390 × 844 CSS viewport it becomes a vertical route with no horizontal overflow (`scrollWidth === clientWidth`). Browser console errors: none.
+
 final result: passed
