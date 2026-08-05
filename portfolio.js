@@ -64,7 +64,22 @@ function selectProject(key) {
   });
 }
 
-tabs.forEach((tab) => tab.addEventListener("click", () => selectProject(tab.dataset.project)));
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => selectProject(tab.dataset.project));
+  tab.addEventListener("keydown", (event) => {
+    if (!["ArrowRight", "ArrowDown", "ArrowLeft", "ArrowUp", "Home", "End"].includes(event.key)) return;
+    event.preventDefault();
+    const nextIndex = event.key === "Home" ? 0
+      : event.key === "End" ? tabs.length - 1
+      : (index + (event.key === "ArrowRight" || event.key === "ArrowDown" ? 1 : -1) + tabs.length) % tabs.length;
+    const nextTab = tabs[nextIndex];
+    nextTab.focus();
+    selectProject(nextTab.dataset.project);
+  });
+});
+
+if (window.location.hash === "#case-iot") selectProject("iot");
+if (window.location.hash === "#case-miniapp") selectProject("miniapp");
 
 const radarFilters = document.querySelectorAll(".radar-filter");
 const radarCards = document.querySelectorAll(".radar-card");
