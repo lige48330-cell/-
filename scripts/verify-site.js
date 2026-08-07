@@ -31,7 +31,7 @@ for (const file of files) {
 }
 
 const home = read("index.html");
-for (const text of ["把业务流程、物联网设备与 AI 工程实践，落成可验证的软件系统。", "ESP32 IoT 平台", "AI Supervisor", "智慧水产养殖应用套件", "开发服务展示小程序", "XAU 黄金交易研究", "上下文工程实验", "AI Supervisor pytest 93 项通过", "水产后端 API 测试 12 项通过"]) {
+for (const text of ["把业务流程、物联网设备与 AI 工程实践，落成可验证的软件系统。", "ESP32 IoT 平台", "AI Supervisor", "智慧水产养殖应用套件", "开发服务展示小程序", "XAU 黄金交易研究", "上下文工程实验", "AI Supervisor pytest 93 项通过", "水产后端 API 测试 12 项通过", "93+", "构建 0 警告 0 错误", "pytest 93 项通过", "API 测试 12 项通过"]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 
