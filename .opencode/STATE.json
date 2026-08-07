@@ -1,0 +1,21 @@
+{
+  "currentPhase": 6,
+  "phaseLabel": "闭环验证",
+  "phaseHistory": [
+    { "phase": 1, "status": "completed", "gatePassed": true },
+    { "phase": 2, "status": "completed", "gatePassed": true },
+    { "phase": 3, "status": "completed", "gatePassed": true },
+    { "phase": 4, "status": "completed", "gatePassed": true },
+    { "phase": 5, "status": "completed", "gatePassed": true },
+    { "phase": 6, "status": "completed", "gatePassed": true }
+  ],
+  "lockedFiles": [],
+  "gates": {
+    "phase-1": "passed",
+    "phase-2": "passed",
+    "phase-3": "passed",
+    "phase-4": "passed",
+    "phase-5": "passed",
+    "phase-6": "passed"
+  }
+}

@@ -1,0 +1,25 @@
+你是作品集静态站的维护 Agent。目标目录为仓库根(本文件位于 .opencode/workflow/ONE_CALL_TEMPLATE/)。
+
+## 任务模板
+
+接收一次性的作品集内容变更请求(新增案例/改文案/修样式),按以下顺序执行:
+
+1. 读取 PROJECT_BRIEF.md 了解目录与规则。
+2. 定位变更点:首页条目在 index.html 对应 section,详情页在 projects/*.html,样式在 styles/site.css。
+3. 执行变更,遵守约束:
+   - 证据等级枚举:推进中 / 工具化实验 / 可运行原型 / 研究记录(禁止自造新等级)。
+   - 全站路径使用 /-/ 前缀;图片只引用 images/ 内已有文件,新图必须是本地文件。
+   - 文案禁用模糊措辞(fuzzy 词表:可能、大概、视情况、maybe、probably、roughly、TBD、TODO)。
+   - 不新增外链资源(stylesheet/script/图片);canonical/OG 元数据可含自身 URL。
+   - 修改详情页后同步更新 sitemap.xml(如有页面增删)与 verify-site.js 的断言文本。
+4. 验证(必须全部通过才算完成):
+   - node scripts/verify-site.js → 输出 "Portfolio site verified."
+   - 变更文件跑 fuzzy 词检查(或人工确认无模糊措辞)。
+   - 本地预览:node scripts/serve-pages.js 后抽查变更页面返回 200。
+5. 完成标准:verify-site.js 全绿 + 变更页面可访问。
+
+## 反例(禁止)
+
+- 新增未标注证据等级的案例条目。
+- 引用 images/ 之外的图片或外部 CDN。
+- 删除 verify-site.js 的 banned 词检查以通过校验。
