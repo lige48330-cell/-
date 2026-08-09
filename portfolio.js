@@ -85,6 +85,8 @@ const radarFilters = document.querySelectorAll(".radar-filter");
 const radarCards = document.querySelectorAll(".radar-card");
 const radarCount = document.querySelector("#radar-count");
 
+if (radarCount) radarCount.textContent = String(radarCards.length);
+
 radarFilters.forEach((filter) => filter.addEventListener("click", () => {
   const selected = filter.dataset.filter;
   let visibleCount = 0;

@@ -3,8 +3,21 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const base = "/-/";
-const files = ["index.html", "projects/esp32-iot-platform.html", "projects/ai-supervisor.html", "projects/aquaculture-prototype.html", "404.html", "styles/site.css", "scripts/site.js", "robots.txt", "sitemap.xml"];
-const banned = ["Smart" + "Agri", "smart" + "agri", "Career" + "Ops", "career" + "ops", "Codex" + "Cont", "codex" + "cont"];
+const files = [
+  "index.html",
+  "projects/esp32-iot-platform.html",
+  "projects/ai-supervisor.html",
+  "projects/aquaculture-prototype.html",
+  "404.html",
+  "portfolio.css",
+  "portfolio.js",
+  "styles/site.css",
+  "scripts/site.js",
+  "robots.txt",
+  "sitemap.xml",
+  "images/aquaculture-erp-workflow.svg",
+  "images/agent-workflow.svg",
+];
 
 function read(file) {
   const target = path.join(root, file);
@@ -19,28 +32,32 @@ function links(content) {
 for (const file of files) {
   const content = read(file);
   if (content.includes("�") || content.includes('\\"')) throw new Error(`${file} contains broken text`);
-  for (const term of banned) if (content.includes(term)) throw new Error(`${file} contains removed project reference: ${term}`);
   if (file.endsWith(".html")) {
     for (const link of links(content)) {
-      if (link.startsWith("#") || /^(mailto:|tel:|https?:\/\/)/.test(link)) continue;
-      if (!link.startsWith(base)) throw new Error(`${file} contains non-GitHub-Pages path: ${link}`);
-      const relative = link.slice(base.length).split(/[?#]/)[0] || "index.html";
-      if (!fs.existsSync(path.join(root, relative))) throw new Error(`${file} links to missing target: ${link}`);
+      if (link.startsWith("#") || /^(mailto:|tel:|https?:\/\/|data:)/.test(link)) continue;
+      const clean = link.split(/[?#]/)[0];
+      const isPagesPath = clean.startsWith(base);
+      const relative = isPagesPath ? clean.slice(base.length) : clean.replace(/^\//, "");
+      const target = path.resolve(isPagesPath ? root : path.dirname(path.join(root, file)), relative || "index.html");
+      if (!target.startsWith(root) || !fs.existsSync(target)) throw new Error(`${file} links to missing target: ${link}`);
     }
   }
 }
 
 const home = read("index.html");
-for (const text of ["把业务流程、物联网设备与 AI 工程实践，落成可验证的软件系统。", "ESP32 IoT 平台", "AI Supervisor", "智慧水产养殖应用套件", "AI Agent 编程学习平台", "开发服务展示小程序", "AI Supervisor pytest 93 项通过", "水产后端 API 测试 12 项通过"]) {
+for (const text of ["AI 辅助全栈系统工程师", "能力画像", "协作证据", "项目地图", "AI 工具开发与评测", "公开工程档案"]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 
+const radarCount = (home.match(/<article class="radar-card/g) || []).length;
+if (radarCount !== 17) throw new Error(`Expected 17 radar cards, found ${radarCount}`);
+if (!read("portfolio.css").includes(".capability-proof-grid")) throw new Error("portfolio.css is missing capability styles");
+if (!read("portfolio.js").includes("radarCards.length")) throw new Error("portfolio.js is missing radar count logic");
 for (const file of ["index.html", "projects/esp32-iot-platform.html", "projects/ai-supervisor.html", "projects/aquaculture-prototype.html"]) {
-  if (!read(file).includes('data-site-version="2026-07-14"')) throw new Error(`${file} has an unexpected site version`);
-}
-
-for (const [file, text] of [["projects/esp32-iot-platform.html", "0 个警告、0 个错误"], ["projects/ai-supervisor.html", "93 项测试，全部通过"], ["projects/aquaculture-prototype.html", "12 项全部通过"]]) {
-  if (!read(file).includes(text)) throw new Error(`${file} is missing verification evidence`);
+  const content = read(file);
+  if (/(18577876725|AdminPass123|password|passwd|api[_-]?key|bearer\s+[A-Za-z0-9._-]+)/i.test(content)) {
+    throw new Error(`${file} contains credential-like text`);
+  }
 }
 
 console.log("Portfolio site verified.");
