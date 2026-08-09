@@ -2,38 +2,21 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const pages = ["index.html", "404.html", "projects/ai-career-ops.html"];
-
-const requiredEveryPageSnippets = [
-  'href="/-/liquid-glass.css"',
-  'src="/-/liquid-glass.js"',
-  "lg-liquid-ready",
+const requiredPages = ["index.html", "404.html", "projects/ai-career-ops.html"];
+const requiredHomeSnippets = [
+  'id="capability-map"',
+  'id="team-collaboration"',
+  'id="project-map"',
+  'id="project-radar"',
+  "AI 工具开发与评测",
 ];
-
-const requiredHomePageSnippets = [
-  "lg-nav",
-  "lg-card",
-  "lg-button",
-  "lg-badge",
-  "lg-surface",
-];
-
 const requiredCssSnippets = [
-  ".lg-card",
-  ".lg-button",
-  ".lg-nav",
-  ".lg-badge",
-  ".lg-surface",
-  ".lg-shimmer",
-  "@media (prefers-reduced-motion: reduce)",
+  ".capability-proof-grid",
+  ".collaboration-proof",
+  ".source-map-grid",
+  ".prototype-evidence-strip",
 ];
-
-const requiredJsSnippets = [
-  "initLiquidGlass",
-  "data-lg-pointer",
-  "pointermove",
-  "lg-pointer-active",
-];
+const requiredJsSnippets = ["radarCards.length", "radarCount.textContent"];
 
 function assertContains(filePath, content, snippet) {
   if (!content.includes(snippet)) {
@@ -41,27 +24,34 @@ function assertContains(filePath, content, snippet) {
   }
 }
 
-for (const page of pages) {
+for (const page of requiredPages) {
   const filePath = path.join(root, page);
-  const html = fs.readFileSync(filePath, "utf8");
-  for (const snippet of requiredEveryPageSnippets) {
-    assertContains(page, html, snippet);
-  }
+  if (!fs.existsSync(filePath)) throw new Error(`Missing required page: ${page}`);
 }
 
 const homeHtml = fs.readFileSync(path.join(root, "index.html"), "utf8");
-for (const snippet of requiredHomePageSnippets) {
+for (const snippet of requiredHomeSnippets) {
   assertContains("index.html", homeHtml, snippet);
 }
 
-const css = fs.readFileSync(path.join(root, "liquid-glass.css"), "utf8");
+const css = fs.readFileSync(path.join(root, "portfolio.css"), "utf8");
 for (const snippet of requiredCssSnippets) {
-  assertContains("liquid-glass.css", css, snippet);
+  assertContains("portfolio.css", css, snippet);
 }
 
-const js = fs.readFileSync(path.join(root, "liquid-glass.js"), "utf8");
+const js = fs.readFileSync(path.join(root, "portfolio.js"), "utf8");
 for (const snippet of requiredJsSnippets) {
-  assertContains("liquid-glass.js", js, snippet);
+  assertContains("portfolio.js", js, snippet);
 }
 
-console.log("Liquid Glass integration verified.");
+for (const asset of ["images/aquaculture-erp-workflow.svg", "images/agent-workflow.svg"]) {
+  if (!fs.existsSync(path.join(root, asset))) throw new Error(`Missing evidence asset: ${asset}`);
+}
+
+const radarCount = (homeHtml.match(/<article class="radar-card/g) || []).length;
+if (radarCount !== 17) throw new Error(`Expected 17 radar cards, found ${radarCount}`);
+if (/([A-Za-z]:\\|password|passwd|api[_-]?key|bearer\s+[A-Za-z0-9._-]+)/i.test(homeHtml)) {
+  throw new Error("Homepage contains a local path or credential-like text");
+}
+
+console.log("Portfolio structure verified.");
