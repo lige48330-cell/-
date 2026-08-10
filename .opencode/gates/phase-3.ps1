@@ -6,7 +6,6 @@ $root = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 $requiredFiles = @(
   "$root/index.html",
   "$root/styles/site.css",
-  "$root/liquid-glass.css",
   "$root/scripts/site.js",
   "$root/scripts/verify-site.js",
   "$root/404.html",

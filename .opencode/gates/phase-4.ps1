@@ -23,13 +23,12 @@ if ($homeContent -notmatch 'width="[0-9]+"') {
 }
 
 $cssContent = Get-Content "$root/styles/site.css" -Raw
-if ($cssContent -notmatch '@media \(max-width: 980px\)' -or $cssContent -notmatch '@media \(max-width: 760px\)') {
+if ($cssContent -notmatch '@media \(max-width: 900px\)' -or $cssContent -notmatch '@media \(max-width: 640px\)') {
   Write-Host "FAIL: missing responsive breakpoints"
   $errors++
 }
 
-$lgCss = Get-Content "$root/liquid-glass.css" -Raw
-if ($lgCss -notmatch 'prefers-reduced-motion') {
+if ($cssContent -notmatch 'prefers-reduced-motion') {
   Write-Host "FAIL: missing reduced-motion support"
   $errors++
 }

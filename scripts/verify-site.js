@@ -3,7 +3,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const base = "/-/";
-const files = ["index.html", "projects/esp32-iot-platform.html", "projects/ai-supervisor.html", "projects/aquaculture-prototype.html", "projects/profile-miniapp.html", "projects/ea-research.html", "404.html", "styles/site.css", "liquid-glass.css", "scripts/site.js", "scripts/apply-liquid-glass.js", "robots.txt", "sitemap.xml"];
+const files = ["index.html", "projects/esp32-iot-platform.html", "projects/ai-supervisor.html", "projects/aquaculture-prototype.html", "projects/profile-miniapp.html", "projects/ea-research.html", "404.html", "styles/site.css", "scripts/site.js", "robots.txt", "sitemap.xml"];
 const banned = ["Smart" + "Agri", "smart" + "agri", "Career" + "Ops", "career" + "ops", "Codex" + "Cont", "codex" + "cont"];
 
 function read(file) {
