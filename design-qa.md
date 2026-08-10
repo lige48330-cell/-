@@ -121,3 +121,11 @@ final result: passed
 - The mini-program selector and case copy now describe the visible management overview and state-feedback collaboration only; they do not present the screenshot as proof of a real remote-control action.
 - Browser verification: the desktop route shows six readable nodes in one horizontal chain; at `390 × 844`, the hero summary is visible in the first viewport and the chain collapses into a readable vertical route with no horizontal overflow (`scrollWidth === clientWidth`).
 - Interaction verification: the protocol node navigates to `#case-miniapp-protocol`; selecting the IoT project tab sets its selected state and displays `images/iot-monitoring-dashboard-public.png`. Browser console errors: none.
+
+## Public image and source boundary — 2026-08-10
+
+- Every public image on the main portfolio now carries an `AI 脱敏 / 泛化展示` disclosure in its alt text, caption, or visible badge. Workflow diagrams use `AI 泛化 / 方法示意` so they are not mistaken for production screenshots.
+- The three company cases (aquaculture ERP, IoT equipment platform, and ESP32-linked mini-program / firmware chain) are explicitly labeled `公司项目 · 仅展示`; source code, internal configuration, device data, credentials, and original solution files remain unpublished.
+- The project radar includes a visible publication-status legend and a per-project status. Personal projects are marked `可开源`, `可开源 · 需去除本机数据`, or `方法可公开 · 数据不公开` according to the evidence and privacy boundary.
+- The capability surface now foregrounds four signals: 原型设计、全栈交付、AI 工程、创新落地. Each has a short outcome statement and can be traced to the existing capability cards, project map, and AI Agent engineering section.
+- Verification target after this change: `node --check portfolio.js`, `node scripts/verify-liquid-glass.js`, `git diff --check`, image/status count checks, and a sensitive-literal scan. The linked `gh-pages` worktree README modification remains user-owned and must not be overwritten.
