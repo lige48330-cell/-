@@ -10,7 +10,7 @@ const projects = {
     link: "#case-iot",
   },
   erp: {
-    image: "images/smartagri-erp-public.png",
+    image: "images/aquaculture-erp-public.png",
     alt: "脱敏后的养殖渔业 ERP 数据大屏",
     caption: "养殖水质、投喂、设备自动化与经营模块的脱敏展示图。",
     type: "ERP / 低代码业务系统",

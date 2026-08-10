@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
-  <title id="title">糖厂ERP与物联网数据看板证据图</title>
+  <title id="title">工业设备 ERP 与物联网数据看板证据图</title>
   <desc id="desc">展示设备侧数据进入ERP系统并转化为看板指标和报表的路径。</desc>
   <rect width="1200" height="760" fill="#f6f8fb"/>
   <rect x="52" y="48" width="1096" height="664" rx="18" fill="#ffffff" stroke="#d9e1ea" stroke-width="2"/>
-  <text x="92" y="104" fill="#172434" font-family="Arial, sans-serif" font-size="34" font-weight="700">糖厂 ERP / IoT 数据看板</text>
+  <text x="92" y="104" fill="#172434" font-family="Arial, sans-serif" font-size="34" font-weight="700">工业设备 ERP / IoT 数据看板</text>
   <text x="92" y="142" fill="#647184" font-family="Arial, sans-serif" font-size="18">把设备侧数据整理成业务人员能查看、对比和分析的监控指标</text>
   <g font-family="Arial, sans-serif">
     <rect x="94" y="214" width="220" height="300" rx="14" fill="#f0f6ff" stroke="#a9c7ed"/>

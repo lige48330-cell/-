@@ -2,11 +2,11 @@
 
 ## Comparison target
 
-- Source visual truth: `C:\Users\12982\.codex\generated_images\019fbd97-9850-7430-b502-f4185408b414\exec-cf4f7a68-8f17-4cf1-81a3-150bb271b880.png`
-- Browser-rendered implementation: `C:\Users\12982\.codex\visualizations\2026\08\01\019fbd97-9850-7430-b502-f4185408b414\portfolio-option-2-implementation-2.png`
-- Full-view comparison: `C:\Users\12982\.codex\visualizations\2026\08\01\019fbd97-9850-7430-b502-f4185408b414\portfolio-qa-comparison-2.png`
-- Mobile responsive capture: `C:\Users\12982\.codex\visualizations\2026\08\01\019fbd97-9850-7430-b502-f4185408b414\portfolio-mobile.png`
-- AI full-stack section capture: `C:\Users\12982\.codex\visualizations\2026\08\01\019fbd97-9850-7430-b502-f4185408b414\portfolio-ai-work.png`
+- Source visual truth: local design reference capture (not published).
+- Browser-rendered implementation: local desktop capture (not published).
+- Full-view comparison: local full-view comparison (not published).
+- Mobile responsive capture: local mobile capture (not published).
+- AI full-stack section capture: local AI full-stack capture (not published).
 - State: desktop default selection is the IoT equipment-monitoring case; mobile screenshot is the home hero before scrolling.
 
 ## Viewport and normalization
@@ -48,11 +48,11 @@
 
 ## Project-radar extension — 2026-08-01
 
-- Source visual truth: `C:\Users\12982\.codex\generated_images\019fbd97-9850-7430-b502-f4185408b414\exec-cf4f7a68-8f17-4cf1-81a3-150bb271b880.png`
-- Browser-rendered desktop capture: `C:\Users\12982\.codex\visualizations\2026\08\01\019fbd97-9850-7430-b502-f4185408b414\portfolio-desktop-current.png`
-- Browser-rendered project-radar capture: `C:\Users\12982\.codex\visualizations\2026\08\01\019fbd97-9850-7430-b502-f4185408b414\portfolio-radar-anchor.png`
-- Browser-rendered mobile capture: `C:\Users\12982\.codex\visualizations\2026\08\01\019fbd97-9850-7430-b502-f4185408b414\portfolio-radar-mobile-anchor.png`
-- Same-input visual comparison: `C:\Users\12982\.codex\visualizations\2026\08\01\019fbd97-9850-7430-b502-f4185408b414\portfolio-design-comparison-radar.png`
+- Source visual truth: local design reference capture (not published).
+- Browser-rendered desktop capture: local desktop capture (not published).
+- Browser-rendered project-radar capture: local project-radar capture (not published).
+- Browser-rendered mobile capture: local mobile project-radar capture (not published).
+- Same-input visual comparison: local design comparison (not published).
 - State: desktop default project tab; all eight public project records visible. Mobile capture is anchored to `#project-radar`.
 
 ### Extension findings and fixes
@@ -71,7 +71,7 @@
 - Fonts and typography: desktop hero remains high-contrast and compact; radar heading scales from a two-column desktop composition to a readable mobile hierarchy.
 - Spacing and layout rhythm: the toolbar, two-column featured card, and three-column project matrix collapse to one column without clipping.
 - Colors and visual tokens: the existing charcoal, muted gray, emerald signal, amber-boundary, and atlas-image language is reused consistently.
-- Image quality and asset fidelity: ERP now uses `smartagri-erp-public.png`, a de-identified derivative of the user-specified ERP screenshot. The mini-program image remains labeled as a control-chain illustration; no live control screen, source code, credentials, customer details, or device identifiers are published.
+- Image quality and asset fidelity: ERP now uses `aquaculture-erp-public.png`, a de-identified derivative of the user-specified ERP screenshot. The mini-program image remains labeled as a control-chain illustration; no live control screen, source code, credentials, customer details, or device identifiers are published.
 - Copy and content: eight cards distinguish private extension, personal work, open-source adaptation, and research context. Mailbox/credential-oriented local utilities are explicitly excluded from the public inventory.
 
 ### Extension interactions and checks
@@ -85,7 +85,7 @@
 
 ## Mini-program screenshot replacement — 2026-08-01
 
-- Source visual truth: user-provided `C:\Users\12982\AppData\Local\Temp\codex-clipboard-712de9fd-8c0b-438a-96e3-6f8308b00444.png`.
+- Source visual truth: user-provided local capture (not published).
 - Public asset: `images/esp32-miniapp-public.png`.
 - The source visual is an approved, static management-overview capture. It shows aggregate device and alert information plus generic navigation only; it contains no account, customer name, contact detail, location, device identifier, credential, or control action.
 - The case card and the interactive `ESP32 小程序` tab now use the same image and describe only the visible management-overview capabilities.
