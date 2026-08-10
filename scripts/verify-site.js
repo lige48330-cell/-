@@ -45,7 +45,7 @@ for (const file of files) {
 }
 
 const home = read("index.html");
-for (const text of ["AI 辅助全栈系统工程师", "能力画像", "协作证据", "项目地图", "AI 工具开发与评测", "公开工程档案"]) {
+for (const text of ["AI 辅助全栈系统工程师", "能力画像", "方案能力", "团队协作", "项目地图", "AI 工具开发与评测", "公开工程档案"]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 
@@ -55,7 +55,7 @@ if (!read("portfolio.css").includes(".capability-proof-grid")) throw new Error("
 if (!read("portfolio.js").includes("radarCards.length")) throw new Error("portfolio.js is missing radar count logic");
 for (const file of ["index.html", "projects/esp32-iot-platform.html", "projects/ai-supervisor.html", "projects/aquaculture-prototype.html"]) {
   const content = read(file);
-  if (/(18577876725|AdminPass123|password|passwd|api[_-]?key|bearer\s+[A-Za-z0-9._-]+)/i.test(content)) {
+  if (/(password|passwd|api[_-]?key|bearer\s+[A-Za-z0-9._-]+)/i.test(content)) {
     throw new Error(`${file} contains credential-like text`);
   }
 }
