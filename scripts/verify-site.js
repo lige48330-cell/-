@@ -45,7 +45,7 @@ for (const file of files) {
 }
 
 const home = read("index.html");
-for (const text of ["AI 辅助全栈系统工程师", "能力画像", "方案能力", "团队协作", "项目地图", "AI 工具开发与评测", "公开工程档案"]) {
+for (const text of ["AI Agent 产品与全栈工程师", "交付成可运行的系统。", "业务可用、团队可接、结果可验", "能力画像", "方案能力", "团队协作", "项目地图", "AI 工具开发与评测", "公开工程档案"]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 
