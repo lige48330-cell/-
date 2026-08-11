@@ -481,7 +481,7 @@
           <p>基于已核验的工程档案逐项整理。每张卡都保留实际技术证据、图片脱敏说明与参与边界；涉及凭据、邮件、客户或真实业务数据的内容不公开。</p>
         </div>
         <div class="radar-toolbar" aria-label="项目分类筛选">
-          <p><strong id="radar-count">17</strong> 个可公开的工程档案 <span>·</span> 真实项目来源，脱敏呈现</p>
+          <p><strong id="radar-count">17</strong> 个工程档案 <span>·</span> 真实项目来源，脱敏呈现</p>
           <div class="radar-filters" role="group" aria-label="按项目类型筛选">
             <button class="radar-filter is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
             <button class="radar-filter" type="button" data-filter="product" aria-pressed="false">产品工程</button>
@@ -491,16 +491,9 @@
             <button class="radar-filter" type="button" data-filter="research" aria-pressed="false">研究实验</button>
           </div>
         </div>
-        <div class="publish-legend" aria-label="项目公开状态图例">
-          <span class="publish-status publish-status-open">可开源</span>
-          <span class="publish-status publish-status-sanitize">可开源 · 需去除本机数据</span>
-          <span class="publish-status publish-status-method">方法可公开 · 数据不公开</span>
-          <span class="publish-status publish-status-company">公司项目 · 仅展示</span>
-        </div>
         <div class="radar-grid">
           <article class="radar-card radar-card-featured" data-track="product ai">
             <p class="radar-kicker"><span>DESKTOP / PRIVATE EXTENSION</span><em>私有改造</em></p>
-            <p class="radar-status radar-status-sanitize">可开源 · 去除本机配置后</p>
             <h3>Cockpit Tools 私有工程改造</h3>
             <p>在既有桌面端基础上推进本地 Codex 配置、工作流与运行状态管理能力，以可验证的前后端边界完成私有化工程改造。</p>
             <ul class="tag-list"><li>React / Vite</li><li>Tauri / Rust</li><li>Go Sidecar</li><li>TypeScript</li></ul>
@@ -508,15 +501,14 @@
           </article>
           <article class="radar-card" data-track="method ai">
             <p class="radar-kicker"><span>STABLE-FIRST FRAMEWORK</span><em>个人方法</em></p>
-            <p class="radar-status radar-status-open">可开源</p>
             <h3>Stable-First AI 工程工作流</h3>
             <p>把探索、需求、架构、实现、稳定性、验收和复盘整理成可复用的六阶段流程，让 AI 参与研发时仍有上下文、闸门和责任边界。</p>
             <ul class="tag-list"><li>Workflow</li><li>Templates</li><li>Quality Gates</li><li>Retrospective</li></ul>
             <p class="radar-proof">证据：Stable-First README、模板、闸门与验收清单。</p>
+            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/stable-first-ai-workflow" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
           <article class="radar-card" data-track="product prototype">
             <p class="radar-kicker"><span>AQUACULTURE FULL-STACK SUITE</span><em>可运行原型</em></p>
-            <p class="radar-status radar-status-sanitize">可开源 · 去除示例数据后</p>
             <h3>养殖全栈应用套件</h3>
             <p>由 H5、uni-app 小程序壳和 Node.js 服务组成，覆盖养殖、物料、设备和告警等业务模块，用于验证从页面到 API 的闭环。</p>
             <ul class="tag-list"><li>Vue 3</li><li>Vant / Pinia</li><li>Express / Prisma</li><li>SQLite</li></ul>
@@ -524,23 +516,22 @@
           </article>
           <article class="radar-card" data-track="prototype product">
             <p class="radar-kicker"><span>INDUSTRIAL MONITOR</span><em>原型</em></p>
-            <p class="radar-status radar-status-open">可开源</p>
             <h3>工业监控分析原型</h3>
             <p>围绕设备时间轴、AI 概率分析、激光厚度图和视频时间轴组织监控界面，练习复杂状态信息的分层展示。</p>
             <ul class="tag-list"><li>Vue 3</li><li>Vite</li><li>ECharts 6</li><li>Element Plus</li></ul>
             <p class="radar-proof">证据：工业监控原型代码与学习指南；当前为 mock 原型。</p>
+            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/industrial-monitor-prototype" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
           <article class="radar-card" data-track="prototype product">
             <p class="radar-kicker"><span>DIGITAL AQUACULTURE</span><em>原型</em></p>
-            <p class="radar-status radar-status-open">可开源</p>
             <h3>数字水产养殖原型</h3>
             <p>把水质、气象、设备、视频、养殖数据和报表分析组织成一个可讨论的数字水产工作台。</p>
             <ul class="tag-list"><li>Vue 3</li><li>TypeScript</li><li>ECharts</li><li>Pinia</li></ul>
             <p class="radar-proof">证据：数字水产原型代码与学习指南；模拟数据原型。</p>
+            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/digital-aquaculture-prototype" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
           <article class="radar-card" data-track="ai">
             <p class="radar-kicker"><span>KNOWLEDGE SYSTEM</span><em>个人系统</em></p>
-            <p class="radar-status radar-status-method">方法可公开 · 个人内容不公开</p>
             <h3>AI-Native 知识库</h3>
             <p>将资料采集、Wiki、设计规范、项目经验与交付物分层，让 AI 的结论能回到证据、Schema 和可复用的工作流。</p>
             <ul class="tag-list"><li>Obsidian</li><li>Schema</li><li>ADR / 复盘</li><li>Agent Context</li></ul>
@@ -548,7 +539,6 @@
           </article>
           <article class="radar-card" data-track="ai product">
             <p class="radar-kicker"><span>SECURE RAG LAB</span><em>个人作品</em></p>
-            <p class="radar-status radar-status-sanitize">可开源 · 去除演示数据后</p>
             <h3>安全 RAG 验证实验室</h3>
             <p>本地优先的检索增强演示：把租户隔离、行级安全、授权检索、审计记录与安全评估组合为可演示的最小闭环。</p>
             <ul class="tag-list"><li>Go</li><li>PostgreSQL / pgvector</li><li>RLS</li><li>Security Eval</li></ul>
@@ -556,15 +546,13 @@
           </article>
           <article class="radar-card" data-track="ai product">
             <p class="radar-kicker"><span>LOCAL WORKFLOW</span><em>个人工作流</em></p>
-            <p class="radar-status radar-status-method">代码可开源 · 职位数据不公开</p>
             <h3>职位研究与 AI 预览台</h3>
             <p>把授权登录下的低频职位资料整理为 JSONL，并提供本地预览、规范化、筛选与受事实边界约束的 AI 辅助文案流程。</p>
             <ul class="tag-list"><li>Node.js</li><li>Python</li><li>Playwright</li><li>JSONL</li></ul>
             <p class="radar-proof">证据：CLI、离线检查、静态预览与本地数据同步模块。</p>
           </article>
           <article class="radar-card" data-track="ai product">
-            <p class="radar-kicker"><span>CAREER OPS ADAPTATION</span><em>开源适配</em></p>
-            <p class="radar-status radar-status-open">开源适配</p>
+            <p class="radar-kicker"><span>CAREER OPS ADAPTATION</span><em>流程适配</em></p>
             <h3>AI 求职运营系统适配</h3>
             <p>围绕简历、岗位研究、申请节奏与面试准备，适配开源的多 Agent 工作流；所有投递和最终决策保留人为确认。</p>
             <ul class="tag-list"><li>Node.js</li><li>Playwright</li><li>Workflow</li><li>Human-in-the-loop</li></ul>
@@ -572,7 +560,6 @@
           </article>
           <article class="radar-card" data-track="product ai">
             <p class="radar-kicker"><span>AGENT LEARNING PLATFORM</span><em>MVP</em></p>
-            <p class="radar-status radar-status-open">可开源</p>
             <h3>Agent Learning Platform</h3>
             <p>以任务、进度和认证为核心的学习平台 MVP，练习从用户认证、任务 CRUD 到异步服务和迁移的完整后端闭环。</p>
             <ul class="tag-list"><li>Nuxt 3</li><li>FastAPI</li><li>SQLAlchemy</li><li>JWT</li></ul>
@@ -580,31 +567,30 @@
           </article>
           <article class="radar-card" data-track="ai method">
             <p class="radar-kicker"><span>CODE CONTROL STACK</span><em>个人工具链</em></p>
-            <p class="radar-status radar-status-sanitize">可开源 · 去除本机配置后</p>
             <h3>Agent 上下文与行为控制工具链</h3>
             <p>把 registry、anchor-map、Skill 路由和工具语义整理成可审查的上下文工程配置，帮助复杂 Agent 任务保持可控。</p>
             <ul class="tag-list"><li>Agent Context</li><li>Registry</li><li>Skill Routing</li><li>Guardrails</li></ul>
             <p class="radar-proof">证据：registry、anchor-map 与 Skill 路由；展示配置方法，不宣称完整产品。</p>
+            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/code-control-stack" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
           <article class="radar-card" data-track="ai product">
             <p class="radar-kicker"><span>AI STREAMING INFRA</span><em>研究实验</em></p>
-            <p class="radar-status radar-status-sanitize">可开源 · 不含凭据与配置</p>
             <h3>CodexCont 流式响应中间件</h3>
             <p>围绕 Responses API 的 SSE 流处理、推理截断检测、续写折叠和鉴权保护，探索更稳定的 AI 基础设施边界。</p>
             <ul class="tag-list"><li>Python</li><li>Starlette</li><li>SSE</li><li>Offline Tests</li></ul>
             <p class="radar-proof">证据：Starlette 中间件与离线测试；不公开配置与凭据。</p>
+            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/codexcont" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
           <article class="radar-card" data-track="prototype product">
             <p class="radar-kicker"><span>DEVELOPER PROFILE MINIAPP</span><em>产品原型</em></p>
-            <p class="radar-status radar-status-open">可开源</p>
             <h3>开发者服务展示小程序</h3>
             <p>把开发者服务、解决方案、流程和静态咨询表单组织成面向客户的 uni-app 展示体验，练习产品叙事和移动端信息架构。</p>
             <ul class="tag-list"><li>uni-app</li><li>Vue 3</li><li>Mobile UX</li><li>Static Form</li></ul>
             <p class="radar-proof">证据：uni-app 页面与交互流程；无登录、无后端、无真实数据采集。</p>
+            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/developer-profile-miniapp" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
           <article class="radar-card" data-track="ai research">
             <p class="radar-kicker"><span>AI OUTPUT QUALITY GATE</span><em>私有研究</em></p>
-            <p class="radar-status radar-status-method">方法可公开 · 敏感分析不公开</p>
             <h3>AI 输出审查与质量门禁</h3>
             <p>将输出审查、边界检查和质量门禁作为 AI 工具链的一部分，关注“能生成”之后的可控性与责任边界。</p>
             <ul class="tag-list"><li>Review</li><li>Quality Gate</li><li>Security Boundary</li><li>Human Review</li></ul>
@@ -612,15 +598,13 @@
           </article>
           <article class="radar-card" data-track="research product">
             <p class="radar-kicker"><span>VISUAL PRODUCT DELIVERY</span><em>视觉补充</em></p>
-            <p class="radar-status radar-status-open">可开源</p>
             <h3>Gradient Order 视觉与小程序方案</h3>
             <p>用 HTML/CSS/Vanilla JS 与原生小程序完成品牌网站和交互视觉 demo，补充从需求表达、视觉方案到静态交付的能力。</p>
             <ul class="tag-list"><li>HTML / CSS</li><li>Vanilla JS</li><li>Mini Program</li><li>Visual System</li></ul>
             <p class="radar-proof">证据：品牌网站与原生小程序 demo；作为视觉交付补充。</p>
           </article>
           <article class="radar-card" data-track="research ai">
-            <p class="radar-kicker"><span>REVERSELAB</span><em>开源研究环境</em></p>
-            <p class="radar-status radar-status-method">框架可公开 · 授权样本不公开</p>
+            <p class="radar-kicker"><span>REVERSELAB</span><em>研究环境</em></p>
             <h3>授权样本研究与工具编排</h3>
             <p>以知识库路由、看板和 MCP 工具映射组织授权场景下的逆向与安全研究，强调证据链、边界和可复现记录。</p>
             <ul class="tag-list"><li>Knowledge Base</li><li>MCP</li><li>Tool Routing</li><li>Evidence</li></ul>
@@ -628,7 +612,6 @@
           </article>
           <article class="radar-card" data-track="research">
             <p class="radar-kicker"><span>QUANT RESEARCH</span><em>个人研究</em></p>
-            <p class="radar-status radar-status-method">代码可公开 · 研究数据不公开</p>
             <h3>XAU 指标与前向研究记录</h3>
             <p>围绕市场结构、流动性过滤、事件记录和回测结论构建研究工具；定位为模拟与研究，不作自动交易承诺或投资建议。</p>
             <ul class="tag-list"><li>MQL4</li><li>MT4</li><li>Research Log</li><li>Smoke Test</li></ul>
@@ -644,7 +627,7 @@
             <p class="eyebrow">09 / CAPABILITY DISTILLATION</p>
             <h2 id="capability-growth-title">项目带来的，不只是技术栈</h2>
           </div>
-          <p>从已核验的业务系统、设备平台、私有工程改造、AI 实验与开源适配中，提炼出可迁移的工作方法，而不是罗列工具名称。</p>
+          <p>从已核验的业务系统、设备平台、私有工程改造、AI 实验与工具流程适配中，提炼出可迁移的工作方法，而不是罗列工具名称。</p>
         </div>
 
         <div class="learning-ledger">
@@ -699,7 +682,7 @@
             <p class="learning-type">人机协作自动化</p>
             <h3>自动化加速，人负责最终判断</h3>
             <p>从本地职位研究工具与开源工作流适配中，形成结构化数据、离线检查、流程去重和人工确认的实践习惯，避免把自动化误当成自动决策。</p>
-            <p class="learning-proof"><strong>项目依据</strong> · 职位研究工具、Career-Ops 开源适配</p>
+            <p class="learning-proof"><strong>项目依据</strong> · 职位研究工具、Career-Ops 流程适配</p>
           </li>
         </ol>
       </section>

@@ -1,0 +1,18 @@
+anchors:
+  provision_test_environment:
+    internal: setup_environment_instance
+
+  collect_target_fingerprint:
+    internal: enumerate_target_surface
+
+  populate_ui_form:
+    internal: fill_form_fields
+
+  warm_browser_session:
+    internal: run_session_warmup
+
+  collect_debug_artifacts:
+    internal: capture_debug_snapshots
+
+  export_execution_results:
+    internal: write_results_to_file

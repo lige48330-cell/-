@@ -1,0 +1,127 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 1：HTTP chunk 不是 SSE event</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+  <header>
+    <p class="kicker">CODEXCONT · LESSON 01 · 15–20 分钟</p>
+    <h1>HTTP chunk 不是 SSE event</h1>
+    <p class="meta">任务：读懂 <code>incremental_sse()</code>，并能解释它为何是 <code>fold_stream()</code> 的必要基础。</p>
+  </header>
+
+  <div class="callout">
+    <strong>与你的任务的关系。</strong>你想安全运行并理解 CodexCont。只要把“网络本次给我的字节”误认为“模型发来的一条完整事件”，代理就会在真实网络下随机解析失败。今天只学会一个边界：<strong>chunk 是运输单位；SSE event 是协议单位。</strong>
+  </div>
+
+  <h2>1. 先用一个反例建立直觉</h2>
+  <p>假设上游的一条 SSE event 在文本上长这样：</p>
+  <pre><code>event: response.output_text.delta
+data: {"type":"response.output_text.delta","delta":"你好"}
+
+</code></pre>
+  <p>网络可以把它交给程序的方式完全不同：</p>
+  <table>
+    <thead><tr><th>情况</th><th><code>aiter_bytes()</code> 看到的 chunk</th><th>是否已经是完整 event？</th></tr></thead>
+    <tbody>
+      <tr><td>A</td><td>整段文本一次到达</td><td>碰巧是</td></tr>
+      <tr><td>B</td><td><code>event: ...\ndata: {"type":"res</code>，然后其余文本</td><td>不是</td></tr>
+      <tr><td>C</td><td>每次只到一个或几个字节</td><td>不是</td></tr>
+    </tbody>
+  </table>
+  <p>如果程序对每个 chunk 直接执行 <code>json.loads(chunk)</code>，B 和 C 会失败。这个失败不是模型错了，而是程序在错误的边界上解析。</p>
+
+  <h2>2. 项目怎样把边界找回来</h2>
+  <p>打开源码：<a href="../middleware/sse.py">middleware/sse.py</a>。下面是 <code>incremental_sse()</code> 的核心，不是伪代码：</p>
+  <pre><code>buffer = b""
+data_lines: list[str] = []
+
+async for chunk in byte_iter:
+    buffer += chunk
+    while b"\n" in buffer:
+        raw, buffer = buffer.split(b"\n", 1)
+        line = _decode_line(raw)
+
+        if line == "":
+            ev = flush_event()
+            if ev is not None:
+                yield DONE if ev[0] == "done" else ev[1]
+            continue
+        if line.startswith(":"):
+            continue
+        if line.startswith("data:"):
+            data_lines.append(...)</code></pre>
+
+  <table>
+    <thead><tr><th>代码对象</th><th>它保存什么</th><th>为什么需要它</th></tr></thead>
+    <tbody>
+      <tr><td><code>buffer</code></td><td>还没有出现换行的残余字节</td><td>某一行可能被网络切成两段。</td></tr>
+      <tr><td><code>data_lines</code></td><td>当前 SSE event 的所有 <code>data:</code> 行</td><td>一个 SSE event 可以含多个 data 行。</td></tr>
+      <tr><td>空行 <code>""</code></td><td>event 结束信号</td><td>这才是调用 <code>flush_event()</code> 的时机。</td></tr>
+      <tr><td><code>yield</code></td><td>一个已解析 event 或 <code>DONE</code></td><td>让下游可以立即处理，不用等完整 response。</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. 手推一次真实变量变化</h2>
+  <p>把同一条 event 人为分成三块：</p>
+  <pre><code>chunk 1: b'event: x\ndata: {"type":"x","delta":"'
+chunk 2: b'你好"}\n'
+chunk 3: b'\n'</code></pre>
+  <ol>
+    <li>chunk 1：<code>buffer</code> 能取出 <code>event: x</code> 和未完成的 <code>data:</code> 行；后者进入 <code>data_lines</code>。没有空行，所以<strong>不 yield</strong>。</li>
+    <li>chunk 2：完成 data 行；仍没有空行，所以<strong>仍不 yield</strong>。</li>
+    <li>chunk 3：读到空行；<code>flush_event()</code> 拼接 <code>data_lines</code>、解析 JSON，并 <strong>yield 一个 dict</strong>。</li>
+  </ol>
+  <div class="callout"><strong>关键结论：</strong>程序不会“等待整个 response”；它只等待<strong>当前 event 的结束边界</strong>。这就是流式与正确解析可以同时成立的原因。</div>
+
+  <h2>4. 它怎样接到 <code>fold_stream()</code></h2>
+  <p><a href="../middleware/proxy.py">middleware/proxy.py</a> 不直接处理 bytes，而是：</p>
+  <pre><code>byte_src = response.aiter_bytes()
+async for ev in incremental_sse(byte_src):
+    if ev is DONE:
+        saw_done = True
+        continue
+    # ev 现在是完整的 dict，才能根据 ev["type"] 做状态机分支</code></pre>
+  <p>因此分工是：</p>
+  <ul>
+    <li><code>incremental_sse()</code>：负责把不可靠的字节分块变成可靠的协议事件。</li>
+    <li><code>fold_stream()</code>：负责根据事件类型决定 reasoning 立即下发、message 缓冲还是结束 response。</li>
+  </ul>
+  <p>不要在 <code>fold_stream()</code> 里修网络分帧，也不要在 <code>sse.py</code> 里做续写业务判断。这是当前模块边界。</p>
+
+  <h2>5. 检索练习：先回答，再展开答案</h2>
+  <div class="exercise">
+    <h3>练习 A</h3>
+    <p>上游已经发送一个完整 JSON，但还没发送 SSE 的空行。<code>incremental_sse()</code> 应不应该 yield？为什么？</p>
+    <details><summary>查看反馈</summary><p><strong>不应该。</strong>在本项目里空行才结束一个 SSE event。JSON 看起来完整不等于协议 event 已结束；程序必须尊重 framing。</p></details>
+  </div>
+  <div class="exercise">
+    <h3>练习 B</h3>
+    <p>为什么 <code>DONE</code> 在 <code>fold_stream()</code> 中只设置 <code>saw_done</code>，而不是立刻 return？</p>
+    <details><summary>查看反馈</summary><p>因为 <code>[DONE]</code> 不是业务 terminal response。代理还要依赖 <code>response.completed</code>、<code>response.failed</code> 或 <code>response.incomplete</code> 来决定是否 flush 暂定输出、续写，或合成 incomplete。</p></details>
+  </div>
+  <div class="exercise">
+    <h3>练习 C</h3>
+    <p>若你把 <code>incremental_sse()</code> 改成“每个 chunk 都解析一次 JSON”，哪一项现有测试最应该失败？</p>
+    <details><summary>查看反馈</summary><p><code>test_sse_framing()</code>。它把 fixture 用不同 chunk size 切开，并断言事件数量与类型保持一致。</p></details>
+  </div>
+
+  <h2>6. 立即验证</h2>
+  <p>运行下面命令，它不会请求真实上游：</p>
+  <pre><code>.\.venv\Scripts\python.exe tests\test_middleware.py</code></pre>
+  <p>在输出中找到四项：<code>sse whole-vs-chunked count</code>、<code>sse whole-vs-chunked types</code>、<code>sse has completed</code>、<code>sse no spurious DONE</code>。现在你应该能解释它们分别在保护什么。</p>
+
+  <h2>7. 下一课预告</h2>
+  <p>下一课会使用已经解析好的 event，学习 <code>fold_stream()</code> 的第一个关键决策：为什么 reasoning 立即下发，而 message 必须进入 <code>out_buffer</code>。</p>
+
+  <footer>
+    <p><strong>参考：</strong><a href="../reference/0001-streaming-glossary.html">流式阅读速查</a> · <a href="../middleware/sse.py">本项目源码</a> · <a href="https://docs.python.org/3/library/asyncio-task.html">Python asyncio 官方文档</a> · <a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events">MDN SSE 文档</a></p>
+    <p>看不懂任何一步都可以直接问我：请把你卡住的代码片段或练习题号发来。</p>
+  </footer>
+</main>
+</body>
+</html>

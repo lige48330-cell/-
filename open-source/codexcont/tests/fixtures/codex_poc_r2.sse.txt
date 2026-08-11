@@ -1,0 +1,1625 @@
+event: response.created
+data: {"type":"response.created","response":{"id":"fixture-id-4","object":"response","created_at":1782741546,"status":"in_progress","background":false,"completed_at":null,"error":null,"frequency_penalty":0,"incomplete_details":null,"instructions":"[redacted system instructions]","max_output_tokens":null,"max_tool_calls":null,"model":"gpt-5.5","moderation":null,"output":[],"parallel_tool_calls":true,"presence_penalty":0,"previous_response_id":null,"prompt_cache_key":"[fixture]","prompt_cache_retention":"[fixture]","reasoning":{"context":"[fixture]","effort":"[fixture]","mode":"standard","summary":"[fixture text]"},"safety_identifier":"[fixture]","service_tier":"auto","store":false,"temperature":1,"text":{"format":{"type":"text"},"verbosity":"medium"},"tool_choice":"auto","tool_usage":{"image_gen":{"input_tokens":0,"input_tokens_details":{"image_tokens":0,"text_tokens":0},"output_tokens":0,"output_tokens_details":{"image_tokens":0,"text_tokens":0},"total_tokens":0},"web_search":{"num_requests":0}},"tools":[],"top_logprobs":0,"top_p":0.98,"truncation":"disabled","usage":null,"user":null,"metadata":{}},"sequence_number":0}
+
+event: response.in_progress
+data: {"type":"response.in_progress","response":{"id":"fixture-id-4","object":"response","created_at":1782741546,"status":"in_progress","background":false,"completed_at":null,"error":null,"frequency_penalty":0,"incomplete_details":null,"instructions":"[redacted system instructions]","max_output_tokens":null,"max_tool_calls":null,"model":"gpt-5.5","moderation":null,"output":[],"parallel_tool_calls":true,"presence_penalty":0,"previous_response_id":null,"prompt_cache_key":"[fixture]","prompt_cache_retention":"[fixture]","reasoning":{"context":"[fixture]","effort":"[fixture]","mode":"standard","summary":"[fixture text]"},"safety_identifier":"[fixture]","service_tier":"auto","store":false,"temperature":1,"text":{"format":{"type":"text"},"verbosity":"medium"},"tool_choice":"auto","tool_usage":{"image_gen":{"input_tokens":0,"input_tokens_details":{"image_tokens":0,"text_tokens":0},"output_tokens":0,"output_tokens_details":{"image_tokens":0,"text_tokens":0},"total_tokens":0},"web_search":{"num_requests":0}},"tools":[],"top_logprobs":0,"top_p":0.98,"truncation":"disabled","usage":null,"user":null,"metadata":{}},"sequence_number":1}
+
+event: response.output_item.added
+data: {"type":"response.output_item.added","item":{"id":"fixture-id-5","type":"reasoning","content":[],"encrypted_content":"fixture-encrypted-reasoning","summary":[]},"output_index":0,"sequence_number":2}
+
+event: response.reasoning_summary_part.added
+data: {"type":"response.reasoning_summary_part.added","item_id":"fixture-id-5","output_index":0,"part":{"type":"summary_text","text":"[fixture text]"},"sequence_number":3,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":4,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":5,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":6,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":7,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":8,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":9,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":10,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":11,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":12,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":13,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":14,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":15,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":16,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":17,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":18,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":19,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":20,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":21,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":22,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":23,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":24,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":25,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":26,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":27,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":28,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":29,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":30,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":31,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":32,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":33,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":34,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":35,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":36,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":37,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":38,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":39,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":40,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":41,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":42,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":43,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":44,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":45,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":46,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":47,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":48,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":49,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":50,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":51,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":52,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":53,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":54,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":55,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":56,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":57,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":58,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":59,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":60,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":61,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":62,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":63,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":64,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":65,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":66,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":67,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":68,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":69,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":70,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":71,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":72,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":73,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":74,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":75,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":76,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":77,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":78,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":79,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":80,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":81,"summary_index":0}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":82,"summary_index":0}
+
+event: keepalive
+data: {"type":"keepalive","sequence_number":83}
+
+event: response.reasoning_summary_text.done
+data: {"type":"response.reasoning_summary_text.done","item_id":"fixture-id-5","output_index":0,"sequence_number":84,"summary_index":0,"text":"[fixture text]"}
+
+event: response.reasoning_summary_part.done
+data: {"type":"response.reasoning_summary_part.done","item_id":"fixture-id-5","output_index":0,"part":{"type":"summary_text","text":"[fixture text]"},"sequence_number":85,"summary_index":0}
+
+event: response.reasoning_summary_part.added
+data: {"type":"response.reasoning_summary_part.added","item_id":"fixture-id-5","output_index":0,"part":{"type":"summary_text","text":"[fixture text]"},"sequence_number":86,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":87,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":88,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":89,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":90,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":91,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":92,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":93,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":94,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":95,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":96,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":97,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":98,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":99,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":100,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":101,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":102,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":103,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":104,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":105,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":106,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":107,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":108,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":109,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":110,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":111,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":112,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":113,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":114,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":115,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":116,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":117,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":118,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":119,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":120,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":121,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":122,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":123,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":124,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":125,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":126,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":127,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":128,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":129,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":130,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":131,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":132,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":133,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":134,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":135,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":136,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":137,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":138,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":139,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":140,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":141,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":142,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":143,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":144,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":145,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":146,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":147,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":148,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":149,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":150,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":151,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":152,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":153,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":154,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":155,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":156,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":157,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":158,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":159,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":160,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":161,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":162,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":163,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":164,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":165,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":166,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":167,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":168,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":169,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":170,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":171,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":172,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":173,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":174,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":175,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":176,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":177,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":178,"summary_index":1}
+
+event: response.reasoning_summary_text.delta
+data: {"type":"response.reasoning_summary_text.delta","delta":"[fixture trace]","item_id":"fixture-id-5","obfuscation":"fixture-obfuscation","output_index":0,"sequence_number":179,"summary_index":1}
+
+event: keepalive
+data: {"type":"keepalive","sequence_number":180}
+
+event: response.reasoning_summary_text.done
+data: {"type":"response.reasoning_summary_text.done","item_id":"fixture-id-5","output_index":0,"sequence_number":181,"summary_index":1,"text":"[fixture text]"}
+
+event: response.reasoning_summary_part.done
+data: {"type":"response.reasoning_summary_part.done","item_id":"fixture-id-5","output_index":0,"part":{"type":"summary_text","text":"[fixture text]"},"sequence_number":182,"summary_index":1}
+
+event: response.output_item.done
+data: {"type":"response.output_item.done","item":{"id":"fixture-id-5","type":"reasoning","content":[],"encrypted_content":"fixture-encrypted-reasoning","summary":[{"type":"summary_text","text":"[fixture text]"},{"type":"summary_text","text":"[fixture text]"}]},"output_index":0,"sequence_number":183}
+
+event: response.output_item.added
+data: {"type":"response.output_item.added","item":{"id":"fixture-id-6","type":"message","status":"in_progress","content":[],"phase":"final_answer","role":"assistant"},"output_index":1,"sequence_number":184}
+
+event: response.content_part.added
+data: {"type":"response.content_part.added","content_index":0,"item_id":"fixture-id-6","output_index":1,"part":{"type":"output_text","annotations":[],"logprobs":[],"text":"[fixture text]"},"sequence_number":185}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":186}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":187}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":188}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":189}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":190}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":191}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":192}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":193}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":194}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":195}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":196}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":197}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":198}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":199}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":200}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":201}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":202}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":203}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":204}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":205}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":206}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":207}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":208}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":209}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":210}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":211}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":212}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":213}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":214}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":215}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":216}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":217}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":218}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":219}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":220}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":221}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":222}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":223}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":224}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":225}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":226}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":227}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":228}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":229}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":230}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":231}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":232}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":233}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":234}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":235}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":236}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":237}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":238}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":239}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":240}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":241}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":242}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":243}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":244}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":245}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":246}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":247}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":248}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":249}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":250}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":251}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":252}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":253}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":254}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":255}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":256}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":257}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":258}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":259}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":260}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":261}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":262}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":263}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":264}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":265}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":266}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":267}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":268}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":269}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":270}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":271}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":272}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":273}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":274}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":275}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":276}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":277}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":278}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":279}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":280}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":281}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":282}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":283}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":284}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":285}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":286}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":287}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":288}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":289}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":290}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":291}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":292}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":293}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":294}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":295}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":296}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":297}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":298}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":299}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":300}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":301}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":302}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":303}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":304}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":305}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":306}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":307}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":308}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":309}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":310}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":311}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":312}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":313}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":314}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":315}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":316}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":317}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":318}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":319}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":320}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":321}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":322}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":323}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":324}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":325}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":326}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":327}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":328}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":329}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":330}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":331}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":332}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":333}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":334}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":335}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":336}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":337}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":338}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":339}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":340}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":341}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":342}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":343}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":344}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":345}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":346}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":347}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":348}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":349}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":350}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":351}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":352}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":353}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":354}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":355}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":356}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":357}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":358}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":359}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":360}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":361}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":362}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":363}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":364}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":365}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":366}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":367}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":368}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":369}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":370}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":371}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":372}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":373}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":374}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":375}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":376}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":377}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":378}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":379}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":380}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":381}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":382}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":383}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":384}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":385}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":386}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":387}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":388}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":389}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":390}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":391}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":392}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":393}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":394}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":395}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":396}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":397}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":398}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":399}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":400}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":401}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":402}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":403}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":404}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":405}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":406}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":407}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":408}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":409}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":410}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":411}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":412}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":413}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":414}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":415}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":416}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":417}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":418}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":419}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":420}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":421}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":422}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":423}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":424}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":425}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":426}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":427}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":428}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":429}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":430}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":431}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":432}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":433}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":434}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":435}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":436}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":437}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":438}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":439}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":440}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":441}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":442}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":443}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":444}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":445}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":446}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":447}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":448}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":449}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":450}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":451}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":452}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":453}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":454}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":455}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":456}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":457}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":458}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":459}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":460}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":461}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":462}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":463}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":464}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":465}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":466}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":467}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":468}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":469}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":470}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":471}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":472}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":473}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":474}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":475}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":476}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":477}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":478}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":479}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":480}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":481}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":482}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":483}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":484}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":485}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":486}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":487}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":488}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":489}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":490}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":491}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":492}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":493}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":494}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":495}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":496}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":497}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":498}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":499}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":500}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":501}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":502}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":503}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":504}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":505}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":506}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":507}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":508}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":509}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":510}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":511}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":512}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":513}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":514}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":515}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":516}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":517}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":518}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":519}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":520}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":521}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":522}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":523}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":524}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":525}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":526}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":527}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":528}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":529}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":530}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":531}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":532}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":533}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":534}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":535}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":536}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","content_index":0,"delta":"答案是 21","item_id":"fixture-id-6","logprobs":[],"obfuscation":"fixture-obfuscation","output_index":1,"sequence_number":537}
+
+event: response.output_text.done
+data: {"type":"response.output_text.done","content_index":0,"item_id":"fixture-id-6","logprobs":[],"output_index":1,"sequence_number":538,"text":"[fixture text]"}
+
+event: response.content_part.done
+data: {"type":"response.content_part.done","content_index":0,"item_id":"fixture-id-6","output_index":1,"part":{"type":"output_text","annotations":[],"logprobs":[],"text":"[fixture text]"},"sequence_number":539}
+
+event: response.output_item.done
+data: {"type":"response.output_item.done","item":{"id":"fixture-id-6","type":"message","status":"completed","content":[{"type":"output_text","annotations":[],"logprobs":[],"text":"[fixture text]"}],"phase":"final_answer","role":"assistant"},"output_index":1,"sequence_number":540}
+
+event: response.completed
+data: {"type":"response.completed","response":{"id":"fixture-id-4","object":"response","created_at":1782741546,"status":"completed","background":false,"completed_at":1782741652,"error":null,"frequency_penalty":0,"incomplete_details":null,"instructions":"[redacted system instructions]","max_output_tokens":null,"max_tool_calls":null,"model":"gpt-5.5","moderation":null,"output":[],"parallel_tool_calls":true,"presence_penalty":0,"previous_response_id":null,"prompt_cache_key":"[fixture]","prompt_cache_retention":"[fixture]","reasoning":{"context":"[fixture]","effort":"[fixture]","mode":"standard","summary":"[fixture text]"},"safety_identifier":"[fixture]","service_tier":"default","store":false,"temperature":1,"text":{"format":{"type":"text"},"verbosity":"medium"},"tool_choice":"auto","tool_usage":{"image_gen":{"input_tokens":0,"input_tokens_details":{"image_tokens":0,"text_tokens":0},"output_tokens":0,"output_tokens_details":{"image_tokens":0,"text_tokens":0},"total_tokens":0},"web_search":{"num_requests":0}},"tools":[],"top_logprobs":0,"top_p":0.98,"truncation":"disabled","usage":{"input_tokens":5140,"input_tokens_details":{"cached_tokens":3840},"output_tokens":2947,"output_tokens_details":{"reasoning_tokens":2588},"total_tokens":8087},"user":null,"metadata":{}},"sequence_number":541}

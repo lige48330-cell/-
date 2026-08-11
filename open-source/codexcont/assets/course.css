@@ -1,0 +1,36 @@
+﻿:root {
+  --ink: #162235;
+  --muted: #56657a;
+  --paper: #f7f4ed;
+  --panel: #fffdf8;
+  --line: #d9d4ca;
+  --accent: #006d77;
+  --accent-soft: #def1ee;
+  --code: #12212b;
+  --code-ink: #e7f1ef;
+  --warn: #7b4b00;
+  --warn-soft: #fff0d4;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 18px/1.65 Georgia, 'Noto Serif SC', serif; }
+main { max-width: 900px; margin: 0 auto; padding: 48px 28px 80px; }
+header { border-bottom: 4px solid var(--accent); padding-bottom: 22px; margin-bottom: 34px; }
+h1, h2, h3 { line-height: 1.2; font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; }
+h1 { font-size: clamp(2rem, 5vw, 3.4rem); margin: 0; letter-spacing: -.03em; }
+h2 { margin-top: 2.4em; font-size: 1.55rem; }
+h3 { margin-top: 1.6em; font-size: 1.1rem; }
+.kicker, .meta { color: var(--muted); font: 600 .9rem/1.4 'Segoe UI', 'Microsoft YaHei', sans-serif; letter-spacing: .04em; }
+.card, .exercise, blockquote { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 20px 22px; margin: 20px 0; }
+.callout { background: var(--accent-soft); border-left: 5px solid var(--accent); padding: 14px 18px; margin: 22px 0; }
+.warning { background: var(--warn-soft); border-left-color: var(--warn); }
+code { font-family: ui-monospace, Consolas, monospace; font-size: .88em; }
+pre { background: var(--code); color: var(--code-ink); overflow-x: auto; border-radius: 10px; padding: 18px; line-height: 1.55; }
+pre code { font-size: .86rem; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: .94em; }
+th, td { text-align: left; vertical-align: top; padding: 10px; border-bottom: 1px solid var(--line); }
+th { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; }
+details { background: #eef4f3; border-radius: 8px; padding: 10px 14px; margin-top: 12px; }
+summary { cursor: pointer; font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; font-weight: 700; }
+a { color: var(--accent); }
+footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 20px; color: var(--muted); font-size: .9rem; }
+@media print { body { background: white; } main { max-width: none; padding: 20px; } .card, .exercise { break-inside: avoid; } }
