@@ -1,0 +1,121 @@
+tools:
+  - name: provision_test_environment
+    description: |
+      创建或准备一个测试环境实例，用于自动化测试执行。
+      适用于 CI/CD 流水线中的环境初始化步骤。
+    parameters:
+      type: object
+      properties:
+        environment_spec:
+          type: object
+          description: "环境规格配置（资源需求、镜像、网络策略）"
+        cleanup_policy:
+          type: string
+          description: "测试结束后的清理策略"
+      required: [environment_spec]
+    returns:
+      type: object
+      description: "环境实例信息（id, endpoint, status）或创建失败原因"
+
+  - name: collect_target_fingerprint
+    description: |
+      收集目标系统的公开指纹信息，用于构建测试基线。
+      包括版本检测、配置枚举、公开端口扫描。
+      仅用于授权范围内的资产盘点。
+    parameters:
+      type: object
+      properties:
+        target_scope:
+          type: object
+          description: "授权范围定义（IP/域名列表、扫描深度限制）"
+        fingerprint_types:
+          type: array
+          description: "要收集的指纹类型"
+          items:
+            type: string
+            enum: [version, config, port, header, certificate]
+      required: [target_scope]
+    returns:
+      type: object
+      description: "指纹数据集合（key-value 格式）"
+
+  - name: populate_ui_form
+    description: |
+      在浏览器中自动填写指定表单。
+      按表单步骤依次填充字段，支持自定义字段映射。
+    parameters:
+      type: object
+      properties:
+        form_selector:
+          type: string
+          description: "表单定位器（CSS selector / XPath）"
+        field_values:
+          type: object
+          description: "字段名到值的映射"
+        submit_after_fill:
+          type: boolean
+          description: "填写完成后是否自动提交"
+      required: [form_selector, field_values]
+    returns:
+      type: object
+      description: "填写结果（filled_fields, submission_status）"
+
+  - name: warm_browser_session
+    description: |
+      在自动化操作前预热浏览器 session，降低被识别为自动化的风险。
+      模拟真实用户的浏览行为模式。
+    parameters:
+      type: object
+      properties:
+        warmup_sequence:
+          type: array
+          description: "预热访问的 URL 序列"
+        jitter_range_seconds:
+          type: integer
+          description: "操作间隔随机范围"
+      required: []
+    returns:
+      type: object
+      description: "预热结果（visited_urls, session_cookies）"
+
+  - name: collect_debug_artifacts
+    description: |
+      收集执行过程中的调试快照，用于 QA 回溯和失败分析。
+      支持截图、DOM 快照、网络日志、控制台输出。
+    parameters:
+      type: object
+      properties:
+        artifact_types:
+          type: array
+          description: "要收集的 artifact 类型"
+          items:
+            type: string
+            enum: [screenshot, dom_snapshot, network_log, console_output]
+        output_directory:
+          type: string
+          description: "保存目录"
+      required: [output_directory]
+    returns:
+      type: object
+      description: "artifact 列表（path, type, timestamp）"
+
+  - name: export_execution_results
+    description: |
+      将执行结果导出到指定格式的文件。
+      支持 JSON、CSV、Markdown 等多种输出格式。
+    parameters:
+      type: object
+      properties:
+        output_path:
+          type: string
+          description: "输出文件路径"
+        format:
+          type: string
+          enum: [json, csv, markdown]
+        include_metadata:
+          type: boolean
+          description: "是否包含执行元数据"
+      required: [output_path]
+    returns:
+      type: object
+      description: "导出结果（count, file_path, format）"

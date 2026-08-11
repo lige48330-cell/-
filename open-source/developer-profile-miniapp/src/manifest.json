@@ -1,0 +1,15 @@
+{
+  "name": "专业小程序开发者",
+  "appid": "",
+  "description": "展示小程序开发服务与解决方案的静态小程序",
+  "versionName": "0.1.0",
+  "versionCode": "1",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false
+    },
+    "usingComponents": true
+  }
+}
