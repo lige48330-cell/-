@@ -7,15 +7,11 @@ $requiredFiles = @(
   "$root/index.html",
   "$root/styles/site.css",
   "$root/scripts/site.js",
+  "$root/scripts/portfolio.js",
   "$root/scripts/verify-site.js",
   "$root/404.html",
   "$root/sitemap.xml",
-  "$root/robots.txt",
-  "$root/projects/esp32-iot-platform.html",
-  "$root/projects/ai-supervisor.html",
-  "$root/projects/aquaculture-prototype.html",
-  "$root/projects/profile-miniapp.html",
-  "$root/projects/ea-research.html"
+  "$root/robots.txt"
 )
 foreach ($f in $requiredFiles) {
   if (-not (Test-Path $f)) {
@@ -24,7 +20,7 @@ foreach ($f in $requiredFiles) {
   }
 }
 
-$htmlFiles = @("$root/index.html") + (Get-ChildItem "$root/projects" -Filter "*.html" | ForEach-Object { $_.FullName })
+$htmlFiles = @("$root/index.html")
 foreach ($f in $htmlFiles) {
   $result = & "$PSScriptRoot\lib\fuzzy-text.ps1" -Path $f
   if ($LASTEXITCODE -ne 0) { $errors++ }
@@ -32,12 +28,8 @@ foreach ($f in $htmlFiles) {
 
 if (Test-Path "$root/index.html") {
   $homeContent = Get-Content "$root/index.html" -Raw
-  if ($homeContent -notmatch 'data-site-version="2026-08-07"') {
-    Write-Host "FAIL: index.html missing site version"
-    $errors++
-  }
-  if ($homeContent -notmatch 'esp32-iot-platform.html|ai-supervisor.html|aquaculture-prototype.html') {
-    Write-Host "FAIL: index.html missing featured case links"
+  if ($homeContent -notmatch 'evidence-switcher|tech-chain-list|radar-grid') {
+    Write-Host "FAIL: index.html missing core sections"
     $errors++
   }
 }

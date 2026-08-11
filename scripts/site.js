@@ -26,7 +26,7 @@
           }
         }
       },
-      { threshold: 0.12 }
+      { threshold: 0.1 }
     );
     for (const target of targets) observer.observe(target);
   } else {
