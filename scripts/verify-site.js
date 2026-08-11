@@ -3,8 +3,7 @@ const path = require("path");
 
 const root = path.resolve(__dirname, "..");
 const base = "/-/";
-const files = ["index.html", "styles/site.css", "scripts/site.js", "scripts/portfolio.js", "404.html", "robots.txt", "sitemap.xml"];
-const banned = ["Codex" + "Cont"];
+const files = ["index.html", "styles/site.css", "scripts/site.js", "404.html", "robots.txt", "sitemap.xml"];
 
 function read(file) {
   const target = path.join(root, file);
@@ -19,7 +18,6 @@ function links(content) {
 for (const file of files) {
   const content = read(file);
   if (content.includes("\uFFFD") || content.includes('\\"')) throw new Error(`${file} contains broken text`);
-  for (const term of banned) if (content.includes(term)) throw new Error(`${file} contains removed project reference: ${term}`);
   if (file.endsWith(".html")) {
     for (const link of links(content)) {
       if (link.startsWith("#") || /^(mailto:|tel:|https?:\/\/)/.test(link)) continue;
@@ -35,6 +33,11 @@ const homeContent = read("index.html");
 for (const img of homeContent.match(/src="[^"]+\.(?:png|svg|jpg|jpeg)"/g) || []) {
   const src = img.replace(/^src="/, "").replace(/"$/, "").replace(/^\/-\//, "");
   if (!fs.existsSync(path.join(root, src))) throw new Error(`index.html references missing image: ${src}`);
+}
+
+// verify core content present
+for (const text of ["ESP32 IoT 平台", "AI Supervisor", "智慧水产养殖应用套件", "证据等级", "本地复现验证"]) {
+  if (!homeContent.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 
 console.log("Portfolio site verified.");

@@ -7,7 +7,6 @@ $requiredFiles = @(
   "$root/index.html",
   "$root/styles/site.css",
   "$root/scripts/site.js",
-  "$root/scripts/portfolio.js",
   "$root/scripts/verify-site.js",
   "$root/404.html",
   "$root/sitemap.xml",
