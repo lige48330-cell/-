@@ -53,7 +53,7 @@ for (const text of ["AI Agent 工程 · 业务系统交付 · IoT", "让系统�
 const radarCount = (home.match(/<article\b[^>]*\bclass=["'][^"']*\bradar-card\b/g) || []).length;
 if (radarCount !== 17) throw new Error(`Expected 17 radar cards, found ${radarCount}`);
 if (!read("portfolio.css").includes(".capability-proof-grid")) throw new Error("portfolio.css is missing capability styles");
-if (!read("portfolio-premium.css").includes("--signal: #aaff47")) throw new Error("premium visual system is missing signal color");
+if (!read("portfolio-premium.css").includes("--signal: #107a5b")) throw new Error("premium visual system is missing signal color");
 if (!read("portfolio.js").includes("radarCards.length")) throw new Error("portfolio.js is missing radar count logic");
 for (const file of ["index.html", "projects/esp32-iot-platform.html", "projects/ai-supervisor.html", "projects/aquaculture-prototype.html"]) {
   const content = read(file);
