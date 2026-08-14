@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Lige 的 FDE / Forward Deployed Engineer 中文简历。" />
+    <title>Lige / FDE 简历</title>
+    <link rel="preload" href="fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="fde.css?v=20260814f" />
+    <style>
+      :root { --resume-ink: #17211d; --resume-muted: #5e6963; --resume-line: #d5dad4; --resume-accent: #1f4bff; --resume-warm: #b34b2a; }
+      body { min-height: 100vh; padding: 2rem 0; }
+      .resume-shell { width: min(1080px, calc(100% - 2rem)); margin: 0 auto; }
+      .resume-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem; color: var(--resume-muted); font: 700 0.68rem ui-monospace, monospace; }
+      .resume-toolbar a { color: var(--resume-accent); text-decoration: none; }
+      .resume-paper { display: grid; grid-template-columns: 0.32fr 0.68fr; min-height: 1414px; border: 1px solid var(--resume-line); background: #fff; box-shadow: 10px 10px 0 #e9edff; }
+      .resume-rail { padding: 2rem 1.5rem; border-right: 1px solid var(--resume-line); background: #f0f2ed; }
+      .resume-mark { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; margin-bottom: 2.2rem; color: #fff; background: var(--resume-ink); font: 800 0.72rem ui-monospace, monospace; }
+      .resume-rail h2 { margin: 2rem 0 0.75rem; color: var(--resume-accent); font: 800 0.62rem ui-monospace, monospace; }
+      .resume-rail p, .resume-rail li { color: var(--resume-muted); font-size: 0.72rem; line-height: 1.65; }
+      .resume-rail ul { padding: 0; margin: 0; list-style: none; }
+      .resume-rail li { padding: 0.42rem 0; border-bottom: 1px solid var(--resume-line); }
+      .resume-rail strong { display: block; color: var(--resume-ink); font-size: 0.75rem; }
+      .resume-main { padding: 2.3rem 2.6rem; }
+      .resume-kicker { margin: 0 0 0.75rem; color: var(--resume-accent); font: 800 0.68rem ui-monospace, monospace; }
+      .resume-main h1 { max-width: none; margin: 0; color: var(--resume-ink); font-size: clamp(3rem, 6vw, 5.6rem); line-height: 0.98; }
+      .resume-role { margin: 0.7rem 0 1.1rem; color: var(--resume-warm); font-weight: 800; }
+      .resume-intro { max-width: 45rem; padding-bottom: 1.2rem; margin: 0; color: var(--resume-muted); border-bottom: 1px solid var(--resume-line); font-size: 0.86rem; line-height: 1.75; }
+      .resume-section { padding-top: 1.45rem; }
+      .resume-section h2 { padding-bottom: 0.55rem; margin: 0 0 0.9rem; color: var(--resume-ink); border-bottom: 2px solid var(--resume-ink); font-size: 1.05rem; }
+      .resume-entry { padding: 0 0 1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--resume-line); }
+      .resume-entry:last-child { margin-bottom: 0; }
+      .resume-entry-head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+      .resume-entry h3 { margin: 0; color: var(--resume-ink); font-size: 1rem; }
+      .resume-entry-meta { color: var(--resume-warm); font: 700 0.62rem ui-monospace, monospace; white-space: nowrap; }
+      .resume-entry p { margin: 0.45rem 0 0; color: var(--resume-muted); font-size: 0.76rem; line-height: 1.65; }
+      .resume-entry ul { padding-left: 1rem; margin: 0.55rem 0 0; }
+      .resume-entry li { padding: 0.15rem 0; color: var(--resume-muted); font-size: 0.74rem; line-height: 1.55; }
+      .resume-entry li::marker { color: var(--resume-accent); }
+      .resume-proof { padding: 0.7rem 0.8rem; margin-top: 0.7rem; color: var(--resume-muted); border-left: 2px solid var(--resume-accent); background: #f5f6ff; font-size: 0.7rem; line-height: 1.6; }
+      .resume-proof strong { color: var(--resume-accent); }
+      .resume-footer { padding-top: 1rem; margin-top: 1.2rem; color: var(--resume-muted); border-top: 1px solid var(--resume-line); font-size: 0.68rem; line-height: 1.55; }
+      @media (max-width: 760px) {
+        body { padding: 0.75rem 0; }
+        .resume-paper { grid-template-columns: 1fr; min-height: 0; box-shadow: 5px 5px 0 #e9edff; }
+        .resume-rail { padding: 1.25rem; border-right: 0; border-bottom: 1px solid var(--resume-line); }
+        .resume-mark { margin-bottom: 1rem; }
+        .resume-rail h2 { margin-top: 1.2rem; }
+        .resume-main { padding: 1.5rem 1.25rem; }
+        .resume-entry-head { display: block; }
+        .resume-entry-meta { display: block; margin-top: 0.25rem; }
+      }
+      @media print {
+        @page { size: A4; margin: 10mm; }
+        body { padding: 0; background: #fff; }
+        .resume-toolbar { display: none; }
+        .resume-shell { width: 100%; }
+        .resume-paper { min-height: 0; border: 0; box-shadow: none; }
+        .resume-rail { padding: 1.3rem 1rem; }
+        .resume-main { padding: 1.5rem 1.8rem; }
+        .resume-main h1 { font-size: 3.7rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume-shell">
+      <div class="resume-toolbar"><span>FDE / RESUME · FACT-BOUND EDITION</span><a href="index.html">返回作品集 ↗</a></div>
+      <article class="resume-paper">
+        <aside class="resume-rail">
+          <div class="resume-mark">FDE</div>
+          <h2>CONTACT</h2>
+          <p><strong>GitHub</strong><br /><a href="https://github.com/lige48330-cell/-" target="_blank" rel="noreferrer">lige48330-cell/-</a></p>
+          <p><strong>Portfolio</strong><br /><a href="index.html">lige48330-cell.github.io/-</a></p>
+
+          <h2>CORE SIGNALS</h2>
+          <ul>
+            <li><strong>现场问题建模</strong>角色、流程、状态、异常与验收</li>
+            <li><strong>方案与原型</strong>流程图、交互、低代码、Vue 原型</li>
+            <li><strong>全栈与 IoT</strong>ERP、uni-app、API、ESP32 协同</li>
+            <li><strong>Agent 工程</strong>上下文、工具语义、人工接管、复盘</li>
+            <li><strong>桌面工程</strong>Tauri、Rust、React、运行态与配置</li>
+          </ul>
+
+          <h2>TECHNOLOGY</h2>
+          <p>TypeScript · React · Vue · Vite · Node.js · Tauri 2 · Rust · Go · .NET · uni-app · ESP32 · MQTT · HTTP · ECharts · Prisma</p>
+
+          <h2>BOUNDARY</h2>
+          <p>公司项目仅展示 AI 辅助脱敏截图、职责范围和方法。源码、配置、客户信息、账号、密码、API Key 与真实业务数据不公开。</p>
+        </aside>
+
+        <main class="resume-main">
+          <p class="resume-kicker">FORWARD DEPLOYED ENGINEER / SYSTEM DELIVERY</p>
+          <h1>Lige</h1>
+          <p class="resume-role">FDE / AI 系统交付工程师</p>
+          <p class="resume-intro">从业务现场出发，把复杂问题推进成可运行、可验证、可交接的系统。能够在需求分析、原型设计、全栈实现、设备联调、Agent 工程和团队交接之间建立可追溯的交付链。</p>
+
+          <section class="resume-section">
+            <h2>SELECTED DELIVERY</h2>
+            <article class="resume-entry">
+              <div class="resume-entry-head"><h3>养殖渔业 ERP 与 IoT 设备管理</h3><span class="resume-entry-meta">公司项目 · 脱敏案例</span></div>
+              <ul>
+                <li>将基础资料、采购、库存、销售、养殖和设备流程拆成对象、字段、状态、表单与关键单据核验路径。</li>
+                <li>用流程图和交互原型对齐角色、异常、管理动作与验收条件，再进入低代码页面、流程配置和闭环验证。</li>
+                <li>参与消毒除臭设备监管大屏和管理小程序，负责指标、设备状态、事件与预警呈现，以及前端和云端接口协作。</li>
+              </ul>
+            </article>
+            <article class="resume-entry">
+              <div class="resume-entry-head"><h3>Cockpit Tools 私有化 AI IDE 桌面工作台</h3><span class="resume-entry-meta">独立维护 · 二次开发</span></div>
+              <ul>
+                <li>维护 Tauri 2 + Rust + React 19 + TypeScript 私有分支，覆盖本地 API 服务、供应商配置、Live Config 和运行状态。</li>
+                <li>收敛私有化边界，修复 Responses / Chat Completions 切换时 gateway 生命周期、旧运行态和 API Key 账号变化问题。</li>
+                <li>通过 typecheck、API Key scope 回归测试、静态断言和 diff 检查验证；Rust 测试因环境缺少 cargo / rustc 未宣称通过。</li>
+              </ul>
+            </article>
+            <article class="resume-entry">
+              <div class="resume-entry-head"><h3>FDE 作品集与工程表达系统</h3><span class="resume-entry-meta">个人项目</span></div>
+              <ul>
+                <li>将简历、作品集和 GitHub 组织成三层证据链，并按公开工程、公司脱敏、私有改造和研究实验分层。</li>
+                <li>把项目经历统一为动作、系统能力、业务价值、结果证据和个人边界，形成可编辑 HTML 简历与案例页面。</li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="resume-section">
+            <h2>WORKING METHOD</h2>
+            <p class="resume-proof"><strong>现场理解 → 问题建模 → 原型验证 → 系统集成 → 联调验收 → 团队交接</strong><br />AI 用于加速资料整理、代码理解、任务拆分和验证，不替代业务判断、工程责任和人工接管。</p>
+          </section>
+
+          <section class="resume-section">
+            <h2>ROLE FIT</h2>
+            <p class="resume-intro">适合 FDE、AI 系统交付、业务系统实施、全栈工程、开发者工具和 IoT 应用协同方向。教育经历、城市、邮箱和工作时间线可在投递前补入事实母稿，不以占位信息冒充完整经历。</p>
+          </section>
+
+          <p class="resume-footer">证据入口：作品集中的 ERP、IoT、小程序、Agent 工程和项目索引；公开工程提供源码或测试，公司的真实项目仅提供脱敏案例与面试说明。</p>
+        </main>
+      </article>
+    </div>
+  </body>
+</html>

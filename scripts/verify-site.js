@@ -5,6 +5,7 @@ const root = path.resolve(__dirname, "..");
 const base = "/-/";
 const files = [
   "index.html",
+  "resume.html",
   "projects/esp32-iot-platform.html",
   "projects/ai-supervisor.html",
   "projects/aquaculture-prototype.html",
@@ -46,13 +47,14 @@ for (const file of files) {
 }
 
 const home = read("index.html");
-for (const text of ["AI Agent 工程 · 业务系统交付 · IoT", "让系统真正交得出去。", "核心交付证据", "证据等级", "能力画像", "方案能力", "团队协作", "项目地图", "本地 AI 工具可靠性实验", "有证据等级的工程记录"]) {
+for (const text of ["FDE / 现场交付工程师", "把现场问题", "核心交付证据", "证据边界", "能力画像", "方案能力", "团队协作", "项目地图", "本地 AI 工具可靠性实验", "工程索引：公开、脱敏、私有和研究分层", "resume.html"]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 
 const radarCount = (home.match(/<article\b[^>]*\bclass=["'][^"']*\bradar-card\b/g) || []).length;
 if (radarCount !== 17) throw new Error(`Expected 17 radar cards, found ${radarCount}`);
 if (!read("portfolio.css").includes(".capability-proof-grid")) throw new Error("portfolio.css is missing capability styles");
+if (!read("fde.css").includes("--fde-accent: #1f4bff")) throw new Error("fde.css is missing FDE visual system");
 if (!read("portfolio-premium.css").includes("--signal: #107a5b")) throw new Error("premium visual system is missing signal color");
 if (!home.includes("tech-chain-signal")) throw new Error("Homepage is missing the tech-chain signal SVG");
 if (!read("portfolio-premium.css").includes("tech-chain-pulse")) throw new Error("premium visual system is missing tech-chain pulse");
