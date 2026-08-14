@@ -47,6 +47,8 @@ const tags = document.querySelector("#project-tags");
 const link = document.querySelector("#project-link");
 const tabs = document.querySelectorAll(".evidence-tab");
 const evidenceStage = document.querySelector(".evidence-stage");
+const techChain = document.querySelector(".tech-chain");
+const techChainSignal = document.querySelector(".tech-chain-signal");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function selectProject(key) {
@@ -166,6 +168,17 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
   }, { rootMargin: "0px 0px -8%", threshold: 0.08 });
 
   revealTargets.forEach((element) => revealObserver.observe(element));
+}
+
+if (techChainSignal && reduceMotion) {
+  techChainSignal.classList.add("is-static");
+} else if (techChain && techChainSignal && "IntersectionObserver" in window) {
+  const techChainObserver = new IntersectionObserver((entries, observer) => {
+    if (!entries.some((entry) => entry.isIntersecting)) return;
+    techChainSignal.classList.add("is-live");
+    observer.disconnect();
+  }, { rootMargin: "0px 0px -12%", threshold: 0.1 });
+  techChainObserver.observe(techChain);
 }
 
 let progressFrame = 0;
