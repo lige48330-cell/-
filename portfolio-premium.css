@@ -1,4 +1,15 @@
 /* Premium engineering portfolio visual system. Loaded last on purpose. */
+
+/* Self-hosted Inter (latin, variable). Same-origin as the site, so it does not
+   depend on any third-party font CDN; Chinese text still falls back to PingFang / YaHei. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("fonts/inter-latin-var.woff2") format("woff2");
+}
+
 :root {
   color-scheme: light;
   --page: #f3f6f3;
