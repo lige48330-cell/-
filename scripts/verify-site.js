@@ -12,7 +12,7 @@ function read(file) {
 }
 
 function links(content) {
-  return [...content.matchAll(/\b(?:href|src)=["']([^"']+)["']/g)].map((match) => match[1]);
+  return [...content.matchAll(/\b(?:href|src)=["']([^"']+)["']/g)].map((m) => m[1]);
 }
 
 for (const file of files) {
@@ -28,15 +28,13 @@ for (const file of files) {
   }
 }
 
-// verify all images referenced in index.html exist
 const homeContent = read("index.html");
 for (const img of homeContent.match(/src="[^"]+\.(?:png|svg|jpg|jpeg)"/g) || []) {
   const src = img.replace(/^src="/, "").replace(/"$/, "").replace(/^\/-\//, "");
   if (!fs.existsSync(path.join(root, src))) throw new Error(`index.html references missing image: ${src}`);
 }
 
-// verify core content present
-for (const text of ["ESP32 IoT 平台", "AI Supervisor", "智慧水产养殖应用套件", "证据等级", "本地复现验证"]) {
+for (const text of ["CodexCont 流式中间件", "Code Control Stack", "Stable-First", "六段技术链", "项目实证", "六项能力"]) {
   if (!homeContent.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 

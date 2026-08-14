@@ -3,196 +3,486 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="展示原创的物联网平台、AI 工程工具与全栈业务原型。" />
-    <title>业务流程数字化作品集 | IoT 与 AI 工程</title>
+    <meta name="description" content="独立开发者作品集：把业务问题、IoT 设备与 AI 工程落成可验证的系统。展示 CodexCont、Code Control Stack 与 Stable-First 工作流等项目证据。" />
+    <title>系统交付作品集 | 业务问题 × IoT × AI 工程</title>
     <link rel="canonical" href="https://lige48330-cell.github.io/-/" />
-    <meta property="og:title" content="业务流程数字化作品集" />
-    <meta property="og:description" content="把业务流程、物联网设备与 AI 工程实践，落成可验证的软件系统。" />
+    <meta property="og:title" content="系统交付作品集 | 业务问题 × IoT × AI 工程" />
+    <meta property="og:description" content="把业务问题、IoT 设备与 AI 工程实践，落成可验证的软件系统与工程方法。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lige48330-cell.github.io/-/" />
-    <meta property="og:image" content="https://lige48330-cell.github.io/-/images/esp32-miniapp.png" />
+    <meta property="og:image" content="https://lige48330-cell.github.io/-/images/codexcont-flow.svg" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="/-/favicon.ico" />
     <link rel="stylesheet" href="/-/styles/site.css" />
     <script src="/-/scripts/site.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#projects">跳到项目案例</a>
+    <a class="skip-link" href="#main">跳到正文</a>
     <header class="site-header">
       <nav class="nav-shell" aria-label="主导航">
-        <a class="brand" href="#home" aria-label="返回作品集首页">
+        <a class="brand" href="#top" aria-label="返回作品集首页">
           <span class="brand-mark">SYS</span>
           <span>
-            <strong>业务流程数字化作品集</strong>
-            <small>IoT / AI / 全栈原型</small>
+            <strong>系统交付作品集</strong>
+            <small>业务问题 × IoT × AI 工程</small>
           </span>
         </a>
         <div class="nav-links">
-          <a href="#capabilities">能力</a>
-          <a href="#projects">项目</a>
-          <a href="#evidence">边界</a>
+          <a href="#chain">技术链</a>
+          <a href="#capability">能力</a>
+          <a href="#cases">案例</a>
+          <a href="#method">方法</a>
+          <a href="#radar">档案</a>
+          <a href="#learn">沉淀</a>
           <a href="#contact">联系</a>
         </div>
-        <a class="nav-cta" href="#projects">查看证据</a>
+        <a class="nav-cta" href="#cases">查看证据</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero section-wrap" aria-labelledby="hero-title">
+    <main id="main">
+      <section id="top" class="hero section-wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Original work portfolio</p>
-          <h1 id="hero-title">把业务流程、物联网设备与 AI 工程实践，落成可验证的软件系统。</h1>
-          <p class="hero-lede">这里仅展示原创项目。每个案例都标明当前证据与边界，不把原型、示意图或推进中的工作包装成已上线产品。</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">查看原创项目</a>
-            <a class="button button-quiet" href="#evidence">查看证据规则</a>
-          </div>
-          <ul class="proof-row" aria-label="项目范围">
-            <li><strong>ESP32 IoT 平台</strong><span>三端监管，IoT 全栈</span></li>
-            <li><strong>AI Supervisor</strong><span>AI 交付质量门禁</span></li>
-            <li><strong>智慧水产养殖</strong><span>可运行全栈原型</span></li>
+          <p class="eyebrow">INDEPENDENT PORTFOLIO</p>
+          <h1 id="hero-title">把业务问题、<br />IoT 设备与 AI 工程<br />落成可验证的系统</h1>
+          <p class="hero-lede">以独立开发者身份，把现场业务、物联网设备与 AI 工程实践，交付成可运行、可验证、可复盘的系统能力与工程方法。</p>
+          <p class="hero-summary"><strong>30 秒能力摘要</strong> · 独立开源项目 + AI 增强交付：问题定义 → 领域建模 → 全栈实现 → 协议与设备协同 → 工程验证。所有展示均自带证据来源与职责边界。</p>
+          <ul class="hero-metrics" aria-label="作品集关键指标">
+            <li><strong>3</strong><span>主案例</span></li>
+            <li><strong>6</strong><span>能力维度</span></li>
+            <li><strong>6</strong><span>开源档案</span></li>
           </ul>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#cases">浏览主案例</a>
+            <a class="button button-quiet" href="#chain">60 秒看技术链</a>
+          </div>
         </div>
 
         <div class="project-control-room" aria-label="项目证据控制台">
+          <div class="atlas-bg" aria-hidden="true"></div>
           <div class="control-heading">
             <div>
               <p class="eyebrow">SELECTED WORKS</p>
               <h2>项目实证</h2>
             </div>
-            <p>点击切换案例</p>
+            <p class="control-hint">← → 切换 / 点击直达</p>
           </div>
-          <div class="evidence-switcher" role="tablist" aria-label="选择项目案例">
-            <button class="evidence-tab is-active" type="button" role="tab" aria-selected="true" data-project="esp32">
-              <span>01</span><strong>ESP32 IoT 平台</strong><small>IoT 全栈</small>
+          <div class="evidence-switcher" role="tablist" aria-label="选择主案例">
+            <button class="evidence-tab is-active" type="button" role="tab" aria-selected="true" data-project="codexcont">
+              <span>01</span><strong>CodexCont</strong><small>流式中间件</small>
             </button>
-            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="supervisor">
-              <span>02</span><strong>AI Supervisor</strong><small>AI 工程</small>
+            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="stack">
+              <span>02</span><strong>Control Stack</strong><small>工程方法</small>
             </button>
-            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="aquaculture">
-              <span>03</span><strong>智慧水产养殖</strong><small>全栈原型</small>
+            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="stablefirst">
+              <span>03</span><strong>Stable-First</strong><small>工作流</small>
             </button>
           </div>
           <div class="evidence-stage" role="tabpanel" aria-live="polite">
             <figure>
-              <img id="project-image" src="/-/images/esp32-miniapp.png" alt="ESP32 IoT 平台小程序界面" />
-              <figcaption id="project-caption">ESP32 设备、云平台与小程序协同的 IoT 监管界面。</figcaption>
+              <img id="project-image" src="/-/images/codexcont-flow.svg" alt="CodexCont 流式中间件架构示意图" />
+              <figcaption id="project-caption">CodexCont：客户端与 OpenAI Codex 上游之间的流式转发中间件。</figcaption>
             </figure>
             <div class="evidence-detail">
-              <p class="detail-kicker" id="project-type">IoT / .NET 8 / uni-app</p>
-              <h3 id="project-title">ESP32 IoT 平台</h3>
-              <p id="project-summary">面向智能消毒除臭设备的三端监管平台：ESP32 固件、自研 MQTT Broker、.NET 8 云平台与微信小程序。</p>
+              <p class="detail-kicker" id="project-type">PRODUCT / AI 中间件</p>
+              <h3 id="project-title">CodexCont 流式中间件</h3>
+              <p id="project-summary">Python / Starlette / SSE 实现的流式转发层，负责客户端与上游 Codex 之间的协议适配与状态透传。</p>
               <ul id="project-tags" class="tag-list">
-                <li>ESP32 固件</li><li>.NET 8</li><li>MQTT</li><li>uni-app</li>
+                <li>Python</li><li>Starlette</li><li>SSE</li><li>离线测试全通</li>
               </ul>
+              <a id="project-link" class="text-link" href="#case-codexcont">查看此案例 →</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="capabilities" class="section-wrap section-block fade-up" aria-labelledby="capabilities-title">
-        <div class="section-heading">
+      <section class="section-wrap value-proposition" aria-label="价值主张">
+        <div class="value-lead">
+          <p class="eyebrow">WHAT I SOLVE</p>
+          <h2>我解决的不是单点技术，<br />而是"问题 → 系统 → 验证"的完整闭环。</h2>
+        </div>
+        <div class="value-cards">
+          <article>
+            <p class="learning-kicker">01 · 我解决</p>
+            <h3>可验证的业务系统</h3>
+            <p>把模糊的现场需求整理为领域模型、状态机与可测试的闭环，不只产出页面，而是产出可复核的交付物。</p>
+          </article>
+          <article>
+            <p class="learning-kicker">02 · 方法</p>
+            <h3>AI 增强的工程链</h3>
+            <p>把探索、设计、实现、审查与复盘固化为闸门化工作流，让每次交付都有规范对照、证据与复盘记录。</p>
+          </article>
+          <article>
+            <p class="learning-kicker">03 · 最终价值</p>
+            <h3>可复现的工程资产</h3>
+            <p>项目、方法、工具与文档共同沉淀为可持续改进的资产库，任何能力都可以回到证据来源核验。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="chain" class="section-wrap section-block section-block-alt tech-chain" aria-labelledby="chain-title">
+        <div class="section-heading tech-chain-heading">
           <div>
-            <p class="eyebrow">HOW THE SYSTEMS CONNECT</p>
-            <h2 id="capabilities-title">从问题到可验证交付</h2>
+            <p class="eyebrow">HOW THE SYTEMS CONNECT</p>
+            <h2 id="chain-title">一条六段技术链，从业务问题到运营验证</h2>
           </div>
-          <p>四个能力方向贯穿项目始终：把现场操作变成模块、把系统连成闭环、用规则把交付边界写清楚。</p>
+          <p>这是一张能力关系图，不代表所有系统运行在同一环境。每个节点都可跳转到对应的公开证据。</p>
         </div>
 
-        <ol class="capability-path">
-          <li><span>01</span><div><h3>业务建模</h3><p>把现场操作整理为模块、字段、状态、权限和验证规则。</p></div></li>
-          <li><span>02</span><div><h3>全栈原型</h3><p>把前端、服务端、数据模型和测试组织成可运行的闭环。</p></div></li>
-          <li><span>03</span><div><h3>IoT 联调</h3><p>衔接设备通信、云端管理与用户侧小程序。</p></div></li>
-          <li><span>04</span><div><h3>AI 工程</h3><p>将 spec、plan、review 与质量门禁纳入协作流程。</p></div></li>
+        <ol class="tech-chain-list">
+          <li><a class="tech-chain-node" href="#cases"><span>01</span><strong>业务问题与约束</strong><small>现场角色 · 流程 · 异常边界</small><em>问题 · 案例定位</em></a></li>
+          <li><a class="tech-chain-node" href="#case-codexcont"><span>02</span><strong>领域建模与规则</strong><small>对象 · 状态 · 接口契约</small><em>CodexCont · 契约</em></a></li>
+          <li><a class="tech-chain-node" href="#case-stablefirst"><span>03</span><strong>工程实现与验证</strong><small>模块 · 测试 · 质量闸门</small><em>工作流 · 验证</em></a></li>
+          <li><a class="tech-chain-node" href="#case-stack"><span>04</span><strong>协议与服务协同</strong><small>API · SSE · 消息流</small><em>中间件 · 转发</em></a></li>
+          <li><a class="tech-chain-node" href="#radar"><span>05</span><strong>设备与现场反馈</strong><small>IoT 原型 · 状态事件</small><em>原型 · 设备边界</em></a></li>
+          <li><a class="tech-chain-node" href="#learn"><span>06</span><strong>复盘沉淀与闭环</strong><small>对照实验 · 复盘 · 交接</small><em>方法 · 能力沉淀</em></a></li>
+        </ol>
+
+        <aside class="tech-enhancer" aria-label="工程增强层">
+          <div>
+            <p class="learning-kicker">ENGINEERING ENABLEMENT</p>
+            <h3>AI 增强自定义的方法链，而不是替换业务主链。</h3>
+          </div>
+          <p>工作流、闸门、技能路由与证据纪律贯穿探索、实现、审查和复盘的每个阶段，产出始终回到可复核的工件。</p>
+          <a class="text-link" href="#method">查看工程方法 →</a>
+        </aside>
+      </section>
+
+      <section id="capability" class="section-wrap section-block" aria-labelledby="capability-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CAPABILITY PORTRAIT</p>
+            <h2 id="capability-title">六项能力，每项都有证据来源</h2>
+          </div>
+          <p>能力不是口号，每张卡都带有公开的证据来源与核实方式。</p>
+        </div>
+
+        <ol class="capability-grid">
+          <li class="capability-card">
+            <span>01</span>
+            <p class="learning-type">全栈原型</p>
+            <h3>从页面到数据链路的可运行闭环</h3>
+            <p>覆盖前端、服务端、数据模型与测试，交付可本地运行、可验证问题的全栈原型。</p>
+            <p class="card-proof"><strong>证据来源</strong> · 数字水产原型 · 工业监控原型</p>
+          </li>
+          <li class="capability-card">
+            <span>02</span>
+            <p class="learning-type">流式中间件</p>
+            <h3>协议适配与状态透传</h3>
+            <p>用 Python / Starlette 构建 SSE 流式转发层，处理客户端与上游之间的契约与状态。</p>
+            <p class="card-proof"><strong>证据来源</strong> · CodexCont 离线测试 · 社区验证</p>
+          </li>
+          <li class="capability-card">
+            <span>03</span>
+            <p class="learning-type">工程方法</p>
+            <h3>控制堆栈与门禁工作流</h3>
+            <p>把规范、模板、闸门与复盘固化为可复用方法，用对照实验量化工程改进。</p>
+            <p class="card-proof"><strong>证据来源</strong> · Code Control Stack · Stable-First</p>
+          </li>
+          <li class="capability-card">
+            <span>04</span>
+            <p class="learning-type">AI 工程</p>
+            <h3>让 AI 结论回到证据</h3>
+            <p>上下文注入、技能路由、人工确认点与验收标准，让 AI 输出保留来源与职责边界。</p>
+            <p class="card-proof"><strong>证据来源</strong> · Stable-First 闸门 · 审查清单</p>
+          </li>
+          <li class="capability-card">
+            <span>05</span>
+            <p class="learning-type">复杂任务编排</p>
+            <h3>独立与协作的边界管理</h3>
+            <p>在独立交付与多端协同之间划清职责，明确交互、协议与设备反馈的归属。</p>
+            <p class="card-proof"><strong>证据来源</strong> · 六段技术链 · 项目边界清单</p>
+          </li>
+          <li class="capability-card">
+            <span>06</span>
+            <p class="learning-type">研究记录</p>
+            <h3>把实验结论留在可复核的记录里</h3>
+            <p>以日志、复现条件与对照结论判断结果，不以"看起来能用"代替验证。</p>
+            <p class="card-proof"><strong>证据来源</strong> · 对照实验记录 · 复盘文档</p>
+          </li>
         </ol>
       </section>
 
-      <section id="projects" class="section-wrap section-block fade-up" aria-labelledby="projects-title">
+      <section id="cases" class="section-wrap section-block" aria-labelledby="cases-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">01 / PROJECT CASES</p>
-            <h2 id="projects-title">项目不是标题，是责任边界</h2>
+            <p class="eyebrow">MAIN CASES</p>
+            <h2 id="cases-title">三个主案例：方法、中间件与工作流</h2>
           </div>
-          <p>每个案例聚焦实际参与的工作、可展示的交付证据，以及诚实标注的证据等级。</p>
+          <p>全部为独立开源项目，注明我负责的工作与系统协同的范围，不夸大完成度。</p>
         </div>
 
-        <article class="case-card">
-          <div class="case-visual"><img src="/-/images/esp32-miniapp.png" alt="ESP32 IoT 平台小程序界面" /></div>
+        <article id="case-codexcont" class="case-card">
+          <div class="case-visual"><img src="/-/images/codexcont-flow.svg" alt="CodexCont 流式中间件架构示意图" /></div>
           <div class="case-content">
-            <p class="case-index">CASE 01 · IoT / .NET 8 / uni-app</p>
-            <h3>ESP32 IoT 平台</h3>
-            <p class="case-lede">面向智能消毒除臭设备的三端监管平台，覆盖设备固件、云平台与微信小程序。</p>
+            <p class="case-index">CASE 01 · PRODUCT / AI 中间件</p>
+            <h3>CodexCont 流式中间件</h3>
+            <p class="case-lede">面向 Codex 生态的流式转发层：Python / Starlette 实现，负责客户端与 OpenAI Codex 上游之间的协议适配与状态透传。</p>
             <div class="case-grid">
-              <div><h4>01 · 固件与设备</h4><p>PlatformIO / Arduino 框架，含自动与手动模式、串口配置、NVS 存储与 MQTT 上报。</p></div>
-              <div><h4>02 · 云平台</h4><p>.NET 8 + EF Core Sqlite，JWT 认证，四角色权限，工单报修，报表与自研 MQTT Broker。</p></div>
-              <div><h4>03 · 小程序</h4><p>uni-app 多角色入口（监管 / 管理 / 安装 / 养殖），Vue 3 + Pinia 状态管理。</p></div>
-              <div><h4>04 · 证据</h4><p>后端隔离构建 0 警告 0 错误；数据库迁移脚本 V1-V17 完整；部署文档齐全。设备端到端联调进行中。</p></div>
+              <div><h4>01 · 问题</h4><p>客户端需要稳定的流式接口契约，与不同上游之间需要统一适配与状态处理。</p></div>
+              <div><h4>02 · 我负责</h4><p><strong>我负责：</strong>中间件设计、SSE 流式转发、协议适配、超时与状态处理，离线测试与验证。</p></div>
+              <div><h4>03 · 技术</h4><p><strong>技术栈：</strong>Python / Starlette / SSE。流式缓存、超时控制与客户端状态透传。</p></div>
+              <div><h4>04 · 证据</h4><p><strong>证据：</strong>离线测试全通，社区验证可用。设计图示为方法示意，非运行截图。</p></div>
             </div>
-            <p class="case-learning"><strong>证据等级：推进中</strong> · 云端能力已验证，设备联调待完成。</p>
-            <ul class="tag-list"><li>ESP32 固件</li><li>.NET 8</li><li>MQTT Broker</li><li>uni-app</li></ul>
+            <p class="case-learning"><strong>能力沉淀</strong> · 用契约与状态处理把一次流式转发做成可验证的工程交付。</p>
+            <ul class="tag-list"><li>Python</li><li>Starlette</li><li>SSE</li><li>协议适配</li><li>离线测试全通</li></ul>
           </div>
         </article>
 
-        <article class="case-card case-card-reverse">
-          <div class="case-visual"><img src="/-/images/agent-workflow.svg" alt="AI Supervisor 工作流示意图" /></div>
+        <article id="case-stack" class="case-card case-card-reverse">
+          <div class="case-visual"><img src="/-/images/code-control-stack.svg" alt="Code Control Stack 分层控制架构示意图" /></div>
           <div class="case-content">
-            <p class="case-index">CASE 02 · Python / CLI / Quality Gate</p>
-            <h3>AI Supervisor</h3>
-            <p class="case-lede">一个把 AI Agent 输出与设计规范、实施计划对照审查的命令行工具实验。</p>
+            <p class="case-index">CASE 02 · METHOD / 工程方法</p>
+            <h3>Code Control Stack 分层控制栈</h3>
+            <p class="case-lede">把规则、模板、闸门、Agent 与工件组织为分层控制架构，用工程语言约束 AI 协作交付过程。</p>
             <div class="case-grid">
-              <div><h4>01 · Review</h4><p>对照规范与计划输出人工可读的审查报告。</p></div>
-              <div><h4>02 · Guard</h4><p>将审查结果作为 CI 风格门禁。</p></div>
-              <div><h4>03 · Hook 与 Doctor</h4><p>提供工具链接入与监督就绪度诊断，配套 MCP server。</p></div>
-              <div><h4>04 · 证据</h4><p>pytest 运行 93 项测试，全部通过。CLI 四命令（review / guard / hook / doctor）可用于监督流程。</p></div>
+              <div><h4>01 · 问题</h4><p>AI 协作交付缺少可强制的规则层级，输出质量依赖临时检查而非系统纪律。</p></div>
+              <div><h4>02 · 我负责</h4><p><strong>我负责：</strong>分层模型设计、模板与闸门定义、对照实验、方法沉淀与文档化。</p></div>
+              <div><h4>03 · 技术</h4><p><strong>技术栈：</strong>YAML 规则 / Markdown 模板 / 实验对照方法。</p></div>
+              <div><h4>04 · 证据</h4><p><strong>证据：</strong>四组对照实验给出量化结论，方法与规则均可复现。</p></div>
             </div>
-            <p class="case-learning"><strong>证据等级：工具化实验</strong> · 证明工具化思路可行，不承诺全自动监督。</p>
-            <ul class="tag-list"><li>Python CLI</li><li>Spec / Plan</li><li>MCP Server</li><li>pytest 93</li></ul>
+            <p class="case-learning"><strong>能力沉淀</strong> · 用分层与闸门把"AI 协作质量"变成可衡量、可改进的工程问题。</p>
+            <ul class="tag-list"><li>YAML</li><li>Markdown</li><li>对照实验</li><li>分层控制</li><li>可复现</li></ul>
           </div>
         </article>
 
-        <article class="case-card">
-          <div class="case-visual"><img src="/-/images/aquaculture-prototype-flow.svg" alt="水产养殖应用架构示意图" /></div>
+        <article id="case-stablefirst" class="case-card">
+          <div class="case-visual"><img src="/-/images/stable-first-workflow.svg" alt="Stable-First 工作流六阶段闸门示意图" /></div>
           <div class="case-content">
-            <p class="case-index">CASE 03 · Vue / uni-app / Express / Prisma</p>
-            <h3>智慧水产养殖应用套件</h3>
-            <p class="case-lede">由 H5、微信小程序壳与 Node.js 服务组成的三端全栈原型，覆盖养殖、物料、设备和告警模块。</p>
+            <p class="case-index">CASE 03 · METHOD / 工作流</p>
+            <h3>Stable-First 稳定优先工作流</h3>
+            <p class="case-lede">需求 → 方案 → 计划 → 实现 → 审查 → 复盘的六阶段闸门工作流，每阶段有明确检查标准。</p>
             <div class="case-grid">
-              <div><h4>01 · H5 端</h4><p>Vue 3 + Vant 4 + Pinia，覆盖登录、工作台、养殖、物料、设备、报警与个人中心。</p></div>
-              <div><h4>02 · 小程序壳</h4><p>uni-app 壳子通过 web-view 加载 H5，以 postMessage 桥接切换 Tab 与扫码。</p></div>
-              <div><h4>03 · Node 服务</h4><p>Express + Prisma + SQLite，JWT 认证，统一响应格式，幂等与全局错误处理。</p></div>
-              <div><h4>04 · 证据</h4><p>API 测试 12 项全部通过；Mock 与真实双模式；本地可完整启动链路。</p></div>
+              <div><h4>01 · 问题</h4><p>交付节奏混乱，阶段之间缺少可检查的通过标准。</p></div>
+              <div><h4>02 · 我负责</h4><p><strong>我负责：</strong>六阶段定义、闸门标准、模板与 Agent 协作方式设计，全程复盘。</p></div>
+              <div><h4>03 · 技术</h4><p><strong>技术栈：</strong>模板 / 闸门 / Agent 协作。每阶段有明确输入与验证标准。</p></div>
+              <div><h4>04 · 证据</h4><p><strong>证据：</strong>六阶段闸门全部通过，每个闸门均有明确检查标准。</p></div>
             </div>
-            <p class="case-learning"><strong>证据等级：可运行全栈原型</strong> · 说明技术闭环可行，不等同于真实生产运营。</p>
-            <ul class="tag-list"><li>Vue 3</li><li>uni-app</li><li>Express</li><li>Prisma</li></ul>
+            <p class="case-learning"><strong>能力沉淀</strong> · 用闸门把交付节奏管住，让每一步都可检查、可复盘。</p>
+            <ul class="tag-list"><li>模板化</li><li>自动化门禁</li><li>可审查</li><li>复盘归档</li></ul>
           </div>
         </article>
       </section>
 
-      <section id="evidence" class="section-wrap section-block fade-up" aria-labelledby="evidence-title">
+      <section id="method" class="section-wrap section-block section-block-alt method-and-ai" aria-labelledby="method-title">
         <div class="section-heading">
-          <div><p class="eyebrow">02 / EVIDENCE RULES</p><h2 id="evidence-title">宁可明确边界，也不夸大完成度</h2></div>
-          <p>以下规则适用于本站所有项目条目，不区分主案例与次级项目。</p>
+          <div>
+            <p class="eyebrow">DELIVERY MODEL + AI ENGINEERING</p>
+            <h2 id="method-title">把技术链落进可交付的工作过程</h2>
+          </div>
+          <p>方案能力、交付模型与 AI 工程三张图，说明我如何把需求拆成可协作、可验证的交付步骤。</p>
         </div>
-        <ol class="method-list">
-          <li><strong>仅原创</strong><span>不展示非原创项目，不公开其页面、图片或源码链接。</span></li>
-          <li><strong>推进中</strong><span>可展示架构与联调思路，但不宣称已上线或已完成。</span></li>
-          <li><strong>可运行原型</strong><span>说明当前技术闭环，不等同于真实生产运营。</span></li>
-          <li><strong>示意图</strong><span>流程和架构图只用于解释设计，不伪装成运行截图。</span></li>
-          <li><strong>本地复现验证（2026-08-07）</strong><span>ESP32 后端隔离构建 0 警告 / 0 错误；AI Supervisor pytest 93 项通过；水产后端 API 测试 12 项通过。</span></li>
+
+        <div class="step-grid">
+          <article class="step-card">
+            <span>01</span><h3>需求澄清</h3><p>识别对象、流程、状态、规则与协作关系，形成可核对的输入。</p>
+          </article>
+          <article class="step-card">
+            <span>02</span><h3>方案设计</h3><p>把需求映射成模块、字段、接口契约、验证点与交付边界。</p>
+          </article>
+          <article class="step-card">
+            <span>03</span><h3>原型验证</h3><p>用最小可运行闭环验证关键假设，先证明可行再继续。</p>
+          </article>
+          <article class="step-card">
+            <span>04</span><h3>实现与审查</h3><p>分模块实现、配套测试并通过闸门审查，产出可复核工件。</p>
+          </article>
+          <article class="step-card">
+            <span>05</span><h3>复盘交接</h3><p>记录结论、问题与下一步，沉淀为可复用的方法与文档。</p>
+          </article>
+        </div>
+
+        <div class="ai-boards">
+          <article class="ai-board">
+            <p class="learning-kicker">AI ENGINEERING 01</p>
+            <h3>上下文与技能路由</h3>
+            <p>把规范、模板与历史结论注入 Agent 上下文，按任务路由到对应技能与知识入口。</p>
+            <ul class="tag-list"><li>上下文注入</li><li>技能路由</li><li>Agent 协作</li></ul>
+          </article>
+          <article class="ai-board">
+            <p class="learning-kicker">AI ENGINEERING 02</p>
+            <h3>闸门与审查</h3>
+            <p>每阶段通过标准明确，审查不只看代码，也看计划、测试与证据是否对齐。</p>
+            <ul class="tag-list"><li>质量闸门</li><li>规范对照</li><li>可复核交付</li></ul>
+          </article>
+          <article class="ai-board">
+            <p class="learning-kicker">AI ENGINEERING 03</p>
+            <h3>人机协作边界</h3>
+            <p>自动化负责节奏与证据收集，人在确认点做最终判断，AI 不替人做决定。</p>
+            <ul class="tag-list"><li>人工确认</li><li>职责边界</li><li>自动化加速</li></ul>
+          </article>
+          <article class="ai-board">
+            <p class="learning-kicker">AI ENGINEERING 04</p>
+            <h3>可复现证据链</h3>
+            <p>结论必须落到日志、测试、对照实验或复现条件，不以"看起来能用"代替验证。</p>
+            <ul class="tag-list"><li>证据链</li><li>复现条件</li><li>复盘归档</li></ul>
+          </article>
+        </div>
+
+        <div class="agent-design" aria-labelledby="agent-title">
+          <div class="agent-heading">
+            <p class="learning-kicker">AGENT DESIGN</p>
+            <h3 id="agent-title">Agent 交互与工程系统的双视图</h3>
+          </div>
+          <div class="agent-split">
+            <article>
+              <h4>交互系统</h4>
+              <p><strong>人机协作</strong> · 清晰指令、明确上下文、阶段化拆解与人工确认点。</p>
+              <p><strong>反馈闭环</strong> · 每轮输出回到规范与计划对照，偏差即修正。</p>
+            </article>
+            <article>
+              <h4>工程系统</h4>
+              <p><strong>技能与路由</strong> · 按任务类型选择对应工作流、模板与工具。</p>
+              <p><strong>验证与交接</strong> · 测试、审查、复盘与交接文档构成完整交付链。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="radar" class="section-wrap section-block project-radar" aria-labelledby="radar-title">
+        <div class="section-heading radar-heading">
+          <div>
+            <p class="eyebrow">PROJECT RADAR</p>
+            <h2 id="radar-title">六份开源档案，按领域筛选取证</h2>
+          </div>
+          <p>每张卡保留技术证据与参与边界；涉及凭据、客户或真实业务数据的工程不公开。</p>
+        </div>
+        <div class="radar-toolbar" aria-label="项目分类筛选">
+          <p><strong id="radar-count">6</strong> 个可公开的全栈原型 <span>·</span> 独立开源来源</p>
+          <div class="radar-filters" role="group" aria-label="按项目类型筛选">
+            <button class="radar-filter is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+            <button class="radar-filter" type="button" data-filter="product" aria-pressed="false">产品</button>
+            <button class="radar-filter" type="button" data-filter="method" aria-pressed="false">方法</button>
+            <button class="radar-filter" type="button" data-filter="prototype" aria-pressed="false">原型</button>
+          </div>
+        </div>
+        <div class="radar-grid">
+          <article class="radar-card radar-card-featured" data-track="product">
+            <p class="radar-kicker"><span>PRODUCT</span><em>可开源成品</em></p>
+            <h3>CodexCont 流式中间件</h3>
+            <p>面向 Codex 生态的流式转发中间件，Python / Starlette / SSE，负责协议适配与状态透传。</p>
+            <ul class="tag-list"><li>Python</li><li>Starlette</li><li>SSE</li></ul>
+            <p class="radar-proof">证据：离线测试全通 · 社区验证可用</p>
+          </article>
+          <article class="radar-card" data-track="method">
+            <p class="radar-kicker"><span>METHOD</span><em>可开源成品</em></p>
+            <h3>Code Control Stack</h3>
+            <p>分层控制架构：规则、模板、闸门、Agent 与工件，用工程语言约束 AI 协作交付。</p>
+            <ul class="tag-list"><li>YAML</li><li>Markdown</li><li>对照实验</li></ul>
+            <p class="radar-proof">证据：4 组对照实验量化结论</p>
+          </article>
+          <article class="radar-card" data-track="method">
+            <p class="radar-kicker"><span>METHOD</span><em>可开源框架</em></p>
+            <h3>Stable-First 工作流</h3>
+            <p>六阶段闸门工作流：需求 → 方案 → 计划 → 实现 → 审查 → 复盘，每阶段有明确检查标准。</p>
+            <ul class="tag-list"><li>模板</li><li>闸门</li><li>Agent</li></ul>
+            <p class="radar-proof">证据：六阶段闸门全部通过</p>
+          </article>
+          <article class="radar-card" data-track="prototype">
+            <p class="radar-kicker"><span>PROTOTYPE</span><em>展示原型</em></p>
+            <h3>开发服务展示小程序</h3>
+            <p>面向开发服务的展示型小程序，说明服务、方案与咨询入口，不包装为交付案例。</p>
+            <ul class="tag-list"><li>uni-app</li><li>小程序</li><li>HV 展示</li></ul>
+            <p class="radar-proof">证据：原型示意 · 服务边界说明</p>
+          </article>
+          <article class="radar-card" data-track="prototype">
+            <p class="radar-kicker"><span>PROTOTYPE</span><em>业务原型</em></p>
+            <h3>数字水产养殖原型</h3>
+            <p>覆盖养殖、物料、设备与告警模块的可运行业务原型，说明完整技术闭环。</p>
+            <ul class="tag-list"><li>Vue</li><li>uni-app</li><li>Express</li></ul>
+            <p class="radar-proof">证据：原型示意 · 技术闭环说明</p>
+          </article>
+          <article class="radar-card" data-track="prototype">
+            <p class="radar-kicker"><span>PROTOTYPE</span><em>交互原型</em></p>
+            <h3>工业监控原型</h3>
+            <p>面向设备状态与交互的监控原型，展示观测、反馈与协作距离。</p>
+            <ul class="tag-list"><li>H5</li><li>设备状态</li><li>监控原型</li></ul>
+            <p class="radar-proof">证据：原型示意 · 状态与交互边界</p>
+          </article>
+        </div>
+        <p class="radar-note">隐私、账号、邮箱和凭据相关的工作已主动排除在公开作品集之外。</p>
+      </section>
+
+      <section id="learn" class="section-wrap section-block capability-growth" aria-labelledby="learn-title">
+        <div class="section-heading growth-heading">
+          <div>
+            <p class="eyebrow">CAPABILITY DISTILLATION</p>
+            <h2 id="learn-title">项目带来的，不只是技术栈</h2>
+          </div>
+          <p>从已核验的中间件、工程方法与原型中，提炼出的可迁移工作方法，而不是罗列工具名称。</p>
+        </div>
+
+        <div class="learning-ledger">
+          <div>
+            <p class="learning-kicker">WHAT I LEARNED</p>
+            <h3>把复杂项目拆成边界清晰、可以被验证的能力单元。</h3>
+          </div>
+          <p>每项能力都能回到一个或多个开源项目的 README、工程清单或模块入口。如实标示示意、原型与已验证的边界。</p>
+          <ul class="learning-sources" aria-label="能力来源项目类型">
+            <li>流式中间件</li><li>工程方法</li><li>工作流</li><li>全栈原型</li><li>展示小程序</li><li>监控原型</li>
+          </ul>
+        </div>
+
+        <ol class="learning-grid">
+          <li class="learning-card">
+            <span>01</span>
+            <p class="learning-type">契约建模</p>
+            <h3>接口契约先于实现</h3>
+            <p>在 CodexCont 中先定义客户端与上游的契约、状态与超时语义，再实现转发，让系统边界可核对。</p>
+            <p class="learning-proof"><strong>项目依据</strong> · CodexCont</p>
+          </li>
+          <li class="learning-card">
+            <span>02</span>
+            <p class="learning-type">工程约束</p>
+            <h3>用规则强制而不是依赖自觉</h3>
+            <p>Code Control Stack 把规范、模板与闸门做成系统约束，对照实验验证约束是否让质量变好。</p>
+            <p class="learning-proof"><strong>项目依据</strong> · Code Control Stack</p>
+          </li>
+          <li class="learning-card">
+            <span>03</span>
+            <p class="learning-type">交付节奏</p>
+            <h3>闸门决定节奏</h3>
+            <p>Stable-First 用六阶段闸门管住节奏，每个阶段有进有出标准，交付不再依赖临场判断。</p>
+            <p class="learning-proof"><strong>项目依据</strong> · Stable-First</p>
+          </li>
+          <li class="learning-card">
+            <span>04</span>
+            <p class="learning-type">原型验证</p>
+            <h3>先跑通闭环再谈规模</h3>
+            <p>数字水产与工业监控原型先验证数据链路与交互闭环，用最小可实现证明问题理解正确。</p>
+            <p class="learning-proof"><strong>项目依据</strong> · 数字水产 · 工业监控</p>
+          </li>
+          <li class="learning-card">
+            <span>05</span>
+            <p class="learning-type">人机协作</p>
+            <h3>自动化加速，人做最终判断</h3>
+            <p>技能路由与质量门禁负责节奏与证据，确认点保留给人工，避免把自动化误当自动决策。</p>
+            <p class="learning-proof"><strong>项目依据</strong> · Stable-First · AI 工程卡</p>
+          </li>
+          <li class="learning-card">
+            <span>06</span>
+            <p class="learning-type">证据纪律</p>
+            <h3>每一句话都能回到证据</h3>
+            <p>从测试、对照实验到复盘记录，所有展示均标注来源与示意边界，公开内容不夸大完成度。</p>
+            <p class="learning-proof"><strong>项目依据</strong> · 全项目证据规则</p>
+          </li>
         </ol>
       </section>
 
-      <section id="contact" class="section-wrap section-block fade-up contact-section">
-        <div><p class="eyebrow">03 / CONTACT</p><h2>演示与项目材料可按需提供</h2></div>
+      <section id="contact" class="section-wrap section-block contact-section">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2>演示与交付材料，按需提供</h2>
+          <p class="contact-copy">本页不公开联系方式以保护隐私。如需查看演示、源码或测试证据，可通过你已持有的渠道与我沟通。</p>
+        </div>
         <div class="contact-panel">
-          <p>本页不公开联系方式以保护隐私；如您在评估，可通过简历中的联系方式与我沟通，演示、源码与测试证据可按需提供。</p>
-          <p class="contact-principle"><strong>作品集维护原则</strong> · 仅补充已确认原创、可诚实描述并具备相应证据的项目与研究记录。</p>
+          <p class="contact-principle"><strong>作品集维护原则</strong> · 仅补充已确认原创、可诚实描述并具备相应证据的项目与方法。</p>
+          <p class="contact-principle">示意与原型均标注清楚，不伪装运行截图，不夸大完成度。</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div><strong>业务流程数字化作品集</strong><span>IoT / AI / 全栈原型 — 本机可复现的原创项目</span></div>
+      <div><strong>系统交付作品集</strong><span>业务问题 × IoT × AI 工程 — 独立开源项目与方法</span></div>
       <a href="https://github.com/lige48330-cell/-" target="_blank" rel="noreferrer">GitHub 作品集 ↗</a>
     </footer>
     <script src="/-/scripts/site.js" defer></script>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none" role="img" aria-label="CodexCont 流式中间件架构示意图">
+  <rect width="640" height="360" fill="#f4f2ec" rx="12"/>
+  <rect x="40" y="20" width="560" height="48" rx="6" fill="#fffefa" stroke="rgba(8,123,100,0.3)" stroke-width="1.2"/>
+  <text x="320" y="42" text-anchor="middle" fill="#172722" font-family="system-ui,sans-serif" font-size="11" font-weight="700">客户端 / Codex CLI</text>
+  <text x="320" y="56" text-anchor="middle" fill="#5c6a63" font-family="ui-monospace,monospace" font-size="9">HTTP SSE / POST /v1/chat/completions</text>
+
+  <path d="M320 68 L320 96" stroke="#087c66" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="316,94 320,102 324,94" fill="#087c66"/>
+
+  <rect x="40" y="104" width="560" height="56" rx="6" fill="#087c66" opacity="0.08" stroke="#087c66" stroke-width="1.2"/>
+  <text x="320" y="126" text-anchor="middle" fill="#087c66" font-family="system-ui,sans-serif" font-size="12" font-weight="700">CodexCont 流式中间件</text>
+  <text x="320" y="142" text-anchor="middle" fill="#5c6a63" font-family="ui-monospace,monospace" font-size="9">Python / Starlette · 协议转换 · 流式缓存 · 超时控制</text>
+  <text x="320" y="154" text-anchor="middle" fill="#5c6a63" font-family="ui-monospace,monospace" font-size="9">jest · pytest 离线测试全通 · 社区验证</text>
+
+  <path d="M320 160 L320 188" stroke="#087c66" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="316,186 320,194 324,186" fill="#087c66"/>
+
+  <rect x="40" y="196" width="560" height="48" rx="6" fill="#fffefa" stroke="rgba(8,123,100,0.3)" stroke-width="1.2"/>
+  <text x="320" y="218" text-anchor="middle" fill="#172722" font-family="system-ui,sans-serif" font-size="11" font-weight="700">OpenAI Codex / 上游 Provider</text>
+  <text x="320" y="232" text-anchor="middle" fill="#5c6a63" font-family="ui-monospace,monospace" font-size="9">SSE 流式响应 · 无状态转发</text>
+
+  <path d="M320 244 L320 272" stroke="#087c66" stroke-width="2" stroke-dasharray="4 3"/>
+  <polygon points="316,270 320,278 324,270" fill="#087c66"/>
+
+  <rect x="40" y="280" width="240" height="36" rx="6" fill="#c66747" opacity="0.1" stroke="#c66747" stroke-width="1"/>
+  <text x="160" y="302" text-anchor="middle" fill="#c66747" font-family="ui-monospace,monospace" font-size="9">✅ 证据：离线测试全通</text>
+
+  <rect x="360" y="280" width="240" height="36" rx="6" fill="#4169b2" opacity="0.1" stroke="#4169b2" stroke-width="1"/>
+  <text x="480" y="302" text-anchor="middle" fill="#4169b2" font-family="ui-monospace,monospace" font-size="9">✅ 证据：社区验证</text>
+
+  <text x="320" y="340" text-anchor="middle" fill="#5c6a63" font-family="ui-monospace,monospace" font-size="8">AI 泛化 / 方法示意 — 不伪装运行截图</text>
+</svg>

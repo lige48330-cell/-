@@ -1,35 +1,36 @@
-# 业务流程数字化作品集
+# 系统交付作品集
 
-这是 `lige48330-cell/-` 的 GitHub Pages 静态作品集，只展示已确认的原创项目与研究记录。
+独立开源作品集，展示 CodexCont 流式中间件、Code Control Stack 工程方法与 Stable-First 工作流等可验证的交付案例。
 
-线上入口：
+线上入口：`https://lige48330-cell.github.io/-/`
 
-```text
-https://lige48330-cell.github.io/-/
-```
+## 内容架构
 
-## 项目分层
-
-- 主案例：ESP32 IoT 平台、AI Supervisor、智慧水产养殖应用套件。
-- 次级项目与研究：开发服务展示小程序、AI Agent 编程学习平台、XAU 黄金交易研究、上下文工程实验。
-- 不公开源码仓库、个人联系方式或非原创项目内容。
-
-项目页面必须诚实标注证据等级；架构和流程图不应被描述为运行截图。
+- 10 区块单页：Hero → 价值主张 → 六段技术链 → 能力画像 → 主案例 → 方案与 AI 工程 → Agent 设计 → 项目雷达 → 能力沉淀 → 联系
+- 暖纸色设计系统，零构建（HTML5 / CSS3 Custom Properties / Vanilla JS）
+- 所有图片标注 AI 泛化 / 方法示意，不伪装运行截图
 
 ## 本地预览与验证
 
 ```bash
-node scripts/serve-pages.js
 node scripts/verify-site.js
 ```
 
-本地预览地址：`http://127.0.0.1:4173/-/`。
+部署到 `gh-pages` 分支前运行验证，检查文件完整性、链接有效性、图片存在性与核心内容。
 
 ## 维护范围
 
-- `index.html`：首页和项目分层。
-- `projects/*.html`：主案例与次级条目详情页。
-- `images/`：仅存放当前公开页面使用的素材。
-- `styles/site.css`、`liquid-glass.css`、`scripts/site.js`、`scripts/apply-liquid-glass.js`：样式与前端增强。
-- `scripts/verify-site.js`：公开站点的确定性检查。
-- `.opencode/workflow/`：六阶段工作流产物（SPEC / ARCHITECTURE / STABILITY / RETROSPECT / CHECKLIST / ONE_CALL_TEMPLATE）。
+- `index.html`：单页全部 10 区块
+- `styles/site.css`：暖纸色设计系统
+- `scripts/site.js`：证据切换器、雷达筛选、滚动渐入
+- `scripts/verify-site.js`：确定性检查
+- `images/`：本地示意图（全部 AI 泛化 / 原型示意）
+- `404.html` / `robots.txt` / `sitemap.xml`
+- `.opencode/workflow/`：六阶段工作流产物
+
+## 证据纪律
+
+- 每张图标注 AI 泛化 / 方法示意
+- 每个能力卡标注证据来源
+- 案例区分我负责 / 系统协同
+- 不公开联系方式、凭据、私有数据
