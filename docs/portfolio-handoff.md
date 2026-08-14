@@ -10,9 +10,9 @@
 - Pages：`D:\2\pojie\portfolio-gh-pages`，分支 `gh-pages`
 - GitHub：`git@github.com:lige48330-cell/-.git`
 - 线上：`https://lige48330-cell.github.io/-/`
-- 上一版已发布：`df4cc5a`（`gh-pages`）
-- 上一版源站提交：`7d88b16`（`main`）
-- 本次完成技术链脉冲后，需要更新为新的提交和缓存版本。
+- 最新已发布：`d45baab`（`gh-pages`）
+- 最新源站提交：`20b7258`（`main`）
+- 最新线上缓存 URL：`https://lige48330-cell.github.io/-/?v=d45baab`
 
 ## 已完成
 
