@@ -46,33 +46,49 @@ const summary = document.querySelector("#project-summary");
 const tags = document.querySelector("#project-tags");
 const link = document.querySelector("#project-link");
 const tabs = document.querySelectorAll(".evidence-tab");
+const evidenceStage = document.querySelector(".evidence-stage");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function selectProject(key) {
   const project = projects[key];
   if (!project) return;
 
-  image.src = project.image;
-  image.alt = project.alt;
-  caption.textContent = project.caption;
-  type.textContent = project.type;
-  if (projectStatus) {
-    projectStatus.textContent = project.status;
-    projectStatus.className = `project-status ${project.statusClass}`;
-  }
-  title.textContent = project.title;
-  summary.textContent = project.summary;
-  link.href = project.link;
-  tags.replaceChildren(...project.tags.map((tag) => {
-    const item = document.createElement("li");
-    item.textContent = tag;
-    return item;
-  }));
+  const updateProject = () => {
+    image.src = project.image;
+    image.alt = project.alt;
+    caption.textContent = project.caption;
+    type.textContent = project.type;
+    if (projectStatus) {
+      projectStatus.textContent = project.status;
+      projectStatus.className = `project-status ${project.statusClass}`;
+    }
+    title.textContent = project.title;
+    summary.textContent = project.summary;
+    link.href = project.link;
+    tags.replaceChildren(...project.tags.map((tag) => {
+      const item = document.createElement("li");
+      item.textContent = tag;
+      return item;
+    }));
 
-  tabs.forEach((tab) => {
-    const active = tab.dataset.project === key;
-    tab.classList.toggle("is-active", active);
-    tab.setAttribute("aria-selected", String(active));
-  });
+    tabs.forEach((tab) => {
+      const active = tab.dataset.project === key;
+      tab.classList.toggle("is-active", active);
+      tab.setAttribute("aria-selected", String(active));
+    });
+  };
+
+  if (!reduceMotion && document.startViewTransition) {
+    document.startViewTransition(updateProject);
+  } else {
+    updateProject();
+  }
+
+  if (evidenceStage && !reduceMotion) {
+    evidenceStage.classList.remove("is-scanning");
+    void evidenceStage.offsetWidth;
+    evidenceStage.classList.add("is-scanning");
+  }
 }
 
 tabs.forEach((tab, index) => {
@@ -115,3 +131,53 @@ radarFilters.forEach((filter) => filter.addEventListener("click", () => {
     item.setAttribute("aria-pressed", String(active));
   });
 }));
+
+const revealTargets = document.querySelectorAll([
+  ".section-heading",
+  ".value-grid article",
+  ".tech-chain-node",
+  ".capability-proof-card",
+  ".case-card",
+  ".solution-brief",
+  ".solution-steps li",
+  ".agent-design-panel",
+  ".agent-engineering-panel",
+  ".source-map-column",
+  ".radar-card",
+  ".learning-card",
+].join(","));
+
+revealTargets.forEach((element, index) => {
+  element.dataset.reveal = "";
+  element.style.setProperty("--reveal-delay", `${(index % 4) * 55}ms`);
+});
+
+document.documentElement.classList.add("motion-ready");
+
+if (reduceMotion || !("IntersectionObserver" in window)) {
+  revealTargets.forEach((element) => element.classList.add("is-visible"));
+} else {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { rootMargin: "0px 0px -8%", threshold: 0.08 });
+
+  revealTargets.forEach((element) => revealObserver.observe(element));
+}
+
+let progressFrame = 0;
+function updateScrollProgress() {
+  progressFrame = 0;
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
+  document.documentElement.style.setProperty("--scroll-progress", String(progress));
+}
+
+window.addEventListener("scroll", () => {
+  if (progressFrame) return;
+  progressFrame = window.requestAnimationFrame(updateScrollProgress);
+}, { passive: true });
+updateScrollProgress();
