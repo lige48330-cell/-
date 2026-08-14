@@ -368,6 +368,14 @@ h3 { font-size: clamp(1.4rem, 2.2vw, 2.2rem); line-height: 1.16; font-weight: 70
 .collaboration-proof .learning-kicker { color: #b9d8cd; }
 .collaboration-proof .collaboration-heading > p:not(.learning-kicker),
 .collaboration-proof .collaboration-grid p { color: #c8d0ca; }
+.collaboration-proof .collaboration-grid article {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: #24332c;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.collaboration-proof .collaboration-grid article span { color: #b9d8cd; }
+.collaboration-proof .collaboration-grid article strong { color: #fff; }
+.collaboration-proof .collaboration-grid article p { color: #c8d0ca; }
 .radar-card.radar-card-featured h3,
 .radar-card.radar-card-featured > p:not(.radar-kicker):not(.radar-proof) { color: #fff; }
 .radar-card.radar-card-featured .radar-proof { color: #c8d0ca; }
