@@ -34,7 +34,7 @@ for (const img of homeContent.match(/src="[^"]+\.(?:png|svg|jpg|jpeg)"/g) || [])
   if (!fs.existsSync(path.join(root, src))) throw new Error(`index.html references missing image: ${src}`);
 }
 
-for (const text of ["CodexCont 流式中间件", "Code Control Stack", "Stable-First", "六段技术链", "项目实证", "六项能力"]) {
+for (const text of ["FDE", "现场交付工程师", "Forward Deployed", "养殖渔业 ERP", "IoT 监管", "ESP32 小程序", "FDE 交付链", "工程索引", "从项目里提炼的 FDE 能力", "Cockpit Tools"]) {
   if (!homeContent.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 

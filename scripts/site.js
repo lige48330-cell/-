@@ -13,35 +13,35 @@
   }
 
   const projects = {
-    codexcont: {
-      image: "/-/images/codexcont-flow.svg",
-      alt: "CodexCont 流式中间件架构示意图",
-      caption: "CodexCont：客户端与 OpenAI Codex 上游之间的流式转发中间件。",
-      type: "PRODUCT / AI 中间件",
-      title: "CodexCont 流式中间件",
-      summary: "Python / Starlette / SSE 实现的流式转发层，负责客户端与上游 Codex 之间的协议适配与状态透传。",
-      tags: ["Python", "Starlette", "SSE", "离线测试全通"],
-      link: "#case-codexcont",
+    erp: {
+      image: "/-/images/smartagri-erp-public.png",
+      alt: "AI 脱敏后的养殖渔业 ERP 数据大屏",
+      caption: "真实项目截图 · AI 辅助脱敏 · 养殖水质、投喂、设备自动化与经营模块。",
+      type: "COMPANY CASE / 脱敏",
+      title: "养殖渔业 ERP 业务闭环",
+      summary: "把基础资料、库存、采购销售和设备相关流程，落到模块、字段、状态和单据核验路径。",
+      tags: ["业务建模", "库存流程", "低代码", "验证记录"],
+      link: "#case-erp",
     },
-    stack: {
-      image: "/-/images/code-control-stack.svg",
-      alt: "Code Control Stack 分层控制架构示意图",
-      caption: "Code Control Stack：规则、模板、闸门、Agent 与工件五层控制架构。",
-      type: "METHOD / 工程方法",
-      title: "Code Control Stack",
-      summary: "分层控制架构：把规范、模板、闸门与复盘固化为可复用方法，对照实验量化工程改进。",
-      tags: ["YAML", "Markdown", "对照实验", "可复现"],
-      link: "#case-stack",
+    iot: {
+      image: "/-/images/iot-monitoring-dashboard-public.png",
+      alt: "AI 脱敏后的养殖场消毒除臭设备监管大屏",
+      caption: "真实项目截图 · AI 辅助脱敏 · 指标类型、日志区域与异常反馈结构。",
+      type: "COMPANY CASE / 脱敏",
+      title: "养殖场消毒除臭设备监管",
+      summary: "面向现场设备管理，把在线状态、运行记录、换水记录与异常事件整理为可读的监管视图。",
+      tags: ["IoT 场景", "设备状态", "监控大屏", "可视化"],
+      link: "#case-iot",
     },
-    stablefirst: {
-      image: "/-/images/stable-first-workflow.svg",
-      alt: "Stable-First 工作流六阶段闸门示意图",
-      caption: "Stable-First：需求→方案→计划→实现→审查→复盘，六阶段闸门全部通过。",
-      type: "METHOD / 工作流",
-      title: "Stable-First 工作流",
-      summary: "六阶段闸门工作流：需求→方案→计划→实现→审查→复盘，每阶段有明确检查标准。",
-      tags: ["模板化", "自动化门禁", "可审查", "复盘归档"],
-      link: "#case-stablefirst",
+    miniapp: {
+      image: "/-/images/esp32-miniapp-public.png",
+      alt: "AI 脱敏后的养殖场消毒除臭设备管理总览小程序截图",
+      caption: "真实项目截图 · AI 辅助脱敏 · 聚合状态与常用入口。",
+      type: "COMPANY CASE / 脱敏",
+      title: "消毒除臭设备管理小程序",
+      summary: "在管理总览中呈现设备、预警和养殖户概览，并参与小程序、云端接口与 ESP32 状态反馈的协同链路。",
+      tags: ["ESP32", "uni-app", "MQTT / HTTP", "状态反馈"],
+      link: "#case-miniapp",
     },
   };
 
@@ -54,7 +54,7 @@
   const link = document.querySelector("#project-link");
   const tabs = document.querySelectorAll(".evidence-tab");
 
-  let currentTab = "codexcont";
+  let currentTab = "erp";
 
   function selectProject(key) {
     const project = projects[key];
