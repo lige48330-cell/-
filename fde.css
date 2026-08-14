@@ -94,7 +94,7 @@ h3 { font-size: clamp(1.4rem, 2.2vw, 2.2rem); line-height: 1.16; font-weight: 70
 .control-heading { padding: 1.25rem 1.25rem 0.9rem; border-bottom-color: var(--fde-line); }
 .control-heading h2 { color: var(--fde-ink); font-size: 1.25rem; }
 .control-status p { color: var(--fde-faint); font-size: 0.58rem; }
-.control-status span { background: var(--fde-accent); box-shadow: 0 0 0 4px rgba(31, 75, 255, 0.12); }
+.control-status span { background: var(--fde-accent); box-shadow: 0 0 0 4px rgba(50, 104, 91, 0.14); }
 .evidence-switcher { border-bottom: 1px solid var(--fde-line); }
 .evidence-tab { min-height: 4.4rem; color: var(--fde-muted); border-right-color: var(--fde-line); background: var(--fde-surface-alt); }
 .evidence-tab:hover, .evidence-tab:focus-visible, .evidence-tab.is-active { color: var(--fde-ink); background: var(--fde-accent-soft); }
@@ -298,7 +298,7 @@ h3 { font-size: clamp(1.4rem, 2.2vw, 2.2rem); line-height: 1.16; font-weight: 70
   .hero { gap: 2.8rem; padding-top: 2.8rem; padding-bottom: 3.5rem; }
   .hero-identity { flex-direction: column; align-items: flex-start; gap: 0.45rem; }
   .hero-identity span:last-child { text-align: left; }
-  h1 { font-size: clamp(2.8rem, 12vw, 4.6rem); }
+  h1 { font-size: clamp(2.6rem, 11vw, 4.6rem); }
   h2 { font-size: clamp(2rem, 9vw, 3rem); }
   .hero-evidence-list { grid-template-columns: 1fr; }
   .hero-evidence-list a { min-height: 0; border-left: 0; border-top: 1px solid var(--fde-line); }
