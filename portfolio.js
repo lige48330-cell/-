@@ -194,3 +194,35 @@ window.addEventListener("scroll", () => {
   progressFrame = window.requestAnimationFrame(updateScrollProgress);
 }, { passive: true });
 updateScrollProgress();
+
+const pointerTargets = document.querySelectorAll([
+  ".project-control-room",
+  ".case-card",
+  ".capability-proof-card",
+  ".ai-work-card",
+  ".solution-brief",
+  ".agent-design-panel",
+  ".agent-engineering-panel",
+  ".radar-card",
+  ".learning-card",
+  ".source-map-column",
+].join(","));
+const pointerFine = window.matchMedia("(pointer: fine)").matches;
+
+if (pointerFine && !reduceMotion) {
+  pointerTargets.forEach((element) => {
+    element.addEventListener("pointermove", (event) => {
+      const rect = element.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
+      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
+      element.style.setProperty("--tilt-x", `${(x * 1.4).toFixed(2)}deg`);
+      element.style.setProperty("--tilt-y", `${(y * -1.4).toFixed(2)}deg`);
+      element.classList.add("is-pointer-active");
+    });
+    element.addEventListener("pointerleave", () => {
+      element.style.setProperty("--tilt-x", "0deg");
+      element.style.setProperty("--tilt-y", "0deg");
+      element.classList.remove("is-pointer-active");
+    });
+  });
+}
