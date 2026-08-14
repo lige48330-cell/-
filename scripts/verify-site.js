@@ -10,6 +10,7 @@ const files = [
   "projects/aquaculture-prototype.html",
   "404.html",
   "portfolio.css",
+  "portfolio-premium.css",
   "portfolio.js",
   "styles/site.css",
   "scripts/site.js",
@@ -45,13 +46,14 @@ for (const file of files) {
 }
 
 const home = read("index.html");
-for (const text of ["AI Agent 工程 · 全栈交付", "落地为可验证、可交接的业务系统。", "核心交付证据", "证据等级", "能力画像", "方案能力", "团队协作", "项目地图", "本地 AI 工具可靠性实验", "有证据等级的工程记录"]) {
+for (const text of ["AI Agent 工程 · 业务系统交付 · IoT", "让系统真正交得出去。", "核心交付证据", "证据等级", "能力画像", "方案能力", "团队协作", "项目地图", "本地 AI 工具可靠性实验", "有证据等级的工程记录"]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 
 const radarCount = (home.match(/<article\b[^>]*\bclass=["'][^"']*\bradar-card\b/g) || []).length;
 if (radarCount !== 17) throw new Error(`Expected 17 radar cards, found ${radarCount}`);
 if (!read("portfolio.css").includes(".capability-proof-grid")) throw new Error("portfolio.css is missing capability styles");
+if (!read("portfolio-premium.css").includes("--signal: #aaff47")) throw new Error("premium visual system is missing signal color");
 if (!read("portfolio.js").includes("radarCards.length")) throw new Error("portfolio.js is missing radar count logic");
 for (const file of ["index.html", "projects/esp32-iot-platform.html", "projects/ai-supervisor.html", "projects/aquaculture-prototype.html"]) {
   const content = read(file);
