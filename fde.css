@@ -356,6 +356,11 @@ h3 { font-size: clamp(1.4rem, 2.2vw, 2.2rem); line-height: 1.16; font-weight: 70
 .capability-loop > div > p:not(.learning-kicker) { color: #c8d0ca; }
 .capability-loop .learning-kicker { color: #b9d8cd; }
 .capability-loop .delivery-loop small { color: #aeb9b0; }
+.capability-loop.capability-loop,
+.collaboration-proof.collaboration-proof { background-color: var(--fde-ink); }
+.collaboration-proof .learning-kicker { color: #b9d8cd; }
+.collaboration-proof .collaboration-heading > p:not(.learning-kicker),
+.collaboration-proof .collaboration-grid p { color: #c8d0ca; }
 .radar-card.radar-card-featured h3,
 .radar-card.radar-card-featured > p:not(.radar-kicker):not(.radar-proof) { color: #fff; }
 .radar-card.radar-card-featured .radar-proof { color: #c8d0ca; }
