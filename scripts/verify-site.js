@@ -54,6 +54,9 @@ const radarCount = (home.match(/<article\b[^>]*\bclass=["'][^"']*\bradar-card\b/
 if (radarCount !== 17) throw new Error(`Expected 17 radar cards, found ${radarCount}`);
 if (!read("portfolio.css").includes(".capability-proof-grid")) throw new Error("portfolio.css is missing capability styles");
 if (!read("portfolio-premium.css").includes("--signal: #107a5b")) throw new Error("premium visual system is missing signal color");
+if (!home.includes("tech-chain-signal")) throw new Error("Homepage is missing the tech-chain signal SVG");
+if (!read("portfolio-premium.css").includes("tech-chain-pulse")) throw new Error("premium visual system is missing tech-chain pulse");
+if (!read("portfolio.js").includes("techChainSignal")) throw new Error("portfolio.js is missing tech-chain signal logic");
 if (!read("portfolio.js").includes("radarCards.length")) throw new Error("portfolio.js is missing radar count logic");
 for (const file of ["index.html", "projects/esp32-iot-platform.html", "projects/ai-supervisor.html", "projects/aquaculture-prototype.html"]) {
   const content = read(file);
