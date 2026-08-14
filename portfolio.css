@@ -1,20 +1,3 @@
-:root {
-  color-scheme: dark;
-  --page: #07100f;
-  --surface: #0c1917;
-  --surface-raised: #10211d;
-  --line: rgba(177, 229, 205, 0.16);
-  --line-strong: rgba(114, 238, 180, 0.48);
-  --text: #f1f4ef;
-  --muted: #a8b6af;
-  --signal: #60e6ae;
-  --signal-dim: #184b39;
-  --warm: #e4c36d;
-  font-family: Inter, "PingFang SC", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
-  background: var(--page);
-  color: var(--text);
-}
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; background: var(--page); }
@@ -251,20 +234,6 @@ h3 { font-size: clamp(1.45rem, 2.5vw, 2.4rem); line-height: 1.12; letter-spacing
 }
 
 /* Portfolio packaging: identity first, evidence second. */
-:root {
-  --page: #0a0f0e;
-  --surface: #101917;
-  --surface-raised: #17231f;
-  --line: rgba(225, 239, 231, 0.14);
-  --line-strong: rgba(100, 237, 182, 0.62);
-  --text: #f3f1ea;
-  --muted: #aab6b0;
-  --signal: #64edb6;
-  --signal-dim: #1a4939;
-  --warm: #ffb27e;
-  --cool: #9ecbff;
-}
-
 body { background: var(--page); }
 body::before { background: rgba(12, 25, 20, 0.35); }
 h1, h2, h3, h4 { letter-spacing: 0; }
