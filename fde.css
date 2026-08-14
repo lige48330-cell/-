@@ -350,6 +350,17 @@ h3 { font-size: clamp(1.4rem, 2.2vw, 2.2rem); line-height: 1.16; font-weight: 70
 .source-map-column-accent .source-project-list span { color: #c8d0ca; }
 .source-map-column-accent .source-project-list li { border-bottom-color: rgba(255, 255, 255, 0.18); }
 
+/* Dark evidence panels need an explicit high-specificity text contract. The
+   legacy premium layer has more specific light-surface selectors for these
+   same descendants, so a generic color rule is not sufficient here. */
+.capability-loop > div > p:not(.learning-kicker) { color: #c8d0ca; }
+.capability-loop .learning-kicker { color: #b9d8cd; }
+.capability-loop .delivery-loop small { color: #aeb9b0; }
+.radar-card.radar-card-featured h3,
+.radar-card.radar-card-featured > p:not(.radar-kicker):not(.radar-proof) { color: #fff; }
+.radar-card.radar-card-featured .radar-proof { color: #c8d0ca; }
+.radar-card.radar-card-featured .tag-list li { color: var(--fde-ink); background: var(--fde-surface-alt); }
+
 @media (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .project-control-room,
   .case-card,
