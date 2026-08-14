@@ -10,16 +10,18 @@
 - Pages：`D:\2\pojie\portfolio-gh-pages`，分支 `gh-pages`
 - GitHub：`git@github.com:lige48330-cell/-.git`
 - 线上：`https://lige48330-cell.github.io/-/`
-- 最新已发布：`d45baab`（`gh-pages`）
-- 最新源站提交：`20b7258`（`main`）
-- 最新线上缓存 URL：`https://lige48330-cell.github.io/-/?v=d45baab`
+- 最新已发布：`7a1bda6`（`gh-pages`）
+- 最新源站提交：`27230ca`（`main`）
+- 最新线上缓存 URL：`https://lige48330-cell.github.io/-/?v=7a1bda6`
 
 ## 已完成
 
 ### 定位与内容
 
-- 首屏定位：`AI Agent 工程 · 业务系统交付 · IoT`
-- 主标题：`让业务跑起来，让系统真正交得出去。`
+- 首屏定位：`FDE / Forward Deployed Engineer`
+- 主叙事：`把现场问题，推进成可运行、可交接的系统。`
+- AI 的位置：交付放大器，不作为职位名称前缀。
+- 主标题：`把现场问题，推进成可运行、可交接的系统。`
 - 核心证据：养殖渔业 ERP、消毒除臭设备 IoT 监管、Cockpit Tools 私有化 Codex / AI IDE 桌面工作台。
 - 公司项目始终以“真实项目截图 · AI 辅助脱敏”展示，源码不公开。
 
@@ -31,6 +33,13 @@
 - 已实现一次性滚动揭示、顶部阅读进度、案例切换扫描线、轻微图片 hover、原生 View Transition 渐进增强。
 - 首屏只做位移动画，标题和 CTA 始终可读。
 - `prefers-reduced-motion` 下所有装饰动画静态降级。
+
+### FDE 改版与简历
+
+- 新增 `fde.css`：克制的纸张、工程蓝、严格网格、证据优先的视觉系统，覆盖旧暗色主题。
+- 新增 `resume.html`：可编辑、可打印、A4 友好的 FDE 中文简历。
+- 新增 `docs/fde-positioning-brief.zh-CN.md`：定位、证据结构、主案例排序和验收标准。
+- 首页新增简历入口，首页与简历统一使用现场问题 → 交付链 → 证据边界的叙事。
 
 ## 动效研究
 
@@ -87,5 +96,7 @@ git status --short --branch
 
 - 首页：`D:\2\pojie\portfolio\index.html`
 - 样式：`D:\2\pojie\portfolio\portfolio-premium.css`
+- FDE 样式：`D:\2\pojie\portfolio\fde.css`
+- 简历：`D:\2\pojie\portfolio\resume.html`
 - 交互：`D:\2\pojie\portfolio\portfolio.js`
 - Pages 校验：`D:\2\pojie\portfolio-gh-pages\scripts\verify-site.js`
