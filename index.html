@@ -3,93 +3,95 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Lige 的 FDE 技术交付档案：从业务现场、原型与系统集成，到 IoT 联调、Agent 工程和团队交接。" />
-    <title>Lige / FDE 技术交付档案</title>
+    <meta name="description" content="Lige 的 FDE 交付档案：业务建模、ERP、IoT / ESP32、全栈集成与 Agent 工程。" />
+    <title>Lige / FDE 交付档案</title>
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="preload" href="fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="portfolio.css?v=20260814p" />
-    <link rel="stylesheet" href="portfolio-premium.css?v=20260814p" />
-    <link rel="stylesheet" href="fde.css?v=20260814p" />
+    <link rel="stylesheet" href="portfolio.css?v=20260817b" />
+    <link rel="stylesheet" href="portfolio-premium.css?v=20260817b" />
+    <link rel="stylesheet" href="fde.css?v=20260817b" />
   </head>
   <body>
-    <a class="skip-link" href="#projects">跳到项目案例</a>
+    <a class="skip-link" href="#projects">跳到核心交付</a>
     <header class="site-header">
       <nav class="nav-shell" aria-label="主导航">
         <a class="brand" href="#home" aria-label="返回作品集首页">
-          <span class="brand-mark">SYS</span>
+          <span class="brand-mark">FDE</span>
           <span>
-            <strong>Lige · FDE 技术交付</strong>
-            <small>现场问题 / AI 系统 / 全栈落地</small>
+            <strong>Lige · Forward Deployed Engineer</strong>
+            <small>业务建模 / 跨栈集成 / 验收交接</small>
           </span>
         </a>
         <div class="nav-links">
-          <a href="#tech-chain">技术链</a>
-          <a href="#capability-map">能力画像</a>
-          <a href="#solution-capability">方案能力</a>
-          <a href="#projects">项目案例</a>
-          <a href="#agent-lab">Agent 工程方法</a>
-          <a href="#project-map">项目地图</a>
-          <a href="#project-radar">工程档案</a>
-          <a href="resume.html">简历</a>
+          <a href="#projects">核心交付</a>
+          <a href="#responsibility">FDE 责任</a>
+          <a href="#agent-delivery">Agent 工程</a>
+          <a href="#project-radar">补充证据</a>
         </div>
-        <a class="nav-cta" href="#projects">看交付证据</a>
+        <a class="nav-cta" href="#projects">查看三个主案例</a>
+        <details class="mobile-nav">
+          <summary>导航</summary>
+          <div>
+            <a href="#projects">核心交付</a>
+            <a href="#responsibility">FDE 责任</a>
+            <a href="#agent-delivery">Agent 工程</a>
+            <a href="#project-radar">补充证据</a>
+          </div>
+        </details>
       </nav>
     </header>
 
     <main id="home">
       <section class="hero section-wrap" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <div class="hero-identity"><span>LIGE / FDE</span><span>FORWARD DEPLOYED ENGINEER</span></div>
-          <p class="eyebrow">FDE / 现场交付工程师</p>
-          <h1 id="hero-title">把现场问题，<br />推进成 <em>可运行、</em><br /><span class="title-tail">可交接的系统。</span></h1>
-          <p class="hero-lede">我从业务现场开始，负责把问题建模、原型验证、系统集成、联调验收和团队交接推进到同一个结果里。AI、全栈与 IoT 是交付手段，不是孤立的标签。</p>
-          <ul class="hero-evidence-list" aria-label="核心交付证据">
-            <li><a href="#case-erp"><span>脱敏案例</span><strong>ERP 业务闭环</strong><small>流程、字段与关键单据验证</small></a></li>
-            <li><a href="#case-iot"><span>脱敏案例</span><strong>IoT 监管链路</strong><small>状态、事件与管理界面联动</small></a></li>
-            <li><a href="#case-cockpit-tools"><span>私有改造 · 面试可讲</span><strong>AI IDE 桌面工作台</strong><small>配置、运行态与回归验证</small></a></li>
+          <div class="hero-identity"><span>FIELD DELIVERY / FDE</span><span>BUSINESS × SYSTEMS × AGENTS</span></div>
+          <p class="eyebrow">现场判断 / 方案原型 / 跨栈集成 / 验收交接</p>
+          <h1 id="hero-title">进入业务现场，<br />跨栈推进系统交付。<br /><em><span>交得出，验得清，</span><span>接得住。</span></em></h1>
+          <p class="hero-lede">我从业务角色、现场约束和验收条件开始，把流程、状态与异常变成方案和原型，再推进 ERP、小程序、IoT 管理端与桌面工程的接口协作、问题定位和验证。最终留下核验路径、验证记录、边界说明与交接材料；Agent 是缩短这条路径的工程增益层。</p>
+          <ul class="hero-evidence-list" aria-label="三项核心交付证据">
+            <li><a href="#case-erp"><span>01 / BUSINESS MODELING</span><strong>把业务规则变成可配置模型</strong><small>养殖渔业 ERP（脱敏）· 流程 / 对象 / 字段 / 状态 / 单据核验</small></a></li>
+            <li><a href="#case-iot"><span>02 / SYSTEM INTEGRATION</span><strong>把设备反馈变成管理视图</strong><small>消毒除臭设备（脱敏）· 大屏 / 小程序 / 云端接口协作</small></a></li>
+            <li><a href="#case-cockpit-tools"><span>03 / CROSS-STACK DEBUGGING</span><strong>把运行态故障收敛到代码改动</strong><small>Cockpit Tools · 生命周期改造 / typecheck / 聚焦回归</small></a></li>
           </ul>
-          <div class="hero-role"><span>FDE DELIVERY LOOP</span><strong>现场理解 → 问题建模 → 原型验证 → 系统集成 → 联调验收 → 团队交接</strong></div>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">查看业务与 IoT 案例</a>
-            <a class="button button-quiet" href="#case-cockpit-tools">查看本地 AI 工具改造</a>
+            <a class="button button-primary" href="#projects">先看三个主案例</a>
+            <a class="button button-quiet" href="#responsibility">我对交付负责什么</a>
           </div>
-          <p class="hero-summary"><strong>证据边界</strong> · 公开工程提供源码或测试；公司项目与私有改造以脱敏案例、职责范围和面试说明为准。</p>
-          <p class="image-disclosure"><strong>IMAGE POLICY</strong> · 真实项目截图均经 AI 辅助脱敏；方法图会明确标注为示意。</p>
         </div>
 
-        <div class="project-control-room" aria-label="项目证据控制台">
+        <div class="project-control-room" aria-label="核心案例证据切换器">
           <div class="atlas-bg" aria-hidden="true"></div>
           <div class="control-heading">
             <div>
-              <p class="eyebrow">EVIDENCE BOUNDARY / 01</p>
-          <h2>先看现场、交付物和验证方式</h2>
+              <p class="eyebrow">DELIVERY EVIDENCE / 01</p>
+              <h2>看我如何定义问题、推动决策、留下结果</h2>
             </div>
-            <div class="control-status"><span></span><p>COMPANY CASE / AI-SANITIZED</p></div>
+            <div class="control-status"><span></span><p>FACT-BOUND</p></div>
           </div>
-          <div class="evidence-switcher" role="tablist" aria-label="选择项目案例">
-            <button class="evidence-tab is-active" type="button" role="tab" aria-selected="true" data-project="erp">
-              <span>01</span><strong>养殖渔业 ERP</strong><small>ERP</small>
+          <div class="evidence-switcher" role="tablist" aria-label="选择核心案例">
+            <button id="project-tab-erp" class="evidence-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="project-panel" tabindex="0" data-project="erp">
+              <span>01</span><strong>养殖 ERP</strong><small>ERP</small>
             </button>
-            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="iot">
-              <span>02</span><strong>设备监管</strong><small>IoT</small>
+            <button id="project-tab-iot" class="evidence-tab" type="button" role="tab" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="iot">
+              <span>02</span><strong>设备联动</strong><small>IOT</small>
             </button>
-            <button class="evidence-tab" type="button" role="tab" aria-selected="false" data-project="miniapp">
-              <span>03</span><strong>ESP32 小程序</strong><small>APP</small>
+            <button id="project-tab-cockpit" class="evidence-tab" type="button" role="tab" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="cockpit">
+              <span>03</span><strong>桌面工程</strong><small>AI</small>
             </button>
           </div>
-          <div class="evidence-stage" role="tabpanel" aria-live="polite">
+          <div id="project-panel" class="evidence-stage" role="tabpanel" aria-labelledby="project-tab-erp" aria-live="polite">
             <figure>
-              <img id="project-image" src="images/aquaculture-erp-public.png" alt="AI 脱敏后的养殖渔业 ERP 数据大屏" />
-              <span class="image-disclosure-badge">真实项目截图 · AI 辅助脱敏</span>
-              <figcaption id="project-caption">真实项目截图，经 AI 辅助脱敏 · 养殖水质、投喂、设备自动化与经营模块的展示图。</figcaption>
+              <img id="project-image" src="images/aquaculture-erp-public.png" alt="经 AI 辅助脱敏的养殖渔业 ERP 界面" />
+              <span id="project-image-badge" class="image-disclosure-badge">真实项目界面 · AI 辅助脱敏</span>
+              <figcaption id="project-caption">真实项目界面经 AI 辅助脱敏；客户、标识与业务数据已移除。</figcaption>
             </figure>
             <div class="evidence-detail">
-              <p class="detail-kicker" id="project-type">ERP / 低代码业务系统</p>
-              <p class="project-status" id="project-status">公司项目 · 脱敏案例 · 源码不公开</p>
+              <p class="detail-kicker" id="project-type">ERP / 业务建模与配置</p>
+              <p class="project-status project-status-company" id="project-status">公司项目 · 脱敏可核对 · 源码不公开</p>
               <h3 id="project-title">养殖渔业 ERP 业务闭环</h3>
-              <p id="project-summary">把基础资料、库存、采购销售和设备相关流程，落到模块、字段、状态和单据核验路径。</p>
+              <p id="project-summary">把分散的业务口径落到对象、字段、状态与关键单据核验路径。</p>
               <ul id="project-tags" class="tag-list">
-                <li>业务建模</li><li>库存流程</li><li>低代码</li><li>验证记录</li>
+                <li>业务建模</li><li>字段状态</li><li>低代码配置</li><li>单据核验</li>
               </ul>
               <a id="project-link" class="text-link" href="#case-erp">打开完整案例 →</a>
             </div>
@@ -97,606 +99,230 @@
         </div>
       </section>
 
-      <section id="value" class="section-wrap value-strip" aria-labelledby="value-title">
-        <div class="value-intro">
-          <p class="eyebrow">THE VALUE I BRING</p>
-          <h2 id="value-title">FDE 的价值，是把复杂上下文推进到结果。</h2>
+      <section id="projects" class="section-wrap section-block flagship-deliveries" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / FLAGSHIP DELIVERIES</p>
+          <h2 id="projects-title">三个现场：我判断什么、推动什么、留下什么</h2>
+          </div>
+          <p>不只展示功能页面。每个案例都说明业务风险、我的推进动作、关键判断、协作边界、可交接结果，以及证据能证明到哪里。</p>
         </div>
-        <div class="value-grid">
-            <article><span>现场问题</span><strong>需求散、流程断、设备与业务失联</strong><p>先把角色、规则、状态、接口和异常收敛成同一套系统语言。</p></article>
-            <article><span>推进方式</span><strong>方案 → 原型 → 集成 → 联调 → 交接</strong><p>每一步都有可评审产物，AI 加速执行，工程判断仍由人负责。</p></article>
-            <article><span>交付结果</span><strong>能运行、能验收、能被团队接手</strong><p>业务看到可用结果，研发追得到依据，系统留得下演进空间。</p></article>
-        </div>
+        <p class="case-disclosure"><strong>公司案例披露</strong> · 真实项目界面均经 AI 辅助脱敏，客户、标识和业务数据已移除；只证明界面结构、流程与职责范围，不公开公司源码、生产配置或客户成效。</p>
+
+        <article id="case-erp" class="case-card flagship-case">
+          <div class="case-visual case-gallery erp-evidence-gallery">
+            <figure>
+              <img src="images/aquaculture-erp-public.png" alt="经 AI 辅助脱敏的养殖渔业 ERP 业务系统界面" />
+              <span class="image-disclosure-badge">真实项目界面 · AI 辅助脱敏</span>
+              <figcaption>配置结果：模块、表单、状态与业务视图</figcaption>
+            </figure>
+            <figure>
+              <img src="images/erp-prototype-map.svg" alt="基于内部交接资料脱敏重绘的 ERP 流程、原型与配置映射" />
+              <span class="image-disclosure-badge">方案与原型映射 · AI 辅助脱敏重绘</span>
+              <figcaption>交付映射：流程 → 模型 → 原型 → 配置 → 核验</figcaption>
+            </figure>
+          </div>
+          <div class="case-content">
+            <p class="case-index">CASE 01 · ERP / 低代码业务系统</p>
+            <p class="case-boundary"><strong>公司项目 · 脱敏可核对</strong><span>我的范围：业务流程、对象与字段、页面 / 流程配置、关键单据核验</span></p>
+            <h3>养殖渔业 ERP：把业务口径收敛成可配置规则</h3>
+            <p class="case-lede">面对基础资料、采购、库存、销售、养殖和设备流程，我先区分业务主体、事件流水与状态结果，再把规则落实到模块、字段、表单、状态和单据路径。</p>
+            <div class="case-evidence-grid">
+              <div><h4>业务风险</h4><p>业务口径分散，流程、字段、状态和单据之间缺少统一的核验路径。</p></div>
+              <div class="case-signal"><h4>我推动的动作</h4><p>梳理角色与流程，抽象对象、字段和状态，配置页面与流程，并按关键单据路径组织核验。</p></div>
+              <div><h4>关键判断</h4><p>先用流程图、功能结构表和页面原型对齐角色、字段与状态，再配置 UI；将主数据、事件流水和状态 / 报表分层，避免功能堆砌。</p></div>
+              <div><h4>协作边界</h4><p>以对象 / 字段 / 状态表和关键单据路径对齐业务与实施；ERP 底座、生产数据环境与运维由团队提供。</p></div>
+              <div class="case-signal"><h4>可交接结果</h4><p>形成业务与实施可共同配置、检查和继续维护的对象、字段、状态与关键单据核验口径。</p></div>
+              <div><h4>核对方式</h4><p>脱敏界面、流程 / 原型映射与职责说明；源码、客户数据和生产配置不公开。</p></div>
+            </div>
+            <ul class="tag-list"><li>需求分析</li><li>领域建模</li><li>墨刀 / Axure</li><li>低代码配置</li><li>验收路径</li></ul>
+          </div>
+        </article>
+
+        <article id="case-iot" class="case-card flagship-case case-card-reverse">
+          <div class="case-visual case-gallery">
+            <figure>
+              <img src="images/iot-monitoring-dashboard-public.png" alt="经 AI 辅助脱敏的消毒除臭设备监管大屏" />
+              <span class="image-disclosure-badge">真实项目界面 · AI 辅助脱敏</span>
+              <figcaption>监管大屏：在线态势、事件、日志与异常反馈</figcaption>
+            </figure>
+            <figure>
+              <img src="images/esp32-miniapp-public.png" alt="经 AI 辅助脱敏的消毒除臭设备管理小程序" />
+              <span class="image-disclosure-badge">真实项目界面 · AI 辅助脱敏</span>
+              <figcaption>管理小程序：设备、预警、状态反馈与日常入口</figcaption>
+            </figure>
+          </div>
+          <div class="case-content">
+            <p class="case-index">CASE 02 · IOT / ESP32 / 小程序</p>
+            <p class="case-boundary"><strong>公司项目 · 脱敏可核对</strong><span>我的范围：管理指标、信息结构、双端界面、状态呈现与云端接口协作</span></p>
+            <h3>消毒除臭设备管理：把设备反馈组织成运营判断</h3>
+            <p class="case-lede">大屏与小程序面向同一设备管理场景；我负责把团队提供的状态与事件，组织成在线、运行、日志、预警与反馈等可读的管理信息。</p>
+            <div class="case-evidence-grid">
+              <div><h4>业务风险</h4><p>管理人员需要判断设备是否在线、何时运行、是否异常，以及反馈是否到达管理端。</p></div>
+              <div class="case-signal"><h4>我推动的动作</h4><p>定义监控指标与信息结构，把状态、事件、日志和预警映射到双端界面，并参与云端接口字段与状态对齐。</p></div>
+              <div><h4>方案判断</h4><p>方案阶段比较外接 RS485 + 4G DTU 与一体化板，按周期、成本、运维和迁移风险做取舍；该文档是决策参考，不等同于当前固件已实现。</p></div>
+              <div><h4>跨端协作</h4><p>以设备标识、在线 / 运行 / 换水状态和控制回执对齐三端；后端处理、消息协议与 ESP32 固件由团队成员负责。</p></div>
+              <div class="case-signal"><h4>可交接结果</h4><p>形成面向运营判断的双端管理视图与状态口径；本页不宣称实体设备与正式现场验收已由个人完成。</p></div>
+              <div><h4>核对方式</h4><p>脱敏大屏与小程序界面、职责与接口协作说明；截图不单独证明固件或服务端由我实现。</p></div>
+            </div>
+            <ul class="tag-list"><li>状态 / 事件模型</li><li>uni-app</li><li>HTTP / MQTT 协作</li><li>管理端信息架构</li><li>ESP32 协作边界</li></ul>
+          </div>
+        </article>
+
+        <article id="case-cockpit-tools" class="case-card flagship-case">
+          <div class="case-visual cockpit-visual">
+            <img src="images/cockpit-runtime-flow.svg" alt="Cockpit Tools Provider 配置与运行态生命周期示意图" />
+            <span class="image-disclosure-badge">工程架构示意 · 非运行截图</span>
+          </div>
+          <div class="case-content">
+            <p class="case-index">CASE 03 · TAURI / RUST / REACT</p>
+            <p class="case-boundary"><strong>私有分支 · 验证记录</strong><span>我的范围：私有化边界、Codex 配置、Provider 运行态与回归验证</span></p>
+            <h3>Cockpit Tools：跨 React / Tauri / Rust 收敛运行态故障</h3>
+            <p class="case-lede">配置保存成功不等于运行态正确。我从 React 配置入口追到 Tauri 异步命令、Rust 生命周期协调器与 Go sidecar，处理账号配置和本地 gateway 状态不同步。</p>
+            <div class="case-evidence-grid">
+              <div><h4>工程风险</h4><p>Responses / Chat Completions 切换后，可能出现 gateway 未启动、旧运行态残留或 API Key 账号变化后旧 runtime 未清理。</p></div>
+              <div class="case-signal"><h4>我推动的动作</h4><p>沿保存链路追踪到 Rust runtime，定位切换与账号变化后的残留状态，修改生命周期协调并补充聚焦检查。</p></div>
+              <div><h4>关键判断</h4><p>先停止 profile 下旧 runtime，再按当前账号需求协调新 gateway；沿用既有生命周期模块，不增加新依赖。</p></div>
+              <div><h4>协作边界</h4><p>基于既有桌面工具做二次开发，不宣称从零构建整套 AI IDE；私有分支源码不公开。</p></div>
+              <div class="case-signal"><h4>可交接结果</h4><p>完成生命周期改动，并把故障路径收敛为可检查的配置、运行态与已知限制说明。</p></div>
+              <div><h4>核对方式</h4><p>TypeScript typecheck、API Key scope 回归、静态断言和 diff 检查通过；目标 Rust 回归因本机缺少工具链未执行。</p></div>
+            </div>
+            <ul class="tag-list"><li>React 19</li><li>TypeScript</li><li>Tauri 2 / Rust</li><li>Go Sidecar</li><li>Lifecycle</li></ul>
+          </div>
+        </article>
       </section>
 
-      <section id="tech-chain" class="section-wrap section-block tech-chain" aria-labelledby="tech-chain-title">
-        <div class="section-heading tech-chain-heading">
+      <section id="responsibility" class="section-wrap section-block fde-responsibility" aria-labelledby="responsibility-title">
+        <div class="section-heading">
           <div>
-            <p class="eyebrow">HOW THE SYSTEMS CONNECT</p>
-            <h2 id="tech-chain-title">FDE 交付链：从现场信号到系统接手</h2>
+            <p class="eyebrow">02 / FINAL RESPONSIBILITY</p>
+            <h2 id="responsibility-title">FDE 如何收敛四类<span class="nowrap">交付风险</span></h2>
           </div>
-          <p>这不是堆砌技术名词，而是我如何把问题、规则、界面、设备和验证串成一条可解释的交付链。</p>
+          <p>我负责的不是某一层代码，而是跨角色、跨系统的最后一公里：让业务判断、工程实现和验收交接对得上。</p>
         </div>
-
-        <ol class="tech-chain-list">
-          <li><a class="tech-chain-node" href="#case-erp-problem"><span>01</span><strong>业务问题与约束</strong><small>现场角色 · 流程 · 异常</small><em>ERP · 业务问题</em></a></li>
-          <li><a class="tech-chain-node" href="#case-erp-model"><span>02</span><strong>领域模型与规则</strong><small>对象 · 字段 · 状态 · 校验</small><em>ERP · 模型证据</em></a></li>
-          <li><a class="tech-chain-node" href="#case-erp-application"><span>03</span><strong>管理应用与操作</strong><small>模块 · 表单 · 管理视图</small><em>ERP · 配置证据</em></a></li>
-          <li><a class="tech-chain-node" href="#case-miniapp-protocol"><span>04</span><strong>服务与协议协同</strong><small>API · HTTP · MQTT · 状态事件</small><em>小程序 · 端云协同</em></a></li>
-          <li><a class="tech-chain-node" href="#case-miniapp-device"><span>05</span><strong>现场设备与反馈</strong><small>ESP32 · 状态上报 · 回传</small><em>小程序 · 设备边界</em></a></li>
-          <li><a class="tech-chain-node" href="#case-iot-validation"><span>06</span><strong>运营验证与闭环</strong><small>在线态势 · 日志 · 告警 · 验收</small><em>IoT · 监管证据</em></a></li>
+        <ol class="delivery-spine" aria-label="唯一 FDE 交付生命周期">
+          <li><span>01</span><strong>现场</strong><small>角色 / 场景 / 约束</small></li>
+          <li><span>02</span><strong>方案</strong><small>边界 / 取舍 / 风险</small></li>
+          <li><span>03</span><strong>原型</strong><small>流程 / 状态 / 交互</small></li>
+          <li><span>04</span><strong>集成</strong><small>接口 / 数据 / 责任</small></li>
+          <li><span>05</span><strong>联调</strong><small>日志 / 缺陷 / 复测</small></li>
+          <li><span>06</span><strong>验收</strong><small>场景 / 结果 / 限制</small></li>
+          <li><span>07</span><strong>交接</strong><small>文档 / 风险 / 接手</small></li>
         </ol>
-        <svg class="tech-chain-signal" viewBox="0 0 100 16" preserveAspectRatio="none" aria-hidden="true">
-          <path class="tech-chain-signal-base" d="M1 8H99" pathLength="1" />
-          <path class="tech-chain-signal-run" d="M1 8H99" pathLength="1" />
-        </svg>
-
-        <aside class="tech-enhancer" aria-label="工程增强层">
-          <div><p class="learning-kicker">ENGINEERING ENABLEMENT</p><h3>AI 是交付放大器，不是我的岗位名称。</h3></div>
-          <p>知识库、Schema、项目级工作流与 Codex 实践贯穿资料整理、工程理解、任务边界和可复核交付。</p>
-          <a class="text-link" href="#ai-work">查看工程增强层 →</a>
-        </aside>
-      </section>
-
-      <section id="capability-map" class="section-wrap section-block capability-map" aria-labelledby="capability-map-title">
-        <div class="section-heading capability-map-heading">
-          <div>
-            <p class="eyebrow">01 / CAPABILITY PROFILE</p>
-            <h2 id="capability-map-title">FDE 的核心：把复杂上下文收敛成可执行系统</h2>
-          </div>
-          <p>把 AI、业务、原型、协作和工程实现放在同一张能力图里，招聘方可以直接看到我能承担什么工作、凭什么这样判断。</p>
-        </div>
-
-        <div class="capability-priority" aria-labelledby="capability-priority-title">
-          <div class="capability-priority-heading">
-            <p class="learning-kicker">CORE SIGNALS</p>
-            <h3 id="capability-priority-title">四个决定交付质量的能力</h3>
-            <p>我不是只会调用工具：我能把现场问题做成原型，把原型接成系统闭环，再用 Agent 工程和跨栈实现把结果交到团队手里。</p>
-          </div>
-          <ul class="capability-priority-list">
-            <li><span>01</span><strong>原型设计</strong><small>墨刀 / Axure / Vue 原型，把角色、流程、状态变成可评审界面。</small></li>
-            <li><span>02</span><strong>全栈交付</strong><small>从前端、API、数据到 IoT 协同，能定位边界并跑通最小闭环。</small></li>
-            <li><span>03</span><strong>Agent 工程方法</strong><small>上下文、任务边界、工作流与离线验证；完整产品能力按证据等级单列。</small></li>
-            <li><span>04</span><strong>创新落地</strong><small>把新技术变成可验证实验、可复用方法和能讨论的产品方案。</small></li>
-          </ul>
-        </div>
-
-        <div class="capability-proof-grid">
-          <article class="capability-proof-card capability-proof-featured">
-            <p class="capability-number">01 / AI-ASSISTED DELIVERY</p>
-            <h3>Agent 交互与工程化</h3>
-            <p>用 Codex、Skill、上下文文件和多 Agent 协作加速代码理解、方案拆解、实现、测试与复盘；每次输出都回到源码、日志和验收证据。</p>
-            <ul class="proof-points"><li>上下文与知识库治理</li><li>任务分派与交接</li><li>代码审查与验证</li></ul>
-            <p class="capability-source"><strong>证据来源</strong> · AI-Native 知识库、Stable-First Framework、项目级工作流与验证记录。</p>
-          </article>
-          <article class="capability-proof-card capability-proof-primary">
-            <p class="capability-number">02 / REQUIREMENT & PROTOTYPE</p>
-            <h3>从需求到可讨论的原型</h3>
-            <p>先问清角色、流程、异常和约束，再用流程图、线框和交互标注，落到墨刀 / Axure、低代码页面或 Vue 原型中进行评审。</p>
-            <ul class="proof-points"><li>用户角色与场景</li><li>页面流程与字段</li><li>原型验证与迭代</li></ul>
-            <p class="capability-source"><strong>证据来源</strong> · ERP 经验与需求资料、工业监控原型、数字水产原型</p>
-          </article>
-          <article class="capability-proof-card">
-            <p class="capability-number">03 / ERP DOMAIN</p>
-            <h3>能听懂业务，也能落到系统</h3>
-            <p>熟悉养殖渔业 ERP 的基础资料、采购、库存、销售、设备和报表关系，能把业务语言转成对象、状态、权限、单据和验收路径。</p>
-            <ul class="proof-points"><li>流程与单据闭环</li><li>字段与校验规则</li><li>低代码配置</li></ul>
-            <p class="capability-source"><strong>证据来源</strong> · 养殖渔业 ERP 案例、ERP 经验文档、公司项目资料（脱敏）</p>
-          </article>
-          <article class="capability-proof-card">
-            <p class="capability-number">04 / TEAM COORDINATION</p>
-            <h3>让团队在同一张图上工作</h3>
-            <p>通过任务边界、交接文档、阶段闸门和验收清单同步前端、后端、设备与业务角色，减少“各自完成、整体失联”。</p>
-            <ul class="proof-points"><li>职责与接口边界</li><li>结构化交接</li><li>阶段评审与复盘</li></ul>
-            <p class="capability-source"><strong>证据来源</strong> · Stable-First README 与模板、ESP32 AGENTS / 交接文档、ERP 物联网交接指南</p>
-          </article>
-          <article class="capability-proof-card capability-proof-fullstack">
-            <p class="capability-number">05 / FULL-STACK & INNOVATION</p>
-            <h3>跨栈把想法做成可运行闭环</h3>
-            <p>从 Vue / Node 到 .NET / ESP32，再到 Rust 与本地 AI 工具改造，用“读源码 → 做最小闭环 → 写验证 → 沉淀方法”把新想法变成可复用的工程资产。</p>
-            <ul class="proof-points"><li>跨栈快速理解</li><li>实验到产品</li><li>方法沉淀与复用</li></ul>
-            <p class="capability-source"><strong>证据来源</strong> · Cockpit Tools 私有改造、公开业务原型与项目验证记录。</p>
-          </article>
-          <article class="capability-proof-card capability-proof-solution">
-            <p class="capability-number">06 / SOLUTION ARCHITECTURE</p>
-            <h3>把方案讲清楚，也把落地路径算清楚</h3>
-            <p>能把业务目标、设备选型、协议、平台边界、实施周期和后续扩展放在同一份方案里，帮助团队在“快速验证”和“长期演进”之间做取舍。</p>
-            <ul class="proof-points"><li>架构分层</li><li>方案比较</li><li>实施交接</li></ul>
-            <p class="capability-source"><strong>证据来源</strong> · 公司智慧渔业建设方案（脱敏）、ESP32 技术路径、ERP + 物联网交接文档</p>
-          </article>
-        </div>
-
-        <div class="capability-loop" aria-labelledby="capability-loop-title">
-          <div>
-            <p class="learning-kicker">WORKING LOOP</p>
-            <h3 id="capability-loop-title">我如何把能力落到一次交付里</h3>
-            <p>每一环都有产物，方便团队接手，也方便用 AI 加速而不丢失判断。</p>
-          </div>
-          <ol class="delivery-loop">
-            <li><span>01</span><strong>需求澄清</strong><small>角色 / 场景 / 约束</small></li>
-            <li><span>02</span><strong>原型与模型</strong><small>流程 / 字段 / 状态</small></li>
-            <li><span>03</span><strong>AI 辅助实现</strong><small>上下文 / 任务 / 代码</small></li>
-            <li><span>04</span><strong>团队协同</strong><small>接口 / 交接 / 评审</small></li>
-            <li><span>05</span><strong>验收复盘</strong><small>测试 / 证据 / 迭代</small></li>
-          </ol>
-        </div>
-        <div class="prototype-evidence-strip" aria-label="原型与流程证据">
-          <figure>
-            <img src="images/aquaculture-erp-workflow.svg" alt="AI 泛化后的养殖渔业 ERP 业务流程原型示意图" />
-            <span class="image-disclosure-badge">AI 泛化 / 方法示意</span>
-            <figcaption><strong>流程 / 原型示意 · ERP</strong><span>AI 泛化 / 方法示意 · 对象、单据与业务状态先被画清楚，再进入配置和开发；不是运行截图。</span></figcaption>
-          </figure>
-          <figure>
-            <img src="images/agent-workflow.svg" alt="AI 泛化后的 AI Agent 工程工作流示意图" />
-            <span class="image-disclosure-badge">AI 泛化 / 方法示意</span>
-            <figcaption><strong>流程 / 原型示意 · AI 工具</strong><span>AI 泛化 / 方法示意 · 把 AI 规范、计划、审查和门禁表达成可讨论的工作流；不是运行截图。</span></figcaption>
-          </figure>
-        </div>
-        <div id="team-collaboration" class="collaboration-proof" aria-labelledby="collaboration-title">
-          <div class="collaboration-heading">
-            <p class="learning-kicker">TEAM OPERATING SYSTEM</p>
-            <h3 id="collaboration-title">团队协作不是“沟通”，而是可交接的产物</h3>
-            <p>我会把协作拆成输入、责任边界和出口；这样业务、前端、后端、设备与 AI 工具都能在同一套上下文里工作。</p>
-          </div>
-          <div class="collaboration-grid">
-            <article><span>01</span><strong>需求对齐</strong><p>角色矩阵、业务词汇、流程图、优先级和验收标准。</p></article>
-            <article><span>02</span><strong>工程交接</strong><p>接口契约、状态边界、任务拆分、启动说明和风险清单。</p></article>
-            <article><span>03</span><strong>阶段复盘</strong><p>测试记录、截图证据、问题清单、决策记录和下一步。</p></article>
-          </div>
+        <div class="responsibility-matrix" aria-label="FDE 交付风险、推进动作和证据矩阵">
+          <div class="responsibility-head" aria-hidden="true"><span>交付风险</span><span>我的推进动作与交付物</span><span>证据入口</span></div>
+          <a class="responsibility-row" href="#case-erp"><strong>业务口径不一致</strong><span>角色与流程图、对象 / 字段 / 状态表、关键单据核验路径</span><em>ERP 案例 →</em></a>
+          <a class="responsibility-row" href="#case-iot"><strong>设备反馈无法支持运营判断</strong><span>状态 / 事件模型、双端管理视图、接口字段与协作边界</span><em>IoT 案例 →</em></a>
+          <a class="responsibility-row" href="#case-cockpit-tools"><strong>跨栈配置与运行态偏离</strong><span>根因定位、生命周期改动、聚焦验证与已知限制</span><em>Cockpit 案例 →</em></a>
+          <div class="responsibility-row"><strong>多人协作后系统难接手</strong><span>接口契约、启动说明、验证记录、风险与责任边界</span><em>跨案例交付</em></div>
         </div>
       </section>
 
-      <section id="projects" class="section-wrap section-block" aria-labelledby="projects-title">
+      <section id="agent-delivery" class="section-wrap section-block agent-delivery" aria-labelledby="agent-delivery-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">02 / SELECTED SYSTEMS</p>
-            <h2 id="projects-title">三类现场，三种交付边界</h2>
+            <p class="eyebrow">03 / AGENT ENGINEERING</p>
+            <h2 id="agent-delivery-title">把 Agent 变成可观察、可审查、可接管的交付协作者</h2>
           </div>
-          <p>每个案例都把个人参与、系统协同、公开证据和能力沉淀分开写清楚，方便快速判断我的工程深度。</p>
+          <p>我用状态可见、证据可追踪、工具边界和人工接管组织 Agent 工作流，而不是停在提示词；公开工程证明工作流与上下文工程，交互部分明确作为设计约束呈现。</p>
         </div>
-
-        <article id="case-erp" class="case-card">
-          <div class="case-visual"><img src="images/aquaculture-erp-public.png" alt="经 AI 辅助脱敏的养殖渔业 ERP 业务系统大屏" /><span class="image-disclosure-badge">真实项目截图 · AI 辅助脱敏</span></div>
-          <div class="case-content">
-            <p class="case-index">CASE 01 · ERP / 低代码</p>
-            <p class="case-boundary"><strong>公司项目 · 脱敏案例</strong><span>原始系统、配置与源码不公开；面试可说明职责与验证路径</span></p>
-            <h3>养殖渔业 ERP 业务系统</h3>
-            <p class="case-lede">把养殖业务的基础资料、库存、采购销售和设备相关流程，细化为可配置的模块、表单、字段、状态与校验规则。</p>
-            <div class="case-grid">
-              <div><h4 id="case-erp-problem">01 · 业务问题</h4><p>养殖资料、库存、采购销售与设备流程需要被拆成可追踪、可配置的业务规则。</p></div>
-              <div><h4 id="case-erp-model">02 · 领域建模与我的边界</h4><p><strong>我负责：</strong>业务流程梳理、模块与字段设计、页面/流程配置与关键闭环验证。</p><p><strong>系统协同：</strong>业务规则在既有 ERP 配置与数据环境中运行；公开页仅展示脱敏模型与界面表达。</p></div>
-              <div><h4 id="case-erp-application">03 · 我交付的产物</h4><p>业务对象与角色 → 模块、字段与表单 → 状态校验 → 关键单据核验路径。</p></div>
-              <div><h4>04 · 脱敏验证方式</h4><p>真实项目截图经 AI 辅助脱敏，仅用于说明模块与管理视图；不公开客户数据、配置或完整源码。</p></div>
-            </div>
-            <p class="case-learning"><strong>能力沉淀</strong> · 将现场业务语言转换成对象、状态、校验和可验证的系统闭环。</p>
-            <ul class="tag-list"><li>业务建模</li><li>ERP 模块</li><li>低代码配置</li><li>闭环验证</li></ul>
-          </div>
-        </article>
-
-        <article id="case-iot" class="case-card case-card-reverse">
-          <div class="case-visual"><img src="images/iot-monitoring-dashboard-public.png" alt="经 AI 辅助脱敏的养殖场消毒除臭设备监管大屏" /><span class="image-disclosure-badge">真实项目截图 · AI 辅助脱敏</span></div>
-          <div class="case-content">
-            <p class="case-index">CASE 02 · IOT / 数据看板</p>
-            <p class="case-boundary"><strong>公司项目 · 脱敏案例</strong><span>平台源码、设备数据与内部配置不公开；面试可说明职责与验证路径</span></p>
-            <h3>养殖场消毒除臭设备监管平台</h3>
-            <p class="case-lede">面向现场设备管理，把在线状态、运行记录、换水记录与异常事件整理为可读的监管视图。</p>
-            <div class="case-grid">
-              <div><h4>01 · 业务问题</h4><p>现场管理需要从分散记录中快速判断设备在线、运行事件、异常和运营态势。</p></div>
-              <div><h4>02 · 我的边界 / 系统协同</h4><p><strong>我负责：</strong>监控指标梳理、状态与事件展示、管理界面和大屏功能联动。</p><p><strong>系统协同：</strong>设备状态上报、服务处理与固件反馈属于多端协同链路；公开页不将其表述为由我单独交付。</p></div>
-              <div><h4 id="case-iot-validation">03 · 我交付的界面与协作点</h4><p>状态与事件展示 → 协同服务处理 → 在线态势、日志、告警与监管视图。</p></div>
-              <div><h4>04 · 脱敏验证方式</h4><p>真实项目截图经 AI 辅助脱敏，展示指标类型、日志区域与异常反馈结构；地图与精确时间已移除。</p></div>
-            </div>
-            <p class="case-learning"><strong>能力沉淀</strong> · 用可观察的状态、事件与日志，把现场设备信息转为运营决策界面。</p>
-            <ul class="tag-list"><li>IoT 场景</li><li>设备状态</li><li>监控大屏</li><li>可视化</li></ul>
-          </div>
-        </article>
-
-        <article id="case-miniapp" class="case-card">
-          <div class="case-visual"><img src="images/esp32-miniapp-public.png" alt="经 AI 辅助脱敏的养殖场消毒除臭设备管理总览小程序截图" /><span class="image-disclosure-badge">真实项目截图 · AI 辅助脱敏</span></div>
-          <div class="case-content">
-            <p class="case-index">CASE 03 · ESP32 / 小程序</p>
-            <p class="case-boundary"><strong>公司项目 · 脱敏案例</strong><span>小程序、ESP32 固件与设备控制代码不公开；面试可说明职责与验证路径</span></p>
-            <h3>养殖场消毒除臭设备管理小程序</h3>
-            <p class="case-lede">围绕养殖场消毒除臭设备，在管理总览中呈现设备、预警与日常入口，并参与小程序、云端接口与 ESP32 状态反馈的协同链路。</p>
-            <div class="case-grid">
-              <div><h4>01 · 业务问题</h4><p>管理人员需要通过移动端了解设备、预警和养殖户概览，并进入日常管理流程。</p></div>
-              <div><h4 id="case-miniapp-protocol">02 · 服务与协议协同</h4><p><strong>我负责：</strong>前端管理界面、设备状态呈现、云端接口协作与日常管理流程。</p><p><strong>系统协同：</strong>端云交互、消息协议与 ESP32 固件反馈为多端协同范围，公开页不等同于真实控制操作。</p></div>
-              <div><h4 id="case-miniapp-device">03 · 我协作的状态反馈</h4><p>管理端界面与云端接口协作，接收设备状态反馈并呈现管理总览；端云协议与 ESP32 固件由多端协同范围负责。</p></div>
-              <div><h4>04 · 脱敏验证方式</h4><p>真实项目截图经 AI 辅助脱敏，展示聚合状态与常用入口；不展示真实设备控制或设备标识。</p></div>
-            </div>
-            <p class="case-learning"><strong>能力沉淀</strong> · 在端、云、管理端之间划清状态反馈与控制流程的责任边界。</p>
-            <ul class="tag-list"><li>ESP32</li><li>uni-app</li><li>MQTT / HTTP</li><li>设备联动</li></ul>
-          </div>
-        </article>
-      </section>
-
-      <section id="solution-capability" class="section-wrap section-block solution-capability" aria-labelledby="solution-capability-title">
-        <div class="section-heading solution-heading">
-          <div>
-            <p class="eyebrow">03 / SOLUTION DESIGN</p>
-            <h2 id="solution-capability-title">方案能力：从现场约束到可实施蓝图</h2>
-          </div>
-          <p>从公司项目方案资料中提炼出的工作方式：先理解业务和现场约束，再比较方案、划分架构、做出原型，最后交给团队实施和验证。</p>
-        </div>
-        <div class="solution-layout">
-          <article class="solution-brief">
-            <p class="solution-kicker">公司项目 / 智慧渔业与 ERP-物联网方案（脱敏）</p>
-            <h3>把“想做一个平台”变成一张能落地的系统蓝图。</h3>
-            <p>围绕试点养殖单元，梳理水质采集、设备控制、投喂、视频、告警、可视化和经营流程，让方案既能快速验证，也能为规模化扩展保留边界。</p>
-            <div class="solution-result"><span>方案结果</span><strong>业务目标、设备边界、数据路径和实施步骤被放在同一套决策里。</strong></div>
-          </article>
-          <ol class="solution-steps">
-            <li><span>01</span><div><strong>发现问题</strong><p>访谈角色、梳理现状流程、明确现场约束与验收目标。</p></div></li>
-            <li><span>02</span><div><strong>比较方案</strong><p>比较外挂 DTU 快速验证与一体化量产路径，权衡成本、周期、运维和迁移。</p></div></li>
-            <li><span>03</span><div><strong>划分架构</strong><p>按感知层、边缘层、平台层、应用层拆出设备、协议、服务和管理端责任。</p></div></li>
-            <li><span>04</span><div><strong>做出可讨论的原型</strong><p>把仪表盘、状态、告警、SOP、设备入口和数据流做成可评审的界面与流程。</p></div></li>
-            <li><span>05</span><div><strong>交接与验证</strong><p>用安装说明、接口契约、测试清单和复盘记录支持后续团队继续交付。</p></div></li>
-          </ol>
-        </div>
-        <ul class="solution-evidence" aria-label="方案能力证据">
-          <li><strong>业务建模</strong><span>主数据 / 事件流水 / 状态投影 / 权限</span></li>
-          <li><strong>技术决策</strong><span>MQTT / Modbus / HTTPS / OTA / WebSocket</span></li>
-          <li><strong>交付表达</strong><span>需求说明 / 方案比较 / 架构图 / 安装与交接</span></li>
-        </ul>
-        <p class="redaction-note"><strong>公开边界</strong> · 公司名称、客户信息、设备编号、地址、账号、原始方案文件和真实数据均已移除，仅保留可迁移的方法与技术链。</p>
-      </section>
-
-      <section id="skills" class="section-wrap section-block" aria-labelledby="skills-title">
-        <div class="section-heading">
-          <div><p class="eyebrow">04 / DELIVERY MODEL</p><h2 id="skills-title">我的工作台：每一步都有可接手产物</h2></div>
-          <p>技术链说明系统如何连接；这里说明我如何把需求、原型、AI 协作和验证拆成团队可接手的交付动作。</p>
-        </div>
-        <ol class="capability-path">
-          <li><span>01</span><div><h3>需求分析</h3><p>识别角色、场景、流程、异常、约束与成功标准。</p></div></li>
-          <li><span>02</span><div><h3>原型与领域模型</h3><p>用流程图、线框和交互标注，落到墨刀 / Axure、低代码页面或 Vue 原型中确认路径。</p></div></li>
-          <li><span>03</span><div><h3>Agent 工程协同</h3><p>用上下文、任务边界与工具路由让 Agent 参与实现，再由人复核代码与行为。</p></div></li>
-          <li><span>04</span><div><h3>团队协同</h3><p>用接口契约、交接文档、阶段闸门和评审记录让多端同步。</p></div></li>
-          <li><span>05</span><div><h3>验证交付</h3><p>通过测试、截图、日志与复盘把结果变成可追溯证据。</p></div></li>
-        </ol>
-      </section>
-
-      <section id="ai-work" class="section-wrap section-block ai-work" aria-labelledby="ai-work-title">
-        <div class="section-heading">
-          <div><p class="eyebrow">05 / AI ENGINEERING</p><h2 id="ai-work-title">Agent 工程：让上下文、工具和结果可见</h2></div>
-          <p>这里展示经筛选的知识治理、验证与跨栈协作方法；公司源码、生产配置、凭据与业务数据不公开，个人工程按项目提供源码或文档证据。</p>
-        </div>
-        <div class="ai-work-grid">
-          <article class="ai-work-card">
-            <p class="case-index">AI SYSTEM 01</p>
-            <h3>知识与上下文治理</h3>
-            <p>把原始资料、结构化 Wiki、设计规范、项目复盘和可发布成果分层组织，让知识可以追溯、复用和持续更新。</p>
-            <ul class="tag-list"><li>知识建模</li><li>Obsidian</li><li>Schema</li><li>可追溯性</li></ul>
-          </article>
-          <article class="ai-work-card">
-            <p class="case-index">AI SYSTEM 02</p>
-            <h3>可复用的工程验证工作流</h3>
-            <p>将项目探索、需求拆解、实现验证、代码审查和复盘归档沉淀为可调用的工程方法，避免 AI 只停留在临时问答。</p>
-            <ul class="tag-list"><li>Agent 协作</li><li>验证优先</li><li>Skill 设计</li><li>项目交接</li></ul>
-          </article>
-          <article class="ai-work-card">
-            <p class="case-index">AI SYSTEM 03</p>
-            <h3>跨栈工程改造</h3>
-            <p>在 React/Vite、Tauri/Rust、Go sidecar、.NET、uni-app 与 ESP32 组合中，利用 AI 辅助理解、实现、验证和产品体验迭代。</p>
-            <ul class="tag-list"><li>TypeScript</li><li>Rust</li><li>Go</li><li>.NET</li><li>Embedded</li></ul>
-          </article>
-          <article class="ai-work-card">
-            <p class="case-index">AI SYSTEM 04</p>
-            <h3>本地 AI 工具可靠性实验</h3>
-            <p>围绕流式响应、配置边界、失败处理与离线检查做研究和私有改造；公开页面不将研究配置表述为完整 Agent 平台或安全网关。</p>
-            <ul class="tag-list"><li>Responses API</li><li>SSE</li><li>Local Config</li><li>Offline Checks</li></ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="agent-lab" class="section-wrap section-block agent-lab" aria-labelledby="agent-lab-title">
-        <div class="section-heading agent-heading">
-          <div>
-            <p class="eyebrow">06 / AGENT ENGINEERING METHOD</p>
-            <h2 id="agent-lab-title">Agent 不是聊天框，是一条有人可接管的工作流</h2>
-          </div>
-          <p>这里展示我在任务表达、上下文、工具行动和复盘上的工程方法；公开材料不等同于一个已上线的通用 Agent 产品。</p>
-        </div>
-        <div class="agent-lab-grid">
-          <article class="agent-design-panel">
-            <p class="agent-kicker">INTERACTION DESIGN</p>
-            <h3>让用户知道任务正在做什么、为什么做、如何接管。</h3>
-            <ol class="agent-flow-list">
-              <li><span>01</span><div><strong>任务成形</strong><p>把自然语言目标变成范围、输入和成功标准。</p></div></li>
-              <li><span>02</span><div><strong>上下文确认</strong><p>展示引用资料、约束和待确认信息，减少黑盒感。</p></div></li>
-              <li><span>03</span><div><strong>工具行动</strong><p>明确调用哪个工具、会改变什么、是否需要人批准。</p></div></li>
-              <li><span>04</span><div><strong>结果反馈</strong><p>输出差异、证据、失败原因和下一步，而不是只给结论。</p></div></li>
-              <li><span>05</span><div><strong>交接复盘</strong><p>保留任务记录，让人和下一个 Agent 都能继续工作。</p></div></li>
+        <div class="agent-delivery-grid">
+          <article class="agent-contract-panel">
+            <p class="agent-kicker">INTERACTION DESIGN CONTRACT</p>
+            <h3>Agent 交互不是聊天框，而是状态、证据与接管设计。</h3>
+            <ol>
+              <li><span>01</span><div><strong>任务状态可见</strong><p>目标、范围、当前步骤和完成条件不藏在聊天记录里。</p></div></li>
+              <li><span>02</span><div><strong>上下文与证据可见</strong><p>引用资料、事实边界、假设和待确认项明确展示。</p></div></li>
+              <li><span>03</span><div><strong>变更影响可确认</strong><p>调用工具前说明对象、影响和人工确认点。</p></div></li>
+              <li><span>04</span><div><strong>失败可解释、任务可接管</strong><p>保留差异、日志、阻塞原因与下一步，让人或下一个 Agent 继续。</p></div></li>
             </ol>
           </article>
-          <article class="agent-engineering-panel">
-            <p class="agent-kicker">ENGINEERING SYSTEM</p>
-            <h3>把工作流约束写成可测试、可审查的工程规则。</h3>
-            <ul class="agent-system-list">
-              <li><strong>Context contract</strong><span>项目背景、边界、证据和输出格式先结构化。</span></li>
-              <li><strong>Skill / registry</strong><span>能力入口、版本、适用范围和责任边界可发现。</span></li>
-              <li><strong>Tool semantics</strong><span>声明工具适用范围、确认点与人工接管边界。</span></li>
-              <li><strong>Offline checks</strong><span>用测试、日志、质量检查和复盘记录追踪结果。</span></li>
+          <article class="agent-contract-panel agent-contract-engineering">
+            <p class="agent-kicker">ENGINEERING CONTRACT</p>
+            <h3>Agent 工程不是提示词，而是上下文、路由与质量闸门。</h3>
+            <ul>
+              <li><strong>Context contract</strong><span>项目背景、边界、证据与输出格式结构化。</span></li>
+              <li><strong>Skill / tool routing</strong><span>能力入口、工具语义、权限与人工接管点可发现。</span></li>
+              <li><strong>Multi-agent coordination</strong><span>按任务边界并行评审，由主线程整合、验证和负责。</span></li>
+              <li><strong>Diff / test / handoff</strong><span>结论回到代码差异、测试、日志和交接记录。</span></li>
             </ul>
-            <div class="agent-value-note"><span>解决的问题</span><strong>减少上下文丢失、任务误解、结果不可复核和团队无法接手。</strong></div>
-            <p class="agent-evidence"><strong>方法证据</strong> · AI-Native 知识库、Stable-First 工作流、项目级验证记录与私有改造 case study。</p>
+            <div class="agent-trace"><span>输入与边界</span><i>→</i><span>Agent 行动</span><i>→</i><span>人工判断</span><i>→</i><span>验证交接</span></div>
           </article>
+        </div>
+        <div class="agent-proof-links">
+          <p><strong>具体证据，而非方法口号</strong> · Cockpit Tools 展示跨栈运行态改造；Stable-First 与 Code Control Stack 提供工作流、上下文契约、工具路由和质量闸门源码。交互契约属于设计规范，不冒充已上线 Agent 产品。</p>
+          <div class="agent-proof-actions">
+            <a class="text-link" href="https://github.com/lige48330-cell/-/tree/main/open-source/stable-first-ai-workflow" target="_blank" rel="noreferrer">Stable-First 源码 ↗</a>
+            <a class="text-link" href="https://github.com/lige48330-cell/-/tree/main/open-source/code-control-stack" target="_blank" rel="noreferrer">Code Control Stack ↗</a>
+          </div>
         </div>
       </section>
 
-      <section id="project-map" class="section-wrap section-block project-map" aria-labelledby="project-map-title">
-        <div class="section-heading project-map-heading">
+      <section id="project-radar" class="section-wrap section-block supporting-evidence" aria-labelledby="project-radar-title">
+        <div class="section-heading">
           <div>
-            <p class="eyebrow">07 / PROJECT SOURCE MAP</p>
-            <h2 id="project-map-title">证据地图：能力从哪里长出来</h2>
+            <p class="eyebrow">04 / SUPPORTING EVIDENCE</p>
+            <h2 id="project-radar-title">公开工程证明：快速进入陌生栈，并把探索沉淀成资产</h2>
           </div>
-          <p>这张地图回答“能力从哪里来”。目录是工作证据的来源，不代表所有项目都已上线；每个状态都按可运行、MVP、原型、私有改造或研究实验标注。</p>
+          <p>这些个人项目不是主经历的替代品，而是证明我能快速读懂陌生栈、做出可讨论原型、建立 Agent 工作流并留下可复用工程资产。</p>
         </div>
-        <div class="source-map-grid">
-          <article class="source-map-column">
-            <div class="source-map-top"><span>业务系统域</span><em>业务系统 / 工程方法</em></div>
-            <h3>把业务问题做成可运行应用</h3>
-            <ul class="source-project-list">
-              <li><strong>养殖全栈应用套件</strong><span>Vue 3 · Express · Prisma · uni-app · 可运行原型</span></li>
-              <li><strong>工业监控原型</strong><span>Vue 3 · ECharts · Element Plus · 原型</span></li>
-              <li><strong>数字水产原型</strong><span>Vue 3 · TypeScript · ECharts · 原型</span></li>
-              <li><strong>Stable-First Framework</strong><span>AI 六阶段工作流 · 模板 · 闸门 · 复盘</span></li>
-              <li><strong>职位研究工具</strong><span>Node.js · Python · Playwright · JSONL · 本地自动化</span></li>
-            </ul>
-            <p class="source-map-capability">能力输出：需求拆解、领域建模、前端落地、流程验证、工程规范。</p>
-          </article>
-          <article class="source-map-column source-map-column-accent">
-            <div class="source-map-top"><span>IoT 与 Agent 域</span><em>IoT / Agent / 桌面端</em></div>
-            <h3>把端、云、设备和 Agent 接起来</h3>
-            <ul class="source-project-list">
-              <li><strong>ESP32 养殖场平台</strong><span>公司项目 · 仅展示 · ESP32 · .NET 8 · uni-app · MQTT</span></li>
-              <li><strong>Agent Learning Platform</strong><span>Nuxt 3 · FastAPI · SQLAlchemy · MVP</span></li>
-              <li><strong>Cockpit Tools</strong><span>React · Tauri/Rust · Go sidecar · 私有改造 · 面试可讲</span></li>
-              <li><strong>ReverseLab 适配</strong><span>MCP · 研究编排 · 开源基础 · 授权研究</span></li>
-            </ul>
-            <p class="source-map-capability">能力输出：协议边界、跨栈理解、任务交接、状态验证、私有化改造。</p>
-          </article>
-          <article class="source-map-column">
-            <div class="source-map-top"><span>AI / 基础设施仓</span><em>AI 基础设施 / 产品表达</em></div>
-            <h3>让 AI 有上下文、有边界、有产品形态</h3>
-            <ul class="source-project-list">
-              <li><strong>AI-Native 知识库</strong><span>Raw → Wiki → Schema → Projects · 个人系统</span></li>
-              <li><strong>AI 流式中间件研究</strong><span>Starlette · SSE · 研究记录；不作为招聘主案例</span></li>
-              <li><strong>开发者服务展示小程序</strong><span>uni-app · Vue 3 · 产品化展示 · 原型</span></li>
-              <li><strong>XAU 研究工作区</strong><span>MQL4 · MT4 · 事件记录 · 模拟研究</span></li>
-              <li><strong>Gradient Order 视觉项目</strong><span>HTML/CSS/JS · 原生小程序 · 视觉补充</span></li>
-            </ul>
-            <p class="source-map-capability">能力输出：知识治理、AI 流式处理、产品叙事、实验纪律、视觉表达。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="project-radar" class="section-wrap section-block project-radar" aria-labelledby="project-radar-title">
-        <div class="section-heading radar-heading">
-          <div>
-            <p class="eyebrow">08 / CODEX PROJECT RADAR</p>
-            <h2 id="project-radar-title">工程索引：公开、脱敏、私有和研究分层</h2>
-          </div>
-          <p>基于已核验的项目记录逐项整理。公开工程、公司脱敏案例、私有改造与研究实验分别标注；涉及凭据、邮件、客户或真实业务数据的内容不公开。</p>
-        </div>
-        <div class="radar-toolbar" aria-label="项目分类筛选">
-          <p><strong id="radar-count">17</strong> 条工程记录 <span>·</span> 公开、脱敏、私有与研究边界已标注</p>
-          <div class="radar-filters" role="group" aria-label="按项目类型筛选">
-            <button class="radar-filter is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
-            <button class="radar-filter" type="button" data-filter="product" aria-pressed="false">产品工程</button>
-            <button class="radar-filter" type="button" data-filter="ai" aria-pressed="false">AI 系统</button>
-            <button class="radar-filter" type="button" data-filter="prototype" aria-pressed="false">原型与交互</button>
-            <button class="radar-filter" type="button" data-filter="method" aria-pressed="false">工程方法</button>
-            <button class="radar-filter" type="button" data-filter="research" aria-pressed="false">研究实验</button>
-          </div>
-        </div>
-        <div class="radar-grid">
-          <article id="case-cockpit-tools" class="radar-card radar-card-featured" data-track="product ai">
-            <p class="radar-kicker"><span>DESKTOP / PRIVATE EXTENSION</span><em>私有改造</em></p>
-            <h3>Cockpit Tools 私有工程改造</h3>
-            <p>在既有桌面端基础上完成本地 Codex 配置、Live Config、供应商切换运行态与私有化边界改造；该私有分支不公开源码，面试可讲设计约束与回归验证。</p>
-            <ul class="tag-list"><li>React / Vite</li><li>Tauri / Rust</li><li>Go Sidecar</li><li>TypeScript</li></ul>
-            <p class="radar-proof">证据等级：私有改造 · 构建脚本、Rust workspace、sidecar 模块、类型检查与 API Key 切换回归测试。</p>
-          </article>
-          <article class="radar-card" data-track="method ai">
-            <p class="radar-kicker"><span>STABLE-FIRST FRAMEWORK</span><em>个人方法</em></p>
+        <div class="supporting-grid">
+          <article class="evidence-card">
+            <p class="radar-kicker"><span>AI DELIVERY METHOD</span><em>公开源码</em></p>
             <h3>Stable-First AI 工程工作流</h3>
-            <p>把探索、需求、架构、实现、稳定性、验收和复盘整理成可复用的六阶段流程，让 AI 参与研发时仍有上下文、闸门和责任边界。</p>
-            <ul class="tag-list"><li>Workflow</li><li>Templates</li><li>Quality Gates</li><li>Retrospective</li></ul>
-            <p class="radar-proof">证据：Stable-First README、模板、闸门与验收清单。</p>
+            <p>把探索、需求、实现、稳定性、验收和复盘整理成有上下文与质量闸门的交付流程。</p>
+            <p class="radar-proof"><strong>补充能力</strong> · Agent 协作、验证门禁、团队交接</p>
             <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/stable-first-ai-workflow" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
-          <article class="radar-card" data-track="product prototype">
-            <p class="radar-kicker"><span>AQUACULTURE FULL-STACK SUITE</span><em>可运行原型</em></p>
-            <h3>养殖全栈应用套件</h3>
-            <p>由 H5、uni-app 小程序壳和 Node.js 服务组成，覆盖养殖、物料、设备和告警等业务模块，用于验证从页面到 API 的闭环。</p>
-            <ul class="tag-list"><li>Vue 3</li><li>Vant / Pinia</li><li>Express / Prisma</li><li>SQLite</li></ul>
-            <p class="radar-proof">证据：APP、server、小程序壳；API 测试 12 项通过记录。</p>
+          <article class="evidence-card">
+            <p class="radar-kicker"><span>AGENT CONTROL STACK</span><em>公开源码</em></p>
+            <h3>Code Control Stack</h3>
+            <p>以 registry、anchor map、Skill 路由和工具语义组织复杂 Agent 上下文与执行边界。</p>
+            <p class="radar-proof"><strong>补充能力</strong> · Agent 架构、工具语义、质量闸门</p>
+            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/code-control-stack" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
-          <article class="radar-card" data-track="prototype product">
-            <p class="radar-kicker"><span>INDUSTRIAL MONITOR</span><em>原型</em></p>
+          <article class="evidence-card">
+            <p class="radar-kicker"><span>INDUSTRIAL PROTOTYPE</span><em>公开源码</em></p>
             <h3>工业监控分析原型</h3>
-            <p>围绕设备时间轴、AI 概率分析、激光厚度图和视频时间轴组织监控界面，练习复杂状态信息的分层展示。</p>
-            <ul class="tag-list"><li>Vue 3</li><li>Vite</li><li>ECharts 6</li><li>Element Plus</li></ul>
-            <p class="radar-proof">证据：工业监控原型代码与学习指南；当前为 mock 原型。</p>
+            <p>围绕设备时间轴、AI 概率、激光厚度和视频时间轴组织复杂状态信息。</p>
+            <p class="radar-proof"><strong>补充能力</strong> · Vue 3、ECharts、信息分层与原型验证</p>
             <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/industrial-monitor-prototype" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
-          <article class="radar-card" data-track="prototype product">
-            <p class="radar-kicker"><span>DIGITAL AQUACULTURE</span><em>原型</em></p>
-            <h3>数字水产养殖原型</h3>
-            <p>把水质、气象、设备、视频、养殖数据和报表分析组织成一个可讨论的数字水产工作台。</p>
-            <ul class="tag-list"><li>Vue 3</li><li>TypeScript</li><li>ECharts</li><li>Pinia</li></ul>
-            <p class="radar-proof">证据：数字水产原型代码与学习指南；模拟数据原型。</p>
-            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/digital-aquaculture-prototype" target="_blank" rel="noreferrer">查看源码 ↗</a>
-          </article>
-          <article class="radar-card" data-track="ai">
-            <p class="radar-kicker"><span>KNOWLEDGE SYSTEM</span><em>个人系统</em></p>
-            <h3>AI-Native 知识库</h3>
-            <p>将资料采集、Wiki、设计规范、项目经验与交付物分层，让 AI 的结论能回到证据、Schema 和可复用的工作流。</p>
-            <ul class="tag-list"><li>Obsidian</li><li>Schema</li><li>ADR / 复盘</li><li>Agent Context</li></ul>
-            <p class="radar-proof">证据：00/01/02/03 分层、AI_CONTEXT 与质量检查脚本。</p>
-          </article>
-          <article class="radar-card" data-track="ai research">
-            <p class="radar-kicker"><span>SECURE RAG LAB</span><em>私有研究 · 面试可讲</em></p>
-            <h3>安全 RAG 验证实验室</h3>
-            <p>围绕租户隔离、授权检索、审计记录与安全评估整理的私有研究案例；公开页仅说明研究方向，不把它当作可公开复核的产品。</p>
-            <ul class="tag-list"><li>Go</li><li>PostgreSQL / pgvector</li><li>RLS</li><li>Security Eval</li></ul>
-            <p class="radar-proof">证据等级：私有研究 · 面试可讲；源码与实验环境不公开。</p>
-          </article>
-          <article class="radar-card" data-track="ai product">
-            <p class="radar-kicker"><span>LOCAL WORKFLOW</span><em>个人工作流</em></p>
-            <h3>职位研究与 AI 预览台</h3>
-            <p>把授权登录下的低频职位资料整理为 JSONL，并提供本地预览、规范化、筛选与受事实边界约束的 AI 辅助文案流程。</p>
-            <ul class="tag-list"><li>Node.js</li><li>Python</li><li>Playwright</li><li>JSONL</li></ul>
-            <p class="radar-proof">证据：CLI、离线检查、静态预览与本地数据同步模块。</p>
-          </article>
-          <article class="radar-card" data-track="ai product">
-            <p class="radar-kicker"><span>CAREER OPS ADAPTATION</span><em>流程适配</em></p>
-            <h3>AI 求职运营系统适配</h3>
-            <p>围绕简历、岗位研究、申请节奏与面试准备，适配开源的多 Agent 工作流；所有投递和最终决策保留人为确认。</p>
-            <ul class="tag-list"><li>Node.js</li><li>Playwright</li><li>Workflow</li><li>Human-in-the-loop</li></ul>
-            <p class="radar-proof">证据：管道校验、去重、状态规范化与本地报告体系。</p>
-          </article>
-          <article class="radar-card" data-track="product ai">
-            <p class="radar-kicker"><span>AGENT LEARNING PLATFORM</span><em>MVP</em></p>
-            <h3>Agent Learning Platform</h3>
-            <p>以任务、进度和认证为核心的学习平台 MVP，练习从用户认证、任务 CRUD 到异步服务和迁移的完整后端闭环。</p>
-            <ul class="tag-list"><li>Nuxt 3</li><li>FastAPI</li><li>SQLAlchemy</li><li>JWT</li></ul>
-            <p class="radar-proof">证据：Nuxt / FastAPI / Alembic 工程；AI Agent 助手模块仍在推进。</p>
-          </article>
-          <article class="radar-card" data-track="research ai">
-            <p class="radar-kicker"><span>AGENT CONTEXT RESEARCH</span><em>授权研究</em></p>
-            <h3>Agent 上下文与工具语义研究</h3>
-            <p>探索 registry、anchor-map、Skill 路由与工具语义如何影响复杂 Agent 任务；它是研究配置，不替代运行时权限控制或安全网关。</p>
-            <ul class="tag-list"><li>Agent Context</li><li>Registry</li><li>Skill Routing</li><li>Research Notes</li></ul>
-            <p class="radar-proof">证据等级：授权研究 · 配置与方法记录；不宣称完整产品或 Guardrails。</p>
-          </article>
-          <article class="radar-card" data-track="research ai">
-            <p class="radar-kicker"><span>AI STREAMING INFRA</span><em>研究实验</em></p>
-            <h3>流式响应与鉴权边界研究</h3>
-            <p>围绕 Responses API 的 SSE 流处理与鉴权边界开展本地可靠性研究；不作为招聘主案例，也不把研究实验表述为通用 Agent 基础设施。</p>
-            <ul class="tag-list"><li>Python</li><li>Starlette</li><li>SSE</li><li>Offline Tests</li></ul>
-            <p class="radar-proof">证据等级：研究实验 · 仅展示研究边界；不公开配置与凭据。</p>
-          </article>
-          <article class="radar-card" data-track="prototype product">
-            <p class="radar-kicker"><span>DEVELOPER PROFILE MINIAPP</span><em>产品原型</em></p>
-            <h3>开发者服务展示小程序</h3>
-            <p>把开发者服务、解决方案、流程和静态咨询表单组织成面向客户的 uni-app 展示体验，练习产品叙事和移动端信息架构。</p>
-            <ul class="tag-list"><li>uni-app</li><li>Vue 3</li><li>Mobile UX</li><li>Static Form</li></ul>
-            <p class="radar-proof">证据：uni-app 页面与交互流程；无登录、无后端、无真实数据采集。</p>
-            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/developer-profile-miniapp" target="_blank" rel="noreferrer">查看源码 ↗</a>
-          </article>
-          <article class="radar-card" data-track="ai research">
-            <p class="radar-kicker"><span>AI OUTPUT QUALITY GATE</span><em>私有研究</em></p>
-            <h3>AI 输出审查与质量门禁</h3>
-            <p>将输出审查、边界检查和质量门禁作为 AI 工具链的一部分，关注“能生成”之后的可控性与责任边界。</p>
-            <ul class="tag-list"><li>Review</li><li>Quality Gate</li><li>Security Boundary</li><li>Human Review</li></ul>
-            <p class="radar-proof">证据：输出审查与质量门禁方法记录；敏感分析文件不公开。</p>
-          </article>
-          <article class="radar-card" data-track="research product">
-            <p class="radar-kicker"><span>VISUAL PRODUCT DELIVERY</span><em>视觉补充</em></p>
-            <h3>Gradient Order 视觉与小程序方案</h3>
-            <p>用 HTML/CSS/Vanilla JS 与原生小程序完成品牌网站和交互视觉 demo，补充从需求表达、视觉方案到静态交付的能力。</p>
-            <ul class="tag-list"><li>HTML / CSS</li><li>Vanilla JS</li><li>Mini Program</li><li>Visual System</li></ul>
-            <p class="radar-proof">证据：品牌网站与原生小程序 demo；作为视觉交付补充。</p>
-          </article>
-          <article class="radar-card" data-track="research ai">
-            <p class="radar-kicker"><span>REVERSELAB</span><em>研究环境</em></p>
-            <h3>授权样本研究与工具编排</h3>
-            <p>以知识库路由、看板和 MCP 工具映射组织授权场景下的逆向与安全研究，强调证据链、边界和可复现记录。</p>
-            <ul class="tag-list"><li>Knowledge Base</li><li>MCP</li><li>Tool Routing</li><li>Evidence</li></ul>
-            <p class="radar-proof">证据：多领域知识库、board 路由、启动检查与研究规范。</p>
-          </article>
-          <article class="radar-card" data-track="research">
-            <p class="radar-kicker"><span>QUANT RESEARCH</span><em>个人研究</em></p>
-            <h3>XAU 指标与前向研究记录</h3>
-            <p>围绕市场结构、流动性过滤、事件记录和回测结论构建研究工具；定位为模拟与研究，不作自动交易承诺或投资建议。</p>
-            <ul class="tag-list"><li>MQL4</li><li>MT4</li><li>Research Log</li><li>Smoke Test</li></ul>
-            <p class="radar-proof">证据：指标源码、研究数据、设计原则、回测总结与逻辑烟雾测试。</p>
+          <article class="evidence-card">
+            <p class="radar-kicker"><span>AI STREAMING LAB</span><em>公开源码</em></p>
+            <h3>CodexCont</h3>
+            <p>围绕 Responses API 的 SSE 流处理、鉴权边界与离线测试开展本地可靠性研究。</p>
+            <p class="radar-proof"><strong>补充能力</strong> · Python、Starlette、SSE、测试夹具</p>
+            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/codexcont" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
         </div>
-        <p class="radar-note">证据等级说明：公开工程可提供源码或测试入口；公司项目使用真实项目截图的 AI 辅助脱敏案例；私有改造与研究实验仅提供方法、边界与面试说明。隐私、账号、邮箱和凭据相关内容不公开。</p>
-      </section>
-
-      <section id="capability-growth" class="section-wrap section-block capability-growth" aria-labelledby="capability-growth-title">
-        <div class="section-heading growth-heading">
-          <div>
-            <p class="eyebrow">09 / CAPABILITY DISTILLATION</p>
-            <h2 id="capability-growth-title">从项目里提炼的 FDE 能力</h2>
+        <details class="evidence-archive">
+          <summary><span>再看两个公开原型</span><strong>数字水产工作台 / 开发者服务小程序</strong></summary>
+          <div class="evidence-archive-grid">
+            <article class="archive-item">
+              <div><span>PUBLIC PROTOTYPE</span><h3>数字水产养殖原型</h3></div>
+              <p>用 Vue 3、TypeScript、Pinia 和 ECharts 组织水质、设备、视频、养殖数据与报表工作台。</p>
+              <a href="https://github.com/lige48330-cell/-/tree/main/open-source/digital-aquaculture-prototype" target="_blank" rel="noreferrer">查看源码 ↗</a>
+            </article>
+            <article class="archive-item">
+              <div><span>PUBLIC PROTOTYPE</span><h3>开发者服务展示小程序</h3></div>
+              <p>用 uni-app 与 Vue 3 验证移动端信息架构、服务表达和静态交互流程。</p>
+              <a href="https://github.com/lige48330-cell/-/tree/main/open-source/developer-profile-miniapp" target="_blank" rel="noreferrer">查看源码 ↗</a>
+            </article>
           </div>
-          <p>从已核验的业务系统、设备平台、私有工程改造、AI 实验与工具流程适配中，提炼出可迁移的工作方法，而不是罗列工具名称。</p>
-        </div>
-
-        <div class="learning-ledger">
-          <div>
-            <p class="learning-kicker">WHAT I LEARNED</p>
-            <h3>把复杂项目拆成边界清晰、可以被验证的能力单元。</h3>
-          </div>
-          <p>每项公开主张都标明证据等级；公司项目、私有改造和研究实验会明确区分可公开材料与面试说明范围。</p>
-          <ul class="learning-sources" aria-label="能力来源项目类型">
-            <li>业务系统</li><li>IoT / ESP32</li><li>桌面端改造</li><li>Agent 工程方法</li><li>研究实验</li><li>自动化工作流</li>
-          </ul>
-        </div>
-
-        <ol class="learning-grid">
-          <li class="learning-card">
-            <span>01</span>
-            <p class="learning-type">业务抽象</p>
-            <h3>先建模，再做页面</h3>
-            <p>在养殖渔业 ERP 与设备平台中，学会先梳理对象、角色、状态、规则和关键闭环，再将它们落实到模块、字段、表单与管理界面。</p>
-            <p class="learning-proof"><strong>项目依据</strong> · 养殖渔业 ERP、IoT 监管平台</p>
-          </li>
-          <li class="learning-card">
-            <span>02</span>
-            <p class="learning-type">端云设备协同</p>
-            <h3>让状态与反馈形成闭环</h3>
-            <p>从固件状态上报、消息协议、服务端处理到小程序管理视图，理解设备系统的重点是可观察、可追踪的状态反馈，而非单点控制按钮。</p>
-            <p class="learning-proof"><strong>项目依据</strong> · ESP32、.NET、uni-app、MQTT</p>
-          </li>
-          <li class="learning-card">
-            <span>03</span>
-            <p class="learning-type">跨栈工程</p>
-            <h3>在运行时边界上组织系统</h3>
-            <p>通过桌面端私有工程改造，建立 React/Vite、Tauri/Rust 与 Go sidecar 之间的模块边界意识：每一层都应有清晰输入、输出与验证方式。</p>
-            <p class="learning-proof"><strong>项目依据</strong> · Cockpit Tools 私有工程改造</p>
-          </li>
-          <li class="learning-card">
-            <span>04</span>
-            <p class="learning-type">AI 系统设计</p>
-            <h3>让 AI 结论能回到证据</h3>
-            <p>从分层知识库和 Agent 工程方法记录中沉淀资料分层、Schema、任务边界与复盘方式；安全 RAG 属于私有研究，不作为公开产品证明。</p>
-            <p class="learning-proof"><strong>项目依据</strong> · AI-Native 知识库、Agent 工程方法记录</p>
-          </li>
-          <li class="learning-card">
-            <span>05</span>
-            <p class="learning-type">可靠性与安全</p>
-            <h3>把实验结论留在可复核的记录里</h3>
-            <p>在授权安全研究与模拟评估记录中，训练以日志、权限边界和复现条件判断结果，不以“看起来能用”代替验证。</p>
-            <p class="learning-proof"><strong>项目依据</strong> · Secure RAG Lab、ReverseLab、量化研究记录</p>
-          </li>
-          <li class="learning-card">
-            <span>06</span>
-            <p class="learning-type">人机协作自动化</p>
-            <h3>自动化加速，人负责最终判断</h3>
-            <p>从本地职位研究工具与开源工作流适配中，形成结构化数据、离线检查、流程去重和人工确认的实践习惯，避免把自动化误当成自动决策。</p>
-            <p class="learning-proof"><strong>项目依据</strong> · 职位研究工具、Career-Ops 流程适配</p>
-          </li>
-        </ol>
-      </section>
-
-      <section id="method" class="section-wrap section-block method-panel" aria-labelledby="method-title">
-        <div><p class="eyebrow">10 / DELIVERY METHOD</p><h2 id="method-title">我的交付原则：过程可见，结果可验</h2></div>
-        <div class="method-copy">
-          <p>我会用 AI 辅助需求拆解、代码理解、原型验证和问题排查；核心仍是把每个工具的输出落回业务边界、系统行为和可验证结果。</p>
-          <p>从业务现场到代码与设备，从资料整理到可复用工作流，重点始终是：信息可追溯、过程可验证、系统可持续迭代。</p>
+        </details>
+        <div class="repository-callout">
+          <div><p class="agent-kicker">OPEN-SOURCE BOUNDARY</p><h3>个人工程可读源码；公司项目只讲职责、方法与脱敏证据。</h3></div>
+          <a class="button button-primary" href="https://github.com/lige48330-cell/-/tree/main/open-source" target="_blank" rel="noreferrer">打开全部公开工程 ↗</a>
         </div>
       </section>
     </main>
 
     <footer id="contact" class="site-footer">
-      <div><strong>Lige · FDE / Forward Deployed Engineer</strong><span>业务系统 · IoT · Agent 工程 · 原型建设 · 团队交接</span></div>
-      <div class="footer-proof"><strong>公开协作方式</strong><span>先对齐问题与边界，再以原型、代码和验证证据推进。</span></div>
+      <div><strong>Lige · FDE / Forward Deployed Engineer</strong><span>业务建模 · ERP · IoT / ESP32 · 全栈集成 · Agent 工程</span></div>
+      <div class="footer-proof"><strong>FDE DELIVERY SIGNAL</strong><span>进入现场定义问题，跨栈推进实现，带着验证记录和交接边界离场。</span></div>
       <a href="https://github.com/lige48330-cell/-" target="_blank" rel="noreferrer">GitHub 作品集 ↗</a>
     </footer>
-    <script src="portfolio.js?v=20260814h"></script>
+    <script src="portfolio.js?v=20260817b"></script>
   </body>
 </html>
