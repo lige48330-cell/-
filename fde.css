@@ -159,6 +159,24 @@ h3 { font-size: clamp(1.4rem, 2.2vw, 2.2rem); line-height: 1.16; font-weight: 70
 .proof-points li { color: var(--fde-ink); font-size: 0.68rem; }
 .capability-source { color: var(--fde-faint); border-top-color: var(--fde-line); font-size: 0.62rem; }
 .capability-source strong { color: var(--fde-warm); }
+.capability-proof-card.capability-proof-featured {
+  border-color: var(--fde-ink);
+  background: var(--fde-ink);
+  color: #fff;
+}
+.capability-proof-card.capability-proof-featured h3,
+.capability-proof-card.capability-proof-featured > p:not(.capability-number):not(.capability-source) { color: #fff; }
+.capability-proof-card.capability-proof-featured .capability-number { color: #b9d8cd; }
+.capability-proof-card.capability-proof-featured .capability-source {
+  color: #c8d0ca;
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+.capability-proof-card.capability-proof-featured .capability-source strong { color: #f0b39f; }
+.capability-proof-card.capability-proof-featured .proof-points li {
+  color: #edf7f2;
+  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+}
 .capability-loop, .collaboration-proof { border-color: var(--fde-line); border-radius: 0; background: var(--fde-ink); }
 .capability-loop h3, .collaboration-proof h3 { color: #fff; font-size: 1.25rem; }
 .capability-loop p, .collaboration-proof p { color: #c8d0ca; }
@@ -258,6 +276,8 @@ h3 { font-size: clamp(1.4rem, 2.2vw, 2.2rem); line-height: 1.16; font-weight: 70
 .radar-card > p:not(.radar-kicker):not(.radar-proof) { color: var(--fde-muted); font-size: 0.75rem; }
 .radar-proof { color: var(--fde-faint); font-size: 0.66rem; }
 .radar-card-featured .radar-proof { color: #c8d0ca; }
+.radar-card.radar-card-featured .radar-kicker,
+.radar-card.radar-card-featured .radar-kicker span { color: #b9d8cd; }
 .radar-repo { color: var(--fde-accent); font-size: 0.65rem; }
 .radar-note { color: var(--fde-faint); font-size: 0.66rem; }
 
@@ -376,6 +396,8 @@ h3 { font-size: clamp(1.4rem, 2.2vw, 2.2rem); line-height: 1.16; font-weight: 70
 .collaboration-proof .collaboration-grid article span { color: #b9d8cd; }
 .collaboration-proof .collaboration-grid article strong { color: #fff; }
 .collaboration-proof .collaboration-grid article p { color: #c8d0ca; }
+.hero-identity { color: var(--fde-muted); }
+.image-disclosure, .redaction-note, .radar-note { color: var(--fde-muted); }
 .radar-card.radar-card-featured h3,
 .radar-card.radar-card-featured > p:not(.radar-kicker):not(.radar-proof) { color: #fff; }
 .radar-card.radar-card-featured .radar-proof { color: #c8d0ca; }
