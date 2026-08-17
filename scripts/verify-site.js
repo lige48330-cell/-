@@ -6,19 +6,16 @@ const base = "/-/";
 const files = [
   "index.html",
   "resume.html",
-  "projects/esp32-iot-platform.html",
-  "projects/ai-supervisor.html",
-  "projects/aquaculture-prototype.html",
   "404.html",
   "portfolio.css",
   "portfolio-premium.css",
+  "fde.css",
   "portfolio.js",
-  "styles/site.css",
-  "scripts/site.js",
-  "robots.txt",
-  "sitemap.xml",
-  "images/aquaculture-erp-workflow.svg",
-  "images/agent-workflow.svg",
+  "images/aquaculture-erp-public.png",
+  "images/erp-prototype-map.svg",
+  "images/iot-monitoring-dashboard-public.png",
+  "images/esp32-miniapp-public.png",
+  "images/cockpit-runtime-flow.svg",
 ];
 
 function read(file) {
@@ -32,39 +29,68 @@ function links(content) {
 }
 
 for (const file of files) {
+  const target = path.join(root, file);
+  if (!fs.existsSync(target)) throw new Error(`Missing required file: ${file}`);
+  if (!/\.(?:png|ico|woff2)$/.test(file)) {
+    const content = read(file);
+    if (content.includes("�") || content.includes('\\"')) throw new Error(`${file} contains broken text`);
+  }
+}
+
+for (const file of ["index.html", "resume.html", "404.html"]) {
   const content = read(file);
-  if (content.includes("�") || content.includes('\\"')) throw new Error(`${file} contains broken text`);
-  if (file.endsWith(".html")) {
-    for (const link of links(content)) {
-      if (link.startsWith("#") || /^(mailto:|tel:|https?:\/\/|data:)/.test(link)) continue;
-      const clean = link.split(/[?#]/)[0];
-      const isPagesPath = clean.startsWith(base);
-      const relative = isPagesPath ? clean.slice(base.length) : clean.replace(/^\//, "");
-      const target = path.resolve(isPagesPath ? root : path.dirname(path.join(root, file)), relative || "index.html");
-      if (!target.startsWith(root) || !fs.existsSync(target)) throw new Error(`${file} links to missing target: ${link}`);
-    }
+  for (const link of links(content)) {
+    if (link.startsWith("#") || /^(mailto:|tel:|https?:\/\/|data:)/.test(link)) continue;
+    const clean = link.split(/[?#]/)[0];
+    const isPagesPath = clean.startsWith(base);
+    const relative = isPagesPath ? clean.slice(base.length) : clean.replace(/^\//, "");
+    const target = path.resolve(isPagesPath ? root : path.dirname(path.join(root, file)), relative || "index.html");
+    if (!target.startsWith(root) || !fs.existsSync(target)) throw new Error(`${file} links to missing target: ${link}`);
   }
 }
 
 const home = read("index.html");
-for (const text of ["FDE / 现场交付工程师", "把现场问题", "核心交付证据", "证据边界", "能力画像", "方案能力", "团队协作", "项目地图", "本地 AI 工具可靠性实验", "工程索引：公开、脱敏、私有和研究分层", "resume.html"]) {
+for (const text of [
+  "Lige · Forward Deployed Engineer",
+  "进入业务现场，",
+  "三个现场：我判断什么、推动什么、留下什么",
+  "FDE 如何收敛四类",
+  "现场</strong><small>角色 / 场景 / 约束",
+  "把 Agent 变成可观察、可审查、可接管的交付协作者",
+  "公开工程证明：快速进入陌生栈",
+  "真实项目界面 · AI 辅助脱敏",
+  "case-cockpit-tools",
+]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
 
-const radarCount = (home.match(/<article\b[^>]*\bclass=["'][^"']*\bradar-card\b/g) || []).length;
-if (radarCount !== 17) throw new Error(`Expected 17 radar cards, found ${radarCount}`);
-if (!read("portfolio.css").includes(".capability-proof-grid")) throw new Error("portfolio.css is missing capability styles");
-if (!read("fde.css").includes("--fde-accent: #32685b")) throw new Error("fde.css is missing FDE visual system");
-if (!read("portfolio-premium.css").includes("--signal: #107a5b")) throw new Error("premium visual system is missing signal color");
-if (!home.includes("tech-chain-signal")) throw new Error("Homepage is missing the tech-chain signal SVG");
-if (!read("portfolio-premium.css").includes("tech-chain-pulse")) throw new Error("premium visual system is missing tech-chain pulse");
-if (!read("portfolio.js").includes("techChainSignal")) throw new Error("portfolio.js is missing tech-chain signal logic");
-if (!read("portfolio.js").includes("radarCards.length")) throw new Error("portfolio.js is missing radar count logic");
-for (const file of ["index.html", "projects/esp32-iot-platform.html", "projects/ai-supervisor.html", "projects/aquaculture-prototype.html"]) {
+const flagshipCount = (home.match(/<article\b[^>]*\bclass=["'][^"']*\bflagship-case\b/g) || []).length;
+if (flagshipCount !== 3) throw new Error(`Expected 3 flagship cases, found ${flagshipCount}`);
+if (home.includes('href="resume.html"')) throw new Error("Incomplete resume must not be linked from the homepage");
+if ((home.match(/class="mobile-nav"/g) || []).length !== 1) throw new Error("Mobile navigation is missing");
+
+const css = read("fde.css");
+for (const selector of [".case-evidence-grid", ".delivery-spine", ".responsibility-matrix", ".agent-delivery-grid", ".supporting-grid"]) {
+  if (!css.includes(selector)) throw new Error(`fde.css is missing ${selector}`);
+}
+
+const js = read("portfolio.js");
+for (const snippet of ["cockpit-runtime-flow.svg", "ArrowLeft", "revealTargets", "pointerTargets"]) {
+  if (!js.includes(snippet)) throw new Error(`portfolio.js is missing ${snippet}`);
+}
+
+const forbiddenPublicPatterns = [
+  ["credential assignment", /(?:password|passwd|密码|账号|用户名|api[\s_-]?key)\s*[:：=]\s*[^\s<>"']+/i],
+  ["bearer token", /bearer\s+[A-Za-z0-9._-]{12,}/i],
+  ["phone number", /\b1[3-9]\d{9}\b/],
+  ["Windows absolute path", /\b[A-Za-z]:\\[^\r\n<>"']+/],
+];
+
+for (const file of ["index.html", "resume.html", "portfolio.js", "images/cockpit-runtime-flow.svg", "images/erp-prototype-map.svg"]) {
   const content = read(file);
-  if (/(password|passwd|api[_-]?key|bearer\s+[A-Za-z0-9._-]+)/i.test(content)) {
-    throw new Error(`${file} contains credential-like text`);
+  for (const [label, pattern] of forbiddenPublicPatterns) {
+    if (pattern.test(content)) throw new Error(`${file} contains ${label}`);
   }
 }
 
-console.log("Portfolio site verified.");
+console.log("FDE portfolio site verified.");
