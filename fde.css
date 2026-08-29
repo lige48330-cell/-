@@ -841,7 +841,7 @@ a.responsibility-row:hover, a.responsibility-row:focus-visible { padding-left: 1
   .hero-evidence-list li:first-child a { border-top: 1px solid var(--fde-line); }
   .hero-actions { grid-template-columns: 1fr; margin-top: 0.85rem; }
   .hero-actions .button-quiet { display: none; }
-  .project-control-room { display: none; }
+  .project-control-room { display: block; width: 100%; min-height: 0; box-shadow: 5px 5px 0 var(--fde-accent-soft); }
   .section-block { padding-top: 4.2rem; }
   .section-heading { grid-template-columns: 1fr; gap: 0.8rem; align-items: start; padding-bottom: 1rem; margin-bottom: 1.4rem; }
   .section-heading h2 { font-size: clamp(2rem, 9vw, 2.75rem); }
@@ -909,6 +909,12 @@ a.responsibility-row:hover, a.responsibility-row:focus-visible { padding-left: 1
 .hero h1 em { font-size: 0.72em; white-space: nowrap; }
 .hero h1 em span { display: inline; }
 .agent-proof-actions { display: flex; flex-wrap: wrap; gap: 0.8rem 1.1rem; align-items: center; }
+
+/* Keep keyboard navigation visible after the legacy theme layers are applied. */
+a:focus-visible, button:focus-visible, summary:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--fde-warm);
+  outline-offset: 3px;
+}
 
 @media (min-width: 721px) {
   .flagship-case { align-items: start; overflow: clip; }

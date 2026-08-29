@@ -2,9 +2,9 @@
 
 [English](README.md) · [中文](README_zh.md)
 
-Continue-thinking middleware for Codex / OpenAI Responses-compatible APIs.
+Experimental continuation middleware for local Codex / Responses-compatible test environments.
 
-This project is a small Starlette proxy that sits between a coding agent and an upstream Responses endpoint. It detects a known reasoning-truncation fingerprint (`usage.output_tokens_details.reasoning_tokens == 518 * n - 2`), silently asks the model to continue thinking, and folds multiple upstream streaming responses into one coherent downstream SSE response.
+This project is a small Starlette proxy that sits between a coding agent and a Responses-compatible endpoint. It detects a configured reasoning-truncation pattern, requests a bounded continuation, and folds multiple streaming responses into one downstream SSE response for local experiments.
 
 ```text
 Coding agent  ->  CodexCont  ->  Codex / Responses API
@@ -14,7 +14,7 @@ Coding agent  ->  CodexCont  ->  Codex / Responses API
 
 ## Disclaimer
 
-This project explicitly bypasses the observed OpenAI Codex reasoning-truncation behavior. If your use of this middleware is considered abusive, violates service terms, increases costs unexpectedly, or causes any other adverse consequences, you are solely responsible for those consequences.
+This is an experimental compatibility layer, not a production workaround. Use only with an endpoint and account where proxying, continuation requests, data handling and cost are authorized. Keep the safety cap enabled, review upstream terms, and do not use it to evade service limits or policy controls.
 
 ## What it does
 
