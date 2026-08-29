@@ -10,9 +10,9 @@
 - Pages：独立发布工作树的 `gh-pages` 分支
 - GitHub：`git@github.com:lige48330-cell/-.git`
 - 线上：`https://lige48330-cell.github.io/-/`
-- 本轮发布前源站基线：`a432324`（`main`）
-- 本轮发布前 Pages 基线：`117eaf0`（`gh-pages`）
-- 发布后应使用新的提交哈希作为缓存参数，并在线核验 TraceRAG Demo。
+- 本轮源站提交：`8ac44f7`（`main`）
+- 本轮 Pages 发布提交：`0012696`（`gh-pages`）
+- 线上核验地址：`https://lige48330-cell.github.io/-/?v=0012696`
 
 ## 已完成
 
@@ -21,7 +21,7 @@
 - 首屏定位：`FDE / Forward Deployed Engineer`
 - 主叙事：`进入业务现场，跨栈推进系统交付。交得出，验得清，接得住。`
 - AI 的位置：交付放大器，不作为职位名称前缀。
-- 主标题：`把现场问题，推进成可运行、可交接的系统。`
+- 主标题：`进入业务现场，跨栈推进系统交付。交得出，验得清，接得住。`
 - 核心证据：养殖渔业 ERP、消毒除臭设备 IoT 监管、Cockpit Tools 私有化 Codex / AI IDE 桌面工作台。
 - 新增公开第一证据：TraceRAG Agent（知识摄取、检索、路由、人工闸门、引用回答与 trace / handoff）。
 - 公司项目始终以“真实项目截图 · AI 辅助脱敏”展示，源码不公开。
@@ -71,7 +71,7 @@
 1. `portfolio-premium.css` 定义静态轨道和 `stroke-dashoffset` 脉冲。
 2. `portfolio.js` 使用 `IntersectionObserver` 只触发一次，reduced-motion 下静态降级。
 3. 桌面与 390px 手机端验证通过，无横向溢出。
-4. 资源版本号升级为 `20260814d`，用于避免旧 CSS / JS 缓存。
+4. 资源版本号升级为 `20260830a`，用于避免旧 CSS / JS 缓存。
 
 接手后应继续关注线上复核、项目边界和新需求，不要重复实现已有的 SVG 动效。
 
