@@ -3,13 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Lige 的 FDE 交付档案：业务建模、ERP、IoT / ESP32、全栈集成与 Agent 工程。" />
+    <meta name="description" content="Lige 的 FDE 交付档案：把业务问题推进成可运行、可验证、可交接的 AI Agent 与全栈系统。" />
+    <link rel="canonical" href="https://lige48330-cell.github.io/-/" />
+    <meta property="og:title" content="Lige / FDE · AI Agent 与全栈系统交付" />
+    <meta property="og:description" content="业务建模、原型、跨栈集成、Agent 工程与可核验交接。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lige48330-cell.github.io/-/" />
     <title>Lige / FDE 交付档案</title>
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="preload" href="fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="portfolio.css?v=20260817b" />
-    <link rel="stylesheet" href="portfolio-premium.css?v=20260817b" />
-    <link rel="stylesheet" href="fde.css?v=20260817b" />
+    <link rel="stylesheet" href="portfolio.css?v=20260830a" />
+    <link rel="stylesheet" href="portfolio-premium.css?v=20260830a" />
+    <link rel="stylesheet" href="fde.css?v=20260830a" />
+    <link rel="stylesheet" href="trace-rag.css?v=20260830a" />
   </head>
   <body>
     <a class="skip-link" href="#projects">跳到核心交付</a>
@@ -26,16 +32,18 @@
           <a href="#projects">核心交付</a>
           <a href="#responsibility">FDE 责任</a>
           <a href="#agent-delivery">Agent 工程</a>
-          <a href="#project-radar">补充证据</a>
+          <a href="#trace-rag">TraceRAG</a>
+          <a href="#project-radar">公开项目</a>
         </div>
-        <a class="nav-cta" href="#projects">查看三个主案例</a>
+        <a class="nav-cta" href="#projects">查看 FDE 交付 ↗</a>
         <details class="mobile-nav">
           <summary>导航</summary>
           <div>
             <a href="#projects">核心交付</a>
             <a href="#responsibility">FDE 责任</a>
             <a href="#agent-delivery">Agent 工程</a>
-            <a href="#project-radar">补充证据</a>
+            <a href="#trace-rag">TraceRAG</a>
+            <a href="#project-radar">公开项目</a>
           </div>
         </details>
       </nav>
@@ -47,7 +55,7 @@
           <div class="hero-identity"><span>FIELD DELIVERY / FDE</span><span>BUSINESS × SYSTEMS × AGENTS</span></div>
           <p class="eyebrow">现场判断 / 方案原型 / 跨栈集成 / 验收交接</p>
           <h1 id="hero-title">进入业务现场，<br />跨栈推进系统交付。<br /><em><span>交得出，验得清，</span><span>接得住。</span></em></h1>
-          <p class="hero-lede">我从业务角色、现场约束和验收条件开始，把流程、状态与异常变成方案和原型，再推进 ERP、小程序、IoT 管理端与桌面工程的接口协作、问题定位和验证。最终留下核验路径、验证记录、边界说明与交接材料；Agent 是缩短这条路径的工程增益层。</p>
+          <p class="hero-lede">我把现场问题拆成业务模型、接口契约和可观察任务，再用 React、Python、Node、Rust 等跨栈推进实现；最后用 trace、测试、验收场景和交接文档证明系统真的能被使用和接手。Agent 是我组织上下文、工具与协作的工程方式。</p>
           <ul class="hero-evidence-list" aria-label="三项核心交付证据">
             <li><a href="#case-erp"><span>01 / BUSINESS MODELING</span><strong>把业务规则变成可配置模型</strong><small>养殖渔业 ERP（脱敏）· 流程 / 对象 / 字段 / 状态 / 单据核验</small></a></li>
             <li><a href="#case-iot"><span>02 / SYSTEM INTEGRATION</span><strong>把设备反馈变成管理视图</strong><small>消毒除臭设备（脱敏）· 大屏 / 小程序 / 云端接口协作</small></a></li>
@@ -55,7 +63,8 @@
           </ul>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects">先看三个主案例</a>
-            <a class="button button-quiet" href="#responsibility">我对交付负责什么</a>
+            <a class="button button-quiet" href="#trace-rag">运行 AI Agent 原型 ↗</a>
+            <a class="button button-quiet" href="resume.html">打开简历 ↗</a>
           </div>
         </div>
 
@@ -258,51 +267,99 @@
         </div>
       </section>
 
+      <section id="trace-rag" class="section-wrap section-block trace-rag-feature" aria-labelledby="trace-rag-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 / PUBLIC BUILD · TRACE RAG AGENT</p>
+            <h2 id="trace-rag-title">把 Agent 做成一条能跑、能解释、能交接的系统链</h2>
+          </div>
+          <p>用一个不依赖外部模型的可运行原型，证明我能把知识摄取、检索、路由、人工闸门、引用回答和交接 trace 组织成完整工程闭环。</p>
+        </div>
+        <div class="trace-rag-layout">
+          <div class="trace-rag-copy">
+            <div class="trace-rag-status"><span class="status-led"></span><strong>可运行公开原型</strong><em>mock 数据 · 无外部凭据</em></div>
+            <h3>TraceRAG Agent</h3>
+            <p class="trace-rag-lede">面对“设备离线怎么办”这类现场问题，系统先检索有出处的资料；遇到低置信度或可能改变状态的请求，就停在人工确认点，并留下下一步负责人需要的上下文。</p>
+            <ol class="trace-rag-chain" aria-label="TraceRAG 技术链">
+              <li><span>01</span><strong>知识摄取</strong><small>文档 / 分块 / 索引</small></li>
+              <li><span>02</span><strong>证据检索</strong><small>命中 / 评分 / 引用</small></li>
+              <li><span>03</span><strong>Agent 路由</strong><small>知识问答 / 受控动作</small></li>
+              <li><span>04</span><strong>人工闸门</strong><small>确认 / 停止 / 回滚</small></li>
+              <li><span>05</span><strong>交接 trace</strong><small>结果 / 风险 / 下一步</small></li>
+            </ol>
+            <div class="trace-rag-proof-grid">
+              <div><span>API</span><strong>/api/health · /api/query · /api/ingest</strong><small>标准库 HTTP 服务，可 curl 验证</small></div>
+              <div><span>QUALITY</span><strong>7 offline tests</strong><small>检索、置信度与人工闸门路径</small></div>
+              <div><span>BOUNDARY</span><strong>无静默变更</strong><small>确认后也只生成 mock 计划，不触碰外部系统</small></div>
+            </div>
+            <div class="trace-rag-actions">
+              <a class="button button-primary" href="open-source/trace-rag-agent/demo.html" target="_blank" rel="noreferrer">打开可交互 Demo ↗</a>
+              <a class="text-link" href="https://github.com/lige48330-cell/-/tree/main/open-source/trace-rag-agent" target="_blank" rel="noreferrer">阅读源码与测试 ↗</a>
+              <a class="text-link" href="docs/trace-rag-primary-research.md">阅读一手资料与边界 ↗</a>
+            </div>
+          </div>
+          <figure class="trace-rag-visual">
+            <img src="open-source/trace-rag-agent/architecture.svg" alt="TraceRAG Agent 从业务问题到引用回答和交接的技术架构图" />
+            <figcaption>架构证据：业务问题 → 检索 → 路由 → 人工闸门 → 引用回答 / handoff。</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section id="project-radar" class="section-wrap section-block supporting-evidence" aria-labelledby="project-radar-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">04 / SUPPORTING EVIDENCE</p>
-            <h2 id="project-radar-title">公开工程证明：快速进入陌生栈，并把探索沉淀成资产</h2>
+            <p class="eyebrow">05 / PUBLIC PROJECT MATRIX</p>
+            <h2 id="project-radar-title">公开工程按能力分层，不用项目数量制造噪声</h2>
           </div>
-          <p>这些个人项目不是主经历的替代品，而是证明我能快速读懂陌生栈、做出可讨论原型、建立 Agent 工作流并留下可复用工程资产。</p>
+          <p>优先展示能被运行、阅读或复盘的 AI / 全栈证据；业务原型保留为场景迁移能力，低价值项目放入折叠档案。</p>
         </div>
         <div class="supporting-grid">
           <article class="evidence-card">
-            <p class="radar-kicker"><span>AI DELIVERY METHOD</span><em>公开源码</em></p>
-            <h3>Stable-First AI 工程工作流</h3>
-            <p>把探索、需求、实现、稳定性、验收和复盘整理成有上下文与质量闸门的交付流程。</p>
-            <p class="radar-proof"><strong>补充能力</strong> · Agent 协作、验证门禁、团队交接</p>
+            <p class="radar-kicker"><span>AI INFRASTRUCTURE</span><em>公开源码</em></p>
+            <h3>CodexCont</h3>
+            <p>Python / Starlette 流式中间件实验：处理 Responses-compatible SSE、鉴权边界和离线 fixture 测试。</p>
+            <p class="radar-proof"><strong>证明</strong> · Python、HTTP、SSE 状态机、测试夹具</p>
+            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/codexcont" target="_blank" rel="noreferrer">查看源码 ↗</a>
+          </article>
+          <article class="evidence-card">
+            <p class="radar-kicker"><span>AGENT WORKFLOW</span><em>公开源码</em></p>
+            <h3>Stable-First AI Workflow</h3>
+            <p>把需求结构化、上下文准备、实现、稳定性、验收和复盘变成带闸门的可重复工作流。</p>
+            <p class="radar-proof"><strong>证明</strong> · 任务拆解、质量闸门、团队交接</p>
             <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/stable-first-ai-workflow" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
           <article class="evidence-card">
-            <p class="radar-kicker"><span>AGENT CONTROL STACK</span><em>公开源码</em></p>
-            <h3>Code Control Stack</h3>
-            <p>以 registry、anchor map、Skill 路由和工具语义组织复杂 Agent 上下文与执行边界。</p>
-            <p class="radar-proof"><strong>补充能力</strong> · Agent 架构、工具语义、质量闸门</p>
-            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/code-control-stack" target="_blank" rel="noreferrer">查看源码 ↗</a>
+            <p class="radar-kicker"><span>AGENT QUALITY GATE</span><em>本机验证</em></p>
+            <h3>AI Supervisor</h3>
+            <p>把 spec / plan、文件状态和禁止项检查转成报告与 exit code，让 Agent 的“已完成”可以被外部证据复核。</p>
+            <p class="radar-proof"><strong>证明</strong> · review / guard / hook / doctor、93 个离线测试</p>
+            <a class="radar-repo" href="docs/ai-supervisor-case.zh-CN.md">查看脱敏能力卡 ↗</a>
           </article>
           <article class="evidence-card">
-            <p class="radar-kicker"><span>INDUSTRIAL PROTOTYPE</span><em>公开源码</em></p>
-            <h3>工业监控分析原型</h3>
-            <p>围绕设备时间轴、AI 概率、激光厚度和视频时间轴组织复杂状态信息。</p>
-            <p class="radar-proof"><strong>补充能力</strong> · Vue 3、ECharts、信息分层与原型验证</p>
-            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/industrial-monitor-prototype" target="_blank" rel="noreferrer">查看源码 ↗</a>
-          </article>
-          <article class="evidence-card">
-            <p class="radar-kicker"><span>AI STREAMING LAB</span><em>公开源码</em></p>
-            <h3>CodexCont</h3>
-            <p>围绕 Responses API 的 SSE 流处理、鉴权边界与离线测试开展本地可靠性研究。</p>
-            <p class="radar-proof"><strong>补充能力</strong> · Python、Starlette、SSE、测试夹具</p>
-            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/codexcont" target="_blank" rel="noreferrer">查看源码 ↗</a>
+            <p class="radar-kicker"><span>FULL-STACK DOMAIN</span><em>公开源码</em></p>
+            <h3>数字水产工作台</h3>
+            <p>Vue 3 / TypeScript / Pinia / ECharts 组织水质、设备、视频和报表状态，验证复杂业务信息架构。</p>
+            <p class="radar-proof"><strong>证明</strong> · 前端状态建模、数据视图、场景原型</p>
+            <a class="radar-repo" href="https://github.com/lige48330-cell/-/tree/main/open-source/digital-aquaculture-prototype" target="_blank" rel="noreferrer">查看源码 ↗</a>
           </article>
         </div>
         <details class="evidence-archive">
-          <summary><span>再看两个公开原型</span><strong>数字水产工作台 / 开发者服务小程序</strong></summary>
+          <summary><span>补充工程档案</span><strong>上下文契约 / 工业监控 / 有界自动化 / 开发者小程序</strong></summary>
           <div class="evidence-archive-grid">
             <article class="archive-item">
-              <div><span>PUBLIC PROTOTYPE</span><h3>数字水产养殖原型</h3></div>
-              <p>用 Vue 3、TypeScript、Pinia 和 ECharts 组织水质、设备、视频、养殖数据与报表工作台。</p>
-              <a href="https://github.com/lige48330-cell/-/tree/main/open-source/digital-aquaculture-prototype" target="_blank" rel="noreferrer">查看源码 ↗</a>
+              <div><span>AGENT CONTRACTS · RESEARCH</span><h3>Code Control Stack</h3></div>
+              <p>用显式 registry、上下文契约、工具边界和反馈闸门组织 Agent 的可发现性与执行责任。</p>
+              <a href="https://github.com/lige48330-cell/-/tree/main/open-source/code-control-stack" target="_blank" rel="noreferrer">查看源码 ↗</a>
+            </article>
+            <article class="archive-item">
+              <div><span>PUBLIC PROTOTYPE</span><h3>工业监控分析原型</h3></div>
+              <p>围绕设备时间轴、AI 概率、激光厚度和视频时间轴组织复杂状态信息。</p>
+              <a href="https://github.com/lige48330-cell/-/tree/main/open-source/industrial-monitor-prototype" target="_blank" rel="noreferrer">查看源码 ↗</a>
+            </article>
+            <article class="archive-item">
+              <div><span>FULL-STACK AUTOMATION · LOCAL EVIDENCE</span><h3>有界数据流水线</h3></div>
+              <p>Node 本地 Dashboard、Python 采集器、规范化 JSONL、预览产物和离线检查组成可复盘的自动化链路；原始工程含登录态边界，源码暂不公开。</p>
+              <a href="docs/china-job-channels-case.zh-CN.md">查看脱敏能力卡 ↗</a>
             </article>
             <article class="archive-item">
               <div><span>PUBLIC PROTOTYPE</span><h3>开发者服务展示小程序</h3></div>
@@ -323,6 +380,6 @@
       <div class="footer-proof"><strong>FDE DELIVERY SIGNAL</strong><span>进入现场定义问题，跨栈推进实现，带着验证记录和交接边界离场。</span></div>
       <a href="https://github.com/lige48330-cell/-" target="_blank" rel="noreferrer">GitHub 作品集 ↗</a>
     </footer>
-    <script src="portfolio.js?v=20260817b"></script>
+    <script src="portfolio.js?v=20260830a"></script>
   </body>
 </html>

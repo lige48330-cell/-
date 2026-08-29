@@ -6,24 +6,26 @@
 
 ## 仓库与发布
 
-- 源站：`D:\2\pojie\portfolio`，分支 `main`
-- Pages：`D:\2\pojie\portfolio-gh-pages`，分支 `gh-pages`
+- 源站：本仓库 `main` 分支
+- Pages：独立发布工作树的 `gh-pages` 分支
 - GitHub：`git@github.com:lige48330-cell/-.git`
 - 线上：`https://lige48330-cell.github.io/-/`
-- 最新已发布：`7a1bda6`（`gh-pages`）
-- 最新源站提交：`27230ca`（`main`）
-- 最新线上缓存 URL：`https://lige48330-cell.github.io/-/?v=7a1bda6`
+- 本轮发布前源站基线：`a432324`（`main`）
+- 本轮发布前 Pages 基线：`117eaf0`（`gh-pages`）
+- 发布后应使用新的提交哈希作为缓存参数，并在线核验 TraceRAG Demo。
 
 ## 已完成
 
 ### 定位与内容
 
 - 首屏定位：`FDE / Forward Deployed Engineer`
-- 主叙事：`把现场问题，推进成可运行、可交接的系统。`
+- 主叙事：`进入业务现场，跨栈推进系统交付。交得出，验得清，接得住。`
 - AI 的位置：交付放大器，不作为职位名称前缀。
 - 主标题：`把现场问题，推进成可运行、可交接的系统。`
 - 核心证据：养殖渔业 ERP、消毒除臭设备 IoT 监管、Cockpit Tools 私有化 Codex / AI IDE 桌面工作台。
+- 新增公开第一证据：TraceRAG Agent（知识摄取、检索、路由、人工闸门、引用回答与 trace / handoff）。
 - 公司项目始终以“真实项目截图 · AI 辅助脱敏”展示，源码不公开。
+- 公开工程按“可运行 Agent / AI 基础设施 / 方法资产 / 业务原型”分层，避免把低价值原型当成主证据。
 
 ### 视觉与交互
 
@@ -40,13 +42,16 @@
 - 新增 `resume.html`：可编辑、可打印、A4 友好的 FDE 中文简历。
 - 新增 `docs/fde-positioning-brief.zh-CN.md`：定位、证据结构、主案例排序和验收标准。
 - 首页新增简历入口，首页与简历统一使用现场问题 → 交付链 → 证据边界的叙事。
+- 首页新增 TraceRAG 可交互 Demo 入口与技术链，首屏明确 FDE 的 Agent / 全栈交付方式。
 - 修复旧主题造成的白底白字：方案证据条和 IoT / Agent 来源列现在使用明确的深色背景与高对比文本。
 - 主标题改为黑色主体 + 暖色关键词 + 细青绿色强调；桌面卡片增加轻微指针透视反馈，手机与 reduced-motion 自动关闭。
+- TraceRAG 区域使用独立浅色证据面板，展示 API、测试、人工闸门和架构图；不使用白底白字。
+- `docs/trace-rag-primary-research.md` 汇总 RAG、工具授权、人工闸门、trace 与评测的一手资料，并逐项标出当前原型边界。
 - 视觉参考后将高饱和蓝色替换为低饱和深青绿，砖红保留为关键词色，避免页面出现模板化蓝色字。
 
 ## 动效研究
 
-研究记录：`D:\2\pojie\portfolio\docs\animation-portfolio-github-research.md`
+研究记录：`docs/animation-portfolio-github-research.md`
 
 参考 GitHub 的 Magic UI、Codrops OnScrollTypographyAnimations、Codrops ScrollBasedLayoutAnimations 与 Dopefolio。结论：不引入 GSAP、Lenis、Three.js 等依赖；不使用自定义光标、滚动劫持、无限 marquee、全屏粒子或文字 blur。
 
@@ -68,11 +73,20 @@
 3. 桌面与 390px 手机端验证通过，无横向溢出。
 4. 资源版本号升级为 `20260814d`，用于避免旧 CSS / JS 缓存。
 
-接手后应继续关注线上复核和新需求，不要重复实现这条 SVG 动效。
+接手后应继续关注线上复核、项目边界和新需求，不要重复实现已有的 SVG 动效。
+
+## TraceRAG Agent（本轮新增）
+
+- 目录：`open-source/trace-rag-agent/`
+- 公开入口：`demo.html`（GitHub Pages 可直接运行）
+- 本地入口：`python run.py`，API 默认 `127.0.0.1:8788`
+- 测试：`python -m unittest discover -s tests -v`
+- 证据边界：纯 mock 运维知识，不连接真实模型、设备或公司系统。
+- 技术链：业务问题 → 摄取 / 分块 → 检索 → Agent 路由 → 人工闸门 → 引用回答 → trace / handoff。
 
 ## 验证命令
 
-在 `D:\2\pojie\portfolio-gh-pages`：
+在 Pages 发布工作树中：
 
 ```powershell
 node scripts\verify-site.js
@@ -93,13 +107,14 @@ git status --short --branch
 - 不公开公司 ERP、ESP32 固件、小程序源码、账号、密码、手机号、API Key、Bearer Token、业务数据或内部地址。
 - 只公开已允许开源的个人项目；公司项目只展示脱敏截图、职责、技术链与可面试说明。
 - 不伪造量化结果，不使用无法被源码、测试、截图或文档支撑的“主导”“全链路”等表述。
+- TraceRAG 的“可运行”仅指公开静态 Demo 与本地标准库 API，不能表述为线上生产系统或真实业务上线。
 - `CodexCont`、`Code Control Stack`、安全 RAG 等研究不是主招聘证据，只能按现有证据等级陈述。
 
 ## 主要文件
 
-- 首页：`D:\2\pojie\portfolio\index.html`
-- 样式：`D:\2\pojie\portfolio\portfolio-premium.css`
-- FDE 样式：`D:\2\pojie\portfolio\fde.css`
-- 简历：`D:\2\pojie\portfolio\resume.html`
-- 交互：`D:\2\pojie\portfolio\portfolio.js`
-- Pages 校验：`D:\2\pojie\portfolio-gh-pages\scripts\verify-site.js`
+- 首页：`index.html`
+- 样式：`portfolio-premium.css`
+- FDE 样式：`fde.css`
+- 简历：`resume.html`
+- 交互：`portfolio.js`
+- Pages 校验：`scripts/verify-site.js`

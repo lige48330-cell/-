@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="TraceRAG Agent：可观察、可接管的 RAG Agent 全栈原型演示。" />
+    <title>TraceRAG Agent / 可核验 Agent 原型</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <header class="demo-header">
+      <a class="demo-brand" href="#top"><span>TR</span><strong>TraceRAG Agent</strong></a>
+      <div class="header-meta"><span>OFFLINE-FIRST PROTOTYPE</span><span class="status-dot">LOCAL DEMO</span></div>
+    </header>
+
+    <main id="top">
+      <section class="demo-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">AI AGENT / RETRIEVAL / HANDOFF</p>
+          <h1>回答要有出处，<em>动作要有闸门。</em></h1>
+          <p>把一条业务问题走过的路径完整摊开：摄取知识、检索证据、选择路由、请求人工确认，再把结果交接给下一位执行者。</p>
+          <div class="hero-facts"><span><strong>4</strong> mock docs</span><span><strong>3</strong> routes</span><span><strong>1</strong> human gate</span></div>
+        </div>
+        <div class="hero-schematic" aria-label="TraceRAG 运行链路">
+          <div class="schematic-line"></div>
+          <span>INPUT</span><span>INDEX</span><span>ROUTE</span><span>GATE</span><span>HANDOFF</span>
+        </div>
+      </section>
+
+      <section class="workbench" aria-labelledby="workbench-title">
+        <div class="section-bar"><div><p class="eyebrow">01 / RUN A TRACE</p><h2 id="workbench-title">运行一次可复盘的 Agent 任务</h2></div><p class="demo-note">静态演示使用本地 mock 知识库；不会调用外部模型，也不会写入真实系统。</p></div>
+        <div class="workbench-grid">
+          <form id="query-form" class="query-panel">
+            <label for="query-input">输入现场问题</label>
+            <textarea id="query-input" rows="4" placeholder="例如：设备离线怎么排查？" required></textarea>
+            <div class="example-list" aria-label="示例问题">
+              <button type="button" data-query="设备离线怎么排查">设备离线怎么排查</button>
+              <button type="button" data-query="任务回执超时怎么办">任务回执超时怎么办</button>
+              <button type="button" data-query="直接下发消毒任务">直接下发消毒任务</button>
+              <button type="button" data-query="财务报表怎么导出">财务报表怎么导出</button>
+            </div>
+            <button class="run-button" type="submit"><span>运行 Agent</span><b>↗</b></button>
+            <p class="gate-hint">包含“下发 / 修改 / 删除 / 重启”的请求会停在人工确认，不会静默执行。</p>
+          </form>
+          <div class="result-panel" aria-live="polite">
+            <div class="result-top"><span class="result-label">ANSWER</span><span id="result-state" class="state-chip state-idle">等待输入</span></div>
+            <p id="answer-output" class="answer-output">选择一个示例问题，查看回答、引用和完整 trace。</p>
+            <div class="result-meta"><span>ROUTE <strong id="route-output">—</strong></span><span>CONFIDENCE <strong id="confidence-output">—</strong></span><span>HUMAN GATE <strong id="gate-output">—</strong></span></div>
+            <button id="approve-button" class="approve-button" type="button" hidden>确认影响范围，生成 mock 计划</button>
+            <div class="citation-block"><p>引用证据</p><div id="citation-output" class="citation-list"><span class="empty-state">暂无引用</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trace-section" aria-labelledby="trace-title">
+        <div class="section-bar"><div><p class="eyebrow">02 / OBSERVABILITY</p><h2 id="trace-title">Trace 让判断过程可以被接手</h2></div><p class="demo-note">每个节点都是结构化事件：下一位同事不需要猜 Agent 做过什么。</p></div>
+        <ol id="trace-list" class="trace-list"><li class="trace-empty">运行任务后，事件会按顺序出现在这里。</li></ol>
+      </section>
+
+      <section class="architecture-section" aria-labelledby="architecture-title">
+        <div class="section-bar"><div><p class="eyebrow">03 / SYSTEM CONTRACT</p><h2 id="architecture-title">小接口，完整闭环</h2></div><a class="back-link" href="README.md">阅读工程说明 ↗</a></div>
+        <div class="contract-grid">
+          <article><span>01</span><h3>KnowledgeBase</h3><p>摄取文档、分块并建立确定性索引；可替换为向量库而不改变 Agent API。</p><code>ingest() · search()</code></article>
+          <article><span>02</span><h3>AgentRuntime</h3><p>把知识查询、动作请求和低置信度问题路由到不同路径。</p><code>run(query, approved)</code></article>
+          <article><span>03</span><h3>Trace / Handoff</h3><p>回答之外保留引用、置信度、阻塞原因和下一步负责人。</p><code>answer · citations · trace</code></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="demo-footer"><span>TraceRAG Agent · 个人公开原型 · mock 数据</span><a href="https://github.com/lige48330-cell/-/tree/main/open-source/trace-rag-agent" target="_blank" rel="noreferrer">查看源码 ↗</a></footer>
+    <script src="demo.js"></script>
+  </body>
+</html>

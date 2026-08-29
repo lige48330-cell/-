@@ -128,6 +128,9 @@ const revealTargets = document.querySelectorAll([
   ".delivery-spine li",
   ".responsibility-row",
   ".agent-contract-panel",
+  ".trace-rag-copy",
+  ".trace-rag-visual",
+  ".trace-rag-chain li",
   ".evidence-card",
   ".archive-item",
 ].join(","));
@@ -171,6 +174,8 @@ const pointerTargets = document.querySelectorAll([
   ".project-control-room",
   ".flagship-case",
   ".agent-contract-panel",
+  ".trace-rag-copy",
+  ".trace-rag-visual",
   ".evidence-card",
 ].join(","));
 const pointerFine = window.matchMedia("(pointer: fine)").matches;

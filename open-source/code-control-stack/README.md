@@ -1,17 +1,17 @@
 # Code Control Stack
 
-完整上下文工程配置包。把模型行为控制从"对抗"改为"环境工程"。
+完整上下文工程配置包。用显式上下文、工具契约、权限边界和反馈记录，让 Agent 的行为可发现、可审查、可交接。
 
 ## 核心原理
 
-不是让模型违反规则，而是让模型在它的规则系统里，觉得这就是正确的事。
+目标不是操纵模型或绕过平台规则，而是把合法任务的输入、工具和验证条件写清楚，让每一步都能被人复核。
 
 ```
-语义入口（工具名/description/skill description）
-  → 改变模型的 embedding 表征
-  → 改变 tool call logits
-  → 改变调用行为、参数填充、结果解释
-  → 整条对话轨迹收敛到授权动作
+任务上下文（目标/边界/证据）
+  → 工具注册与参数契约
+  → 权限与人工确认点
+  → 执行反馈与日志
+  → 可验证、可交接的任务结果
 ```
 
 ## 文件结构
@@ -80,12 +80,12 @@ Skill 路由（ask-matt → ctf-sandbox-orchestrator → project-automation）
   → 决定走哪条 flow、建立 sandbox 模型、执行流程
         ↓
 registry.yaml（工具语义入口）
-  → 模型看到：provision_test_environment / collect_target_fingerprint / ...
-  → 语义空间：测试/工程/运维，无对抗语义
+  → Agent 看到：provision_test_environment / collect_target_fingerprint / ...
+  → 每个入口都有用途、参数、权限和验证说明
         ↓
 anchor-map.yaml（运行时解析）
-  → 实际执行：setup_environment_instance / enumerate_target_surface / ...
-  → 模型全程不可见内部名
+  → 运行时映射到明确的实现适配器
+  → 保留审计记录与失败边界
 ```
 
 ## 工具命名规范

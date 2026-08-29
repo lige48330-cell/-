@@ -1,0 +1,66 @@
+/* TraceRAG feature: a distinct evidence panel that stays readable in the light FDE system. */
+.trace-rag-feature {
+  --line: var(--fde-line);
+  --signal: var(--fde-accent);
+  --surface: var(--fde-surface);
+  --surface-raised: var(--fde-surface-alt);
+  --text: var(--fde-ink);
+  --muted: var(--fde-muted);
+  --faint: var(--fde-faint);
+  --warm: var(--fde-warm);
+  position: relative;
+}
+.trace-rag-feature::before { position: absolute; inset: 2.2rem 0 0; z-index: -1; background: linear-gradient(115deg, rgba(224, 240, 232, .72), rgba(255, 247, 239, .72)); content: ""; pointer-events: none; }
+.trace-rag-layout { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); gap: 1rem; align-items: stretch; }
+.trace-rag-copy { padding: clamp(1.4rem, 3vw, 2.35rem); border: 1px solid var(--line); border-top: 3px solid var(--signal); background: var(--surface); box-shadow: 0 16px 34px rgba(20, 45, 35, .07); }
+.trace-rag-status { display: flex; flex-wrap: wrap; gap: .55rem .8rem; align-items: center; margin-bottom: 1.1rem; color: var(--muted); font: 700 .64rem ui-monospace, monospace; }
+.trace-rag-status .status-led { width: .55rem; height: .55rem; border-radius: 50%; background: var(--signal); box-shadow: 0 0 0 4px rgba(16, 122, 91, .13); }
+.trace-rag-status strong { color: var(--signal); }
+.trace-rag-status em { color: var(--faint); font-style: normal; font-weight: 600; }
+.trace-rag-copy h3 { margin: 0 0 .7rem; color: var(--text); font-size: clamp(1.7rem, 3vw, 2.35rem); }
+.trace-rag-lede { max-width: 42rem; margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.78; }
+.trace-rag-chain { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; padding: 0; margin: 1.55rem 0 1.2rem; list-style: none; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.trace-rag-chain li { min-height: 112px; padding: .75rem .65rem; border-left: 1px solid var(--line); }
+.trace-rag-chain li:first-child { border-left: 0; }
+.trace-rag-chain span, .trace-rag-chain strong, .trace-rag-chain small { display: block; }
+.trace-rag-chain span { color: var(--warm); font: 700 .59rem ui-monospace, monospace; }
+.trace-rag-chain strong { margin-top: 1rem; color: var(--text); font-size: .73rem; line-height: 1.35; }
+.trace-rag-chain small { margin-top: .35rem; color: var(--muted); font-size: .61rem; line-height: 1.4; }
+.trace-rag-proof-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .55rem; }
+.trace-rag-proof-grid div { min-height: 86px; padding: .7rem; border: 1px solid var(--line); background: var(--surface-raised); }
+.trace-rag-proof-grid span, .trace-rag-proof-grid strong, .trace-rag-proof-grid small { display: block; }
+.trace-rag-proof-grid span { color: var(--signal); font: 700 .58rem ui-monospace, monospace; }
+.trace-rag-proof-grid strong { margin-top: .48rem; color: var(--text); font-size: .72rem; }
+.trace-rag-proof-grid small { margin-top: .3rem; color: var(--muted); font-size: .62rem; line-height: 1.45; }
+.trace-rag-actions { display: flex; flex-wrap: wrap; gap: .85rem 1.1rem; align-items: center; margin-top: 1.25rem; }
+.trace-rag-actions .button { min-height: 2.65rem; }
+.trace-rag-visual { display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 1rem; margin: 0; border: 1px solid var(--line); background: var(--surface-raised); box-shadow: 0 16px 34px rgba(20, 45, 35, .06); }
+.trace-rag-visual img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: #f7f4ee; }
+.trace-rag-visual figcaption { padding: .75rem .2rem .1rem; color: var(--muted); font-size: .67rem; line-height: 1.55; }
+.trace-rag-feature .section-heading { position: relative; }
+.trace-rag-feature .section-heading > p { max-width: 34rem; }
+
+@media (max-width: 1050px) {
+  .trace-rag-layout { grid-template-columns: 1fr; }
+  .trace-rag-visual { max-width: 760px; }
+}
+@media (max-width: 720px) {
+  .trace-rag-chain { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trace-rag-chain li, .trace-rag-chain li:first-child { border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .trace-rag-chain li:nth-child(odd) { border-left: 0; }
+  .trace-rag-chain li:nth-last-child(-n + 2) { border-bottom: 0; }
+  .trace-rag-proof-grid { grid-template-columns: 1fr; }
+  .trace-rag-proof-grid div { min-height: 0; }
+}
+@media (max-width: 520px) {
+  .trace-rag-copy { padding: 1.15rem; }
+  .trace-rag-actions { align-items: stretch; flex-direction: column; }
+  .trace-rag-actions .button { justify-content: center; width: 100%; }
+}
+
+/* The hero has three useful actions; keep the demo and resume discoverable on phones. */
+@media (max-width: 720px) {
+  .hero-actions .button-quiet { display: inline-flex; }
+  .mobile-nav summary { min-height: 44px; }
+  .mobile-nav a { min-height: 44px; }
+}

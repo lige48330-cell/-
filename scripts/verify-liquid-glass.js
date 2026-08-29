@@ -11,6 +11,13 @@ const required = [
   "images/iot-monitoring-dashboard-public.png",
   "images/esp32-miniapp-public.png",
   "images/cockpit-runtime-flow.svg",
+  "trace-rag.css",
+  "open-source/trace-rag-agent/demo.html",
+  "open-source/trace-rag-agent/demo.js",
+  "open-source/trace-rag-agent/demo.css",
+  "open-source/trace-rag-agent/architecture.svg",
+  "open-source/trace-rag-agent/README.md",
+  "docs/trace-rag-primary-research.md",
 ];
 
 for (const file of required) {
@@ -23,9 +30,18 @@ for (const text of [
   "三个现场：我判断什么、推动什么、留下什么",
   "FDE 如何收敛四类",
   "把 Agent 变成可观察、可审查、可接管的交付协作者",
-  "公开工程证明：快速进入陌生栈",
+  "公开工程按能力分层，不用项目数量制造噪声",
+  "把 Agent 做成一条能跑、能解释、能交接的系统链",
+  "阅读一手资料与边界",
 ]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
+}
+
+const traceCss = fs.readFileSync(path.join(root, "trace-rag.css"), "utf8");
+if (!traceCss.includes("--faint: var(--fde-faint)")) throw new Error("TraceRAG CSS is missing the FDE faint color alias");
+if (/\b(?:left|right):\s*-\d/.test(traceCss)) throw new Error("TraceRAG CSS contains a negative horizontal offset");
+for (const endpoint of ["/api/health", "/api/query", "/api/ingest"]) {
+  if (!home.includes(endpoint)) throw new Error(`Homepage is missing TraceRAG endpoint: ${endpoint}`);
 }
 
 if ((home.match(/class="mobile-nav"/g) || []).length !== 1) throw new Error("Mobile navigation is missing");
