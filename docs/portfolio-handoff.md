@@ -10,9 +10,9 @@
 - Pages：独立发布工作树的 `gh-pages` 分支
 - GitHub：`git@github.com:lige48330-cell/-.git`
 - 线上：`https://lige48330-cell.github.io/-/`
-- 本轮源站提交：`8ac44f7`（`main`）
-- 本轮 Pages 发布提交：`0012696`（`gh-pages`）
-- 线上核验地址：`https://lige48330-cell.github.io/-/?v=0012696`
+- 本轮源站提交：待发布（`main`）
+- 本轮 Pages 发布提交：待发布（`gh-pages`）
+- 线上核验地址：发布后使用新的提交哈希作为缓存参数。
 
 ## 已完成
 
@@ -26,6 +26,7 @@
 - 新增公开第一证据：TraceRAG Agent（知识摄取、检索、路由、人工闸门、引用回答与 trace / handoff）。
 - 公司项目始终以“真实项目截图 · AI 辅助脱敏”展示，源码不公开。
 - 公开工程按“可运行 Agent / AI 基础设施 / 方法资产 / 业务原型”分层，避免把低价值原型当成主证据。
+- `China Job Channels / 有界求职运营工作台` 已从折叠档案提升为公开项目矩阵的醒目本机证据，展示 Node Dashboard、Python 离线解析、JSONL 契约、状态真源和 57 个离线用例。
 
 ### 视觉与交互
 
@@ -71,7 +72,7 @@
 1. `portfolio-premium.css` 定义静态轨道和 `stroke-dashoffset` 脉冲。
 2. `portfolio.js` 使用 `IntersectionObserver` 只触发一次，reduced-motion 下静态降级。
 3. 桌面与 390px 手机端验证通过，无横向溢出。
-4. 资源版本号升级为 `20260830a`，用于避免旧 CSS / JS 缓存。
+4. 资源版本号升级为 `20260830b`，用于避免新增项目卡样式被旧 CSS / JS 缓存。
 
 接手后应继续关注线上复核、项目边界和新需求，不要重复实现已有的 SVG 动效。
 
@@ -83,6 +84,13 @@
 - 测试：`python -m unittest discover -s tests -v`
 - 证据边界：纯 mock 运维知识，不连接真实模型、设备或公司系统。
 - 技术链：业务问题 → 摄取 / 分块 → 检索 → Agent 路由 → 人工闸门 → 引用回答 → trace / handoff。
+
+## China Job Channels（本轮新增）
+
+- 首页入口：`#local-project`；详情页：`projects/china-job-channels.html`。
+- 技术链：边界策略 → 浏览器受控执行 → Node Dashboard / Python collector → JSONL 规范化 → records 真源 → 预览与恢复。
+- 验证：本机 `npm run check` 通过，JavaScript 与 Python 离线测试合计 57 个用例。
+- 证据边界：不公开登录态、账号、Cookie、Token、原始采集结果或运行配置；只展示脱敏架构、状态契约和验证记录。
 
 ## 验证命令
 

@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">China Job Channels 有界数据流水线</title>
+  <desc id="desc">从边界策略、浏览器控制和采集，到 JSONL 规范化、状态真源、预览产物与离线验证的工程结构示意图。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfaf6"/>
+      <stop offset="1" stop-color="#edf3ee"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1f6b58"/>
+      <stop offset="1" stop-color="#2f9676"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#173a30" flood-opacity=".10"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f8069"/>
+    </marker>
+    <style>
+      .label { font: 700 13px Inter, 'Microsoft YaHei', sans-serif; fill: #17332a; }
+      .body { font: 500 12px Inter, 'Microsoft YaHei', sans-serif; fill: #55675f; }
+      .mono { font: 800 11px Consolas, monospace; letter-spacing: 1px; fill: #2f8069; }
+      .tiny { font: 600 10px Inter, 'Microsoft YaHei', sans-serif; fill: #687a71; }
+      .on-dark { fill: #ffffff; }
+      .on-dark-muted { fill: #c8d9d1; }
+      .on-warm { fill: #a24b34; }
+    </style>
+  </defs>
+
+  <rect width="1120" height="620" rx="22" fill="url(#paper)"/>
+  <path d="M0 86H1120M0 174H1120M0 262H1120M0 350H1120M0 438H1120M0 526H1120" stroke="#dbe5de" stroke-width="1"/>
+  <path d="M80 0V620M240 0V620M400 0V620M560 0V620M720 0V620M880 0V620M1040 0V620" stroke="#e5ece7" stroke-width="1"/>
+
+  <text x="46" y="42" class="mono">CHINA JOB CHANNELS / DELIVERY GRAPH</text>
+  <text x="46" y="67" class="body">把浏览器动作变成有边界、可追踪、可恢复的运营数据链</text>
+
+  <g filter="url(#shadow)">
+    <rect x="46" y="112" width="188" height="102" rx="12" fill="#17332a"/>
+    <text x="66" y="141" class="mono on-dark-muted">01 / POLICY</text>
+    <text x="66" y="169" class="label on-dark">边界策略</text>
+    <text x="66" y="190" class="body on-dark-muted">城市 · 薪资 · 经验</text>
+    <text x="66" y="207" class="body on-dark-muted">正式全职 · 扫描上限</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="280" y="98" width="188" height="130" rx="12" fill="#ffffff" stroke="#cbdad1"/>
+    <text x="300" y="127" class="mono">02 / CONTROL</text>
+    <text x="300" y="156" class="label">浏览器控制</text>
+    <text x="300" y="179" class="body">Tampermonkey</text>
+    <text x="300" y="198" class="body">人工 Start · 有界批次</text>
+    <rect x="300" y="208" width="110" height="5" rx="2.5" fill="#e4eee8"/>
+    <rect x="300" y="208" width="72" height="5" rx="2.5" fill="#d66b4a"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="514" y="112" width="188" height="102" rx="12" fill="#e7f1eb" stroke="#c0d7ca"/>
+    <text x="534" y="141" class="mono">03 / COLLECT</text>
+    <text x="534" y="169" class="label">Node Dashboard</text>
+    <text x="534" y="190" class="body">会话 · 接收 · 预览</text>
+    <text x="534" y="207" class="body">唯一记录入口</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="748" y="98" width="188" height="130" rx="12" fill="#ffffff" stroke="#cbdad1"/>
+    <text x="768" y="127" class="mono">04 / NORMALIZE</text>
+    <text x="768" y="156" class="label">Python Collector</text>
+    <text x="768" y="179" class="body">CDP 详情 · 离线解析</text>
+    <text x="768" y="198" class="body">来源与字段保留</text>
+    <rect x="768" y="208" width="142" height="5" rx="2.5" fill="#e4eee8"/>
+    <rect x="768" y="208" width="101" height="5" rx="2.5" fill="#2f8069"/>
+  </g>
+
+  <path d="M234 163H276" stroke="#2f8069" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M468 163H510" stroke="#2f8069" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M702 163H744" stroke="#2f8069" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="240" y="151" class="tiny">允许什么</text>
+  <text x="474" y="151" class="tiny">受控执行</text>
+  <text x="708" y="151" class="tiny">采集结果</text>
+
+  <path d="M842 228V286" stroke="#2f8069" stroke-width="2" marker-end="url(#arrow)"/>
+  <g filter="url(#shadow)">
+    <rect x="514" y="286" width="422" height="94" rx="12" fill="#ffffff" stroke="#cbdad1"/>
+    <text x="538" y="314" class="mono">05 / DATA CONTRACT</text>
+    <text x="538" y="342" class="label">JSONL 规范化 + records 真源</text>
+    <text x="538" y="363" class="body">原始结果 → 稳定字段 → 可审计状态 → 派生预览</text>
+  </g>
+
+  <path d="M725 380V425" stroke="#2f8069" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="744" y="408" class="tiny">状态分流</text>
+
+  <g filter="url(#shadow)">
+    <rect x="46" y="426" width="188" height="108" rx="12" fill="#fff6f1" stroke="#e5c9bc"/>
+    <text x="66" y="455" class="mono" fill="#a24b34">06 / EVIDENCE</text>
+    <text x="66" y="484" class="label">57 offline tests</text>
+    <text x="66" y="506" class="body">JS smoke / E2E</text>
+    <text x="66" y="523" class="body">Python 离线解析</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="280" y="412" width="188" height="136" rx="12" fill="#17332a"/>
+    <text x="300" y="441" class="mono on-dark-muted">STATE MACHINE</text>
+    <rect x="300" y="458" width="74" height="24" rx="5" fill="#2f8069"/>
+    <text x="316" y="475" class="tiny on-dark">sent</text>
+    <rect x="384" y="458" width="58" height="24" rx="5" fill="#b86b4a"/>
+    <text x="396" y="475" class="tiny on-dark">clicked</text>
+    <rect x="300" y="491" width="74" height="24" rx="5" fill="#71857a"/>
+    <text x="314" y="508" class="tiny on-dark">failed</text>
+    <rect x="384" y="491" width="58" height="24" rx="5" fill="#c4a05c"/>
+    <text x="391" y="508" class="tiny on-dark">skipped</text>
+    <text x="300" y="534" class="tiny on-dark-muted">只有 sent 进入确认列表</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="514" y="426" width="188" height="102" rx="12" fill="#e7f1eb" stroke="#c0d7ca"/>
+    <text x="534" y="455" class="mono">07 / HANDOFF</text>
+    <text x="534" y="484" class="label">预览与恢复</text>
+    <text x="534" y="506" class="body">jobs.jsonl · preview.html</text>
+    <text x="534" y="523" class="body">失败可追踪 · 可重放</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="748" y="426" width="188" height="102" rx="12" fill="#ffffff" stroke="#cbdad1"/>
+    <text x="768" y="455" class="mono">FDE SIGNAL</text>
+    <text x="768" y="484" class="label">可交接的系统结果</text>
+    <text x="768" y="506" class="body">输入、状态、来源、失败</text>
+    <text x="768" y="523" class="body">都能被团队继续维护</text>
+  </g>
+
+  <path d="M234 480H276" stroke="#d66b4a" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M468 480H510" stroke="#2f8069" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M702 480H744" stroke="#2f8069" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="244" y="468" class="tiny">验证</text>
+  <text x="475" y="468" class="tiny">输出</text>
+  <text x="710" y="468" class="tiny">接手</text>
+
+  <path d="M936 163C1000 163 1000 480 940 480" fill="none" stroke="#d4e3da" stroke-width="2" stroke-dasharray="6 7"/>
+  <text x="972" y="319" class="tiny" transform="rotate(90 972 319)">证据回路</text>
+</svg>
