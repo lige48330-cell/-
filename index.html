@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Lige 的 FDE 交付档案：把业务问题推进成可运行、可验证、可交接的 AI Agent 与全栈系统。" />
+    <meta name="description" content="Lige 的 FDE 交付档案：把业务问题推进成可运行、可验证、可交接的 AI Agent、业务系统与有界自动化。" />
     <link rel="canonical" href="https://lige48330-cell.github.io/-/" />
     <meta property="og:title" content="Lige / FDE · AI Agent 与全栈系统交付" />
     <meta property="og:description" content="业务建模、原型、跨栈集成、Agent 工程与可核验交接。" />
@@ -12,10 +12,10 @@
     <title>Lige / FDE 交付档案</title>
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="preload" href="fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="portfolio.css?v=20260830a" />
-    <link rel="stylesheet" href="portfolio-premium.css?v=20260830a" />
-    <link rel="stylesheet" href="fde.css?v=20260830a" />
-    <link rel="stylesheet" href="trace-rag.css?v=20260830a" />
+    <link rel="stylesheet" href="portfolio.css?v=20260830b" />
+    <link rel="stylesheet" href="portfolio-premium.css?v=20260830b" />
+    <link rel="stylesheet" href="fde.css?v=20260830b" />
+    <link rel="stylesheet" href="trace-rag.css?v=20260830b" />
   </head>
   <body>
     <a class="skip-link" href="#projects">跳到核心交付</a>
@@ -56,13 +56,14 @@
           <p class="eyebrow">现场判断 / 方案原型 / 跨栈集成 / 验收交接</p>
           <h1 id="hero-title">进入业务现场，<br />跨栈推进系统交付。<br /><em><span>交得出，验得清，</span><span>接得住。</span></em></h1>
           <p class="hero-lede">我把现场问题拆成业务模型、接口契约和可观察任务，再用 React、Python、Node、Rust 等跨栈推进实现；最后用 trace、测试、验收场景和交接文档证明系统真的能被使用和接手。Agent 是我组织上下文、工具与协作的工程方式。</p>
-          <ul class="hero-evidence-list" aria-label="三项核心交付证据">
+          <ul class="hero-evidence-list" aria-label="四项核心交付证据">
             <li><a href="#case-erp"><span>01 / BUSINESS MODELING</span><strong>把业务规则变成可配置模型</strong><small>养殖渔业 ERP（脱敏）· 流程 / 对象 / 字段 / 状态 / 单据核验</small></a></li>
             <li><a href="#case-iot"><span>02 / SYSTEM INTEGRATION</span><strong>把设备反馈变成管理视图</strong><small>消毒除臭设备（脱敏）· 大屏 / 小程序 / 云端接口协作</small></a></li>
             <li><a href="#case-cockpit-tools"><span>03 / CROSS-STACK DEBUGGING</span><strong>把运行态故障收敛到代码改动</strong><small>Cockpit Tools · 生命周期改造 / typecheck / 聚焦回归</small></a></li>
+            <li><a href="#local-project"><span>04 / BOUNDED AUTOMATION</span><strong>把自动化变成可复盘的运营链路</strong><small>China Job Channels · Dashboard / 状态真源 / 离线验证</small></a></li>
           </ul>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">先看三个主案例</a>
+            <a class="button button-primary" href="#projects">先看核心交付</a>
             <a class="button button-quiet" href="#trace-rag">运行 AI Agent 原型 ↗</a>
             <a class="button button-quiet" href="resume.html">打开简历 ↗</a>
           </div>
@@ -112,7 +113,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">01 / FLAGSHIP DELIVERIES</p>
-          <h2 id="projects-title">三个现场：我判断什么、推动什么、留下什么</h2>
+            <h2 id="projects-title">三个现场 + 一条个人工程：我判断什么、推动什么、留下什么</h2>
           </div>
           <p>不只展示功能页面。每个案例都说明业务风险、我的推进动作、关键判断、协作边界、可交接结果，以及证据能证明到哪里。</p>
         </div>
@@ -224,6 +225,7 @@
           <a class="responsibility-row" href="#case-iot"><strong>设备反馈无法支持运营判断</strong><span>状态 / 事件模型、双端管理视图、接口字段与协作边界</span><em>IoT 案例 →</em></a>
           <a class="responsibility-row" href="#case-cockpit-tools"><strong>跨栈配置与运行态偏离</strong><span>根因定位、生命周期改动、聚焦验证与已知限制</span><em>Cockpit 案例 →</em></a>
           <div class="responsibility-row"><strong>多人协作后系统难接手</strong><span>接口契约、启动说明、验证记录、风险与责任边界</span><em>跨案例交付</em></div>
+          <a class="responsibility-row" href="#local-project"><strong>自动化结果无法复核</strong><span>状态机、唯一记录真源、失败恢复与离线验证</span><em>China Job Channels →</em></a>
         </div>
       </section>
 
@@ -311,8 +313,40 @@
             <p class="eyebrow">05 / PUBLIC PROJECT MATRIX</p>
             <h2 id="project-radar-title">公开工程按能力分层，不用项目数量制造噪声</h2>
           </div>
-          <p>优先展示能被运行、阅读或复盘的 AI / 全栈证据；业务原型保留为场景迁移能力，低价值项目放入折叠档案。</p>
+          <p>优先展示能被运行、阅读或复盘的 AI / 全栈证据；本机数据运营工程单独展开，业务原型再按场景迁移能力归档。</p>
         </div>
+        <article id="local-project" class="local-project-feature" aria-labelledby="local-project-title">
+          <div class="local-project-visual">
+            <img src="images/china-job-channels-flow.svg" alt="China Job Channels 从受控采集到状态真源和离线验证的工程结构示意图" />
+            <span class="image-disclosure-badge">本机工程结构示意 · 脱敏展示</span>
+          </div>
+          <div class="local-project-copy">
+            <div class="local-project-meta">
+              <p class="radar-kicker"><span>LOCAL BUILD / DATA OPERATIONS</span><em>本机验证</em></p>
+              <p class="case-index">PROJECT 04 · NODE / PYTHON / JSONL</p>
+            </div>
+            <h3 id="local-project-title">China Job Channels / 有界求职运营工作台</h3>
+            <p class="local-project-lede">我把一个依赖浏览器登录态、采集结果和人工判断的求职运营问题，收敛成 Dashboard、采集器、规范化层、记录真源和预览产物组成的可复盘系统。</p>
+            <div class="local-project-chain" aria-label="China Job Channels 技术链">
+              <span>Node Dashboard</span><i>→</i><span>Python Collector</span><i>→</i><span>JSONL Contract</span><i>→</i><span>Verified Records</span>
+            </div>
+            <div class="local-project-proof" aria-label="项目可核验结果">
+              <div><strong>57</strong><span>离线用例通过</span></div>
+              <div><strong>4</strong><span>状态分层</span></div>
+              <div><strong>1</strong><span>记录真源</span></div>
+              <div><strong>0</strong><span>静默外发</span></div>
+            </div>
+            <div class="local-project-value">
+              <strong>FDE 价值</strong>
+              <span>把“点过按钮”与“确认完成”分开，把失败、恢复、来源和责任写进协议；这套判断可迁移到 Agent 工具调用、数据摄取和运营后台。</span>
+            </div>
+            <p class="local-project-boundary"><strong>公开边界</strong> · 页面只展示架构、状态与离线证据；原始登录态、会话、配置、第三方采集结果和运行脚本不进入公开站点。</p>
+            <div class="local-project-actions">
+              <a class="button button-primary" href="projects/china-job-channels.html">打开完整案例 ↗</a>
+              <a class="text-link" href="https://github.com/lige48330-cell/-/tree/main/open-source/china-job-channels" target="_blank" rel="noreferrer">阅读脱敏工程说明 ↗</a>
+            </div>
+          </div>
+        </article>
         <div class="supporting-grid">
           <article class="evidence-card">
             <p class="radar-kicker"><span>AI INFRASTRUCTURE</span><em>公开源码</em></p>
@@ -344,7 +378,7 @@
           </article>
         </div>
         <details class="evidence-archive">
-          <summary><span>补充工程档案</span><strong>上下文契约 / 工业监控 / 有界自动化 / 开发者小程序</strong></summary>
+          <summary><span>补充工程档案</span><strong>上下文契约 / 工业监控 / 开发者小程序</strong></summary>
           <div class="evidence-archive-grid">
             <article class="archive-item">
               <div><span>AGENT CONTRACTS · RESEARCH</span><h3>Code Control Stack</h3></div>
@@ -355,11 +389,6 @@
               <div><span>PUBLIC PROTOTYPE</span><h3>工业监控分析原型</h3></div>
               <p>围绕设备时间轴、AI 概率、激光厚度和视频时间轴组织复杂状态信息。</p>
               <a href="https://github.com/lige48330-cell/-/tree/main/open-source/industrial-monitor-prototype" target="_blank" rel="noreferrer">查看源码 ↗</a>
-            </article>
-            <article class="archive-item">
-              <div><span>FULL-STACK AUTOMATION · LOCAL EVIDENCE</span><h3>有界数据流水线</h3></div>
-              <p>Node 本地 Dashboard、Python 采集器、规范化 JSONL、预览产物和离线检查组成可复盘的自动化链路；原始工程含登录态边界，源码暂不公开。</p>
-              <a href="docs/china-job-channels-case.zh-CN.md">查看脱敏能力卡 ↗</a>
             </article>
             <article class="archive-item">
               <div><span>PUBLIC PROTOTYPE</span><h3>开发者服务展示小程序</h3></div>
@@ -380,6 +409,6 @@
       <div class="footer-proof"><strong>FDE DELIVERY SIGNAL</strong><span>进入现场定义问题，跨栈推进实现，带着验证记录和交接边界离场。</span></div>
       <a href="https://github.com/lige48330-cell/-" target="_blank" rel="noreferrer">GitHub 作品集 ↗</a>
     </footer>
-    <script src="portfolio.js?v=20260830a"></script>
+    <script src="portfolio.js?v=20260830b"></script>
   </body>
 </html>

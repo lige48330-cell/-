@@ -16,7 +16,11 @@ const files = [
   "images/iot-monitoring-dashboard-public.png",
   "images/esp32-miniapp-public.png",
   "images/cockpit-runtime-flow.svg",
+  "images/china-job-channels-flow.svg",
   "trace-rag.css",
+  "projects/china-job-channels.html",
+  "projects/china-job-channels.css",
+  "open-source/china-job-channels/README.md",
   "open-source/trace-rag-agent/demo.html",
   "open-source/trace-rag-agent/demo.js",
   "open-source/trace-rag-agent/demo.css",
@@ -60,7 +64,7 @@ const home = read("index.html");
 for (const text of [
   "Lige · Forward Deployed Engineer",
   "进入业务现场，",
-  "三个现场：我判断什么、推动什么、留下什么",
+  "三个现场 + 一条个人工程：我判断什么、推动什么、留下什么",
   "FDE 如何收敛四类",
   "现场</strong><small>角色 / 场景 / 约束",
   "把 Agent 变成可观察、可审查、可接管的交付协作者",
@@ -69,6 +73,7 @@ for (const text of [
   "阅读一手资料与边界",
   "真实项目界面 · AI 辅助脱敏",
   "case-cockpit-tools",
+  "China Job Channels / 有界求职运营工作台",
 ]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
@@ -106,7 +111,7 @@ const forbiddenPublicPatterns = [
   ["Windows absolute path", /\b[A-Za-z]:\\[^\r\n<>"']+/],
 ];
 
-for (const file of ["index.html", "resume.html", "portfolio.js", "images/cockpit-runtime-flow.svg", "images/erp-prototype-map.svg"]) {
+for (const file of ["index.html", "resume.html", "portfolio.js", "projects/china-job-channels.html", "projects/china-job-channels.css", "open-source/china-job-channels/README.md", "images/cockpit-runtime-flow.svg", "images/erp-prototype-map.svg", "images/china-job-channels-flow.svg"]) {
   const content = read(file);
   for (const [label, pattern] of forbiddenPublicPatterns) {
     if (pattern.test(content)) throw new Error(`${file} contains ${label}`);

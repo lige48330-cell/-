@@ -131,6 +131,7 @@ const revealTargets = document.querySelectorAll([
   ".trace-rag-copy",
   ".trace-rag-visual",
   ".trace-rag-chain li",
+  ".local-project-feature",
   ".evidence-card",
   ".archive-item",
 ].join(","));
@@ -176,6 +177,7 @@ const pointerTargets = document.querySelectorAll([
   ".agent-contract-panel",
   ".trace-rag-copy",
   ".trace-rag-visual",
+  ".local-project-feature",
   ".evidence-card",
 ].join(","));
 const pointerFine = window.matchMedia("(pointer: fine)").matches;

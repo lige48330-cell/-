@@ -9,6 +9,12 @@
 | **TraceRAG Agent** | Python API、知识摄取、检索、路由、人工闸门、引用回答、trace / handoff | [运行浏览器 Demo](trace-rag-agent/demo.html) · [阅读源码](trace-rag-agent/) |
 | **CodexCont** | Python、Starlette、SSE 流式中间件、鉴权边界、离线 fixture 测试 | [查看源码](codexcont/) |
 
+## 邻接证据：数据与运营自动化
+
+| 工程 | 重点能力 | 入口 |
+| --- | --- | --- |
+| **China Job Channels / 有界求职运营工作台** | Node Dashboard、Python 采集与离线解析、JSONL 数据契约、状态真源、失败恢复与 57 个离线用例 | [阅读脱敏工程说明](china-job-channels/README.md) · [打开完整案例](../projects/china-job-channels.html) |
+
 ## 第二证据：Agent 工程方法与上下文契约
 
 | 工程 | 重点能力 | 入口 |
@@ -24,7 +30,7 @@
 
 TraceRAG 的设计依据与边界记录见 [一手资料研究](../docs/trace-rag-primary-research.md)。
 
-工业监控与开发者服务小程序仍保留在 [补充原型档案](../#project-radar)，用于证明信息架构和跨端学习能力，不作为 AI Agent 主证据。
+工业监控与开发者服务小程序仍保留在 [补充原型档案](../#project-radar)，用于证明信息架构和跨端学习能力，不作为 AI Agent 主证据。China Job Channels 的原始运行工程依赖个人登录态与第三方页面，因此这里只公开脱敏架构、状态契约和验证证据。
 
 ## 发布边界
 
