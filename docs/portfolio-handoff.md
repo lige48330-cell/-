@@ -10,9 +10,9 @@
 - Pages：独立发布工作树的 `gh-pages` 分支
 - GitHub：`git@github.com:lige48330-cell/-.git`
 - 线上：`https://lige48330-cell.github.io/-/`
-- 本轮源站提交：待发布（`main`）
-- 本轮 Pages 发布提交：待发布（`gh-pages`）
-- 线上核验地址：发布后使用新的提交哈希作为缓存参数。
+- 本轮源站提交：`5e2f0c6`（`main`）
+- 本轮 Pages 发布提交：`79071fd`（`gh-pages`）
+- 线上核验地址：`https://lige48330-cell.github.io/-/?v=79071fd`
 
 ## 已完成
 
