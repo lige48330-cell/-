@@ -11,8 +11,8 @@
 - GitHub：`git@github.com:lige48330-cell/-.git`
 - 线上：`https://lige48330-cell.github.io/-/`
 - 本轮源站提交：`5e2f0c6`（`main`）
-- 本轮 Pages 发布提交：`79071fd`（`gh-pages`）
-- 线上核验地址：`https://lige48330-cell.github.io/-/?v=79071fd`
+- 本轮 Pages 发布提交：`1e40697`（`gh-pages`）
+- 线上核验地址：`https://lige48330-cell.github.io/-/?v=1e40697`
 
 ## 已完成
 
