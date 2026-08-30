@@ -13,7 +13,7 @@
 
 | 工程 | 重点能力 | 入口 |
 | --- | --- | --- |
-| **China Job Channels / 有界求职运营工作台** | Node Dashboard、Python 采集与离线解析、JSONL 数据契约、状态真源、失败恢复与 57 个离线用例 | [阅读脱敏工程说明](china-job-channels/README.md) · [打开完整案例](../projects/china-job-channels.html) |
+| **China Job Channels / 有界求职运营工作台** | Node Dashboard、Python 采集与离线解析、JSONL 数据契约、状态真源、失败恢复、57 项 Python 测试与 8 个 JS 检查脚本 | [阅读脱敏工程说明](china-job-channels/README.md) · [打开完整案例](../projects/china-job-channels.html) |
 
 ## 第二证据：Agent 工程方法与上下文契约
 

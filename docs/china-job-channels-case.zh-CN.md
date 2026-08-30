@@ -23,7 +23,7 @@
 
 ## 可核对结果
 
-- 本机离线检查通过：JavaScript smoke / E2E 与 Python 测试合计 57 个用例。
+- 本机离线检查通过：57 项 Python unittest 与 8 个 JavaScript smoke / E2E 检查脚本。
 - 派生产物由唯一 records 入口刷新：只有确认的 `sent` 才进入已确认列表和预览。
 - 批次、扫描范围和结果状态都有上限；实时浏览器行为仍需要人工受控验证。
 

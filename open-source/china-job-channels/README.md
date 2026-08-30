@@ -10,7 +10,7 @@
 - Python collector：受控浏览器采集与离线解析边界。
 - JSONL contract：稳定字段、来源和状态的规范化方式。
 - Records truth source：把确认完成与尝试、失败、跳过分开。
-- Verification：JavaScript smoke / E2E 与 Python 离线测试，共 57 个用例。
+- Verification：57 项 Python unittest 与 8 个 JavaScript smoke / E2E 检查脚本通过。
 
 ## 状态契约
 
@@ -27,6 +27,6 @@
 
 ## 证据边界
 
-- 57 个用例来自本机离线检查，不代表真实站点持续运行。
+- 57 项 Python 测试和 8 个 JavaScript 检查脚本来自本机离线检查，不代表真实站点持续运行。
 - 结构图是工程示意，不是线上生产截图。
 - 任何真实账号、密码、Token、Cookie、职位记录和第三方页面数据都不在本目录。
