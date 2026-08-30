@@ -26,7 +26,7 @@
 - 新增公开第一证据：TraceRAG Agent（知识摄取、检索、路由、人工闸门、引用回答与 trace / handoff）。
 - 公司项目始终以“真实项目截图 · AI 辅助脱敏”展示，源码不公开。
 - 公开工程按“可运行 Agent / AI 基础设施 / 方法资产 / 业务原型”分层，避免把低价值原型当成主证据。
-- `China Job Channels / 有界求职运营工作台` 已从折叠档案提升为公开项目矩阵的醒目本机证据，展示 Node Dashboard、Python 离线解析、JSONL 契约、状态真源和 57 个离线用例。
+- `China Job Channels / 有界求职运营工作台` 已从折叠档案提升为公开项目矩阵的醒目本机证据，展示 Node Dashboard、Python 离线解析、JSONL 契约、状态真源、57 项 Python 测试和 8 个 JavaScript 检查脚本。
 
 ### 视觉与交互
 
@@ -89,7 +89,7 @@
 
 - 首页入口：`#local-project`；详情页：`projects/china-job-channels.html`。
 - 技术链：边界策略 → 浏览器受控执行 → Node Dashboard / Python collector → JSONL 规范化 → records 真源 → 预览与恢复。
-- 验证：本机 `npm run check` 通过，JavaScript 与 Python 离线测试合计 57 个用例。
+- 验证：本机 `npm run check` 通过，包含 57 项 Python unittest 与 8 个 JavaScript smoke / E2E 检查脚本。
 - 证据边界：不公开登录态、账号、Cookie、Token、原始采集结果或运行配置；只展示脱敏架构、状态契约和验证记录。
 
 ## 验证命令

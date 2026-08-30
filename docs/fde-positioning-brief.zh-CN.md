@@ -32,7 +32,7 @@
 2. 消毒除臭设备联动：监管大屏 + 管理小程序 + 云端接口 + ESP32 状态反馈的管理端协作边界；方案文档可展示技术路径取舍，但不作为已实现硬件证明。
 3. Cockpit Tools：Tauri + React + Rust 私有分支、Provider gateway 生命周期和回归验证。
 
-4. China Job Channels：Node Dashboard、Python 采集与离线解析、JSONL 契约、状态真源、失败恢复和 57 个离线用例；原始登录态工程不公开，只展示脱敏结构与验证证据。
+4. China Job Channels：Node Dashboard、Python 采集与离线解析、JSONL 契约、状态真源、失败恢复、57 项 Python 测试和 8 个 JavaScript 检查脚本；原始登录态工程不公开，只展示脱敏结构与验证证据。
 
 ## 案例最低证据
 

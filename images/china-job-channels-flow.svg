@@ -91,9 +91,9 @@
   <g filter="url(#shadow)">
     <rect x="46" y="426" width="188" height="108" rx="12" fill="#fff6f1" stroke="#e5c9bc"/>
     <text x="66" y="455" class="mono" fill="#a24b34">06 / EVIDENCE</text>
-    <text x="66" y="484" class="label">57 offline tests</text>
-    <text x="66" y="506" class="body">JS smoke / E2E</text>
-    <text x="66" y="523" class="body">Python 离线解析</text>
+    <text x="66" y="484" class="label">57 Python tests</text>
+    <text x="66" y="506" class="body">8 JS smoke / E2E</text>
+    <text x="66" y="523" class="body">全部为离线检查</text>
   </g>
 
   <g filter="url(#shadow)">
