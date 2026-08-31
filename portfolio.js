@@ -199,3 +199,64 @@ if (pointerFine && !reduceMotion) {
     });
   });
 }
+
+const siteAudio = document.querySelector("#site-audio");
+const audioPlayer = document.querySelector(".site-audio-player");
+const audioToggle = document.querySelector("#audio-toggle");
+const audioLabel = document.querySelector("#audio-label");
+const audioHint = document.querySelector("#audio-hint");
+const audioStatus = document.querySelector("#audio-status");
+
+if (siteAudio && audioPlayer && audioToggle) {
+  const trackName = "琵琶行 · 不想呼吸";
+  let manualPause = false;
+  let playAttempt = 0;
+
+  siteAudio.volume = 0.28;
+
+  const setAudioState = (state, label, hint) => {
+    audioPlayer.dataset.state = state;
+    audioToggle.setAttribute("aria-pressed", String(state === "playing"));
+    audioToggle.setAttribute("aria-label", state === "playing" ? "停止背景音乐" : "播放背景音乐");
+    if (audioLabel) audioLabel.textContent = label;
+    if (audioHint) audioHint.textContent = hint;
+    if (audioStatus) audioStatus.textContent = `${label}，${hint}`;
+  };
+
+  const tryStartAudio = () => {
+    if (manualPause) return;
+    const attempt = ++playAttempt;
+    siteAudio.play().then(() => {
+      if (attempt !== playAttempt || manualPause || siteAudio.paused) return;
+      setAudioState("playing", "音乐播放中", `${trackName} · 点击停止`);
+    }).catch(() => {
+      if (attempt !== playAttempt || manualPause) return;
+      setAudioState("blocked", "点击播放", "浏览器阻止了自动播放");
+    });
+  };
+
+  audioToggle.addEventListener("click", () => {
+    if (siteAudio.paused) {
+      manualPause = false;
+      tryStartAudio();
+    } else {
+      manualPause = true;
+      playAttempt += 1;
+      siteAudio.pause();
+      setAudioState("paused", "音乐已停止", `${trackName} · 点击继续`);
+    }
+  });
+
+  siteAudio.addEventListener("play", () => {
+    setAudioState("playing", "音乐播放中", `${trackName} · 点击停止`);
+  });
+  siteAudio.addEventListener("pause", () => {
+    if (manualPause) setAudioState("paused", "音乐已停止", `${trackName} · 点击继续`);
+  });
+  siteAudio.addEventListener("error", () => {
+    audioToggle.disabled = true;
+    setAudioState("error", "音频不可用", "请检查网络或音频文件");
+  });
+
+  tryStartAudio();
+}

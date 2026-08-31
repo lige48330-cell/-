@@ -12,6 +12,7 @@ const required = [
   "images/esp32-miniapp-public.png",
   "images/cockpit-runtime-flow.svg",
   "images/china-job-channels-flow.svg",
+  "audio/portfolio-theme.mp3",
   "trace-rag.css",
   "projects/china-job-channels.html",
   "projects/china-job-channels.css",
@@ -41,6 +42,7 @@ for (const text of [
 ]) {
   if (!home.includes(text)) throw new Error(`Homepage is missing: ${text}`);
 }
+if (!home.includes("audio/portfolio-theme.mp3") || !home.includes("audio-toggle")) throw new Error("Homepage is missing the audio control");
 
 const traceCss = fs.readFileSync(path.join(root, "trace-rag.css"), "utf8");
 if (!traceCss.includes("--faint: var(--fde-faint)")) throw new Error("TraceRAG CSS is missing the FDE faint color alias");
